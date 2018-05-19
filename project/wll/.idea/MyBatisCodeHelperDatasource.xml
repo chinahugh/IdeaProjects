@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="activeDatabaseInfo">
+      <NewDatabaseInfo>
+        <option name="database" value="wll" />
+        <option name="databaseType" value="MySql" />
+        <option name="password" value="root" />
+        <option name="url" value="localhost:3306" />
+        <option name="userName" value="root" />
+      </NewDatabaseInfo>
+    </option>
+    <option name="databaseInfos">
+      <list>
+        <NewDatabaseInfo>
+          <option name="database" value="wll" />
+          <option name="databaseType" value="MySql" />
+          <option name="password" value="root" />
+          <option name="url" value="localhost:3306" />
+          <option name="userName" value="root" />
+        </NewDatabaseInfo>
+      </list>
+    </option>
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="javaMapperPackage" value="com.wll.wll.dao" />
+        <option name="javaMapperPath" value="D:\IdeaProjects\IdeaProjects\project\wll\src\main\java\" />
+        <option name="javaModelPackage" value="com.wll.wll.entity" />
+        <option name="javaModelPath" value="D:\IdeaProjects\IdeaProjects\project\wll\src\main\java" />
+        <option name="xmlMapperPackage" value="mapper/wll" />
+        <option name="xmlMapperPath" value="D:\IdeaProjects\IdeaProjects\project\wll\src\main\resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

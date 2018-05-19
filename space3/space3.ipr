@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="MedicineManager:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/MedicineManager_war_exploded</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="MedicineManager" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/asm.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jta.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jaas.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/mysql.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/struts.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/xml-apis.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/asm-attrs.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/javassist.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/hibernate3.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/antlr-2.7.6.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/cglib-2.1.3.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jakarta-oro.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/log4j-1.2.11.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/xerces-2.6.2.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jcommon-1.0.17.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jdbc2_0-stdext.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-digester.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jaxen-1.1-beta-7.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jfreechart-1.0.14.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-logging-1.0.4.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-beanutils-1.7.0.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-validator-1.3.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-collections-2.1.1.jar" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="MedicineManager/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="myjfinal:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/myjfinal_war_exploded</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="myjfinal/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="myjfinal" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="jfinal_demo:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/jfinal_demo_war_exploded</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="jfinal_demo" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="jfinal_demo/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="xhfw:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/xhfw_war_exploded</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="xhfw" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="lib" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="xhfw/web/Web" />
+      </root>
+    </artifact>
+  </component>
+  <component name="DBNavigator.Project.DataEditorManager">
+    <record-view-column-sorting-type value="BY_INDEX" />
+    <value-preview-text-wrapping value="false" />
+    <value-preview-pinned value="false" />
+  </component>
+  <component name="DBNavigator.Project.DataExportManager">
+    <export-instructions>
+      <create-header value="true" />
+      <quote-values-containing-separator value="true" />
+      <quote-all-values value="false" />
+      <value-separator value="" />
+      <file-name value="" />
+      <file-location value="" />
+      <scope value="GLOBAL" />
+      <destination value="FILE" />
+      <format value="EXCEL" />
+      <charset value="UTF-8" />
+    </export-instructions>
+  </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
+  <component name="DBNavigator.Project.EditorStateManager">
+    <last-used-providers />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+  </component>
+  <component name="DBNavigator.Project.ObjectDependencyManager">
+    <last-used-dependency-type value="INCOMING" />
+  </component>
+  <component name="DBNavigator.Project.ObjectQuickFilterManager">
+    <last-used-operator value="EQUAL" />
+    <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
+  </component>
+  <component name="DBNavigator.Project.Settings">
+    <connections />
+    <browser-settings>
+      <general>
+        <display-mode value="TABBED" />
+        <navigation-history-size value="100" />
+        <show-object-details value="false" />
+      </general>
+      <filters>
+        <object-type-filter>
+          <object-type name="SCHEMA" enabled="true" />
+          <object-type name="USER" enabled="true" />
+          <object-type name="ROLE" enabled="true" />
+          <object-type name="PRIVILEGE" enabled="true" />
+          <object-type name="CHARSET" enabled="true" />
+          <object-type name="TABLE" enabled="true" />
+          <object-type name="VIEW" enabled="true" />
+          <object-type name="MATERIALIZED_VIEW" enabled="true" />
+          <object-type name="NESTED_TABLE" enabled="true" />
+          <object-type name="COLUMN" enabled="true" />
+          <object-type name="INDEX" enabled="true" />
+          <object-type name="CONSTRAINT" enabled="true" />
+          <object-type name="DATASET_TRIGGER" enabled="true" />
+          <object-type name="DATABASE_TRIGGER" enabled="true" />
+          <object-type name="SYNONYM" enabled="true" />
+          <object-type name="SEQUENCE" enabled="true" />
+          <object-type name="PROCEDURE" enabled="true" />
+          <object-type name="FUNCTION" enabled="true" />
+          <object-type name="PACKAGE" enabled="true" />
+          <object-type name="TYPE" enabled="true" />
+          <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+          <object-type name="ARGUMENT" enabled="true" />
+          <object-type name="DIMENSION" enabled="true" />
+          <object-type name="CLUSTER" enabled="true" />
+          <object-type name="DBLINK" enabled="true" />
+        </object-type-filter>
+      </filters>
+      <sorting>
+        <object-type name="COLUMN" sorting-type="NAME" />
+        <object-type name="FUNCTION" sorting-type="NAME" />
+        <object-type name="PROCEDURE" sorting-type="NAME" />
+        <object-type name="ARGUMENT" sorting-type="POSITION" />
+      </sorting>
+      <default-editors>
+        <object-type name="VIEW" editor-type="SELECTION" />
+        <object-type name="PACKAGE" editor-type="SELECTION" />
+        <object-type name="TYPE" editor-type="SELECTION" />
+      </default-editors>
+    </browser-settings>
+    <navigation-settings>
+      <lookup-filters>
+        <lookup-objects>
+          <object-type name="SCHEMA" enabled="true" />
+          <object-type name="USER" enabled="false" />
+          <object-type name="ROLE" enabled="false" />
+          <object-type name="PRIVILEGE" enabled="false" />
+          <object-type name="CHARSET" enabled="false" />
+          <object-type name="TABLE" enabled="true" />
+          <object-type name="VIEW" enabled="true" />
+          <object-type name="MATERIALIZED VIEW" enabled="true" />
+          <object-type name="NESTED TABLE" enabled="false" />
+          <object-type name="COLUMN" enabled="false" />
+          <object-type name="INDEX" enabled="true" />
+          <object-type name="CONSTRAINT" enabled="true" />
+          <object-type name="DATASET TRIGGER" enabled="true" />
+          <object-type name="DATABASE TRIGGER" enabled="true" />
+          <object-type name="SYNONYM" enabled="false" />
+          <object-type name="SEQUENCE" enabled="true" />
+          <object-type name="PROCEDURE" enabled="true" />
+          <object-type name="FUNCTION" enabled="true" />
+          <object-type name="PACKAGE" enabled="true" />
+          <object-type name="TYPE" enabled="true" />
+          <object-type name="TYPE ATTRIBUTE" enabled="false" />
+          <object-type name="ARGUMENT" enabled="false" />
+          <object-type name="DIMENSION" enabled="false" />
+          <object-type name="CLUSTER" enabled="false" />
+          <object-type name="DBLINK" enabled="true" />
+        </lookup-objects>
+        <force-database-load value="false" />
+        <prompt-connection-selection value="true" />
+        <prompt-schema-selection value="true" />
+      </lookup-filters>
+    </navigation-settings>
+    <dataset-grid-settings>
+      <general>
+        <enable-zooming value="true" />
+        <enable-column-tooltip value="true" />
+      </general>
+      <sorting>
+        <nulls-first value="true" />
+        <max-sorting-columns value="4" />
+      </sorting>
+      <tracking-columns>
+        <columnNames value="" />
+        <visible value="true" />
+        <editable value="false" />
+      </tracking-columns>
+    </dataset-grid-settings>
+    <dataset-editor-settings>
+      <text-editor-popup>
+        <active value="false" />
+        <active-if-empty value="false" />
+        <data-length-threshold value="100" />
+        <popup-delay value="1000" />
+      </text-editor-popup>
+      <values-list-popup>
+        <show-popup-button value="true" />
+        <element-count-threshold value="1000" />
+        <data-length-threshold value="250" />
+      </values-list-popup>
+      <general>
+        <fetch-block-size value="100" />
+        <fetch-timeout value="30" />
+        <trim-whitespaces value="true" />
+        <convert-empty-strings-to-null value="true" />
+        <select-content-on-cell-edit value="true" />
+        <large-value-preview-active value="true" />
+      </general>
+      <filters>
+        <prompt-filter-dialog value="true" />
+        <default-filter-type value="BASIC" />
+      </filters>
+      <qualified-text-editor text-length-threshold="300">
+        <content-types>
+          <content-type name="Text" enabled="true" />
+          <content-type name="Properties" enabled="true" />
+          <content-type name="XML" enabled="true" />
+          <content-type name="DTD" enabled="true" />
+          <content-type name="HTML" enabled="true" />
+          <content-type name="XHTML" enabled="true" />
+          <content-type name="CSS" enabled="true" />
+          <content-type name="Java" enabled="true" />
+          <content-type name="SQL" enabled="true" />
+          <content-type name="PL/SQL" enabled="true" />
+          <content-type name="JPA QL" enabled="true" />
+          <content-type name="JavaScript" enabled="true" />
+          <content-type name="JSP" enabled="true" />
+          <content-type name="JSPx" enabled="true" />
+          <content-type name="Groovy" enabled="true" />
+          <content-type name="FTL" enabled="true" />
+          <content-type name="ASP" enabled="true" />
+          <content-type name="VTL" enabled="true" />
+          <content-type name="YAML" enabled="true" />
+          <content-type name="Flex" enabled="true" />
+          <content-type name="Manifest" enabled="true" />
+        </content-types>
+      </qualified-text-editor>
+      <record-navigation>
+        <navigation-target value="VIEWER" />
+      </record-navigation>
+    </dataset-editor-settings>
+    <code-editor-settings>
+      <general>
+        <show-object-navigation-gutter value="false" />
+        <show-spec-declaration-navigation-gutter value="true" />
+      </general>
+      <confirmations>
+        <save-changes value="false" />
+        <revert-changes value="true" />
+      </confirmations>
+    </code-editor-settings>
+    <code-completion-settings>
+      <filters>
+        <basic-filter>
+          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
+          <filter-element type="RESERVED_WORD" id="function" selected="true" />
+          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
+          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
+          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
+          <filter-element type="OBJECT" id="schema" selected="true" />
+          <filter-element type="OBJECT" id="role" selected="true" />
+          <filter-element type="OBJECT" id="user" selected="true" />
+          <filter-element type="OBJECT" id="privilege" selected="true" />
+          <user-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="false" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </user-schema>
+          <public-schema>
+            <filter-element type="OBJECT" id="table" selected="false" />
+            <filter-element type="OBJECT" id="view" selected="false" />
+            <filter-element type="OBJECT" id="materialized view" selected="false" />
+            <filter-element type="OBJECT" id="index" selected="false" />
+            <filter-element type="OBJECT" id="constraint" selected="false" />
+            <filter-element type="OBJECT" id="trigger" selected="false" />
+            <filter-element type="OBJECT" id="synonym" selected="false" />
+            <filter-element type="OBJECT" id="sequence" selected="false" />
+            <filter-element type="OBJECT" id="procedure" selected="false" />
+            <filter-element type="OBJECT" id="function" selected="false" />
+            <filter-element type="OBJECT" id="package" selected="false" />
+            <filter-element type="OBJECT" id="type" selected="false" />
+            <filter-element type="OBJECT" id="dimension" selected="false" />
+            <filter-element type="OBJECT" id="cluster" selected="false" />
+            <filter-element type="OBJECT" id="dblink" selected="false" />
+          </public-schema>
+          <any-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </any-schema>
+        </basic-filter>
+        <extended-filter>
+          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
+          <filter-element type="RESERVED_WORD" id="function" selected="true" />
+          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
+          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
+          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
+          <filter-element type="OBJECT" id="schema" selected="true" />
+          <filter-element type="OBJECT" id="user" selected="true" />
+          <filter-element type="OBJECT" id="role" selected="true" />
+          <filter-element type="OBJECT" id="privilege" selected="true" />
+          <user-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </user-schema>
+          <public-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </public-schema>
+          <any-schema>
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
+          </any-schema>
+        </extended-filter>
+      </filters>
+      <sorting enabled="true">
+        <sorting-element type="RESERVED_WORD" id="keyword" />
+        <sorting-element type="RESERVED_WORD" id="datatype" />
+        <sorting-element type="OBJECT" id="column" />
+        <sorting-element type="OBJECT" id="table" />
+        <sorting-element type="OBJECT" id="view" />
+        <sorting-element type="OBJECT" id="materialized view" />
+        <sorting-element type="OBJECT" id="index" />
+        <sorting-element type="OBJECT" id="constraint" />
+        <sorting-element type="OBJECT" id="trigger" />
+        <sorting-element type="OBJECT" id="synonym" />
+        <sorting-element type="OBJECT" id="sequence" />
+        <sorting-element type="OBJECT" id="procedure" />
+        <sorting-element type="OBJECT" id="function" />
+        <sorting-element type="OBJECT" id="package" />
+        <sorting-element type="OBJECT" id="type" />
+        <sorting-element type="OBJECT" id="dimension" />
+        <sorting-element type="OBJECT" id="cluster" />
+        <sorting-element type="OBJECT" id="dblink" />
+        <sorting-element type="OBJECT" id="schema" />
+        <sorting-element type="OBJECT" id="role" />
+        <sorting-element type="OBJECT" id="user" />
+        <sorting-element type="RESERVED_WORD" id="function" />
+        <sorting-element type="RESERVED_WORD" id="parameter" />
+      </sorting>
+      <format>
+        <enforce-code-style-case value="true" />
+      </format>
+    </code-completion-settings>
+    <execution-engine-settings>
+      <statement-execution>
+        <fetch-block-size value="100" />
+        <execution-timeout value="20" />
+        <debug-execution-timeout value="600" />
+        <focus-result value="false" />
+        <prompt-execution value="false" />
+        <target-connection value="ASK" />
+      </statement-execution>
+      <script-execution>
+        <command-line-interfaces />
+        <execution-timeout value="300" />
+      </script-execution>
+      <method-execution>
+        <execution-timeout value="30" />
+        <debug-execution-timeout value="600" />
+        <parameter-history-size value="10" />
+      </method-execution>
+    </execution-engine-settings>
+    <operation-settings>
+      <transactions>
+        <uncommitted-changes>
+          <on-project-close value="ASK" />
+          <on-disconnect value="ASK" />
+          <on-autocommit-toggle value="ASK" />
+        </uncommitted-changes>
+        <multiple-uncommitted-changes>
+          <on-commit value="ASK" />
+          <on-rollback value="ASK" />
+        </multiple-uncommitted-changes>
+      </transactions>
+      <session-browser>
+        <disconnect-session value="ASK" />
+        <kill-session value="ASK" />
+        <reload-on-filter-change value="false" />
+      </session-browser>
+      <compiler>
+        <compile-type value="KEEP" />
+        <compile-dependencies value="ASK" />
+        <always-show-controls value="false" />
+      </compiler>
+      <debugger>
+        <debugger-type value="ASK" />
+        <use-generic-runners value="true" />
+      </debugger>
+    </operation-settings>
+    <ddl-file-settings>
+      <extensions>
+        <mapping file-type-id="VIEW" extensions="vw" />
+        <mapping file-type-id="TRIGGER" extensions="trg" />
+        <mapping file-type-id="PROCEDURE" extensions="prc" />
+        <mapping file-type-id="FUNCTION" extensions="fnc" />
+        <mapping file-type-id="PACKAGE" extensions="pkg" />
+        <mapping file-type-id="PACKAGE_SPEC" extensions="pks" />
+        <mapping file-type-id="PACKAGE_BODY" extensions="pkb" />
+        <mapping file-type-id="TYPE" extensions="tpe" />
+        <mapping file-type-id="TYPE_SPEC" extensions="tps" />
+        <mapping file-type-id="TYPE_BODY" extensions="tpb" />
+      </extensions>
+      <general>
+        <lookup-ddl-files value="true" />
+        <create-ddl-files value="false" />
+        <synchronize-ddl-files value="true" />
+        <use-qualified-names value="false" />
+        <make-scripts-rerunnable value="true" />
+      </general>
+    </ddl-file-settings>
+    <general-settings>
+      <regional-settings>
+        <date-format value="MEDIUM" />
+        <number-format value="UNGROUPED" />
+        <locale value="SYSTEM_DEFAULT" />
+        <use-custom-formats value="false" />
+      </regional-settings>
+      <environment>
+        <environment-types>
+          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
+          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
+          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
+          <environment-type id="other" name="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
+        </environment-types>
+        <visibility-settings>
+          <connection-tabs value="true" />
+          <dialog-headers value="true" />
+          <object-editor-tabs value="true" />
+          <script-editor-tabs value="false" />
+          <execution-result-tabs value="true" />
+        </visibility-settings>
+      </environment>
+    </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+  </component>
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/MedicineManager/WebRoot/baseData/category_list.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MedicineManager/WebRoot/baseData/med_add.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MedicineManager/src/com/lyq/persistence/Category.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MedicineManager/src/com/lyq/persistence/SellDetail.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MedicineManager/src/com/lyq/persistence/SellSeq.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/MedicineManager/src/com/lyq/struts/action/BaseAction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MedicineManager/src/com/lyq/util/CharacterEncodingFilter.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+      <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="TOP_LEVEL_CLASS_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="INNER_CLASS_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="METHOD_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+          </value>
+        </option>
+        <option name="FIELD_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="IGNORE_DEPRECATED" value="false" />
+        <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+        <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+        <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+        <option name="myAdditionalJavadocTags" value="date" />
+      </inspection_tool>
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="/opt/maven" />
+        <option name="userSettingsFile" value="/opt/maven/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="hugh" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsCSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>CollectionsScala</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>IndicesCollectionsScala</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME SupportJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>Logging issuesJava</id>
+          </State>
+          <State>
+            <id>Method signatureScala</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>OptionsCollectionsScala</id>
+          </State>
+          <State>
+            <id>Pattern Validation</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+          <State>
+            <id>Simplifications: find and map to applyCollectionsScala</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring BootSpring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Syntactic ClarificationScala</id>
+          </State>
+          <State>
+            <id>Syntactic SimplificationScala</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Ali-Check</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MedicineManager/MedicineManager.iml" filepath="$PROJECT_DIR$/MedicineManager/MedicineManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myjfinal/myjfinal.iml" filepath="$PROJECT_DIR$/myjfinal/myjfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xhfw/xhfw.iml" filepath="$PROJECT_DIR$/xhfw/xhfw.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="lib">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/pinyin4j-2.5.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.20-bin.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/freemarker-2.3.20.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/HttpTool_1.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/commons-lang3-3.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/jfinal-weixin-1.7-bin-with-src.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/cos-26Dec2008.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/avalon-framework-4.2.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/jfinal-2.2-bin-with-src.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/poi-ooxml-schemas-3.9-20121203.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/barcode4j.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/QRCode.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/xercesImpl.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/gdal.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/log4j-1.2.16.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/google-collections-1.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/xmlbeans-2.3.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/poi-3.9-20121203.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/gson-2.2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/fastjson-1.1.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/poi-ooxml-3.9-20121203.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/xml-apis.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/jfinal-ext-3.1.4.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/jfinal-2.0-bin-with-src.jar!/" />
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/stax-api-1.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/xhfw/WebRoot/WEB-INF/lib/jfinal-2.2-bin-with-src.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="lib1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jta.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jcommon-1.0.17.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/hibernate3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-beanutils-1.7.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/asm.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jaxen-1.1-beta-7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jfreechart-1.0.14.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jdbc2_0-stdext.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jakarta-oro.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-validator-1.3.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-digester.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/javassist.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-logging-1.0.4.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/asm-attrs.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/antlr-2.7.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-collections-2.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/jaas.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/xml-apis.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/cglib-2.1.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/struts.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/xerces-2.6.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/log4j-1.2.11.jar!/" />
+        <root url="jar://$PROJECT_DIR$/MedicineManager/WebRoot/WEB-INF/lib/mysql.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

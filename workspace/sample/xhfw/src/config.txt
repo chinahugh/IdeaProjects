@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://172.0.0.1/xhfwdb?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user= root
+password= root
+devMode=true

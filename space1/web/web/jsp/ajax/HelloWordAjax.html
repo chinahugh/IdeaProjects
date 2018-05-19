@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<head>
+    <!--   <meta charset="UTF-8">-->
+    <meta http-equiv="content-Language" charset="UTF-8">
+    <title>ajax hello word</title>
+    <style>
+        label {
+            font-size: 20px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>员工查询</h1>
+<label>要查询的员工号：</label>
+<input type="text" width="30" id="keyword" name="keyword" value="22" >
+<button id="inquire">查询</button>
+<br>
+<p id="inquireresult"></p>
+<hr>
+
+<h1>员工添加</h1>
+<label>添加员工信息：</label><br>
+<label>姓名：</label> <input type="text" id="name" name="name" value="22"><br>
+<label>年龄：</label> <input type="text" id="age" name="age"><br>
+<label>性别：</label> <select name="sex" id=""><br>
+    <option value="1">男</option>
+    <option value="0">女</option>
+</select><br>
+<button id="add">添加</button>
+<br>
+<p id="createresult"></p>
+<hr>
+</body>
+<script>
+    var xhr = new XMLHttpRequest();
+    document.getElementById("inquire"). = function () {
+        //发送请求
+        var data = document.getElementById("keyword").value;
+        xhr.open("GET", "/hellowordajax?keyword=" + data);
+        console.log(data);
+        xhr.send();
+       /* if(xhr.readyState===4){
+            */if(xhr.status==200){
+                document.getElementById("inquireresult").innerHTML = "iiii"
+            }else {
+                alert("发生错误"+xhr.status)
+            }
+      /*  }*/
+
+    }
+
+
+</script>
+</html>
