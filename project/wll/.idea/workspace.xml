@@ -7,326 +7,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="716e888e-41ea-457b-92e5-354ace8ef767" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_api_1_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_collectionschema_1_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_core_1_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_runtime_1_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_bundles_aspectjweaver_1_6_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_55.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_ehcache_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_6_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/bean/contains/CommonEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/bean/entity/JWTInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/bean/response/CommonResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/dao/RedisCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/dao/RedisCacheTransfer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/filter/CorsFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/filter/JWTCheckInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/utils/JWTUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/basecontroller/BaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/basecontroller/ViewPath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/ProMainMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/basedao/BaseDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/basedao/PublicDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/entity/baseentity/BaseEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/entity/baseentity/DateEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/service/ProMainService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/service/baseservice/BaseService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/service/baseservice/PublicService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/utils/StringUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_src_/schema/shanxi_shangluo.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/UserAgentUtils-1.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activation-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-bpmn-converter-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-bpmn-model-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-common-rest-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-diagram-rest-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-engine-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-explorer-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-json-converter-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-modeler-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-process-validation-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/activiti-spring-5.15.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/analyzer-2012_u6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/annotations-api.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/apache-ant-zip-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/asm-4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/aspectjrt-1.7.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/aspectjweaver-1.7.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/avalon-framework-api-4.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/avalon-framework-impl-4.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-anim-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-awt-util-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-bridge-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-codec-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-css-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-dom-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-ext-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-gvt-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-js-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-parser-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-svg-dom-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-svggen-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-transcoder-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-util-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/batik-xml-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/cas-client-core-3.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/cglib-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/ckfinder-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/ckfinderplugin-fileeditor-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/ckfinderplugin-imageresize-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/classmate-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/com.zte.smgw.api.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-beanutils-1.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-email-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-httpclient-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-lang3-3.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-logging.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-pool-1.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/commons-pool2-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/core-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/dozer-5.5.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/druid-1.0.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/ehcache-core-2.6.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/ehcache-web-2.0.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/fop-0.94.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/freemarker-2.3.20.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/groovy-all-2.1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/guava-17.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/h2-1.3.170.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/hibernate-validator-5.1.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/imgscalr-lib-4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jackson-annotations-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jackson-core-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jackson-core-asl-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jackson-databind-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jackson-mapper-asl-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jackson-module-jaxb-annotations-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/javaGeom-0.11.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/javase-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jcl-over-slf4j-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jconsole.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jedis-2.5.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/joda-time-2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/json-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/json-lib-2.1-jdk15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jsp-api-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jtds-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jul-to-slf4j-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/junit-4.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/jxl.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/mail-1.4.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/metadata-extractor-2.6.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/mybatis-3.2.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.30.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/ojdbc-11.2.0.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/org.quartz-1.6.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/org.restlet-2.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/org.restlet.ext.fileupload-2.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/org.restlet.ext.jackson-2.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/org.restlet.ext.servlet-2.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/poi-3.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/poi-ooxml-3.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/poi-ooxml-schemas-3.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/servlet-api.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/shiro-cas-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/shiro-core-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/shiro-ehcache-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/shiro-spring-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/shiro-web-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/sitemesh-2.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/sms.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-aop-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-beans-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-context-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-context-support-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-core-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-expression-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-jdbc-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-orm-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-oxm-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-test-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-tx-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-web-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/spring-webmvc-4.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/standard-1.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/thumbnailator-0.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/tools.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xercesImpl-2.8.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xml-apis-1.3.04.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xml-apis-ext-1.3.04.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xmlbeans-2.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xmlgraphics-commons-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xmlpull-1.1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xmpcore-5.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/WEB-INF/lib/xstream-1.4.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/act/rest/explorer/lib/jslint4java-1.3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/act/rest/explorer/lib/yuicompressor-2.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../shangluo/code/src/main/webapp/static/compressor/yuicompressor-2.4.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/aop/GetMethodInfoHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/aop/TimeHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/bean/contains/CommonEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/bean/entity/JWTInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/bean/response/CommonResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/controller/MainController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/controller/ViewPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/interceptor/JWTCheckInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/mapper/DepartMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/mapper/MainMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/mapper/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/mapper/base/BaseDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/model/base/Depart.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/model/base/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/model/base/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/redis/RedisCacheTransfer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/service/MainService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/service/base/Service.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/utils/DateUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/wll/utils/JWTUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/DepartMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring-aop.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/libert.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/DepartMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/MainMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring-aop.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/mapper/DepartMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/mapper/MainMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/mapper/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-aop.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/jsp/libert.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/jsp/list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wll.ipr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wll.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.history/45/d00d2ed2c0260018132db21542554c68" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.history/9f/f05401f2c0260018132db21542554c68" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.history/b/c07ee211c1260018132db21542554c68" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.indexes/75/history.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/.indexes/af/history.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/xhfw/.indexes/ca/a8/26/history.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/xhfw/.indexes/e4/history.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.root/82.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/3337947323.index" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/xhfw/.markers" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/xhfw/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330.xml" afterPath="$PROJECT_DIR$/../../database/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/../../database/.idea/dbnavigator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../database/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../database/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shangluo/code/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../shangluo/code/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tongchuan/tongchuan.iws" afterPath="$PROJECT_DIR$/../tongchuan/tongchuan.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/redis.properties" afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-dao.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-service.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-web.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/redis.properties" afterPath="$PROJECT_DIR$/target/classes/redis.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-dao.xml" afterPath="$PROJECT_DIR$/target/classes/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-service.xml" afterPath="$PROJECT_DIR$/target/classes/spring-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-web.xml" afterPath="$PROJECT_DIR$/target/classes/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/wll/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/redis.properties" afterPath="$PROJECT_DIR$/target/wll/WEB-INF/classes/redis.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-dao.xml" afterPath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-service.xml" afterPath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-web.xml" afterPath="$PROJECT_DIR$/target/wll/WEB-INF/classes/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wll/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/wll/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wll.iml" afterPath="$PROJECT_DIR$/wll.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.log" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="$PROJECT_DIR$/../../workspace/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../workspace/.metadata/version.ini" afterPath="$PROJECT_DIR$/../../workspace/.metadata/version.ini" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/MainMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/wll/ProMainMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wll/sys/annotation/MybatisDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/artifacts/wll_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/artifacts/wll_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/dictionaries/HUGH.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/kotlinc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_alibaba_fastjson_1_2_20.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_auth0_java_jwt_3_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_api_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_collectionschema_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_core_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_runtime_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_apache_geronimo_bundles_aspectjweaver_1_6_8_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_attoparser_attoparser_2_0_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_55.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_mybatis_mybatis_ehcache_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_6_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_aop_4_2_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_beans_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_context_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_9_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_core_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_expression_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_test_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_tx_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_web_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_3_0_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__redis_clients_jedis_2_8_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wll2/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/ProMainMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/ProMainMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wll2/src/main/java/com/wll/sys/controller/LoginController.java" afterPath="$PROJECT_DIR$/../wll2/src/main/java/com/wll/sys/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wll2/wll.iml" afterPath="$PROJECT_DIR$/../wll2/wll.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -337,115 +88,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="PublicService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/service/baseservice/PublicService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-service.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-service.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-dao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1750">
-              <caret line="70" column="28" lean-forward="false" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redis.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProMainMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/dao/ProMainMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="200">
+              <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="71" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/dao/basedao/PublicDao.java">
+      <file leaf-file-name="ProMainController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProMainMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/wll/ProMainMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4521">
-              <caret line="802" column="11" lean-forward="false" selection-start-line="802" selection-start-column="11" selection-end-line="802" selection-end-column="11" />
-              <folding>
-                <marker date="1526486634310" expanded="true" signature="6302:6403" ph="select from pro_main" />
-                <marker date="1526486634310" expanded="true" signature="6619:6674" ph="delete from " />
-                <marker date="1526486634310" expanded="true" signature="6888:9699" ph="insert into pro_main... " />
-                <marker date="1526486634310" expanded="true" signature="20750:27284" ph="update pro_m... " />
-                <marker date="1526486634310" expanded="true" signature="27510:30559" ph="update pro_m... " />
-                <marker date="1526486634310" expanded="true" signature="30637:30703" ph="SELECT FROM pro_main" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/dao/basedao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="475">
+              <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -459,6 +127,7 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Singleton" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -503,10 +172,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/wll/ProMainMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wll/sys/filter/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wll/sys/filter/JWTCheckInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/basedao/PublicDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wll/wll/dao/ProMainMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wll/sys/annotation/MybatisDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wll/wll/controller/basecontroller/ModelController.java" />
       </list>
     </option>
   </component>
@@ -550,9 +221,10 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="x" value="197" />
+    <option name="y" value="379" />
+    <option name="width" value="1380" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -632,6 +304,9 @@
           </State>
           <State>
             <id>HTML</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
           </State>
           <State>
             <id>Inheritance issuesJava</id>
@@ -774,7 +449,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc</id>
+            <id>UNUSED_IMPORT</id>
           </State>
         </selected-state>
       </profile-state>
@@ -797,6 +472,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -838,7 +514,88 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
               <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="basecontroller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="wll" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="baseservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wll" type="b2602c69:ProjectViewProjectNode" />
@@ -874,11 +631,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -898,6 +654,9 @@
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wll.sys.annotation" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wll.wll.dao" />
     </key>
@@ -1132,11 +891,12 @@
       <workItem from="1526697259057" duration="524000" />
       <workItem from="1526697820291" duration="684000" />
       <workItem from="1526698542751" duration="800000" />
+      <workItem from="1526732912972" duration="1445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15986000" />
+    <option name="totallyTimeSpent" value="17431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1145,8 +905,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27320674" sideWeight="0.5050829" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33766234" sideWeight="0.50187266" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27272728" sideWeight="0.5050829" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5040128" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28443113" sideWeight="0.49812734" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1155,8 +915,8 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18405564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49598715" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18619582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1226,14 +986,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aa/model/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1348,13 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/sys/dao/RedisCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/sys/dao/RedisCacheTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1436,30 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/service/baseservice/PublicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-            <element signature="e#519#520#0" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-            <element signature="e#840#841#0" expanded="false" />
-            <element signature="e#902#903#0" expanded="false" />
-            <element signature="e#949#950#0" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/service/ProMainService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1486,17 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1504,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1551,7 +1260,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1564,10 +1273,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/sys/annotation/MybatisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/wll/ProMainMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4521">
-          <caret line="802" column="11" lean-forward="false" selection-start-line="802" selection-start-column="11" selection-end-line="802" selection-end-column="11" />
+        <state relative-caret-position="300">
+          <caret line="117" column="9" lean-forward="false" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
           <folding>
             <marker date="1526486634310" expanded="true" signature="6302:6403" ph="select from pro_main" />
             <marker date="1526486634310" expanded="true" signature="6619:6674" ph="delete from " />
@@ -1581,19 +1298,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/dao/basedao/PublicDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        <state relative-caret-position="200">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/sys/dao/RedisCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/dao/ProMainMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="275">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/service/baseservice/PublicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/controller/basecontroller/ModelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wll/wll/controller/ProMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

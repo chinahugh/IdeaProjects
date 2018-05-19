@@ -1,6 +1,7 @@
 package com.wll.sys.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 /**
  * @Auther HUGH
@@ -9,4 +10,8 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class LoginController {
+    @ModelAttribute
+    public void get(String id){
+        System.out.println("id = " + id);
+    }
 }

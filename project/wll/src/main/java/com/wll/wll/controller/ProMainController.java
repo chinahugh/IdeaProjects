@@ -1,10 +1,7 @@
 package com.wll.wll.controller;
 
 
-import com.alibaba.druid.pool.DruidDataSource;
-import com.github.pagehelper.PageHelper;
 import com.wll.wll.controller.basecontroller.BaseController;
-import com.wll.wll.controller.basecontroller.ViewPath;
 import com.wll.wll.entity.ProMain;
 import com.wll.wll.service.ProMainService;
 import com.wll.wll.utils.StringUtils;
@@ -26,8 +23,6 @@ import java.util.List;
 public class ProMainController extends BaseController{
     @Autowired
     private ProMainService proMainService;
-    @Autowired
-    private DruidDataSource dataSource;
 
     @ModelAttribute
     public ProMain get(String id) {
