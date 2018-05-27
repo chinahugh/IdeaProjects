@@ -1,8 +1,6 @@
 package com.wll.wll.service.baseservice;
 
-import com.wll.wll.dao.basedao.BaseDao;
 import com.wll.wll.dao.basedao.PublicDao;
-import com.wll.wll.entity.ProMain;
 import com.wll.wll.entity.baseentity.BaseEntity;
 
 import java.util.List;
@@ -15,8 +13,8 @@ import java.util.List;
 public class PublicService <D extends PublicDao<T>,T extends BaseEntity<T>> extends BaseService{
     protected D dao;
 
-    public int deleteByPrimaryKey(String id) {
-        return dao.deleteByPrimaryKey(id);
+    public int get(String id) {
+        return dao.get(id);
     }
 
     public int insert(T record) {

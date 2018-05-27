@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 加入下面这两个配置才能支持注解功能 -->
+    <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+    <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+
+    <!-- 本工程拦截器 -->
+    <mvc:interceptors>
+        <bean class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+            <property name="cacheSeconds" value="0"/>
+            <property name="useExpiresHeader" value="true"/>
+            <property name="useCacheControlHeader" value="true"/>
+            <property name="useCacheControlNoStore" value="true"/>
+            <property name="alwaysUseFullPath" value="true"/>
+        </bean>
+    </mvc:interceptors>
+
+    <!-- 扫描包，如果用扫描则不用再写 <context:annotation-config /> -->
+    <context:component-scan base-package="com"/>
+    <context:component-scan base-package="com"/>
+    <context:component-scan base-package="com"/>
+
+    <!-- 加入以下配置支持@ResponseBody返回Json格式 -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=UTF-8</value>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>text/plain;charset=UTF-8</value>
+                    </list>
+                </property>
+                <!-- 为null字段时是否显示 -->
+                <!-- <property name="features"> <list> <value>WriteMapNullValue</value>
+                    <value>QuoteFieldNames</value> <value>WriteNullStringAsEmpty</value> </list>
+                    </property> -->
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+</beans>

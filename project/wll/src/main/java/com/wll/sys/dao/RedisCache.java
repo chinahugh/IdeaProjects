@@ -35,6 +35,7 @@ public class RedisCache implements Cache {
         this.id = id;
     }
 
+    @Override
     public String getId() {
         return this.id;
     }
@@ -42,6 +43,7 @@ public class RedisCache implements Cache {
     /**
      * 存放对象
      */
+    @Override
     public void putObject(Object key, Object value) {
         JedisConnection connection = null;
         try {

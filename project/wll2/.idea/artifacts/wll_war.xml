@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="wll:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="wll.war">
-      <element id="artifact" artifact-name="wll:war exploded" />
-    </root>
-  </artifact>
-</component>
