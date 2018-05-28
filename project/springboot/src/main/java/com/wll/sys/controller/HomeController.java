@@ -32,7 +32,7 @@ public class HomeController {
 //        }
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token=new UsernamePasswordToken(user.getUsername(),user.getPassword());
-        try {
+//        try {
 //            subject.login(token);
             return "redirect:usersPage";
 //        }catch (LockedAccountException lae) {
