@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    name: root
+    password: root
+    url: jdbc:mysql://localhost:3306/wllspringboot
+  thymeleaf:
+    cache: false
+    mode: html5
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.wll.**.mapper
