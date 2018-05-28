@@ -1,8 +1,11 @@
 package com.wll.sys.controller;
 
 
+import com.alibaba.druid.util.StringUtils;
 import com.wll.sys.model.User;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
@@ -26,24 +29,24 @@ public class HomeController {
     public String login(HttpServletRequest request, User user, Model model){
         System.out.println("user = " + user);
 
-//        if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
-//            request.setAttribute("msg", "用户名或密码不能为空！");
-//            return "login";
-//        }
+        if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
+            request.setAttribute("msg", "用户名或密码不能为空！");
+            return "login";
+        }
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token=new UsernamePasswordToken(user.getUsername(),user.getPassword());
-//        try {
-//            subject.login(token);
+        try {
+            subject.login(token);
             return "redirect:usersPage";
-//        }catch (LockedAccountException lae) {
-//            token.clear();
-//            request.setAttribute("msg", "用户已经被锁定不能登录，请与管理员联系！");
-//            return "login";
-//        } catch (AuthenticationException e) {
-//            token.clear();
-//            request.setAttribute("msg", "用户或密码不正确！");
-//            return "login";
-//        }
+        }catch (LockedAccountException lae) {
+            token.clear();
+            request.setAttribute("msg", "用户已经被锁定不能登录，请与管理员联系！");
+            return "login";
+        } catch (AuthenticationException e) {
+            token.clear();
+            request.setAttribute("msg", "用户或密码不正确！");
+            return "login";
+        }
     }
     @RequestMapping(value={"/usersPage",""})
     public String usersPage(){
