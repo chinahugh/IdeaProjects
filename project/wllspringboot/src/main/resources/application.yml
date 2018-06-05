@@ -32,7 +32,8 @@ spring:
       #打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
-      #rides
+
+  #rides
   redis:
     database: 0
     host: 127.0.0.1
@@ -59,7 +60,7 @@ mybatis:
   type-aliases-package: com.wll.**.dao
 #pagehelper分页插件
 pagehelper:
-    helperDialect: mysql
-    reasonable: true
-    supportMethodsArguments: true
-    params: count=countSql
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

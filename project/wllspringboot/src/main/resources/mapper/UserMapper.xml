@@ -21,7 +21,7 @@
         SELECT
         <include refid="columns"/>
         <include refid="from"/>
-        WHERE NAME LIKE "%"#{name}"%"
+        WHERE name LIKE #{name}
     </select>
 
 

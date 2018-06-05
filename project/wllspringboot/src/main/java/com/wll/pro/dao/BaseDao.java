@@ -1,7 +1,6 @@
 package com.wll.pro.dao;
 
-import tk.mybatis.mapper.common.Mapper;
-import tk.mybatis.mapper.common.MySqlMapper;
+
 
 import java.util.List;
 
@@ -10,7 +9,7 @@ import java.util.List;
  * @Date 2018/5/29
  * @Description BaseDao
  */
-public interface BaseDao<T> extends Mapper<T>, MySqlMapper<T> {
+public interface BaseDao<T> {
     T get(String id);
     List<T> list(T t);
 }

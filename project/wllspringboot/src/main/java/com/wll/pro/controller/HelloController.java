@@ -3,6 +3,8 @@ package com.wll.pro.controller;
 import com.alibaba.druid.util.StringUtils;
 import com.wll.pro.entity.User;
 import com.wll.pro.service.HelloService;
+import com.wll.sys.result.RetResponse;
+import com.wll.sys.result.RetResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @Auther HUGH
@@ -36,9 +37,10 @@ public class HelloController {
     }
     @RequestMapping("hello/{name}")
     @ResponseBody
-    public User hello(@PathVariable("name") String name, User user, Model model){
+    public RetResult<User> hello(@PathVariable("name") String name, User user, Model model){
         System.out.println("name = " + name);
-        return user;
+        helloService.list(user);
+        return RetResponse.makeOKRsp(user);
     }
     @RequestMapping("listhello/{namee}/{passwordd}")
     public String list(@PathVariable(value = "namee") String namee,

@@ -11,6 +11,8 @@ import java.util.List;
  * @Description UserDao
  */
 @Component
-public interface UserDao extends BaseDao<User> {
-    List<User> list(User t);
+public interface UserDao  {
+    List<User>  list(User t);
+
+    User get(String id);
 }

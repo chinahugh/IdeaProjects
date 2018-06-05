@@ -5,8 +5,8 @@ import com.wll.pro.entity.User;
 import com.wll.pro.entity.XmMain;
 import com.wll.pro.service.HelloService;
 import com.wll.pro.service.XmMainService;
+
 import net.sf.json.JSONObject;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +19,8 @@ import java.util.List;
  * @Date 2018/5/31
  * @Description XmMainController
  */
-@Controller
-@RequestMapping("/xmmain/")
+/*@Controller
+@RequestMapping("/xmmain/")*/
 public class XmMainController {
     @Resource
     private XmMainService xmMainService;
@@ -39,7 +39,7 @@ public class XmMainController {
         return xmMain;
     }
 
-    @RequestMapping("list")
+  //  @RequestMapping("list")
     public String list(XmMain xmMain, Model model) {
         System.out.println("xmMain = " + JSONObject.fromObject(xmMain));
      /*   List<XmMain> list= xmMainService.list(xmMain);
