@@ -1,6 +1,8 @@
 package com.wll.pro.controller;
 
 import com.alibaba.druid.util.StringUtils;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.wll.pro.entity.User;
 import com.wll.pro.service.HelloService;
 import com.wll.sys.result.RetResponse;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Auther HUGH
@@ -39,7 +42,8 @@ public class HelloController {
     @ResponseBody
     public RetResult<User> hello(@PathVariable("name") String name, User user, Model model){
         System.out.println("name = " + name);
-        helloService.list(user);
+        Page<User> page= PageHelper.startPage(10,10 );
+        List<User> list = helloService.list(user);
         return RetResponse.makeOKRsp(user);
     }
     @RequestMapping("listhello/{namee}/{passwordd}")

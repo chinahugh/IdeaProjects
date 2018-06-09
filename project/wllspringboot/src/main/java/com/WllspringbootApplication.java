@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("com.wll.pro.dao")  //扫描dao包位置
+@MapperScan("com.wll.*.dao")  //扫描dao包位置
 @EnableScheduling
 @EnableCaching
 public class WllspringbootApplication {

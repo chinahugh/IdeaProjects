@@ -1,20 +1,25 @@
 package com.wll.sys.config;
 
 import com.wll.pro.interceptor.LogHandlerInterceptor;
-import org.springframework.context.annotation.Bean;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
  * @Auther HUGH
  * @Date 2018/5/30
  * @Description InterceptorConfig
+ *  WebMvcConfigurerAdapter过期，继承新类WebMvcConfigurationSupport，它是Adapter的扩展
  */
 @Configuration
-public class InterceptorConfig extends WebMvcConfigurerAdapter {
+public class InterceptorConfig extends WebMvcConfigurationSupport {
 
+    /**
+     * 拦截器
+     * @param registry
+     */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //addPathPatterns 用于添加拦截规则
@@ -26,4 +31,6 @@ public class InterceptorConfig extends WebMvcConfigurerAdapter {
                 .excludePathPatterns("/hlladmin/user/login"); //用户登录*/
         super.addInterceptors(registry);
     }
+
+
 }
