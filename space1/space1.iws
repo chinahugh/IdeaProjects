@@ -6,60 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="allmaven">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/jvm/classload/Hello.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/.mvn/wrapper/maven-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/mvnw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/mvnw.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/TemplatespringbootApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/DruidMonitorConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/MyBatisConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/RedisConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/ShiroConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/SwaggerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/WebConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/exception/ServiceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/result/RetCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/result/RetResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/result/RetResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/result/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/shiro/CustomRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/MainController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/RedisController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/UserInfoController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/UserInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RedisService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RoleDirectoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/serviceimpl/RedisServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/serviceimpl/UserInfoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/log4j2.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/rebel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/TemplatespringbootApplicationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../project/wllspringboot/wllspringboot.iws" afterPath="$PROJECT_DIR$/../project/wllspringboot/wllspringboot.iws" />
+    <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/space1.iws" afterPath="$PROJECT_DIR$/space1.iws" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/annotation/Annotation.txt" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/Annotation.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/annotation/base/AnnotationTest.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/base/AnnotationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/annotation/base/Test.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/base/Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/annotation/demo1/ActionListenerFor.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerFor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/annotation/demo1/ActionListenerInstaller.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerInstaller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/annotation/demo1/AnnotationTest.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/AnnotationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/innerclass/HelloWorldInnerClass.java" afterPath="$PROJECT_DIR$/Java/src/com/java/core/innerclass/HelloWorldInnerClass.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/MyBase64.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/MyBase64.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/MyStream.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/MyStream.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/NewDate.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/NewDate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/NewFeaturesTester.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/NewFeaturesTester.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/NewFeaturesTester2.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/NewFeaturesTester2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/Optional_01.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/Optional_01.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/stream/Student.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/stream/Student.java" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
     <ignored path="$PROJECT_DIR$/web_maven/target/" />
@@ -84,45 +32,7 @@
     <favorites_list name="space1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SynchronizesReTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizesReTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/jvm/classload/Hello.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/interfacee/base/HelloTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding>
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1238,7 +1148,7 @@
       <workItem from="1528346771354" duration="3507000" />
       <workItem from="1528538155022" duration="136000" />
       <workItem from="1528773268762" duration="1012000" />
-      <workItem from="1528801740394" duration="1245000" />
+      <workItem from="1528801740394" duration="1444000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1325,7 +1235,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164656000" />
+    <option name="totallyTimeSpent" value="164855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1338,7 +1248,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1357,11 +1266,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4069264" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22943723" sideWeight="0.49812734" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22943723" sideWeight="0.49812734" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4448052" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18512574" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4448052" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18512574" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="6" side_tool="true" content_ui="tabs" />
@@ -1449,7 +1358,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mystream" />
     <MESSAGE value="allmaven" />
-    <option name="LAST_COMMIT_MESSAGE" value="allmaven" />
+    <MESSAGE value="java 8 interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="java 8 interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1513,6 +1423,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,6 +1446,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1075">
           <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1833,13 +1745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizesReTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1854,7 +1759,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/interfacee/base/HelloTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
+        <state relative-caret-position="1384">
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="e#496#497#0" expanded="true" />
@@ -1864,6 +1769,14 @@
             <element signature="e#993#994#0" expanded="true" />
             <element signature="e#1045#1046#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizesReTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
