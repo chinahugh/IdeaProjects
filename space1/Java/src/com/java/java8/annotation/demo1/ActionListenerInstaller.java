@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
  * @Date 2018/3/24
  * @Description ActionListenerInstaller 注解处理程序
  */
-class ActionListenerInstaller {
+public class ActionListenerInstaller {
     /**
      * o 是Annotation对象
      *

@@ -7,7 +7,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../document.pdf" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/JdbcShiro.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/BaseController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/LoginController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/Testcontroller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/ViewPath.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysDepartmentServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/service/SysDepartmentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/login.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/MainController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/UserInfoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/RoleDirectory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysDepartment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysDirectory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysRole.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/UserInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/UserRole.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/RoleDirectoryMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysDepartmentMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysDirectoryMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysRoleMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/UserInfoMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/UserRoleMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/RoleDirectoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/SysDepartmentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/SysDirectoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/SysRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/UserInfoMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/UserRoleMapper.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../project/wllspringboot/src/main/java/com/wll/sys/config/DruidMonitorConfigurer.java" afterPath="$PROJECT_DIR$/../project/wllspringboot/src/main/java/com/wll/sys/config/DruidMonitorConfigurer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../project/wllspringboot/src/main/java/com/wll/sys/config/ExceptionConfig.java" afterPath="$PROJECT_DIR$/../project/wllspringboot/src/main/java/com/wll/sys/config/ExceptionConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../project/wllspringboot/wllspringboot.ipr" afterPath="$PROJECT_DIR$/../project/wllspringboot/wllspringboot.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../project/wllspringboot/wllspringboot.iws" afterPath="$PROJECT_DIR$/../project/wllspringboot/wllspringboot.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All_maven/All_maven.iml" afterPath="$PROJECT_DIR$/All_maven/All_maven.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/HelloWorld.java" afterPath="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/HelloWorld.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerInstaller.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerInstaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/AnnotationTest.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/AnnotationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/space1.ipr" afterPath="$PROJECT_DIR$/space1.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/space1.iws" afterPath="$PROJECT_DIR$/space1.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/pom.xml" afterPath="$PROJECT_DIR$/../templatespringboot/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/TemplatespringbootApplication.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/TemplatespringbootApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/MyBatisConfig.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/MyBatisConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/RedisConfig.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/RedisConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/ShiroConfig.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/ShiroConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/SwaggerConfig.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/SwaggerConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/WebConfig.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/WebConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/exception/ServiceException.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/exception/ServiceException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/shiro/CustomRealm.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/shiro/CustomRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/RedisController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/RedisController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/log4j2.yml" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/log4j2.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/main.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.ipr" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/All_maven/src/main/resources/web/technology/shiro/helloworld/jdbc.properties" afterPath="$PROJECT_DIR$/All_maven/src/main/resources/jdbc.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/All_maven/src/main/resources/web/technology/shiro/helloworld/log4j.properties" afterPath="$PROJECT_DIR$/All_maven/src/main/resources/log4j.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RedisService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/service/RedisService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RoleDirectoryService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/service/RoleDirectoryService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/service/UserInfoService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserRoleService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/service/UserRoleService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/serviceimpl/RedisServiceImpl.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RedisServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/serviceimpl/UserInfoServiceImpl.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
     <ignored path="$PROJECT_DIR$/web_maven/target/" />
@@ -33,18 +96,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelloWordAjax.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/com/web/ajax/HelloWordAjax.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="siro.hgh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/doc/siro.hgh">
+      <file leaf-file-name="Annotation.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/Annotation.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -53,24 +106,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorld.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/HelloWorld.java">
+      <file leaf-file-name="ActionListenerFor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerFor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="444">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnnotationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/AnnotationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="e#1361#1362#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/maven/pom.xml">
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="331">
+              <caret line="800" column="16" lean-forward="false" selection-start-line="800" selection-start-column="16" selection-end-line="800" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Container.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="415" column="21" lean-forward="false" selection-start-line="415" selection-start-column="21" selection-end-line="415" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionListenerInstaller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerInstaller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -121,10 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Java/src/com/java/focus/annotation/demo1/AnnotationTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/com/java/focus/stream/Optional_01.java" />
-        <option value="$PROJECT_DIR$/Python/com/demo/Hello.py" />
-        <option value="/Sybase Fragment (UserMapper.xml:4697).sql" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/slxs/zsxt/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/slxs/zsxt/model/User.java" />
@@ -145,9 +228,7 @@
         <option value="$PROJECT_DIR$/All_maven/src/main/resources/web/technology/shiro/helloworld/jdbc.properties" />
         <option value="$PROJECT_DIR$/All_maven/src/main/webapp/WEB-INF/lib/shiro-core-1.2.2.jar!/org/apache/shiro/realm/jdbc/JdbcRealm.class" />
         <option value="$PROJECT_DIR$/All_maven/src/main/webapp/WEB-INF/lib/shiro-core-1.2.2.jar!/org/apache/shiro/subject/support/DelegatingSubject.class" />
-        <option value="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/HelloWorld.java" />
         <option value="$PROJECT_DIR$/h/pom.xml" />
-        <option value="$PROJECT_DIR$/All_maven/pom.xml" />
         <option value="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/hh.ipynb" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/dao/pro.java" />
         <option value="$PROJECT_DIR$/Java/src/com/tools/file/ChangeFileName.java" />
@@ -172,6 +253,12 @@
         <option value="$PROJECT_DIR$/Java/src/com/java/java8/interfacee/base/A.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/java8/interfacee/base/Hello.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/java8/interfacee/base/HelloTest.java" />
+        <option value="$PROJECT_DIR$/All_maven/pom.xml" />
+        <option value="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/JdbcShiro.java" />
+        <option value="$PROJECT_DIR$/Java/lib/junit-4.12.jar!/org/junit/Test.class" />
+        <option value="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerInstaller.java" />
+        <option value="$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/AnnotationTest.java" />
       </list>
     </option>
   </component>
@@ -360,46 +447,84 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+              <item name="AnnotationTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
               <item name="maven" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -442,16 +567,17 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\java\com\web\technology\shiro\doc" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.java.focus.annotation.demo1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\webapp\WEB-INF\lib" />
       <recent name="$PROJECT_DIR$/Java/lib" />
       <recent name="$PROJECT_DIR$/Java/src/com/java/focus/awt" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.java.focus.annotation.demo1" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\resources" />
+      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\java\com\web\technology\shiro\doc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -466,7 +592,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloTest">
+  <component name="RunManager" selected="Application.AnnotationTest">
     <configuration name="All_maven" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.5" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -539,14 +665,14 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AnnotationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.java.focus.jvm.classload.*" />
+          <option name="PATTERN" value="com.java.java8.annotation.demo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.java.focus.jvm.classload.Hello" />
+      <option name="MAIN_CLASS_NAME" value="com.java.java8.annotation.demo1.AnnotationTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -558,81 +684,105 @@
       <module name="Java" />
       <envs />
     </configuration>
-    <configuration name="HelloTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AnnotationTest.getAnnotations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.java.java8.interfacee.base.*" />
+          <option name="PATTERN" value="com.java.java8.annotation.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.java.java8.interfacee.base.HelloTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="Java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.java.java8.annotation.base" />
+      <option name="MAIN_CLASS_NAME" value="com.java.java8.annotation.base.AnnotationTest" />
+      <option name="METHOD_NAME" value="getAnnotations" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
     </configuration>
-    <configuration name="StationRunableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloWorld.testAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.java.focus.thread.example.demo1.*" />
+          <option name="PATTERN" value="com.web.technology.shiro.helloworld.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.java.focus.thread.example.demo1.StationRunableTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="All_maven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.web.technology.shiro.helloworld" />
+      <option name="MAIN_CLASS_NAME" value="com.web.technology.shiro.helloworld.HelloWorld" />
+      <option name="METHOD_NAME" value="testAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
     </configuration>
-    <configuration name="StationThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloWorld.testAuthentication5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.java.focus.thread.example.demo1.*" />
+          <option name="PATTERN" value="com.web.technology.shiro.helloworld.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.java.focus.thread.example.demo1.StationThreadTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="All_maven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.web.technology.shiro.helloworld" />
+      <option name="MAIN_CLASS_NAME" value="com.web.technology.shiro.helloworld.HelloWorld" />
+      <option name="METHOD_NAME" value="testAuthentication5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
     </configuration>
-    <configuration name="SynchronizesReTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcShiro.testAuthentication5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.java.focus.thread.synchronize.*" />
+          <option name="PATTERN" value="com.web.technology.shiro.helloworld.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.java.focus.thread.synchronize.SynchronizesReTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="All_maven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.web.technology.shiro.helloworld" />
+      <option name="MAIN_CLASS_NAME" value="com.web.technology.shiro.helloworld.JdbcShiro" />
+      <option name="METHOD_NAME" value="testAuthentication5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
     </configuration>
     <configuration name="Tomcat 9.0.2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.2" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -971,19 +1121,19 @@
       <item index="0" class="java.lang.String" itemvalue="Maven.generate" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.All_maven" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 9.0.2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.StationRunableTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.StationThreadTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.SynchronizesReTest" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Hello" />
-      <item index="7" class="java.lang.String" itemvalue="Application.HelloTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HelloWorld.testAuthentication" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HelloWorld.testAuthentication5" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.JdbcShiro.testAuthentication5" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.AnnotationTest.getAnnotations" />
+      <item index="7" class="java.lang.String" itemvalue="Application.AnnotationTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.HelloTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Hello" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SynchronizesReTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.StationThreadTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.StationRunableTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AnnotationTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AnnotationTest.getAnnotations" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcShiro.testAuthentication5" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HelloWorld.testAuthentication5" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HelloWorld.testAuthentication" />
       </list>
     </recent_temporary>
   </component>
@@ -1110,6 +1260,9 @@
       <workItem from="1528538155022" duration="136000" />
       <workItem from="1528773268762" duration="1012000" />
       <workItem from="1528801740394" duration="1938000" />
+      <workItem from="1528868439183" duration="2415000" />
+      <workItem from="1528871181211" duration="311000" />
+      <workItem from="1529248955130" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1164,39 +1317,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Bubble - 2018.06.03 at 16h 28m 56s.xml">
-      <configuration name="Bubble" configurationId="JUnit" />
+    <history-entry file="AnnotationTest_getAnnotations - 2018.06.17 at 23h 24m 59s.xml">
+      <configuration name="AnnotationTest.getAnnotations" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_bubbleSort - 2018.06.03 at 14h 32m 36s.xml">
-      <configuration name="Bubble.bubbleSort" configurationId="JUnit" />
+    <history-entry file="HelloWorld_testAuthentication - 2018.06.13 at 13h 56m 51s.xml">
+      <configuration name="HelloWorld.testAuthentication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_bubbleSort - 2018.06.03 at 14h 32m 51s.xml">
-      <configuration name="Bubble.bubbleSort" configurationId="JUnit" />
+    <history-entry file="HelloWorld_testAuthentication2 - 2018.06.13 at 13h 56m 42s.xml">
+      <configuration name="HelloWorld.testAuthentication2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_bubbleSort - 2018.06.03 at 14h 33m 16s.xml">
-      <configuration name="Bubble.bubbleSort" configurationId="JUnit" />
+    <history-entry file="HelloWorld_testAuthentication3 - 2018.06.13 at 13h 54m 29s.xml">
+      <configuration name="HelloWorld.testAuthentication3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_bubbleSort - 2018.06.03 at 14h 35m 41s.xml">
-      <configuration name="Bubble.bubbleSort" configurationId="JUnit" />
+    <history-entry file="HelloWorld_testAuthentication5 - 2018.06.13 at 13h 59m 03s.xml">
+      <configuration name="HelloWorld.testAuthentication5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_test - 2018.06.03 at 14h 31m 54s.xml">
-      <configuration name="Bubble.test" configurationId="JUnit" />
+    <history-entry file="JdbcShiro_testAuthentication5 - 2018.06.13 at 14h 01m 46s.xml">
+      <configuration name="JdbcShiro.testAuthentication5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_test - 2018.06.03 at 14h 36m 44s.xml">
-      <configuration name="Bubble.test" configurationId="JUnit" />
+    <history-entry file="JdbcShiro_testAuthentication5 - 2018.06.13 at 14h 04m 47s.xml">
+      <configuration name="JdbcShiro.testAuthentication5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Bubble_test - 2018.06.03 at 16h 25m 43s.xml">
-      <configuration name="Bubble.test" configurationId="JUnit" />
+    <history-entry file="JdbcShiro_testAuthentication5 - 2018.06.13 at 14h 05m 32s.xml">
+      <configuration name="JdbcShiro.testAuthentication5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SynchronizedTest_test2 - 2018.05.31 at 13h 00m 33s.xml">
-      <configuration name="SynchronizedTest.test2" configurationId="JUnit" />
+    <history-entry file="JdbcShiro_testAuthentication5 - 2018.06.13 at 14h 08m 39s.xml">
+      <configuration name="JdbcShiro.testAuthentication5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SynchronizedTest_test2 - 2018.05.31 at 13h 00m 38s.xml">
-      <configuration name="SynchronizedTest.test2" configurationId="JUnit" />
+    <history-entry file="JdbcShiro_testAuthentication5 - 2018.06.13 at 14h 09m 34s.xml">
+      <configuration name="JdbcShiro.testAuthentication5" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165349000" />
+    <option name="totallyTimeSpent" value="168798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1227,11 +1380,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4069264" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22943723" sideWeight="0.49812734" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29978356" sideWeight="0.49812734" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2034632" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18298556" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2034632" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18726592" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="6" side_tool="true" content_ui="tabs" />
@@ -1356,139 +1509,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizesReTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/example/demo2/BankTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/web/jsp/ajax/HelloWordAjax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizesReTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/example/demo2/BankTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/sequence/Bubble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/example/Demo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/jvm/jvm.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="475">
-            <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/example/demo1/StationRunableTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/node.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="875">
-            <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/example/demo1/StationThreadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/synchronize/SynchronizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/sequence/Bubble.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
@@ -1517,7 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1550,7 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1575,7 +1593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,7 +1623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1686,7 +1702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1694,7 +1709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1702,14 +1716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1384">
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1717,19 +1723,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/com/web/ajax/HelloWordAjax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All_maven/src/main/resources/web/technology/shiro/helloworld/shiro.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/doc/siro.hgh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All_maven/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1737,10 +1765,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/All_maven/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All_maven/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/realm/SimpleAccountRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/subject/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2200">
+          <caret line="120" column="12" lean-forward="false" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/subject/support/DelegatingSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="156" column="19" lean-forward="false" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="525">
+          <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="28" />
           <folding>
             <element signature="e#1082#1083#0" expanded="true" />
             <element signature="e#1141#1142#0" expanded="true" />
@@ -1748,10 +1815,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
+    <entry file="file://$PROJECT_DIR$/All_maven/src/main/java/com/web/technology/shiro/helloworld/JdbcShiro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="1025">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Java/lib/junit-4.12.jar!/org/junit/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/base/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/base/AnnotationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="e#376#414#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/Annotation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerFor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="415" column="21" lean-forward="false" selection-start-line="415" selection-start-column="21" selection-end-line="415" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="800" column="16" lean-forward="false" selection-start-line="800" selection-start-column="16" selection-end-line="800" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/AnnotationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/java8/annotation/demo1/ActionListenerInstaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding />
         </state>
       </provider>

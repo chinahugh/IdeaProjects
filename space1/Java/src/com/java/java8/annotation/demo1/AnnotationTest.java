@@ -32,6 +32,7 @@ public class AnnotationTest {
         mainWin.pack();
         mainWin.setVisible(true);
     }
+
     public static void main(String[] args) {
         new AnnotationTest().init();
     }

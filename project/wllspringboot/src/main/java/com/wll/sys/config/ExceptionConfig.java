@@ -37,14 +37,10 @@ public class ExceptionConfig extends WebMvcConfigurationSupport {
      * @return
      */
     private HandlerExceptionResolver getHandlerExceptionResolver(){
-        HandlerExceptionResolver handlerExceptionResolver = new HandlerExceptionResolver(){
-            @Override
-            public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response,
-                                                 Object handler, Exception e) {
-                RetResult<Object> result = getResuleByHeandleException(request, handler, e);
-                responseResult(response, result);
-                return new ModelAndView();
-            }
+        HandlerExceptionResolver handlerExceptionResolver = (request, response, handler, e) -> {
+            RetResult<Object> result = getResuleByHeandleException(request, handler, e);
+            responseResult(response, result);
+            return new ModelAndView();
         };
         return handlerExceptionResolver;
     }

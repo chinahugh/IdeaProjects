@@ -7,6 +7,8 @@ import java.io.Serializable;
  * @Date 2018/6/9
  * @Description ServiceException 业务类异常
  */
+
+
 public class ServiceException extends RuntimeException implements Serializable {
     public ServiceException() {
         super();

@@ -1,6 +1,7 @@
 #server访问端口
 server:
   port: 8088
+debug: true
 #spring 配置
 spring:
 #数据库
@@ -58,13 +59,13 @@ spring:
     proxy-target-class: true
   mvc:
   #出现 404 错误时, 直接抛出异常
-    throw-exception-if-no-handler-found: true
+#    throw-exception-if-no-handler-found: true
 #  resources:
   #不要为资源文件建立映射.
 #    add-mappings: false
 mybatis:
   mapper-locations: classpath:mapper/**/*.xml
-  type-aliases-package: springboot.**.mapper
+  type-aliases-package: springboot.template.mvc.entity
   # 打印sql
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -77,3 +78,4 @@ pagehelper:
   page-size-zero: true
 logging:
   config: classpath:log4j2.yml
+

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import springboot.template.global.result.RetResponse;
 import springboot.template.global.result.RetResult;
-import springboot.template.mvc.service.RedisService;
+import springboot.template.mvc.service.service.RedisService;
 
 import javax.annotation.Resource;
 

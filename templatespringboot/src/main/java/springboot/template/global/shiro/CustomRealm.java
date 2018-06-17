@@ -1,31 +1,21 @@
+/*
 package springboot.template.global.shiro;
 
-import com.alibaba.druid.util.StringUtils;
-import org.apache.shiro.authc.*;
-import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
-import org.apache.shiro.authz.AuthorizationInfo;
-import org.apache.shiro.authz.SimpleAuthorizationInfo;
-import org.apache.shiro.realm.AuthorizingRealm;
-import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.util.ByteSource;
-import springboot.template.mvc.entity.UserInfo;
-import springboot.template.mvc.service.RoleDirectoryService;
-import springboot.template.mvc.service.UserInfoService;
-import springboot.template.mvc.service.UserRoleService;
+import org.apache.shiro.authc.AuthenticationException;
 
-import javax.annotation.Resource;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
+*/
 /**
  * @Auther HUGH
  * @Date 2018/6/11
  * @Description CustomRealm  自定义如何查询用户信息，如何查询用户的角色和权限，如何校验密码等逻辑
- */
+ *//*
 
-public class CustomRealm extends AuthorizingRealm {
 
+public class CustomRealm */
+/*extends AuthorizingRealm *//*
+{
+*/
+/*
     @Resource
     private UserInfoService userInfoService;
     @Resource
@@ -33,9 +23,13 @@ public class CustomRealm extends AuthorizingRealm {
     @Resource
     private RoleDirectoryService roleDirectoryService;
 
-    /*
+    *//*
+*/
+/*
       告诉shiro如何根据获取到的用户信息中的密码和盐值来校验密码
-     */ {
+     *//*
+*/
+/* {
         //设置用于匹配密码的 HashedCredentialsMatcher
         HashedCredentialsMatcher matcher = new HashedCredentialsMatcher();
         matcher.setHashAlgorithmName("md5");
@@ -45,12 +39,16 @@ public class CustomRealm extends AuthorizingRealm {
         this.setCredentialsMatcher(matcher);
     }
 
-    /**
+    *//*
+*/
+/**
      * 定义如何获取用户的角色和权限的逻辑，给shiro做权限判断
      *
      * @param principals
      * @return
-     */
+     *//*
+*/
+/*
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
         if (principals == null) {
@@ -63,13 +61,17 @@ public class CustomRealm extends AuthorizingRealm {
         return info;
     }
 
-    /**
+    *//*
+*/
+/**
      * 定义如何获取用户信息的业务逻辑，给shiro做登录
      *
      * @param token
      * @return
      * @throws AuthenticationException
-     */
+     *//*
+*/
+/*
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) token;
@@ -94,5 +96,7 @@ public class CustomRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(oneUser, oneUser.getUserPassword(), getName());
         info.setCredentialsSalt(ByteSource.Util.bytes(oneUser.getSex()));
         return info;
-    }
+    }*//*
+
 }
+*/

@@ -45,28 +45,29 @@ public class WebConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:/index");
+        registry.addViewController("/").setViewName("forward:/login");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
     }
-
     /**
      * 自定义消息装换器
      *
      * @param converters
      */
-    @Override
+
+
+   /* @Override
     protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         FastJsonHttpMessageConverter4 converter = new FastJsonHttpMessageConverter4();
         converter.setSupportedMediaTypes(getSupportedMediaTypes());
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
-        /*
-          WriteNullListAsEmpty  ：List字段如果为null,输出为[],而非null
-          WriteNullStringAsEmpty ： 字符类型字段如果为null,输出为"",而非null
-          DisableCircularReferenceDetect ：消除对同一对象循环引用的问题，默认为false（如果不配置有可能会进入死循环）
-          WriteNullBooleanAsFalse：Boolean字段如果为null,输出为false,而非null
-          WriteMapNullValue：是否输出值为null的字段,默认为false
-         */
+//        WriteNullListAsEmpty  ：List字段如果为null, 输出为[],而非null
+//        WriteNullStringAsEmpty ：字符类型字段如果为null, 输出为 "", 而非null
+//        DisableCircularReferenceDetect ：消除对同一对象循环引用的问题，默认为false（如果不配置有可能会进入死循环）
+//        WriteNullBooleanAsFalse：Boolean字段如果为null, 输出为false, 而非null
+//        WriteMapNullValue：是否输出值为null的字段, 默认为false
+
+
         fastJsonConfig.setSerializerFeatures(
                 // String null -> ""
                 SerializerFeature.WriteNullStringAsEmpty,
@@ -79,18 +80,18 @@ public class WebConfig extends WebMvcConfigurationSupport {
         converter.setFastJsonConfig(fastJsonConfig);
         converter.setDefaultCharset(Charset.forName("UTF-8"));
         converters.add(converter);
-    }
+    }*/
 
     /**
      * 添加自定义异常处理
      *
      * @param exceptionResolvers
      */
-    @Override
+   /* @Override
     protected void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
         //创建异常处理
         exceptionResolvers.add(getHandlerExceptionResolver());
-    }
+    }*/
 
     private HandlerExceptionResolver getHandlerExceptionResolver() {
         return new HandlerExceptionResolver() {
@@ -114,14 +115,13 @@ public class WebConfig extends WebMvcConfigurationSupport {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-        registry.addResourceHandler("/favicon.ico")
-                .addResourceLocations("classpath:/META-INF/resources/favicon.ico");
+                .addResourceLocations("classpath:/resources/");
+        registry.addResourceHandler("/static/**")
+                .addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/logo.png")
+                .addResourceLocations("classpath:/static/img/logo.png");
         super.addResourceHandlers(registry);
     }
-
 
     private RetResult<Object> getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
         RetResult<Object> result = new RetResult<>();
