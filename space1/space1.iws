@@ -7,22 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_5.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_6.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/code/Singleton_7.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/note/总结.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/java/core/system/SystemArraycopy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/example/demo3/ProducerConsumerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/Join框架介绍.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/join" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/node/面试题.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/thread/readme.md" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/base/AnnotationTest.java" afterPath="$PROJECT_DIR$/Java/src/com/java/java8/annotation/base/AnnotationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/space1.iws" afterPath="$PROJECT_DIR$/space1.iws" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/Join框架介绍.md" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/ForkJoin.md" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
     <ignored path="$PROJECT_DIR$/web_maven/target/" />
@@ -48,7 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SystemArraycopy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SystemArraycopy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Java/src/com/java/core/system/SystemArraycopy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -56,6 +41,29 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForkJoin.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/ForkJoin.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="516">
+                <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="join" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/join">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -420,6 +428,36 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="focus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="focus" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="focus" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="forkjoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="focus" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="forkjoin" type="462c0819:PsiDirectoryNode" />
+              <item name="Fork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
@@ -1193,7 +1231,7 @@
       <workItem from="1529388458388" duration="1173000" />
       <workItem from="1529406705487" duration="343000" />
       <workItem from="1529458279039" duration="3155000" />
-      <workItem from="1529543503070" duration="14005000" />
+      <workItem from="1529543503070" duration="14169000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1280,7 +1318,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193257000" />
+    <option name="totallyTimeSpent" value="193421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1318,7 +1356,7 @@
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2034632" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16265382" sideWeight="0.49078727" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16265382" sideWeight="0.49078727" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16265382" sideWeight="0.50921273" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1526,27 +1564,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/forkJoin.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/join">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/example/demo3/ProducerConsumerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/Join框架介绍.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="1250">
-            <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1884,6 +1905,25 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/ForkJoin.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="516">
+            <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/join">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
