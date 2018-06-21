@@ -1,7 +1,9 @@
 package com.java.java8.annotation.base;
 
+import javafx.util.Pair;
 import org.junit.Test;
 
+import javax.swing.text.View;
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +17,8 @@ import java.util.List;
 
 public class AnnotationTest {
     public static void main(String[] args) {
-
+        AnnotationTest test = new AnnotationTest();
+//        System.out.println("test.safeVarargs() = " + test.safeVarargs("213"));
     }
 
     /**
@@ -25,13 +28,17 @@ public class AnnotationTest {
     public void suppressWarning(){
         List<String> list=new ArrayList<>();
     }
-/*    @SafeVarargs*/
-    public void safeVarargs(){
-        List list=new ArrayList<>();
-        list.add(8);
-        List<String> l=list;
-        System.out.println(l.get(0));
-    }
+
+    /**
+     * SafeVarargs   可变长度的方法参数的实际值是通过数组来传递的，
+     * 二数组中存储的是不可具体化的泛型类对象，自身存在类型安全问题。
+     * 因此编译器会给出相应的警告消息。
+     */
+//    @SafeVarargs
+//    public T safeVarargs(T...strs){
+      /*  System.out.println(strs.length);
+        return strs.length > 0?strs[0]:null;
+    }*/
     @Test
     public void test(){
         System.out.println("test");
@@ -43,4 +50,20 @@ public class AnnotationTest {
            System.out.println(a);
        }
     }
+
+    /**
+     * Java不允许创建带泛型类型的数组对象,Java是在运行时才去检查写入数组中的数据类型,
+     * 但是又由于数组在运行时的泛型会被消除generic types have been erased，因此在
+     * 运行时，JVM无法区分Pair<View, String>和Pair<TextView, String>.也就相当于
+     * 我们将一个无泛型参数传递给了一个可变泛型参数的方法, 进而导致堆污染(Heap Pollution)
+     */
+    public void covariant(){
+        // 编译报错
+//        Pair<View, String>[] array = new Pair<View, String>[2];
+
+    }
+}
+
+class A<T>{
+
 }
