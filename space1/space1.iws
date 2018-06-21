@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/Join框架介绍.md" afterPath="$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/ForkJoin.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/java/core/collections/note/集合类图.jpg" afterPath="$PROJECT_DIR$/Java/src/com/java/core/collections/note/集合类图.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/java/core/collections/note/集合结构.png" afterPath="$PROJECT_DIR$/Java/src/com/java/core/collections/note/集合结构.png" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
     <ignored path="$PROJECT_DIR$/web_maven/target/" />
@@ -61,8 +62,8 @@
       <file leaf-file-name="join" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/join">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="350">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -409,7 +410,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
@@ -418,8 +419,8 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="SystemArraycopy.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
@@ -428,36 +429,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="focus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="focus" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="focus" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="forkjoin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="focus" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="forkjoin" type="462c0819:PsiDirectoryNode" />
-              <item name="Fork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
@@ -531,17 +502,19 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.java.focus.annotation.demo1" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\IdeaProjects\space1\Java\src\com\java\core\collections\note" />
+      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\resources" />
+      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\java\com\web\technology\shiro\doc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\IdeaProjects\space1\Java\src\com\java\core\collections\note" />
       <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\webapp\WEB-INF\lib" />
       <recent name="$PROJECT_DIR$/Java/lib" />
       <recent name="$PROJECT_DIR$/Java/src/com/java/focus/awt" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\resources" />
-      <recent name="D:\IdeaProjects\IdeaProjects\space1\All_maven\src\main\java\com\web\technology\shiro\doc" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.java.focus.annotation.demo1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1231,7 +1204,7 @@
       <workItem from="1529388458388" duration="1173000" />
       <workItem from="1529406705487" duration="343000" />
       <workItem from="1529458279039" duration="3155000" />
-      <workItem from="1529543503070" duration="14169000" />
+      <workItem from="1529543503070" duration="14873000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1282,7 +1255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525516229936</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="java 8 interface">
+      <created>1529564022520</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529564022520</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1318,7 +1298,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193421000" />
+    <option name="totallyTimeSpent" value="194125000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1331,7 +1311,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1340,8 +1319,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2552167" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2552167" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986623" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1351,7 +1330,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116883" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4069264" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4069264" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3538961" sideWeight="0.49812734" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1921,8 +1900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/thread/forkjoin/Fork/join">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="350">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding />
         </state>
       </provider>
