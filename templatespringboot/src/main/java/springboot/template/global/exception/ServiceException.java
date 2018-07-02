@@ -10,6 +10,8 @@ import java.io.Serializable;
 
 
 public class ServiceException extends RuntimeException implements Serializable {
+    private static final long serialVersionUID = -7763139086868275378L;
+
     public ServiceException() {
         super();
     }

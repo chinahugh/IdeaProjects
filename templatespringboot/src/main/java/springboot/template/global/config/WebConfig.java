@@ -19,8 +19,8 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springboot.template.global.exception.ServiceException;
-import springboot.template.global.result.RetCode;
-import springboot.template.global.result.RetResult;
+import springboot.template.global.result.R;
+import springboot.template.global.result.RC;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -45,7 +45,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:/login");
+        registry.addViewController("/").setViewName("login");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
     }
@@ -54,9 +54,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
      *
      * @param converters
      */
-
-
-   /* @Override
+    @Override
     protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         FastJsonHttpMessageConverter4 converter = new FastJsonHttpMessageConverter4();
         converter.setSupportedMediaTypes(getSupportedMediaTypes());
@@ -66,32 +64,33 @@ public class WebConfig extends WebMvcConfigurationSupport {
 //        DisableCircularReferenceDetect ：消除对同一对象循环引用的问题，默认为false（如果不配置有可能会进入死循环）
 //        WriteNullBooleanAsFalse：Boolean字段如果为null, 输出为false, 而非null
 //        WriteMapNullValue：是否输出值为null的字段, 默认为false
-
-
         fastJsonConfig.setSerializerFeatures(
                 // String null -> ""
                 SerializerFeature.WriteNullStringAsEmpty,
                 // Number null -> 0
                 SerializerFeature.WriteNullNumberAsZero,
                 //禁止循环引用
-                SerializerFeature.DisableCircularReferenceDetect
-
+                SerializerFeature.DisableCircularReferenceDetect,
+                //List字段如果为null, 输出为[],而非null
+                SerializerFeature.WriteNullListAsEmpty,
+                //map null ->{}
+                SerializerFeature.WriteMapNullValue
         );
         converter.setFastJsonConfig(fastJsonConfig);
         converter.setDefaultCharset(Charset.forName("UTF-8"));
         converters.add(converter);
-    }*/
+    }
 
     /**
      * 添加自定义异常处理
      *
      * @param exceptionResolvers
      */
-   /* @Override
+    @Override
     protected void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
         //创建异常处理
         exceptionResolvers.add(getHandlerExceptionResolver());
-    }*/
+    }
 
     private HandlerExceptionResolver getHandlerExceptionResolver() {
         return new HandlerExceptionResolver() {
@@ -99,7 +98,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
             @Override
             public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex) {
                 //根据异常类型确定返回数据
-                RetResult<Object> result = getResuleByHeandleException(request, handler, ex);
+                R result = getResuleByHeandleException(request, handler, ex);
                 //响应结果
                 responseResult(response, result);
                 return new ModelAndView();
@@ -123,17 +122,20 @@ public class WebConfig extends WebMvcConfigurationSupport {
         super.addResourceHandlers(registry);
     }
 
-    private RetResult<Object> getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
-        RetResult<Object> result = new RetResult<>();
+    private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
+        R result = new R();
         if (e instanceof ServiceException) {
-            result.setCode(RetCode.FAIL).setMsg(e.getMessage()).setData(null);
+            result.setCode(RC.FAIL);
+            result.setMsg(e.getMessage());
             return result;
         }
         if (e instanceof NoHandlerFoundException) {
-            result.setCode(RetCode.NOT_FOUND).setMsg("接口 [" + request.getRequestURI() + "] 不存在");
+            result.setCode(RC.NOT_FOUND);
+            result.setMsg("接口 [" + request.getRequestURI() + "] 不存在");
             return result;
         }
-        result.setCode(RetCode.INTERNAL_SERVER_ERROR).setMsg("接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员");
+        result.setCode(RC.INTERNAL_SERVER_ERROR);
+        result.setMsg("接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员"+e.getMessage());
         String message;
         if (handler instanceof HandlerMethod) {
             HandlerMethod handlerMethod = (HandlerMethod) handler;
@@ -146,7 +148,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
         return result;
     }
 
-    private void responseResult(HttpServletResponse response, RetResult<Object> result) {
+    private void responseResult(HttpServletResponse response, R result) {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "application/json;charset=UTF-8");
         response.setStatus(200);

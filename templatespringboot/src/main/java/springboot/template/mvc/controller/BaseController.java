@@ -14,7 +14,7 @@ public class BaseController implements ViewPath {
     /**
      * 日志对象
      */
-    protected Logger logger = LoggerFactory.getLogger(getClass());
+    protected Logger logger = LoggerFactory.getLogger(this.getClass());
     /**
      * 添加Model消息
      * @param messages

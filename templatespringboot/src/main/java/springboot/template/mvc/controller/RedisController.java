@@ -4,11 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import springboot.template.global.result.RetResponse;
-import springboot.template.global.result.RetResult;
-import springboot.template.mvc.service.service.RedisService;
+import org.springframework.web.bind.annotation.ResponseBody;
+import springboot.template.global.result.R;
+import springboot.template.global.result.RR;
+import springboot.template.mvc.service.RedisService;
 
 import javax.annotation.Resource;
+import java.util.Map;
 
 /**
  * @Auther HUGH
@@ -16,20 +18,22 @@ import javax.annotation.Resource;
  * @Description RedisController
  */
 @Controller
+@ResponseBody
 @RequestMapping(value = "/redis/", method = RequestMethod.GET)
 public class RedisController {
     @Resource
     private RedisService redisService;
 
     @RequestMapping("setReids")
-    public RetResult<String> setRedis(String name) {
+    public R setRedis(String name, Map<String,Object> map) {
         redisService.set("name", name);
-        return RetResponse.makeOKRsp(name);
+        return RR.ok();
     }
 
     @PostMapping("/getRedis")
-    public RetResult<String> getRedis() {
+    public R getRedis(Map<String,Object> map) {
         String name = redisService.get("name");
-        return RetResponse.makeOKRsp(name);
+        map.put(name,name);
+        return RR.ok();
     }
 }

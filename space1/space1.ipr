@@ -600,8 +600,9 @@
   <component name="DBNavigator.Project.StatementExecutionManager">
     <execution-variables />
   </component>
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/All_maven" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/All_maven" />
@@ -850,6 +851,7 @@
     <option name="PROJECT_PLAY_MODULE" value="Java" />
   </component>
   <component name="ProjectDictionaryState">
+    <dictionary name="HUGH" />
     <dictionary name="hugh" />
   </component>
   <component name="ProjectModuleManager">

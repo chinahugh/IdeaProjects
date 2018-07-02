@@ -182,4 +182,12 @@
       is_disable = #{isDisable,jdbcType=INTEGER}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="getUserRoles" resultType="java.lang.String">
+    SELECT a.id as id
+    FROM sys_role a
+    JOIN user_role b on a.id=b.role_id
+    <where>
+      b.user_id=#{userId}
+    </where>
+  </select>
 </mapper>

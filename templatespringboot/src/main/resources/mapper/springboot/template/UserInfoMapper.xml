@@ -281,4 +281,21 @@
             </if>
         </where>
     </select>
+    <select id="login" resultType="springboot.template.mvc.entity.UserInfo">
+        SELECT
+        <include refid="Base_Column_List"/>
+        <include refid="from"/>
+        <include refid="join"/>
+        <where>
+            <if test="userName != null">
+                AND a.user_name =#{userName}
+            </if>
+            <if test="userPassword != null">
+                AND a.user_password = #{userPassword}
+            </if>
+            <if test="isDisable != null">
+                AND a.is_disable=#{isDisable}
+            </if>
+        </where>
+    </select>
 </mapper>

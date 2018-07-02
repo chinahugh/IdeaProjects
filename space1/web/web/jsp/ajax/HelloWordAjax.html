@@ -15,7 +15,7 @@
 
 <h1>员工查询</h1>
 <label>要查询的员工号：</label>
-<input type="text" width="30" id="keyword" name="keyword" value="22" >
+<input type="text" width="30" id="keyword" name="keyword" value="22">
 <button id="inquire">查询</button>
 <br>
 <p id="inquireresult"></p>
@@ -42,13 +42,14 @@
         xhr.open("GET", "/hellowordajax?keyword=" + data);
         console.log(data);
         xhr.send();
-       /* if(xhr.readyState===4){
-            */if(xhr.status==200){
-                document.getElementById("inquireresult").innerHTML = "iiii"
-            }else {
-                alert("发生错误"+xhr.status)
-            }
-      /*  }*/
+        /* if(xhr.readyState===4){
+             */
+        if (xhr.status == 200) {
+            document.getElementById("inquireresult").innerHTML = "iiii"
+        } else {
+            alert("发生错误" + xhr.status)
+        }
+        /*  }*/
 
     }
 

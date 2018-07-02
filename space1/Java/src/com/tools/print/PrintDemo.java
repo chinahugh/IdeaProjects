@@ -1,36 +1,26 @@
 package com.tools.print;
+import javax.print.*;
+import javax.print.attribute.DocAttributeSet;
+import javax.print.attribute.HashDocAttributeSet;
+import javax.print.attribute.HashPrintRequestAttributeSet;
+import javax.swing.*;
+import java.io.File;
+import java.io.FileInputStream;
 
 /**
  * @Author: hugh
  * @Time: 2018/02/11 11:10 AM
- * @Discraption:
+ * @Discraption: 建立与打印机的连接
+ * 运行文件会弹出窗口，选择文件，开始打印
  */
-import java.io.File;
-import java.io.FileInputStream;
 
-import javax.print.Doc;
-import javax.print.DocFlavor;
-import javax.print.DocPrintJob;
-import javax.print.PrintService;
-import javax.print.PrintServiceLookup;
-import javax.print.ServiceUI;
-import javax.print.SimpleDoc;
-import javax.print.attribute.DocAttributeSet;
-import javax.print.attribute.HashDocAttributeSet;
-import javax.print.attribute.HashPrintRequestAttributeSet;
-import javax.swing.JFileChooser;
 
-/**
- * 建立与打印机的连接
- * @author Administrator
- *
- */
+
 public class PrintDemo {
-
     public static void main(String[] args) {
         JFileChooser fileChooser = new JFileChooser(); //创建打印作业
         int state = fileChooser.showOpenDialog(null);
-        if(state == fileChooser.APPROVE_OPTION){
+        if (state == JFileChooser.APPROVE_OPTION) {
             File file = new File("D:/zkyzl.txt"); //获取选择的文件
             //构建打印请求属性集
             HashPrintRequestAttributeSet pras = new HashPrintRequestAttributeSet();
@@ -43,7 +33,7 @@ public class PrintDemo {
             //显示打印对话框
             PrintService service = ServiceUI.printDialog(null, 200, 200, printService,
                     defaultService, flavor, pras);
-            if(service != null){
+            if (service != null) {
                 try {
                     DocPrintJob job = service.createPrintJob(); //创建打印作业
                     FileInputStream fis = new FileInputStream(file); //构造待打印的文件流

@@ -9,14 +9,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import springboot.template.global.result.RetResponse;
-import springboot.template.global.result.RetResult;
-import springboot.template.mvc.entity.SysDepartment;
+import springboot.template.global.result.R;
+import springboot.template.global.result.RR;
 import springboot.template.mvc.entity.UserInfo;
-import springboot.template.mvc.service.service.SysDepartmentService;
-import springboot.template.mvc.service.service.UserInfoService;
+import springboot.template.mvc.service.SysDepartmentService;
+import springboot.template.mvc.service.UserInfoService;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Auther HUGH
@@ -24,6 +25,7 @@ import javax.annotation.Resource;
  * @Description Testcontroller
  */
 @Controller
+@ResponseBody
 @RequestMapping("/")
 public class Testcontroller {
     @Resource
@@ -42,14 +44,19 @@ public class Testcontroller {
     @ResponseBody
     @ApiOperation(value = "查询用户", notes = "根据用户ID查询用户")
     @ApiImplicitParams({@ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "String", paramType = "query")})
-    public RetResult<UserInfo> find(@RequestParam String id) {
-        return RetResponse.makeOKRsp(userInfoService.find(id));
+    public R find(@RequestParam String id, Map map) {
+
+        map.put("user",userInfoService.find(id));
+        System.out.println(userInfoService.find(id));
+        return RR.ok();
     }
 
-    @RequestMapping("a")
+    @RequestMapping("hello")
     @ResponseBody
-    public SysDepartment a(String id){
-
-        return  sysDepartmentService.find(id);
+    public R hello(String hello,  HashMap<String, Object> map){
+        map.put("sysdepartment",hello);
+        map.put("sysdepartment2",hello);
+        map.put("user",new UserInfo());
+        return RR.ok(map);
     }
 }
