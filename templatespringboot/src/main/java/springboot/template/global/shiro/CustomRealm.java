@@ -8,10 +8,10 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import springboot.template.mvc.entity.SysDirectory;
+import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.entity.SysRole;
 import springboot.template.mvc.entity.UserInfo;
-import springboot.template.mvc.service.SysDirectoryService;
+import springboot.template.mvc.service.SysPermissionService;
 import springboot.template.mvc.service.SysRoleService;
 import springboot.template.mvc.service.UserInfoService;
 
@@ -30,7 +30,7 @@ public class CustomRealm extends AuthorizingRealm {
     @Resource
     private SysRoleService userRoleService;
     @Resource
-    private SysDirectoryService roleDirectoryService;
+    private SysPermissionService sysPermissionService;
 
 
    /*   告诉shiro如何根据获取到的用户信息中的密码和盐值来校验密码*/
@@ -60,7 +60,7 @@ public class CustomRealm extends AuthorizingRealm {
         UserInfo userInfo = (UserInfo) getAvailablePrincipal(principals);
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         info.setRoles(userInfo.getRoles());
-        info.setStringPermissions(userInfo.getDirectorys());
+        info.setStringPermissions(userInfo.getPermissions());
         return info;
     }
 
@@ -90,11 +90,11 @@ public class CustomRealm extends AuthorizingRealm {
         //查询用户的角色和权限存到SimpleAuthenticationInfo中，这样在其它地方
         //SecurityUtils.getSubject().getPrincipal()就能拿出用户的所有信息，包括角色和权限
         List<SysRole> roleList = userRoleService.getUserRoles(oneUser.getId());
-        List<SysDirectory> permList = roleDirectoryService.getUserDirectorys(oneUser.getId());
+        List<SysPermission> permList = sysPermissionService.getUserPermissions(oneUser.getId());
         HashSet<String> roles = new HashSet(roleList);
         HashSet<String> perms = new HashSet(permList);
         oneUser.setRoles(roles);
-        oneUser.setDirectorys(perms);
+        oneUser.setPermissions(perms);
 
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(oneUser, oneUser.getUserPassword(), getName());
 //        info.setCredentialsSalt(ByteSource.Util.bytes(oneUser.getSex()));

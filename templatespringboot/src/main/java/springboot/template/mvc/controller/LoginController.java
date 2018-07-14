@@ -1,7 +1,7 @@
 package springboot.template.mvc.controller;
 
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import springboot.template.global.result.R;
+import springboot.template.global.result.RR;
 
 /**
  * @Auther HUGH
@@ -16,40 +18,54 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Description LoginController 用户登录
  */
 @Controller
-@RequestMapping(value = "/",method = RequestMethod.POST)
+@RequestMapping(value = "/", method = RequestMethod.POST)
 public class LoginController extends BaseController {
-
-    @RequestMapping(value = "loginn", method = RequestMethod.GET)
-    public String login() {
-//        Subject subject = SecurityUtils.getSubject();
-//        UsernamePasswordToken token = new UsernamePasswordToken(userInfo.getUserName(), userInfo.getUserPassword());
-//       try {
-//           subject.login(token);
-//       }catch (Exception e){
-//           e.fillInStackTrace();
-//        }
-        System.out.println("****************************************");
-        return "login";
-    }
-
-    @RequestMapping(value = "login",method = RequestMethod.POST)
+    @RequestMapping(value = "login", method = RequestMethod.POST)
     @ResponseBody
-    public Object login(@RequestParam(value = "userName",required = true) String userName,
-                        @RequestParam(value = "userPassword",required = true)String userPassword) {
-        System.out.println("getUserPassword "+userName+" getUserName "+userPassword);
+    public R login(@RequestParam(value = "userName", required = false) String userName,
+                   @RequestParam(value = "userPassword", required = false) String userPassword) {
+        System.out.println("getUserPassword " + userName + " getUserName " + userPassword);
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userName, userPassword);
         try {
             subject.login(token);
-        }catch (Exception e){
-           return "no "+e.getMessage();
+        } catch (LockedAccountException e) {
+            return RR.error("锁定的帐号");
+        } catch (DisabledAccountException e) {
+            return RR.error("禁用的帐号");
+        } catch (UnknownAccountException e) {
+            return RR.error("错误的帐号");
+        } catch (ExcessiveAttemptsException e) {
+            return RR.error("登录失败次数过多");
+        } catch (IncorrectCredentialsException e) {
+            return RR.error("错误的凭证");
+        } catch (ExpiredCredentialsException e) {
+            return RR.error("过期的凭证");
         }
-        return SecurityUtils.getSubject().getPrincipal();
+           /*
+           * DisabledAccountException（禁用的帐号）
+           * LockedAccountException（锁定的帐号）
+           * UnknownAccountException（错误的帐号）
+           * ExcessiveAttemptsException（登录失败次数过多）
+           * IncorrectCredentialsException （错误的凭证）
+           * ExpiredCredentialsException（过期的凭证）等
+           * */
+        return RR.ok("ok");
     }
-
 
     @RequestMapping(value = "index", method = RequestMethod.GET)
     public String index(Model model) {
-        return "login";
+        return "index";
+    }
+
+    @RequestMapping(value = "main", method = RequestMethod.GET)
+    public String main() {
+        return "main";
+    }
+
+    @RequestMapping(value = "logout",method = RequestMethod.GET)
+    public String logout() {
+        SecurityUtils.getSubject().logout();
+        return "redirect:login.html";
     }
 }

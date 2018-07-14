@@ -32,3 +32,5 @@
 /.vscode/
 */classes/
 **/classes/
+#*/.idea/
+#**/.idea/

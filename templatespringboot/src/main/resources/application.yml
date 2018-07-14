@@ -1,7 +1,7 @@
 #server访问端口
 server:
   port: 8080
-debug: true
+debug: false
 #spring 配置
 spring:
 #数据库
@@ -48,7 +48,7 @@ spring:
         min-idle: 0
   thymeleaf:
     cache: false
-    mode: html5
+    mode: HTML5
     prefix: classpath:/templates/
     suffix: .html
     encoding: utf-8
@@ -60,9 +60,11 @@ spring:
   mvc:
   #出现 404 错误时, 直接抛出异常
     throw-exception-if-no-handler-found: true
+    favicon:
+      enabled: false
   resources:
   #不要为资源文件建立映射.
-    add-mappings: false
+    add-mappings: true
 mybatis:
   mapper-locations: classpath:mapper/**/*.xml
   type-aliases-package: springboot.template.mvc.entity

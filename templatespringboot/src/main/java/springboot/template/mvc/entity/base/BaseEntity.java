@@ -9,22 +9,24 @@ import java.io.Serializable;
  */
 public class BaseEntity implements Serializable {
     private static final long serialVersionUID = -7202325628651053055L;
-    private Boolean isNew=false;
+    private Boolean isNewCreate=false;
     private String id;
 
     public BaseEntity() {
+        super();
     }
 
     public BaseEntity(String id) {
+        super();
         this.id = id;
     }
 
     public Boolean getNew() {
-        return isNew||this.getId()==null;
+        return isNewCreate||this.getId()==null;
     }
 
     public void setNew(Boolean aNew) {
-        isNew = aNew;
+        isNewCreate = aNew;
     }
 
     public String getId() {

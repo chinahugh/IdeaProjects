@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import net.sf.json.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
@@ -25,9 +26,8 @@ import java.util.Map;
  * @Description Testcontroller
  */
 @Controller
-@ResponseBody
-@RequestMapping("/")
-public class Testcontroller {
+@RequestMapping(value = "/",method = RequestMethod.GET)
+public class Testcontroller implements ViewPath {
     @Resource
     private UserInfoService userInfoService;
     @Resource
@@ -56,7 +56,12 @@ public class Testcontroller {
     public R hello(String hello,  HashMap<String, Object> map){
         map.put("sysdepartment",hello);
         map.put("sysdepartment2",hello);
-        map.put("user",new UserInfo());
+        UserInfo userInfo = userInfoService.find("1");
+        map.put("user",userInfo);
         return RR.ok(map);
+    }
+    @RequestMapping("user")
+    public String user(){
+        return SYS_PATH+"user";
     }
 }

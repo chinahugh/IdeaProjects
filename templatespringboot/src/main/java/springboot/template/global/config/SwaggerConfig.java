@@ -24,6 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
     @Bean
     public Docket createRestApi() {
+
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
@@ -34,9 +35,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("mySpringBoot 使用Swagger2构建RESTful APIs")
-                .description("更多Spring Boot相关文章请关注：https://juejin.im/user/59e7fb9451882578e1406a51/posts")
-                .termsOfServiceUrl("https://juejin.im/user/59e7fb9451882578e1406a51/posts")
+                .title("Swagger2构建RESTful APIs")
                 .contact(new Contact("hugh", "", null))
                 .version("1.0")
                 .build();

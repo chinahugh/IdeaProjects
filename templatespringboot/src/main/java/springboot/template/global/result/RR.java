@@ -15,7 +15,7 @@ public class RR {
     }
 
     public static R ok() {
-        return makeR(RC.SUCCESS, SUCCESS, null);
+        return ok(SUCCESS);
     }
 
     public static R ok(String msg) {
@@ -27,6 +27,9 @@ public class RR {
     }
 
     public static R error(String message) {
-        return makeR(RC.FAIL, message, null);
+        return error(RC.FAIL, message);
+    }
+    public static R error(RC rc,String message) {
+        return makeR(rc, message, null);
     }
 }

@@ -11,6 +11,7 @@ import org.springframework.core.Ordered;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.lang.Nullable;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,6 +22,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import springboot.template.global.exception.ServiceException;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RC;
+import springboot.template.global.result.RR;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -49,6 +51,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
     }
+
     /**
      * 自定义消息装换器
      *
@@ -69,6 +72,8 @@ public class WebConfig extends WebMvcConfigurationSupport {
                 SerializerFeature.WriteNullStringAsEmpty,
                 // Number null -> 0
                 SerializerFeature.WriteNullNumberAsZero,
+                //Boolean null ->false
+                SerializerFeature.WriteNullBooleanAsFalse,
                 //禁止循环引用
                 SerializerFeature.DisableCircularReferenceDetect,
                 //List字段如果为null, 输出为[],而非null
@@ -97,6 +102,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
             @Nullable
             @Override
             public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex) {
+                LOGGER.error(ex.getMessage(),ex);
                 //根据异常类型确定返回数据
                 R result = getResuleByHeandleException(request, handler, ex);
                 //响应结果
@@ -113,39 +119,35 @@ public class WebConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("swagger-ui.html")
+        registry.addResourceHandler("/swagger-ui.html")
                 .addResourceLocations("classpath:/resources/");
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/templates/a/**")
+                .addResourceLocations("classpath:/templates/a/");
         registry.addResourceHandler("/logo.png")
                 .addResourceLocations("classpath:/static/img/logo.png");
         super.addResourceHandlers(registry);
     }
-
     private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
-        R result = new R();
         if (e instanceof ServiceException) {
-            result.setCode(RC.FAIL);
-            result.setMsg(e.getMessage());
-            return result;
+            return RR.error(e.getMessage());
         }
         if (e instanceof NoHandlerFoundException) {
-            result.setCode(RC.NOT_FOUND);
-            result.setMsg("接口 [" + request.getRequestURI() + "] 不存在");
-            return result;
+            return RR.error("接口 [" + request.getRequestURI() + "] 不存在");
         }
-        result.setCode(RC.INTERNAL_SERVER_ERROR);
-        result.setMsg("接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员"+e.getMessage());
-        String message;
+        if (e instanceof HttpRequestMethodNotSupportedException) {
+            return RR.error(RC.INTERNAL_SERVER_ERROR, "接口 [" + request.getRequestURI() + "] 不能使用GET访问");
+        }
         if (handler instanceof HandlerMethod) {
             HandlerMethod handlerMethod = (HandlerMethod) handler;
-            message = String.format("接口 [%s] 出现异常，方法：%s.%s，异常摘要：%s", request.getRequestURI(),
+            String msg = String.format("接口 [%s] 出现异常，方法：%s.%s，异常摘要：%s", request.getRequestURI(),
                     handlerMethod.getBean().getClass().getName(), handlerMethod.getMethod().getName(), e.getMessage());
-        } else {
-            message = e.getMessage();
+            return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
         }
-        LOGGER.error(message, e);
-        return result;
+        String msg="接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员"+e.getMessage();
+
+        return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
     }
 
     private void responseResult(HttpServletResponse response, R result) {
