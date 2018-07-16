@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RR;
+import springboot.template.mvc.entity.UserInfo;
+
+import java.util.HashMap;
 
 /**
  * @Auther HUGH
@@ -41,6 +44,8 @@ public class LoginController extends BaseController {
             return RR.error("错误的凭证");
         } catch (ExpiredCredentialsException e) {
             return RR.error("过期的凭证");
+        }catch (Exception e){
+            return RR.error("登录失败");
         }
            /*
            * DisabledAccountException（禁用的帐号）
@@ -50,11 +55,14 @@ public class LoginController extends BaseController {
            * IncorrectCredentialsException （错误的凭证）
            * ExpiredCredentialsException（过期的凭证）等
            * */
-        return RR.ok("ok");
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("user",SecurityUtils.getSubject().getPrincipal());
+        return RR.ok(map);
     }
 
     @RequestMapping(value = "index", method = RequestMethod.GET)
     public String index(Model model) {
+
         return "index";
     }
 

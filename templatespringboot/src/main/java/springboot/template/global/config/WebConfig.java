@@ -125,8 +125,8 @@ public class WebConfig extends WebMvcConfigurationSupport {
                 .addResourceLocations("classpath:/static/");
         registry.addResourceHandler("/templates/a/**")
                 .addResourceLocations("classpath:/templates/a/");
-        registry.addResourceHandler("/logo.png")
-                .addResourceLocations("classpath:/static/img/logo.png");
+//        registry.addResourceHandler("/logo.png")
+//                .addResourceLocations("classpath:/static/img/logo.png");
         super.addResourceHandlers(registry);
     }
     private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {

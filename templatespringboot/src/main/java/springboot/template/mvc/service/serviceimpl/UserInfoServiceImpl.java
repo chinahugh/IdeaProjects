@@ -30,7 +30,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Override
     public UserInfo find(String id) {
-        return userInfoMapper.selectByPrimaryKey(id);
+        return userInfoMapper.get(id);
     }
 
     @Override
@@ -49,11 +49,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public UserInfo login(UserInfo userInfo) {
 
-        return userInfoMapper.login(userInfo);
+        return userInfoMapper.select(userInfo);
     }
 
-    @Override
-    public UserInfo findUser(UserInfo userInfo) {
-        return userInfoMapper.findUser(userInfo);
-    }
 }

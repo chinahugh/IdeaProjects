@@ -17,6 +17,6 @@ public class SysDepartmentServiceImpl implements SysDepartmentService {
     private SysDepartmentMapper sysDepartmentMapper;
     @Override
     public SysDepartment find(String id) {
-        return sysDepartmentMapper.selectByPrimaryKey(id);
+        return sysDepartmentMapper.get(id);
     }
 }

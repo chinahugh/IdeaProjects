@@ -13,6 +13,12 @@ import java.util.Date;
  */
 public class SysLog extends BaseEntity {
     private static final long serialVersionUID = -4984063160181217360L;
+    public SysLog(){
+      super();
+    }
+    public SysLog(String id){
+        super(id);
+    }
     /** 用户名*/
     private String username;
 
@@ -28,7 +34,7 @@ public class SysLog extends BaseEntity {
     /** 执行时长(毫秒)*/
     private Long time;
 
-    /** 是否成功*/
+    /** 是否成功 1 成功 0 失败*/
     private String succeed;
 
     /** IP地址*/

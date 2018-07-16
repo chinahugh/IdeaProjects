@@ -18,6 +18,4 @@ public interface UserInfoService {
     UserInfo findOneUser(UserInfo userInfo);
 
     UserInfo login(UserInfo userInfo);
-
-    UserInfo findUser(UserInfo userInfo);
 }

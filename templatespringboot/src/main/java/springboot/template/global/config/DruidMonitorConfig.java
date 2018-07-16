@@ -1,6 +1,5 @@
 package springboot.template.global.config;
 
-
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,12 +17,11 @@ import org.springframework.context.annotation.Configuration;
 public class DruidMonitorConfig {
     @Value("${spring.datasource.druid.username}")
     private String username;
-
     @Value("${spring.datasource.druid.password}")
     private String password;
-    @Bean
-    public ServletRegistrationBean servletRegistrationBean(){
 
+    @Bean
+    public ServletRegistrationBean servletRegistrationBean() {
         ServletRegistrationBean bean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         /** 初始化参数配置，initParams**/
         //白名单//多个ip逗号隔开
@@ -37,14 +35,14 @@ public class DruidMonitorConfig {
         bean.addInitParameter("resetEnable", "false");
         return bean;
     }
+
     @Bean
-    public FilterRegistrationBean filterRegistrationBean(){
+    public FilterRegistrationBean filterRegistrationBean() {
         FilterRegistrationBean bean = new FilterRegistrationBean(new WebStatFilter());
         //添加过滤规则
         bean.addUrlPatterns("/*");
         //添加不需要忽略的格式信息.
-        bean.addInitParameter("exclusions","*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
+        bean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
         return bean;
     }
-
 }

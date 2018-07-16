@@ -30,7 +30,7 @@
             <!-- #section:basics/navbar.layout.brand -->
             <a href="index.html" class="navbar-brand">
                 <small>
-                    <img src="/static/avatars/logo.png" alt="" />
+                    <img src="/static/avatars/logo.png" alt=""/>
                 </small>
             </a>
         </div>
@@ -54,7 +54,7 @@
                             <ul class="dropdown-menu dropdown-navbar">
                                 <li>
                                     <a href="#">
-                                        <img src="/static/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+                                        <img src="/static/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">B2C:</span>
@@ -71,7 +71,7 @@
 
                                 <li>
                                     <a href="#">
-                                        <img src="/static/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+                                        <img src="/static/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">积分商城:</span>
@@ -88,7 +88,7 @@
 
                                 <li>
                                     <a href="#">
-                                        <img src="/static/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+                                        <img src="/static/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">政府机票采购:</span>
@@ -105,7 +105,7 @@
 
                                 <li>
                                     <a href="#">
-                                        <img src="/static/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+                                        <img src="/static/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">B2B:</span>
@@ -122,7 +122,7 @@
 
                                 <li>
                                     <a href="#">
-                                        <img src="/static/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+                                        <img src="/static/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">货运系统:</span>
@@ -151,10 +151,10 @@
                 <!-- #section:basics/navbar.user_menu -->
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="/static/avatars/user.jpg" alt="Jason's Photo" />
+                        <img class="nav-user-photo" src="/static/avatars/user.jpg" alt="Jason's Photo"/>
                         <span class="user-info">
 									欢迎您<br/>
-									${name}
+									<span id="userName"></span>
 								</span>
 
                         <i class="ace-icon fa fa-caret-down"></i>
@@ -576,7 +576,8 @@
 
         <!-- #section:basics/sidebar.layout.minimize -->
         <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
-            <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+            <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left"
+               data-icon2="ace-icon fa fa-angle-double-right"></i>
         </div>
 
     </div>
@@ -634,7 +635,7 @@
     </div>&lt;!&ndash; /.main-content &ndash;&gt;
 -->
 
-    <div class="main-content" >
+    <div class="main-content">
         <iframe id="iframe" src="main.html" width="1300" height="700" frameborder="0">
 
         </iframe>
@@ -662,10 +663,31 @@
 <script th:src="@{/static/js/ace-elements.min.js}" src="/static/js/ace-elements.min.js"></script>
 <script th:src="@{/static/js/ace.min.js}" src="/static/js/ace.min.js"></script>
 <script>
-    function goMain(){
-        var url=$(this).attr("url");
-        $('#iframe').attr("src","main.html");
+    function goMain() {
+        var url = $(this).attr("url");
+        $('#iframe').attr("src", "main.html");
     }
+
+    //获取cookie
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+
+            var c = ca[i];
+//            alert(c);
+            while (c.charAt(0) == ' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+
+    $(document).ready(function () {
+        var userName = getCookie("userName");
+//        alert(userName)
+        $('#userName').html(userName);
+        setCookies()
+    })
 </script>
 </body>
 </html>

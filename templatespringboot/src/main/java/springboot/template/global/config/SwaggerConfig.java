@@ -38,6 +38,7 @@ public class SwaggerConfig {
                 .title("Swagger2构建RESTful APIs")
                 .contact(new Contact("hugh", "", null))
                 .version("1.0")
+                .description("")
                 .build();
     }
 }
