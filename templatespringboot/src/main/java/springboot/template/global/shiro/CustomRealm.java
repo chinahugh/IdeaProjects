@@ -8,6 +8,7 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.util.ByteSource;
 import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.entity.SysRole;
 import springboot.template.mvc.entity.UserInfo;
@@ -32,18 +33,16 @@ public class CustomRealm extends AuthorizingRealm {
     @Resource
     private SysPermissionService sysPermissionService;
 
-
    /*   告诉shiro如何根据获取到的用户信息中的密码和盐值来校验密码*/
-
     {
         //设置用于匹配密码的 HashedCredentialsMatcher
         HashedCredentialsMatcher matcher = new HashedCredentialsMatcher();
         matcher.setHashAlgorithmName("md5");
-//        matcher.setStoredCredentialsHexEncoded(true);
+        matcher.setStoredCredentialsHexEncoded(true);
         //加密次数
         matcher.setHashIterations(1);
         this.setCredentialsMatcher(matcher);
-    }
+      }
 
     /**
      * 定义如何获取用户的角色和权限的逻辑，给shiro做权限判断
@@ -82,7 +81,7 @@ public class CustomRealm extends AuthorizingRealm {
         UserInfo userInfo = new UserInfo();
         userInfo.setUserName(username);
         //通过用户名，查找密码
-        UserInfo oneUser = userInfoService.login(userInfo);
+        UserInfo oneUser = userInfoService.select(userInfo);
         System.out.println("JSONArray.fromObject(oneUser) = " + JSONArray.fromObject(oneUser));
         if (oneUser == null) {
             throw new UnknownAccountException("No account found for admin [" + username + "]");
@@ -97,7 +96,9 @@ public class CustomRealm extends AuthorizingRealm {
         oneUser.setPermissions(perms);
 
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(oneUser, oneUser.getUserPassword(), getName());
-//        info.setCredentialsSalt(ByteSource.Util.bytes(oneUser.getSex()));
+        /*密码盐*/
+        String SALT = "!@#$%^&";
+        info.setCredentialsSalt(ByteSource.Util.bytes(SALT));
         return info;
     }
 }

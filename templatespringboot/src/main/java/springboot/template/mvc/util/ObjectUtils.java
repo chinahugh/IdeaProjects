@@ -10,11 +10,11 @@ import java.util.Date;
  * @Description ObjectUtils
  */
 public class ObjectUtils {
-    public static boolean isNotNULL(Object o) {
-        return !isNULL(o);
+    public static boolean isNotEmpty(Object o) {
+        return !isEmpty(o);
     }
 
-    public static boolean isNULL(Object o) {
+    public static boolean isEmpty(Object o) {
         boolean isNull = true;
         if (o != null) {
             isNull = false;
@@ -30,7 +30,7 @@ public class ObjectUtils {
 
     public static void main(String[] args) {
         Date date = new Date();
-        boolean notNULL = isNotNULL("       ");
+        boolean notNULL = isNotEmpty("       ");
         System.out.println(notNULL);
     }
 }

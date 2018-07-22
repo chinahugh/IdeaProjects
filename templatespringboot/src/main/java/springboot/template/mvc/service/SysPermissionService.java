@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface SysPermissionService {
     /**
-     *
+     *根据userId获取用户去重以后的权限列表
      * @param id
      * @return
      */

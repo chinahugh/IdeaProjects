@@ -1,6 +1,5 @@
 package springboot.template.mvc.service;
 
-
 import com.github.pagehelper.PageInfo;
 import springboot.template.mvc.entity.UserInfo;
 
@@ -9,13 +8,24 @@ import springboot.template.mvc.entity.UserInfo;
  * @Date 2018/6/9
  * @Description UserInfoService
  */
-public interface UserInfoService {
+public interface UserInfoService  {
+    /**
+     * 根据id获得一个user
+     * @param id
+     * @return
+     */
+    UserInfo get(String id);
+    /**
+     * 根据userinfo中已知条件，获取一个user
+     * @param userInfo
+     * @return
+     */
+    UserInfo select(UserInfo userInfo);
 
-    PageInfo<UserInfo> list(UserInfo userInfo);
-
-    UserInfo find(String id);
-
-    UserInfo findOneUser(UserInfo userInfo);
-
-    UserInfo login(UserInfo userInfo);
+    /**
+     * 根据userinfo中已知条件，获取列表
+     * @param userInfo
+     * @return
+     */
+    PageInfo<UserInfo> listPageInfo(UserInfo userInfo);
 }

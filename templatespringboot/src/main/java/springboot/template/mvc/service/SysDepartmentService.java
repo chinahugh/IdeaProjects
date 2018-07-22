@@ -1,6 +1,5 @@
 package springboot.template.mvc.service;
 
-import springboot.template.mvc.entity.SysDepartment;
 
 /**
  * @Auther HUGH
@@ -8,5 +7,5 @@ import springboot.template.mvc.entity.SysDepartment;
  * @Description SysDepartmentService
  */
 public interface SysDepartmentService {
-    SysDepartment find(String id);
+
 }

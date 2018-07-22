@@ -37,7 +37,7 @@ public class Testcontroller implements ViewPath {
     @ResponseBody
     public PageInfo<UserInfo> list(UserInfo userInfo) {
         System.out.println("JSONArray.fromObject(userInfo) = " + JSONArray.fromObject(userInfo));
-        return userInfoService.list(userInfo);
+        return userInfoService.listPageInfo(userInfo);
     }
 
     @RequestMapping("find")
@@ -46,8 +46,8 @@ public class Testcontroller implements ViewPath {
     @ApiImplicitParams({@ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "String", paramType = "query")})
     public R find(@RequestParam String id, Map map) {
 
-        map.put("user",userInfoService.find(id));
-        System.out.println(userInfoService.find(id));
+        map.put("user",userInfoService.get(id));
+        System.out.println(userInfoService.get(id));
         return RR.ok();
     }
 
@@ -56,7 +56,7 @@ public class Testcontroller implements ViewPath {
     public R hello(String hello,  HashMap<String, Object> map){
         map.put("sysdepartment",hello);
         map.put("sysdepartment2",hello);
-        UserInfo userInfo = userInfoService.find("1");
+        UserInfo userInfo = userInfoService.get("1");
         map.put("user",userInfo);
         return RR.ok(map);
     }

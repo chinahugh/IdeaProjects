@@ -17,9 +17,10 @@ import java.util.List;
 public class SysRoleServiceImpl implements SysRoleService {
     @Resource
     private SysRoleMapper sysRoleMapper;
+
     @Override
     public List<SysRole> getUserRoles(String userId) {
-            List<SysRole> list=sysRoleMapper.getUserRoles(userId);
+        List<SysRole> list = sysRoleMapper.getUserRoles(userId);
         return list;
     }
 }

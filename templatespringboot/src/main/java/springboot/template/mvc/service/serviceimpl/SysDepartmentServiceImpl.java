@@ -15,8 +15,4 @@ import springboot.template.mvc.service.SysDepartmentService;
 public class SysDepartmentServiceImpl implements SysDepartmentService {
     @Autowired
     private SysDepartmentMapper sysDepartmentMapper;
-    @Override
-    public SysDepartment find(String id) {
-        return sysDepartmentMapper.get(id);
-    }
 }

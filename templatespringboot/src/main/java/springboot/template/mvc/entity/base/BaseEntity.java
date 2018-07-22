@@ -31,8 +31,8 @@ public class BaseEntity implements Serializable {
     public BaseEntity(String id) {
         super();
         this.id = id;
-        isNewCreate = true;
-        isDisable = 0;
+        this.isNewCreate = true;
+        this.isDisable = 0;
     }
 
     public Boolean getNewCreate() {
