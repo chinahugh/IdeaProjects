@@ -2,17 +2,15 @@ package springboot.template.mvc.controller;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RR;
-import springboot.template.global.util.ShiroUtil;
+import springboot.template.global.util.ShiroUtils;
 import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.SysPermissionService;
@@ -74,7 +72,7 @@ public class LoginController extends BaseController {
     @ResponseBody
     public R index() {
         Map<String,Object> map=new HashMap<>();
-        UserInfo userInfo = ShiroUtil.getUserInfo();
+        UserInfo userInfo = ShiroUtils.getUserInfo();
         List<SysPermission> userPermissions = sysPermissionService.getUserPermissions(userInfo.getId());
         map.put("menu", userPermissions);
         return RR.ok(map);

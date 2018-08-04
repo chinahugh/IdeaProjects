@@ -1,8 +1,9 @@
 package springboot.template.mvc.service;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageInfo;
+import org.springframework.stereotype.Service;
 import springboot.template.mvc.entity.SysPermission;
+import springboot.template.mvc.mapper.SysPermissionMapper;
+import springboot.template.mvc.service.base.BaseService;
 
 import java.util.List;
 
@@ -11,18 +12,14 @@ import java.util.List;
  * @Date 2018/7/14
  * @Description SysPermissionService
  */
-public interface SysPermissionService {
+@Service
+public class SysPermissionService extends BaseService<SysPermissionMapper,SysPermission>{
     /**
      *根据userId获取用户去重以后的权限列表
      * @param id
      * @return
      */
-    List<SysPermission> getUserPermissions(String id);
-
-    SysPermission get(String id);
-
-    PageInfo<SysPermission> listPage(SysPermission sysPermission, Page page);
-
-    int save(SysPermission sysPermission);
-    int update(SysPermission sysPermission);
+   public List<SysPermission> getUserPermissions(String id){
+        return mapper.getUserPermissions(id);
+    }
 }

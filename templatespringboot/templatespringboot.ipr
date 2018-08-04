@@ -136,11 +136,11 @@
     </option>
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="springboot.template.mvc.mapper" />
+        <option name="javaMapperPackage" value="springboot.com.mvc.mapper" />
         <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
-        <option name="javaModelPackage" value="springboot.template.mvc.entity" />
+        <option name="javaModelPackage" value="springboot.com.mvc.entity" />
         <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
-        <option name="xmlMapperPackage" value="mapper.springboot.template" />
+        <option name="xmlMapperPackage" value="mapper.springboot.com" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
       </ProjectProfile>
     </option>

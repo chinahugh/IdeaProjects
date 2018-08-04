@@ -20,7 +20,7 @@ public class ObjectUtils {
             isNull = false;
             if (o instanceof String) {
                 String str = ((String) o).trim();
-                if (str.isEmpty() || StringUtils.EMPTY.equalsIgnoreCase(str)) {
+                if (StringUtils.isBlank(str)) {
                     isNull = true;
                 }
             }

@@ -1,5 +1,7 @@
 package springboot.template.global.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
@@ -18,6 +20,7 @@ import redis.clients.jedis.JedisPoolConfig;
 @Configuration
 @EnableCaching   //开启缓存
 public class RedisConfig extends CachingConfigurerSupport {
+    private final static Logger LOGGER = LoggerFactory.getLogger(RedisConfig.class);
     @Bean
     @ConfigurationProperties(prefix = "spring.rides")
     public JedisPoolConfig jedisPoolConfig() {

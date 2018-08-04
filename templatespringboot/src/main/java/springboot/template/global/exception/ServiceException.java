@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * @Auther HUGH
  * @Date 2018/6/9
- * @Description ServiceException 业务类异常
+ * @Description ServiceException 自定义异常
  */
 
 

@@ -1,6 +1,9 @@
 package springboot.template.mvc.service;
 
+import org.springframework.stereotype.Service;
 import springboot.template.mvc.entity.SysRole;
+import springboot.template.mvc.mapper.SysRoleMapper;
+import springboot.template.mvc.service.base.BaseService;
 
 import java.util.List;
 
@@ -9,6 +12,9 @@ import java.util.List;
  * @Date 2018/6/30
  * @Description SysRoleService
  */
-public interface SysRoleService {
-    List<SysRole> getUserRoles(String userId);
+@Service
+public class SysRoleService extends BaseService<SysRoleMapper,SysRole>{
+    public List<SysRole> getUserRoles(String userId){
+        return mapper.getUserRoles(userId);
+    }
 }

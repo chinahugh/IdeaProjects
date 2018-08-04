@@ -44,7 +44,7 @@ public class MenuController extends BaseController{
     public RH list(SysPermission sysPermission) {
         Map<String, Object> map = RR.getMap();
         map.put("entity", sysPermission);
-        PageInfo<SysPermission> list = sysPermissionService.listPage(sysPermission, new Page(1,10));
+        PageInfo<SysPermission> list = sysPermissionService.list(sysPermission, new Page(1,10));
         map.put("list", list);
         return RH.ok(map);
     }
@@ -52,13 +52,13 @@ public class MenuController extends BaseController{
     @RequestMapping("save")
     @ResponseBody
     public R save(SysPermission sysPermission){
-        sysPermissionService.save(sysPermission);
+        sysPermissionService.insert(sysPermission);
         return RR.ok();
     }
     @RequestMapping("update")
     @ResponseBody
     public R update(SysPermission sysPermission){
-        sysPermissionService.save(sysPermission);
+        sysPermissionService.insert(sysPermission);
         return RR.ok();
     }
 }

@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RR;
-import springboot.template.global.util.UUIDUtil;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.SysDepartmentService;
 import springboot.template.mvc.service.UserInfoService;
@@ -30,7 +29,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping(value = "/", method = RequestMethod.GET)
-public class Testcontroller extends BaseController {
+public class Testcontroller {
     @Resource
     private UserInfoService userInfoService;
     @Resource
@@ -43,7 +42,7 @@ public class Testcontroller extends BaseController {
     @ResponseBody
     public PageInfo<UserInfo> list(UserInfo userInfo) {
         System.out.println("JSONArray.fromObject(userInfo) = " + JSONArray.fromObject(userInfo));
-        return userInfoService.listPageInfo(userInfo,new Page());
+        return userInfoService.list(userInfo,new Page());
     }
 
     @RequestMapping("find")
@@ -66,10 +65,6 @@ public class Testcontroller extends BaseController {
         return RR.ok(map);
     }
 
-    @RequestMapping("user")
-    public String user() {
-        return SYS_PATH + "user";
-    }
 
     @RequestMapping("insert")
     @ResponseBody

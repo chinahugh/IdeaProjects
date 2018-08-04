@@ -3,7 +3,6 @@ package springboot.template.global.util;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
-import springboot.template.global.shiro.ShiroUser;
 import springboot.template.mvc.entity.UserInfo;
 
 /**
@@ -11,7 +10,7 @@ import springboot.template.mvc.entity.UserInfo;
  * @Date 2018/7/16
  * @Description ShiroUtil shiro工具类
  */
-public class ShiroUtil {
+public class ShiroUtils {
     /**
      * 得到shiro主体
      *

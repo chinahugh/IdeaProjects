@@ -7,6 +7,8 @@ import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSource
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,6 +24,8 @@ import java.util.Map;
  */
 @Configuration
 public class ShiroConfig {
+    private final static Logger LOGGER = LoggerFactory.getLogger(ShiroConfig.class);
+
     /**
      * 注入自定义的realm，告诉shiro如何获取用户信息来做登录或权限控制
      *
@@ -41,23 +45,6 @@ public class ShiroConfig {
         creator.setUsePrefix(true);
         return creator;
     }
-    /**
-     * 这里统一做鉴权，即判断哪些请求路径需要用户登录，哪些请求路径不需要用户登录
-     *
-     * @return
-     */
-   /* @Bean
-    public ShiroFilterChainDefinition shiroFilterChainDefinition() {
-        DefaultShiroFilterChainDefinition chain = new DefaultShiroFilterChainDefinition();
-        //  chain.addPathDefinition("/userInfo/selectById", "authc, roles[admin]");
-        chain.addPathDefinition("/login", "anon");
-//        chain.addPathDefinition("/loginn", "anon");
-        chain.addPathDefinition("/static/**", "anon");
-//        chain.addPathDefinition("/userInfo/selectAll", "anon");
-//        chain.addPathDefinition("/userInfo/login", "anon");
-        chain.addPathDefinition("/**", "authc");
-        return chain;
-    }*/
 
     /**
      * SessionManager
@@ -87,6 +74,7 @@ public class ShiroConfig {
 
     /**
      * Filter工厂，设置对应的过滤条件和跳转条件
+     * 这里统一做鉴权，即判断哪些请求路径需要用户登录，哪些请求路径不需要用户登录
      *
      * @param securityManager
      * @return

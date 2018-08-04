@@ -13,7 +13,6 @@ import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.UserInfoService;
 
 import javax.annotation.Resource;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -42,7 +41,7 @@ public class UserInfoController extends BaseController{
     @RequestMapping("list")
     public R list(UserInfo userInfo) {
         Map map = RR.getMap();
-        PageInfo<UserInfo> list = userInfoService.listPageInfo(userInfo, new Page(1, 10));
+        PageInfo<UserInfo> list = userInfoService.list(userInfo, new Page(1, 10));
         map.put("page", list);
         map.put("entity", userInfo);
         return RR.ok(map);

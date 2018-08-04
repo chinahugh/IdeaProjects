@@ -1,7 +1,14 @@
 package springboot.template.mvc.service.base;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import org.apache.commons.lang.StringUtils;
+import springboot.template.global.util.UUIDUtils;
+import springboot.template.mvc.entity.base.BaseEntity;
 import springboot.template.mvc.mapper.base.BaseMapper;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -9,34 +16,80 @@ import java.util.List;
  * @Date 2018/7/29
  * @Description BaseService
  */
-public class BaseService<E> implements BaseMapper<E> {
-    @Override
+public class BaseService<D extends BaseMapper<E>, E extends BaseEntity> {
+    @Resource
+    protected D mapper;
+
+    /**
+     * 查找一个实例
+     *
+     * @param id
+     * @return
+     */
     public E get(String id) {
-        return null;
+        if (StringUtils.isBlank(id)) {
+            return null;
+        }
+        return mapper.get(id);
     }
 
-    @Override
+    /**
+     * 查找一个实例
+     *
+     * @param entity
+     * @return
+     */
     public E select(E entity) {
-        return null;
+        return mapper.select(entity);
     }
 
-    @Override
+    /**
+     * 删除一个实例
+     *
+     * @param id
+     * @return
+     */
     public int deleteByKey(String id) {
-        return 0;
+        return mapper.deleteByKey(id);
     }
+//    /**
+//     * 删除
+//     *
+//     * @param entity
+//     * @return
+//     */
+//    int delete(E entity);
 
-    @Override
+    /**
+     * 插入一个实例
+     *
+     * @param entity
+     * @return
+     */
     public int insert(E entity) {
-        return 0;
+        entity.setId(UUIDUtils.getUUid());
+        return mapper.insert(entity);
     }
 
-    @Override
+    /**
+     * 更新一个实例
+     *
+     * @param entity
+     * @return
+     */
     public int update(E entity) {
-        return 0;
+        return mapper.update(entity);
     }
 
-    @Override
-    public List<E> list(E entity) {
-        return null;
+    /**
+     * 列表
+     *
+     * @param entity
+     * @return
+     */
+    public PageInfo<E> list(E entity, Page<E> page) {
+        PageHelper.startPage(page.getPageNum(), page.getPageSize());
+        List<E> list = mapper.list(entity);
+        return new PageInfo<>(list);
     }
 }

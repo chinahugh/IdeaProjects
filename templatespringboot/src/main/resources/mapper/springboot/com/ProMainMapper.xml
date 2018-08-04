@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="springboot.com.mvc.mapper.ProMainMapper">
+    <sql id="FROM">
+    FROM pro_main a
+    </sql>
+    <sql id="join">
+        LEFT JOIN pro_data b
+    </sql>
+    <sql id="Base_Column_List">
+    a.id,a.user_id,a.sort,
+    a.d1 AS d1_id,
+a.d2 AS d1_id,
+a.d3 AS d1_id,
+a.d4 AS d1_id,
+a.d5 AS d1_id,
+a.d6 AS d1_id,
+a.d7 AS d1_id,
+a.d8 AS d1_id,
+a.d9 AS d1_id,
+a.d10 AS d1_id,
+a.d11 AS d1_id,
+a.d12 AS d1_id,
+a.d13 AS d1_id,
+a.d14 AS d1_id,
+a.d15 AS d1_id,
+a.d16 AS d1_id,
+a.d17 AS d1_id,
+a.d18 AS d1_id,
+a.d19 AS d1_id,
+a.d20 AS d1_id,
+a.d21 AS d1_id,
+a.d22 AS d1_id,
+a.d23 AS d1_id,
+a.d24 AS d1_id,
+a.d25 AS d1_id,
+a.d26 AS d1_id,
+a.d27 AS d1_id,
+a.d28 AS d1_id,
+a.d29 AS d1_id,
+a.d30 AS d1_id,
+a.d31 AS d1_id,
+    a.create_time,a.create_user_id,a.update_time,a.update_user_id,
+    a.is_disable,a.year,a.month,a.day,a.remarks,
+    a.ycqts,a.sjcqts,a.sj,a.bj,a.nj,a.hj,a.qq,a.kg,a.wdk,a.cd,
+    a.father_id,a.num1,a.num2,a.num3,a.num4,a.num5,a.num9,a.str_1,
+    a.str_2,a.str_3,a.str_4,a.str_5
+  </sql>
+    <sql id="WHERE">
+        <if test="id != null">
+            AND id = #{id,jdbcType=VARCHAR}
+        </if>
+        <if test="userId != null">
+            AND user_id = #{userId,jdbcType=VARCHAR}
+        </if>
+        <if test="sort != null">
+            AND sort = #{sort,jdbcType=INTEGER}
+        </if>
+        <if test="d1 != null">
+            AND d1 = #{d1.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d2 != null">
+            AND d2 = #{d2.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d3 != null">
+            AND d3 = #{d3.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d4 != null">
+            AND d4 = #{d4.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d5 != null">
+            AND d5 = #{d5.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d6 != null">
+            AND d6 = #{d6.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d7 != null">
+            AND d7 = #{d7.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d8 != null">
+            AND d8 = #{d8.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d9 != null">
+            AND d9 = #{d9.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d10 != null">
+            AND d10 = #{d10.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d11 != null">
+            AND d11 = #{d11.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d12 != null">
+            AND d12 = #{d12.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d13 != null">
+            AND d13 = #{d13.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d14 != null">
+            AND d14 = #{d14.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d15 != null">
+            AND d15 = #{d15.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d16 != null">
+            AND d16 = #{d16.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d17 != null">
+            AND d17 = #{d17.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d18 != null">
+            AND d18 = #{d18.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d19 != null">
+            AND d19 = #{d19.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d20 != null">
+            AND d20 = #{d20.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d21 != null">
+            AND d21 = #{d21.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d22 != null">
+            AND d22 = #{d22.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d23 != null">
+            AND d23 = #{d23.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d24 != null">
+            AND d24 = #{d24.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d25 != null">
+            AND d25 = #{d25.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d26 != null">
+            AND d26 = #{d26.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d27 != null">
+            AND d27 = #{d27.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d28 != null">
+            AND d28 = #{d28.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d29 != null">
+            AND d29 = #{d29.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d30 != null">
+            AND d30 = #{d30.id,jdbcType=VARCHAR}
+        </if>
+        <if test="d31 != null">
+            AND d31 = #{d31.id,jdbcType=VARCHAR}
+        </if>
+        <if test="createTime != null">
+            AND create_time = #{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="createUserId != null">
+            AND create_user_id = #{createUserId,jdbcType=VARCHAR}
+        </if>
+        <if test="updateTime != null">
+            AND update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateUserId != null">
+            AND update_user_id = #{updateUserId,jdbcType=VARCHAR}
+        </if>
+        <if test="isDisable != null">
+            AND is_disable = #{isDisable,jdbcType=INTEGER}
+        </if>
+
+        <if test="year != null">
+            AND year = #{year,jdbcType=INTEGER}
+        </if>
+        <if test="month != null">
+            AND month = #{month,jdbcType=INTEGER}
+        </if>
+        <if test="day != null">
+            AND day = #{day,jdbcType=INTEGER}
+        </if>
+        <if test="remarks != null">
+            AND remarks = #{remarks,jdbcType=VARCHAR}
+        </if>
+        <if test="ycqts != null">
+            AND ycqts = #{ycqts,jdbcType=INTEGER}
+        </if>
+        <if test="sjcqts != null">
+            AND sjcqts = #{sjcqts,jdbcType=INTEGER}
+        </if>
+        <if test="sj != null">
+            AND sj = #{sj,jdbcType=INTEGER}
+        </if>
+        <if test="bj != null">
+            AND bj = #{bj,jdbcType=INTEGER}
+        </if>
+        <if test="nj != null">
+            AND nj = #{nj,jdbcType=INTEGER}
+        </if>
+        <if test="hj != null">
+            AND hj = #{hj,jdbcType=INTEGER}
+        </if>
+        <if test="qq != null">
+            AND qq = #{qq,jdbcType=INTEGER}
+        </if>
+        <if test="kg != null">
+            AND kg = #{kg,jdbcType=INTEGER}
+        </if>
+        <if test="wdk != null">
+            AND wdk = #{wdk,jdbcType=INTEGER}
+        </if>
+        <if test="cd != null">
+            AND cd = #{cd,jdbcType=INTEGER}
+        </if>
+        <if test="fatherId != null">
+            AND father_id = #{fatherId,jdbcType=VARCHAR}
+        </if>
+        <if test="num1 != null">
+            AND num1 = #{num1,jdbcType=INTEGER}
+        </if>
+        <if test="num2 != null">
+            AND num2 = #{num2,jdbcType=INTEGER}
+        </if>
+        <if test="num3 != null">
+            AND num3 = #{num3,jdbcType=INTEGER}
+        </if>
+        <if test="num4 != null">
+            AND num4 = #{num4,jdbcType=INTEGER}
+        </if>
+        <if test="num5 != null">
+            AND num5 = #{num5,jdbcType=INTEGER}
+        </if>
+        <if test="num9 != null">
+            AND num9 = #{num9,jdbcType=INTEGER}
+        </if>
+        <if test="str1 != null">
+            AND str_1 = #{str1,jdbcType=VARCHAR}
+        </if>
+        <if test="str2 != null">
+            AND str_2 = #{str2,jdbcType=VARCHAR}
+        </if>
+        <if test="str3 != null">
+            AND str_3 = #{str3,jdbcType=VARCHAR}
+        </if>
+        <if test="str4 != null">
+            AND str_4 = #{str4,jdbcType=VARCHAR}
+        </if>
+        <if test="str5 != null">
+            AND str_5 = #{str5,jdbcType=VARCHAR}
+        </if>
+    </sql>
+    <select id="get" parameterType="java.lang.String" resultType="springboot.com.mvc.entity.ProMain">
+        select
+        <include refid="Base_Column_List"/>
+        <include refid="FROM"/>
+        where id = #{id,jdbcType=VARCHAR}
+    </select>
+    <select id="select" parameterType="java.lang.String" resultType="springboot.com.mvc.entity.ProMain">
+        select
+        <include refid="Base_Column_List"/>
+        <include refid="FROM"/>
+        <where>
+            <include refid="WHERE"/>
+        </where>
+    </select>
+    <delete id="deleteByKey" parameterType="java.lang.String">
+        delete from pro_main
+        where id = #{id,jdbcType=VARCHAR}
+    </delete>
+    <insert id="insert" parameterType="springboot.com.mvc.entity.ProMain">
+        insert into pro_main
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="sort != null">
+                sort,
+            </if>
+            <if test="d1 != null">
+                d1,
+            </if>
+            <if test="d2 != null">
+                d2,
+            </if>
+            <if test="d3 != null">
+                d3,
+            </if>
+            <if test="d4 != null">
+                d4,
+            </if>
+            <if test="d5 != null">
+                d5,
+            </if>
+            <if test="d6 != null">
+                d6,
+            </if>
+            <if test="d7 != null">
+                d7,
+            </if>
+            <if test="d8 != null">
+                d8,
+            </if>
+            <if test="d9 != null">
+                d9,
+            </if>
+            <if test="d10 != null">
+                d10,
+            </if>
+            <if test="d11 != null">
+                d11,
+            </if>
+            <if test="d12 != null">
+                d12,
+            </if>
+            <if test="d13 != null">
+                d13,
+            </if>
+            <if test="d14 != null">
+                d14,
+            </if>
+            <if test="d15 != null">
+                d15,
+            </if>
+            <if test="d16 != null">
+                d16,
+            </if>
+            <if test="d17 != null">
+                d17,
+            </if>
+            <if test="d18 != null">
+                d18,
+            </if>
+            <if test="d19 != null">
+                d19,
+            </if>
+            <if test="d20 != null">
+                d20,
+            </if>
+            <if test="d21 != null">
+                d21,
+            </if>
+            <if test="d22 != null">
+                d22,
+            </if>
+            <if test="d23 != null">
+                d23,
+            </if>
+            <if test="d24 != null">
+                d24,
+            </if>
+            <if test="d25 != null">
+                d25,
+            </if>
+            <if test="d26 != null">
+                d26,
+            </if>
+            <if test="d27 != null">
+                d27,
+            </if>
+            <if test="d28 != null">
+                d28,
+            </if>
+            <if test="d29 != null">
+                d29,
+            </if>
+            <if test="d30 != null">
+                d30,
+            </if>
+            <if test="d31 != null">
+                d31,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="createUserId != null">
+                create_user_id,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateUserId != null">
+                update_user_id,
+            </if>
+            <if test="isDisable != null">
+                is_disable,
+            </if>
+
+            <if test="year != null">
+                year,
+            </if>
+            <if test="month != null">
+                month,
+            </if>
+            <if test="day != null">
+                day,
+            </if>
+            <if test="remarks != null">
+                remarks,
+            </if>
+            <if test="ycqts != null">
+                ycqts,
+            </if>
+            <if test="sjcqts != null">
+                sjcqts,
+            </if>
+            <if test="sj != null">
+                sj,
+            </if>
+            <if test="bj != null">
+                bj,
+            </if>
+            <if test="nj != null">
+                nj,
+            </if>
+            <if test="hj != null">
+                hj,
+            </if>
+            <if test="qq != null">
+                qq,
+            </if>
+            <if test="kg != null">
+                kg,
+            </if>
+            <if test="wdk != null">
+                wdk,
+            </if>
+            <if test="cd != null">
+                cd,
+            </if>
+            <if test="fatherId != null">
+                father_id,
+            </if>
+            <if test="num1 != null">
+                num1,
+            </if>
+            <if test="num2 != null">
+                num2,
+            </if>
+            <if test="num3 != null">
+                num3,
+            </if>
+            <if test="num4 != null">
+                num4,
+            </if>
+            <if test="num5 != null">
+                num5,
+            </if>
+            <if test="num9 != null">
+                num9,
+            </if>
+            <if test="str1 != null">
+                str_1,
+            </if>
+            <if test="str2 != null">
+                str_2,
+            </if>
+            <if test="str3 != null">
+                str_3,
+            </if>
+            <if test="str4 != null">
+                str_4,
+            </if>
+            <if test="str5 != null">
+                str_5,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="sort != null">
+                #{sort,jdbcType=INTEGER},
+            </if>
+            <if test="d1 != null">
+                #{d1.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d2 != null">
+                #{d2.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d3 != null">
+                #{d3.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d4 != null">
+                #{d4.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d5 != null">
+                #{d5.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d6 != null">
+                #{d6.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d7 != null">
+                #{d7.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d8 != null">
+                #{d8.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d9 != null">
+                #{d9.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d10 != null">
+                #{d10.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d11 != null">
+                #{d11.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d12 != null">
+                #{d12.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d13 != null">
+                #{d13.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d14 != null">
+                #{d14.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d15 != null">
+                #{d15,jdbcType=VARCHAR},
+            </if>
+            <if test="d16 != null">
+                #{d16.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d17 != null">
+                #{d17.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d18 != null">
+                #{d18.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d19 != null">
+                #{d19.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d20 != null">
+                #{d20.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d21 != null">
+                #{d21.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d22 != null">
+                #{d22.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d23 != null">
+                #{d23.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d24 != null">
+                #{d24.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d25 != null">
+                #{d25.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d26 != null">
+                #{d26.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d27 != null">
+                #{d27.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d28 != null">
+                #{d28.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d29 != null">
+                #{d29.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d30 != null">
+                #{d30.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d31 != null">
+                #{d31.id,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUserId != null">
+                #{createUserId,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUserId != null">
+                #{updateUserId,jdbcType=VARCHAR},
+            </if>
+            <if test="isDisable != null">
+                #{isDisable,jdbcType=INTEGER},
+            </if>
+
+            <if test="year != null">
+                #{year,jdbcType=INTEGER},
+            </if>
+            <if test="month != null">
+                #{month,jdbcType=INTEGER},
+            </if>
+            <if test="day != null">
+                #{day,jdbcType=INTEGER},
+            </if>
+            <if test="remarks != null">
+                #{remarks,jdbcType=VARCHAR},
+            </if>
+            <if test="ycqts != null">
+                #{ycqts,jdbcType=INTEGER},
+            </if>
+            <if test="sjcqts != null">
+                #{sjcqts,jdbcType=INTEGER},
+            </if>
+            <if test="sj != null">
+                #{sj,jdbcType=INTEGER},
+            </if>
+            <if test="bj != null">
+                #{bj,jdbcType=INTEGER},
+            </if>
+            <if test="nj != null">
+                #{nj,jdbcType=INTEGER},
+            </if>
+            <if test="hj != null">
+                #{hj,jdbcType=INTEGER},
+            </if>
+            <if test="qq != null">
+                #{qq,jdbcType=INTEGER},
+            </if>
+            <if test="kg != null">
+                #{kg,jdbcType=INTEGER},
+            </if>
+            <if test="wdk != null">
+                #{wdk,jdbcType=INTEGER},
+            </if>
+            <if test="cd != null">
+                #{cd,jdbcType=INTEGER},
+            </if>
+            <if test="fatherId != null">
+                #{fatherId,jdbcType=VARCHAR},
+            </if>
+            <if test="num1 != null">
+                #{num1,jdbcType=INTEGER},
+            </if>
+            <if test="num2 != null">
+                #{num2,jdbcType=INTEGER},
+            </if>
+            <if test="num3 != null">
+                #{num3,jdbcType=INTEGER},
+            </if>
+            <if test="num4 != null">
+                #{num4,jdbcType=INTEGER},
+            </if>
+            <if test="num5 != null">
+                #{num5,jdbcType=INTEGER},
+            </if>
+            <if test="num9 != null">
+                #{num9,jdbcType=INTEGER},
+            </if>
+            <if test="str1 != null">
+                #{str1,jdbcType=VARCHAR},
+            </if>
+            <if test="str2 != null">
+                #{str2,jdbcType=VARCHAR},
+            </if>
+            <if test="str3 != null">
+                #{str3,jdbcType=VARCHAR},
+            </if>
+            <if test="str4 != null">
+                #{str4,jdbcType=VARCHAR},
+            </if>
+            <if test="str5 != null">
+                #{str5,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="update" parameterType="springboot.com.mvc.entity.ProMain">
+        update pro_main
+        <set>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="sort != null">
+                sort = #{sort,jdbcType=INTEGER},
+            </if>
+            <if test="d1 != null">
+                d1 = #{d1.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d2 != null">
+                d2 = #{d2.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d3 != null">
+                d3 = #{d3.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d4 != null">
+                d4 = #{d4.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d5 != null">
+                d5 = #{d5.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d6 != null">
+                d6 = #{d6.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d7 != null">
+                d7 = #{d7.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d8 != null">
+                d8 = #{d8.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d9 != null">
+                d9 = #{d9.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d10 != null">
+                d10 = #{d10.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d11 != null">
+                d11 = #{d11.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d12 != null">
+                d12 = #{d12.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d13 != null">
+                d13 = #{d13.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d14 != null">
+                d14 = #{d14.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d15 != null">
+                d15 = #{d15.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d16 != null">
+                d16 = #{d16.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d17 != null">
+                d17 = #{d17.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d18 != null">
+                d18 = #{d18.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d19 != null">
+                d19 = #{d19.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d20 != null">
+                d20 = #{d20.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d21 != null">
+                d21 = #{d21.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d22 != null">
+                d22 = #{d22.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d23 != null">
+                d23 = #{d23.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d24 != null">
+                d24 = #{d24.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d25 != null">
+                d25 = #{d25.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d26 != null">
+                d26 = #{d26.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d27 != null">
+                d27 = #{d27.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d28 != null">
+                d28 = #{d28.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d29 != null">
+                d29 = #{d29.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d30 != null">
+                d30 = #{d30.id,jdbcType=VARCHAR},
+            </if>
+            <if test="d31 != null">
+                d31 = #{d31.id,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUserId != null">
+                create_user_id = #{createUserId,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUserId != null">
+                update_user_id = #{updateUserId,jdbcType=VARCHAR},
+            </if>
+            <if test="isDisable != null">
+                is_disable = #{isDisable,jdbcType=INTEGER},
+            </if>
+
+            <if test="year != null">
+                year = #{year,jdbcType=INTEGER},
+            </if>
+            <if test="month != null">
+                month = #{month,jdbcType=INTEGER},
+            </if>
+            <if test="day != null">
+                day = #{day,jdbcType=INTEGER},
+            </if>
+            <if test="remarks != null">
+                remarks = #{remarks,jdbcType=VARCHAR},
+            </if>
+            <if test="ycqts != null">
+                ycqts = #{ycqts,jdbcType=INTEGER},
+            </if>
+            <if test="sjcqts != null">
+                sjcqts = #{sjcqts,jdbcType=INTEGER},
+            </if>
+            <if test="sj != null">
+                sj = #{sj,jdbcType=INTEGER},
+            </if>
+            <if test="bj != null">
+                bj = #{bj,jdbcType=INTEGER},
+            </if>
+            <if test="nj != null">
+                nj = #{nj,jdbcType=INTEGER},
+            </if>
+            <if test="hj != null">
+                hj = #{hj,jdbcType=INTEGER},
+            </if>
+            <if test="qq != null">
+                qq = #{qq,jdbcType=INTEGER},
+            </if>
+            <if test="kg != null">
+                kg = #{kg,jdbcType=INTEGER},
+            </if>
+            <if test="wdk != null">
+                wdk = #{wdk,jdbcType=INTEGER},
+            </if>
+            <if test="cd != null">
+                cd = #{cd,jdbcType=INTEGER},
+            </if>
+            <if test="fatherId != null">
+                father_id = #{fatherId,jdbcType=VARCHAR},
+            </if>
+            <if test="num1 != null">
+                num1 = #{num1,jdbcType=INTEGER},
+            </if>
+            <if test="num2 != null">
+                num2 = #{num2,jdbcType=INTEGER},
+            </if>
+            <if test="num3 != null">
+                num3 = #{num3,jdbcType=INTEGER},
+            </if>
+            <if test="num4 != null">
+                num4 = #{num4,jdbcType=INTEGER},
+            </if>
+            <if test="num5 != null">
+                num5 = #{num5,jdbcType=INTEGER},
+            </if>
+            <if test="num9 != null">
+                num9 = #{num9,jdbcType=INTEGER},
+            </if>
+            <if test="str1 != null">
+                str_1 = #{str1,jdbcType=VARCHAR},
+            </if>
+            <if test="str2 != null">
+                str_2 = #{str2,jdbcType=VARCHAR},
+            </if>
+            <if test="str3 != null">
+                str_3 = #{str3,jdbcType=VARCHAR},
+            </if>
+            <if test="str4 != null">
+                str_4 = #{str4,jdbcType=VARCHAR},
+            </if>
+            <if test="str5 != null">
+                str_5 = #{str5,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+    <select id="list" parameterType="springboot.com.mvc.entity.ProMain" resultType="springboot.com.mvc.entity.ProMain">
+        SELECT
+        <include refid="Base_Column_List"/>
+        <include refid="FROM"/>
+        <where>
+            <include refid="WHERE"/>
+        </where>
+    </select>
+</mapper>
