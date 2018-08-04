@@ -14,11 +14,10 @@ public class R  implements Serializable {
     private static final long serialVersionUID = -4306581789984092527L;
     private int code;
     private String msg;
-    private Map<String,Object> data =new HashMap();
+    private Map<String,Object> data ;
 
     public R() {
     }
-
     public R(RC code, String msg, Map<String, Object> data) {
         this.code = code.code;
         this.msg = msg;
@@ -26,7 +25,7 @@ public class R  implements Serializable {
     }
 
     public int getCode() {
-        return code;
+         return code;
     }
 
     public void setCode(RC code) {

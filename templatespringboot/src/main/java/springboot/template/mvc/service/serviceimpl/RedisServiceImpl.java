@@ -87,13 +87,10 @@ public class RedisServiceImpl implements RedisService {
     @Override
     public long rpush(final String key, Object obj) {
         final String value = JSON.toJSONString(obj);
-        long result = redisTemplate.execute(new RedisCallback<Long>() {
-            @Override
-            public Long doInRedis(RedisConnection connection) throws DataAccessException {
-                RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
-                long count = connection.rPush(serializer.serialize(key), serializer.serialize(value));
-                return count;
-            }
+        long result = redisTemplate.execute((RedisCallback<Long>) connection -> {
+            RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
+            long count = connection.rPush(serializer.serialize(key), serializer.serialize(value));
+            return  count;
         });
         return result;
     }

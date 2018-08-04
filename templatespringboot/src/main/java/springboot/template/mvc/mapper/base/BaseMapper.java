@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface BaseMapper<E> {
     /**
+     * 查找一个实例
+     *
      * @param id
      * @return
      */
@@ -21,8 +23,9 @@ public interface BaseMapper<E> {
      * @return
      */
     E select(E entity);
+
     /**
-     * 删除
+     * 删除一个实例
      *
      * @param id
      * @return
@@ -37,14 +40,12 @@ public interface BaseMapper<E> {
 //    int delete(E entity);
 
     /**
-     * 插入
+     * 插入一个实例
      *
      * @param entity
      * @return
      */
     int insert(E entity);
-
-
 
     /**
      * 更新一个实例

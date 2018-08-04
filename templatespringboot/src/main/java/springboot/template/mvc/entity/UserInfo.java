@@ -3,6 +3,9 @@ package springboot.template.mvc.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import springboot.template.mvc.entity.base.DateEntity;
 
+import javax.persistence.Column;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.Set;
 
@@ -20,6 +23,8 @@ public class UserInfo extends DateEntity {
     /**
      * 登录名
      */
+    @NotBlank(message = "name not null")
+    @Column
     private String userName;
     /**
      * 密码

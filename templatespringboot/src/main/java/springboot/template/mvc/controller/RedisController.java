@@ -19,7 +19,7 @@ import java.util.Map;
  */
 @Controller
 @ResponseBody
-@RequestMapping(value = "/redis/", method = RequestMethod.GET)
+@RequestMapping(value = "/sys/redis/", method = RequestMethod.GET)
 public class RedisController {
     @Resource
     private RedisService redisService;

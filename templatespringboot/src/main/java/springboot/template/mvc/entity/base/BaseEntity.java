@@ -2,6 +2,9 @@ package springboot.template.mvc.entity.base;
 
 import org.apache.commons.lang.StringUtils;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**

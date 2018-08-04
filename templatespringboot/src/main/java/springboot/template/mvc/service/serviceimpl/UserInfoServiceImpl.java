@@ -1,12 +1,15 @@
 package springboot.template.mvc.service.serviceimpl;
 
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.apache.poi.ss.formula.functions.T;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import springboot.template.global.util.UUIDUtil;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.mapper.UserInfoMapper;
 import springboot.template.mvc.service.UserInfoService;
+import springboot.template.mvc.util.DateUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -32,9 +35,22 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
     @Override
-    public PageInfo<UserInfo> listPageInfo(UserInfo userInfo) {
-        PageHelper.startPage(1, 10);
+    public PageInfo<UserInfo> listPageInfo(UserInfo userInfo,Page page) {
+        PageHelper.startPage(page.getPageNum(),page.getPageSize());
         List<UserInfo> list = userInfoMapper.list(userInfo);
         return new PageInfo<>(list);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public int insert(UserInfo userInfo) {
+        userInfo.setId(UUIDUtil.getUUid());
+        userInfo.setCreateTime(DateUtils.getNowDate());
+        return userInfoMapper.insert(userInfo);
+    }
+    @Override
+    public int update(UserInfo userInfo) {
+        userInfo.setCreateTime(DateUtils.getNowDate());
+        return userInfoMapper.update(userInfo);
     }
 }

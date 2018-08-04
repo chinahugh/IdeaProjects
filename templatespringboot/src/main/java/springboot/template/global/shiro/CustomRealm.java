@@ -98,7 +98,7 @@ public class CustomRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(oneUser, oneUser.getUserPassword(), getName());
         /*密码盐*/
         String SALT = "!@#$%^&";
-        info.setCredentialsSalt(ByteSource.Util.bytes(SALT));
+//        info.setCredentialsSalt(ByteSource.Util.bytes(SALT));
         return info;
     }
 }

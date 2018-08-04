@@ -1,7 +1,7 @@
 package springboot.template.mvc.entity;
 
 import springboot.template.mvc.entity.base.BaseEntity;
-
+import springboot.template.mvc.entity.base.DateEntity;
 
 /**
  *
@@ -10,7 +10,7 @@ import springboot.template.mvc.entity.base.BaseEntity;
  *
  * @mbg.generated do_not_delete_during_merge
  */
-public class SysPermission extends BaseEntity {
+public class SysPermission extends DateEntity {
     private static final long serialVersionUID = -308404943148366278L;
     public SysPermission(){
        super();

@@ -109,10 +109,9 @@
                 if (result.code == 200) {
                     console.log(JSON.stringify(result.data.user));
                     setCookie("userName",result.data.user.userName);
-                    window.location = "index";
+                    window.location.href = "index.html";
                 } else {
                    $('#msg').html(result.msg).show(50);
-
                 }
             }
         });

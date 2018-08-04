@@ -6,4 +6,5 @@ package springboot.template.global.shiro;
  * @Description ShiroUser
  */
 public class ShiroUser {
+
 }

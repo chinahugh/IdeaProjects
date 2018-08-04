@@ -119,14 +119,16 @@ public class WebConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/swagger-ui.html")
-                .addResourceLocations("classpath:/resources/");
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+        registry.addResourceHandler("/favicon.ico")
+                .addResourceLocations("classpath:/META-INF/resources/favicon.ico");
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/");
         registry.addResourceHandler("/templates/a/**")
                 .addResourceLocations("classpath:/templates/a/");
-//        registry.addResourceHandler("/logo.png")
-//                .addResourceLocations("classpath:/static/img/logo.png");
         super.addResourceHandlers(registry);
     }
     private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {

@@ -1,5 +1,6 @@
 package springboot.template.mvc.service;
 
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
 import springboot.template.mvc.entity.UserInfo;
 
@@ -27,5 +28,13 @@ public interface UserInfoService  {
      * @param userInfo
      * @return
      */
-    PageInfo<UserInfo> listPageInfo(UserInfo userInfo);
+    PageInfo<UserInfo> listPageInfo(UserInfo userInfo, Page page);
+
+    /**
+     * 新增user
+     * @param userInfo
+     */
+    int insert(UserInfo userInfo);
+
+    int update(UserInfo userInfo);
 }

@@ -1,5 +1,6 @@
 package springboot.template.global.result;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -31,5 +32,12 @@ public class RR {
     }
     public static R error(RC rc,String message) {
         return makeR(rc, message, null);
+    }
+
+    public static Map<String, Object> getMap(int initialCapacity) {
+        return new HashMap<>(initialCapacity);
+    }
+    public static Map<String, Object> getMap() {
+        return getMap(5);
     }
 }

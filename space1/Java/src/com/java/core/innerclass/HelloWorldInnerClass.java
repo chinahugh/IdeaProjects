@@ -23,5 +23,16 @@ public class HelloWorldInnerClass {
     public static void main(String[] args) {
         HelloWorldInnerClass helloWorldInnerClass = new HelloWorldInnerClass();
         helloWorldInnerClass.inner.disPlay();
+        A a = new A();
+        A.Inner inner = a.new Inner();
+
+    }
+}
+
+
+class A{
+    private String s="aa";
+    class Inner{
+        private int anInt=000;
     }
 }

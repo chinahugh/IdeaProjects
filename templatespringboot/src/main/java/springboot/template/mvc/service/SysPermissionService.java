@@ -1,5 +1,7 @@
 package springboot.template.mvc.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageInfo;
 import springboot.template.mvc.entity.SysPermission;
 
 import java.util.List;
@@ -16,4 +18,11 @@ public interface SysPermissionService {
      * @return
      */
     List<SysPermission> getUserPermissions(String id);
+
+    SysPermission get(String id);
+
+    PageInfo<SysPermission> listPage(SysPermission sysPermission, Page page);
+
+    int save(SysPermission sysPermission);
+    int update(SysPermission sysPermission);
 }

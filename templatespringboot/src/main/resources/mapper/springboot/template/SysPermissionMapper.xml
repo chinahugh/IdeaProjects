@@ -24,49 +24,49 @@
   </sql>
     <sql id="where">
         <if test="id != null">
-            AND id = #{id,jdbcType=VARCHAR},
+            AND id = #{id,jdbcType=VARCHAR}
         </if>
         <if test="url != null">
-            AND url = #{url,jdbcType=VARCHAR},
+            AND url = #{url,jdbcType=VARCHAR}
         </if>
         <if test="urlName != null">
-            AND url_name = #{urlName,jdbcType=VARCHAR},
+            AND url_name = #{urlName,jdbcType=VARCHAR}
         </if>
         <if test="urlImg != null">
-            AND url_img = #{urlImg,jdbcType=VARCHAR},
+            AND url_img = #{urlImg,jdbcType=VARCHAR}
         </if>
         <if test="type != null">
-            AND type = #{type,jdbcType=INTEGER},
+            AND type = #{type,jdbcType=INTEGER}
         </if>
         <if test="fatherId != null">
-            AND father_id = #{fatherId,jdbcType=VARCHAR},
+            AND father_id = #{fatherId,jdbcType=VARCHAR}
         </if>
         <if test="fatherIds != null">
-            AND father_ids = #{fatherIds,jdbcType=VARCHAR},
+            AND father_ids = #{fatherIds,jdbcType=VARCHAR}
         </if>
         <if test="sort != null">
-            AND sort = #{sort,jdbcType=INTEGER},
+            AND sort = #{sort,jdbcType=INTEGER}
         </if>
         <if test="permission != null">
-            AND permission = #{permission,jdbcType=VARCHAR},
+            AND permission = #{permission,jdbcType=VARCHAR}
         </if>
         <if test="remarks != null">
-            AND remarks = #{remarks,jdbcType=VARCHAR},
+            AND remarks = #{remarks,jdbcType=VARCHAR}
         </if>
         <if test="createTime != null">
-            AND create_time = #{createTime,jdbcType=TIMESTAMP},
+            AND create_time = #{createTime,jdbcType=TIMESTAMP}
         </if>
         <if test="createUserId != null">
-            AND create_user_id = #{createUserId,jdbcType=VARCHAR},
+            AND create_user_id = #{createUserId,jdbcType=VARCHAR}
         </if>
         <if test="updateTime != null">
-            AND update_time = #{updateTime,jdbcType=TIMESTAMP},
+            AND update_time = #{updateTime,jdbcType=TIMESTAMP}
         </if>
         <if test="updateUserId != null">
-            AND update_user_id = #{updateUserId,jdbcType=VARCHAR},
+            AND update_user_id = #{updateUserId,jdbcType=VARCHAR}
         </if>
         <if test="isDisable != null">
-            AND is_disable = #{isDisable,jdbcType=INTEGER},
+            AND is_disable = #{isDisable,jdbcType=INTEGER}
         </if>
     </sql>
     <select id="get" parameterType="java.lang.String" resultMap="BaseResultMap">
