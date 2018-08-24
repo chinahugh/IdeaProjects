@@ -10,7 +10,7 @@ import springboot.template.mvc.service.base.BaseService;
  * @Date 2018/6/14
  * @Description SysDepartmentService
  */
-@Service
+@Service("sysDepartmentService")
 public class SysDepartmentService extends BaseService<SysDepartmentMapper,SysDepartment> {
 
 }

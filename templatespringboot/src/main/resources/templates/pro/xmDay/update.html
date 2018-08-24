@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script th:src="@{/static/js/jquery.min.js}" src="/static/js/jquery.min.js"></script>
+    <script th:src="@{/static/js/bootstrap.min.js}" src="/static/js/bootstrap.min.js"></script>
+    <link th:href="@{/static/css/bootstrap.min.css}" href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/static/css/font-awesome.min.css}" href="/static/css/font-awesome.min.css"/>
+    <title>个人月打卡信息修改</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center jumbotron">个人月打卡信息修改</h1>
+    <div class="main-content">
+        <div class="page-content">
+            <div class="page-content-area">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" role="form" th:action="@{/pro/xmDay/update}">
+                            <input name="id" th:value="${entity.id}" hidden/>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 日期：</label>
+
+                                <div class="col-sm-2">
+                                    <input name="sysDay" th:value="${entity.sysDay}" class="col-xs-4 col-sm-9"
+                                           readonly=""/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">早上打卡时间： </label>
+
+                                <div class="col-sm-2">
+                                    <input name="mData" placeholder="早上打卡时间" th:value="${entity.mData}"
+                                           class=" col-xs-4 col-sm-9" maxlength="5"/>
+                                </div>
+                                <label class="col-sm-2 control-label no-padding-right">早上打卡标志： </label>
+
+                                <div class="col-sm-2">
+                                    <input name="mTag" placeholder="早上打卡标志" th:value="${entity.mTag}"
+                                           class=" col-xs-4 col-sm-9" maxlength="1"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">下午打卡时间： </label>
+
+                                <div class="col-sm-2">
+                                    <input name="pData" placeholder="下午打卡时间" th:value="${entity.pData}"
+                                           class=" col-xs-4 col-sm-9" maxlength="5"/>
+                                </div>
+                                <label class="col-sm-2 control-label no-padding-right">
+                                    下午打卡标志：</label>
+
+                                <div class="col-sm-2">
+                                    <input name="pTag" placeholder="下午打卡标志" th:value="${entity.pTag}"
+                                           class="col-xs-4 col-sm-9" maxlength="1"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">备注：</label>
+                                <div class="col-sm-9">
+                                    <div class="pos-rel">
+                                        <textarea class="form-control limited autosize-transition" name="remarks"
+                                                  maxlength="50" th:text="${entity.remarks}" title=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        立即提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

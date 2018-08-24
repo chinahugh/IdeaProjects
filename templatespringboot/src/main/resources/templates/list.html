@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html type="zh">
-<head >
+<head>
     <title>Bootstrap 模板</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <!-- 引入 Bootstrap -->
@@ -31,19 +31,20 @@
 <script type="text/javascript">
     $(document).ready(function () {
         function init() {
-            var data={};
-            data.hello="hello";
+            var data = {};
+            data.hello = "hello";
             $.ajax({
-                url:"/hello",
-                type:"get",
-                dataText:json,
-                success:function (resule) {
-                   displan(resule);
+                url: "/hello",
+                type: "get",
+                dataText: json,
+                success: function (resule) {
+                    displan(resule);
                 }
             });
         }
     });
-    function displan(resule){
+
+    function displan(resule) {
         console.log(JSON.stringify(resule))
     }
 </script>

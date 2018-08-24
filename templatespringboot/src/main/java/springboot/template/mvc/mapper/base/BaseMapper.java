@@ -1,5 +1,7 @@
 package springboot.template.mvc.mapper.base;
 
+import springboot.template.mvc.entity.base.BaseEntity;
+
 import java.util.List;
 
 /**
@@ -7,7 +9,7 @@ import java.util.List;
  * @Date 2018/6/10
  * @Description BaseMapper
  */
-public interface BaseMapper<E> {
+public interface BaseMapper<E extends BaseEntity> {
     /**
      * 查找一个实例
      *

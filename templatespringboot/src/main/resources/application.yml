@@ -1,7 +1,7 @@
 #server访问端口
 server:
   port: 8080
-debug: false
+debug: true
 #spring 配置
 spring:
 #数据库
@@ -52,16 +52,18 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     encoding: utf-8
+    check-template: true
     servlet:
       content-type: text/html
-#  aop:
-#    auto: true
-#    proxy-target-class: true
+  aop:
+    proxy-target-class: true
+    auto: true
   mvc:
   #出现 404 错误时, 直接抛出异常
     throw-exception-if-no-handler-found: true
   resources:
   #不要为资源文件建立映射.
+    static-locations: /static/
     add-mappings: false
 mybatis:
   mapper-locations: classpath:mapper/**/*.xml
@@ -69,6 +71,7 @@ mybatis:
   # 打印sql
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
 #pagehelper分页插件
 pagehelper:
   helperDialect: mysql
@@ -76,10 +79,10 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
   page-size-zero: true
+  offset-as-page-num: 10
 logging:
   config: classpath:log4j2.yml
 #項目自身配置
 myconfig:
   id:
      type: 2
-

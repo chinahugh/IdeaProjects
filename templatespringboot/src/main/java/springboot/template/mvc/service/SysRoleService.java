@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2018/6/30
  * @Description SysRoleService
  */
-@Service
+@Service("sysRoleService")
 public class SysRoleService extends BaseService<SysRoleMapper,SysRole>{
     public List<SysRole> getUserRoles(String userId){
         return mapper.getUserRoles(userId);

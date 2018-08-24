@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.RequestMapping;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -25,10 +26,13 @@ public class SwaggerConfig {
 
     @Bean
     public Docket createRestApi() {
+//        com.google.common.base.Predicate<RequestHandler> selector1 = RequestHandlerSelectors.basePackage("springboot.template.mvc.controller");
+//        com.google.common.base.Predicate<RequestHandler> selector2 = RequestHandlerSelectors.basePackage("springboot.com.mvc.controller");
+
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("springboot.template.mvc.controller"))
+                .apis(RequestHandlerSelectors.withClassAnnotation(RequestMapping.class))
                 .paths(PathSelectors.any())
                 .build();
     }

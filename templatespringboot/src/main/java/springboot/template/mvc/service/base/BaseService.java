@@ -4,11 +4,12 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang.StringUtils;
-import springboot.template.global.util.UUIDUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+import springboot.template.global.exception.ServiceException;
 import springboot.template.mvc.entity.base.BaseEntity;
 import springboot.template.mvc.mapper.base.BaseMapper;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -17,79 +18,64 @@ import java.util.List;
  * @Description BaseService
  */
 public class BaseService<D extends BaseMapper<E>, E extends BaseEntity> {
-    @Resource
+    @Autowired
     protected D mapper;
 
-    /**
-     * 查找一个实例
-     *
-     * @param id
-     * @return
-     */
     public E get(String id) {
-        if (StringUtils.isBlank(id)) {
-            return null;
+        E entity = null;
+        if (StringUtils.isNotBlank(id)) {
+            entity=mapper.get(id);
         }
-        return mapper.get(id);
+        return entity;
     }
 
-    /**
-     * 查找一个实例
-     *
-     * @param entity
-     * @return
-     */
     public E select(E entity) {
+        if (entity == null) {
+            return null;
+        }
         return mapper.select(entity);
     }
 
-    /**
-     * 删除一个实例
-     *
-     * @param id
-     * @return
-     */
     public int deleteByKey(String id) {
+        if (id == null) {
+            return 0;
+        }
         return mapper.deleteByKey(id);
     }
-//    /**
-//     * 删除
-//     *
-//     * @param entity
-//     * @return
-//     */
-//    int delete(E entity);
 
-    /**
-     * 插入一个实例
-     *
-     * @param entity
-     * @return
-     */
     public int insert(E entity) {
-        entity.setId(UUIDUtils.getUUid());
+        if (entity == null) {
+            return 0;
+        }
         return mapper.insert(entity);
     }
-
-    /**
-     * 更新一个实例
-     *
-     * @param entity
-     * @return
-     */
+@Transactional(rollbackFor = ServiceException.class)
     public int update(E entity) {
+        if (entity == null) {
+            return 0;
+        }
         return mapper.update(entity);
     }
 
-    /**
-     * 列表
-     *
-     * @param entity
-     * @return
-     */
+    public List<E> list(E entity) {
+        if (entity == null) {
+            return null;
+        }
+        return mapper.list(entity);
+    }
+
     public PageInfo<E> list(E entity, Page<E> page) {
+        if (entity == null) {
+            return null;
+        }
+        if (page == null) {
+            page = new Page<>();
+        }
         PageHelper.startPage(page.getPageNum(), page.getPageSize());
-        List<E> list = mapper.list(entity);
-        return new PageInfo<>(list);
+        List<E> list = list(entity);
+        if (list != null && list.size() > 0) {
+            return new PageInfo<>(list);
+        }
+        return null;
     }
 }

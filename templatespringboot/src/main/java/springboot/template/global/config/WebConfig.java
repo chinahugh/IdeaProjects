@@ -16,10 +16,12 @@ import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.NoHandlerFoundException;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springboot.template.global.exception.ServiceException;
+import springboot.template.global.intercepter.InterceptorConfig;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RC;
 import springboot.template.global.result.RR;
@@ -79,7 +81,8 @@ public class WebConfig extends WebMvcConfigurationSupport {
                 //List字段如果为null, 输出为[],而非null
                 SerializerFeature.WriteNullListAsEmpty,
                 //map null ->{}
-                SerializerFeature.WriteMapNullValue
+                SerializerFeature.WriteMapNullValue,
+                SerializerFeature.WriteDateUseDateFormat
         );
         converter.setFastJsonConfig(fastJsonConfig);
         converter.setDefaultCharset(Charset.forName("UTF-8"));
@@ -102,7 +105,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
             @Nullable
             @Override
             public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex) {
-                LOGGER.error(ex.getMessage(),ex);
+//                LOGGER.error(ex.getMessage(),ex);
                 //根据异常类型确定返回数据
                 R result = getResuleByHeandleException(request, handler, ex);
                 //响应结果
@@ -124,29 +127,35 @@ public class WebConfig extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
         registry.addResourceHandler("/favicon.ico")
-                .addResourceLocations("classpath:/META-INF/resources/favicon.ico");
+                .addResourceLocations("classpath:/static/favicon.ico");
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/templates/a/**")
-                .addResourceLocations("classpath:/templates/a/");
+        registry.addResourceHandler("/templates/**")
+                .addResourceLocations("classpath:/templates/");
+
         super.addResourceHandlers(registry);
     }
     private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
         if (e instanceof ServiceException) {
+            LOGGER.error("ServiceException",e);
             return RR.error(e.getMessage());
         }
         if (e instanceof NoHandlerFoundException) {
+            LOGGER.error("NoHandlerFoundException",e);
             return RR.error("接口 [" + request.getRequestURI() + "] 不存在");
         }
         if (e instanceof HttpRequestMethodNotSupportedException) {
+            LOGGER.error("HttpRequestMethodNotSupportedException",e);
             return RR.error(RC.INTERNAL_SERVER_ERROR, "接口 [" + request.getRequestURI() + "] 不能使用GET访问");
         }
         if (handler instanceof HandlerMethod) {
+            LOGGER.error("HandlerMethod",e);
             HandlerMethod handlerMethod = (HandlerMethod) handler;
             String msg = String.format("接口 [%s] 出现异常，方法：%s.%s，异常摘要：%s", request.getRequestURI(),
                     handlerMethod.getBean().getClass().getName(), handlerMethod.getMethod().getName(), e.getMessage());
             return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
         }
+        LOGGER.error(e.getMessage(),e);
         String msg="接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员"+e.getMessage();
 
         return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
@@ -159,7 +168,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
         try {
             response.getWriter().write(JSON.toJSONString(result, SerializerFeature.WriteMapNullValue));
         } catch (IOException ex) {
-            LOGGER.error(ex.getMessage());
+            LOGGER.error(ex.getMessage(),ex);
         }
     }
 
@@ -184,4 +193,20 @@ public class WebConfig extends WebMvcConfigurationSupport {
         supportedMediaTypes.add(MediaType.TEXT_XML);
         return supportedMediaTypes;
     }
+
+    public InterceptorConfig interceptorConfig(){
+        return new InterceptorConfig();
+    }
+    /**
+     * Override this method to add Spring MVC interceptors for
+     * pre- and post-processing of controller invocation.
+     *
+     * @param registry
+     * @see InterceptorRegistry
+     */
+    @Override
+    protected void addInterceptors(InterceptorRegistry registry) {
+      registry.addInterceptor(interceptorConfig());
+    }
+    
 }

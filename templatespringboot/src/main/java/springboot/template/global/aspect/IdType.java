@@ -13,8 +13,7 @@ import org.springframework.stereotype.Component;
  * @Date 2018/7/29
  * @Description IdType
  */
-@Aspect
-@Component
+
 public class IdType {
     /**
      * id生成方式

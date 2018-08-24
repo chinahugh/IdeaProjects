@@ -9,7 +9,7 @@ import java.util.List;
  * @Date 2018/6/10
  * @Description RedisService redis常用方法
  */
-@Service
+@Service("redisService")
 public interface RedisService {
     /**
      * 设置给定 key 的值。如果 key 已经存储其他值， SET 就覆写旧值，且无视类型。

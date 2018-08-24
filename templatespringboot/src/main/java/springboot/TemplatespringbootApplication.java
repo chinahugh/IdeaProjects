@@ -5,11 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages={"springboot.template.mvc.mapper","springboot.com.mvc.mapper"})  //扫描dao包位置
+@MapperScan(basePackages = {"springboot.template.mvc.mapper", "springboot.com.mvc.mapper"})  //扫描dao包位置
 //@EnableScheduling //定时任务
 public class TemplatespringbootApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(TemplatespringbootApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TemplatespringbootApplication.class, args);
+    }
 }

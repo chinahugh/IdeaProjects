@@ -2,9 +2,6 @@ package springboot.template.mvc.entity.base;
 
 import org.apache.commons.lang.StringUtils;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
@@ -12,7 +9,7 @@ import java.io.Serializable;
  * @Date 2018/7/1
  * @Description BaseEntity
  */
-public class BaseEntity implements Serializable {
+public class BaseEntity implements Serializable,Cloneable {
     private static final long serialVersionUID = -7202325628651053055L;
     /**
      * 是否初建
@@ -23,7 +20,7 @@ public class BaseEntity implements Serializable {
      */
     protected String id;
     /**
-     * 是否禁用 0否 1是 2 待审核
+     * 标志（0 正常 1 禁用 2 待审核）
      */
     protected Integer isDisable;
 
@@ -60,5 +57,10 @@ public class BaseEntity implements Serializable {
 
     public void setIsDisable(Integer isDisable) {
         this.isDisable = isDisable;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

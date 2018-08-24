@@ -8,7 +8,8 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.util.ByteSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import springboot.template.global.exception.ServiceException;
 import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.entity.SysRole;
 import springboot.template.mvc.entity.UserInfo;
@@ -16,7 +17,6 @@ import springboot.template.mvc.service.SysPermissionService;
 import springboot.template.mvc.service.SysRoleService;
 import springboot.template.mvc.service.UserInfoService;
 
-import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.List;
 
@@ -26,11 +26,11 @@ import java.util.List;
  * @Description CustomRealm  自定义如何查询用户信息，如何查询用户的角色和权限，如何校验密码等逻辑
  */
 public class CustomRealm extends AuthorizingRealm {
-    @Resource
+    @Autowired
     private UserInfoService userInfoService;
-    @Resource
+    @Autowired
     private SysRoleService userRoleService;
-    @Resource
+    @Autowired
     private SysPermissionService sysPermissionService;
 
    /*   告诉shiro如何根据获取到的用户信息中的密码和盐值来校验密码*/
@@ -85,6 +85,9 @@ public class CustomRealm extends AuthorizingRealm {
         System.out.println("JSONArray.fromObject(oneUser) = " + JSONArray.fromObject(oneUser));
         if (oneUser == null) {
             throw new UnknownAccountException("No account found for admin [" + username + "]");
+        }
+        if (oneUser.getIsDisable()==2) {
+            throw new ServiceException("账号还未通过审核,请联系管理员");
         }
         //查询用户的角色和权限存到SimpleAuthenticationInfo中，这样在其它地方
         //SecurityUtils.getSubject().getPrincipal()就能拿出用户的所有信息，包括角色和权限

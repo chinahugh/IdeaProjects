@@ -4,15 +4,18 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RH;
 import springboot.template.global.result.RR;
 import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.service.SysPermissionService;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**
@@ -24,7 +27,7 @@ import java.util.Map;
 @ResponseBody
 @RequestMapping(value = "/sys/menu/", method = RequestMethod.POST)
 public class MenuController extends BaseController{
-    @Resource
+    @Autowired
     private SysPermissionService sysPermissionService;
 
     @ModelAttribute

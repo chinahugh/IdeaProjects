@@ -1,5 +1,6 @@
 package springboot.template.mvc.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +10,6 @@ import springboot.template.global.result.R;
 import springboot.template.global.result.RR;
 import springboot.template.mvc.service.RedisService;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**
@@ -21,7 +21,7 @@ import java.util.Map;
 @ResponseBody
 @RequestMapping(value = "/sys/redis/", method = RequestMethod.GET)
 public class RedisController {
-    @Resource
+    @Autowired(required=false)
     private RedisService redisService;
 
     @RequestMapping("setReids")

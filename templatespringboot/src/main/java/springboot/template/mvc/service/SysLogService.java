@@ -10,6 +10,6 @@ import springboot.template.mvc.service.base.BaseService;
  * @Date 2018/8/4
  * @Description SysLogService
  */
-@Service
+@Service("sysLogService")
 public class SysLogService extends BaseService<SysLogMapper,SysLog> {
 }

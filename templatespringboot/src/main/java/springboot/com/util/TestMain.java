@@ -19,6 +19,15 @@ public class TestMain {
             System.out.print("a.d"+i+".p_tag,");
         }
     }
+
+    @Test
+    public void C(){
+        for (int i = 1; i <32 ; i++) {
+            System.out.println("  if (proMain.getD"+i+"()!=null&&StringUtils.isNotBlank(proMain.getD"+i+"().getId())) {\n" +
+                    "            proMain.setD"+i+"(proDataMapper.get(proMain.getD"+i+"().getId()));\n" +
+                    "        }");
+        }
+    }
     @Test
     public void B(){
         String a="              ";

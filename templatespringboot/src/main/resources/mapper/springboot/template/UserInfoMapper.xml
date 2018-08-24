@@ -5,6 +5,7 @@
         <id column="id" jdbcType="VARCHAR" property="id"/>
         <result column="user_name" jdbcType="VARCHAR" property="userName"/>
         <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="department_id" jdbcType="VARCHAR" property="departmentId"/>
         <result column="phone" jdbcType="VARCHAR" property="phone"/>
         <result column="adress" jdbcType="VARCHAR" property="adress"/>
@@ -25,7 +26,7 @@
     </resultMap>
     <sql id="From"> from user_info a </sql>
     <sql id="Base_Column_List">
-        id, user_name, user_password, department_id, phone, adress, email, born, sex, img,
+        id, user_name, user_password,name, department_id, phone, adress, email, born, sex, img,
         remarks, this_login_ip, this_login_time, last_login_ip, last_login_time, create_time,
         create_user_id, update_time, update_user_id, is_disable
     </sql>
@@ -38,6 +39,9 @@
         </if>
         <if test="userPassword != null">
             AND user_password = #{userPassword,jdbcType=VARCHAR}
+        </if>
+        <if test="name != null">
+            AND name = #{name,jdbcType=VARCHAR}
         </if>
         <if test="departmentId != null">
             AND department_id = #{departmentId,jdbcType=VARCHAR}
@@ -118,6 +122,9 @@
             <if test="userName != null">
                 user_name,
             </if>
+            <if test="name != null">
+                name,
+            </if>
             <if test="userPassword != null">
                 user_password,
             </if>
@@ -180,6 +187,9 @@
             <if test="userName != null">
                 #{userName,jdbcType=VARCHAR},
             </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
             <if test="userPassword != null">
                 #{userPassword,jdbcType=VARCHAR},
             </if>
@@ -241,6 +251,9 @@
         <set>
             <if test="userName != null">
                 user_name = #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
             </if>
             <if test="userPassword != null">
                 user_password = #{userPassword,jdbcType=VARCHAR},

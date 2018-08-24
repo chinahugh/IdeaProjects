@@ -3,16 +3,17 @@ package springboot.template.mvc.controller;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RR;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.UserInfoService;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**
@@ -20,10 +21,11 @@ import java.util.Map;
  * @Date 2018/7/31
  * @Description UserInfoController
  */
-@RestController
+@Controller
+@ResponseBody
 @RequestMapping(value = "/sys/userinfo/", method = RequestMethod.POST)
 public class UserInfoController extends BaseController{
-    @Resource
+    @Autowired
     private UserInfoService userInfoService;
 
     @ModelAttribute

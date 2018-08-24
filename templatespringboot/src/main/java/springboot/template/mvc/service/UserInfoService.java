@@ -10,7 +10,7 @@ import springboot.template.mvc.service.base.BaseService;
  * @Date 2018/6/9
  * @Description UserInfoService
  */
-@Service
+@Service("userInfoService")
 public class UserInfoService extends BaseService<UserInfoMapper,UserInfo> {
 
 }

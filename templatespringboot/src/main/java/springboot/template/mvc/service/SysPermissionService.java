@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2018/7/14
  * @Description SysPermissionService
  */
-@Service
+@Service("sysPermissionService")
 public class SysPermissionService extends BaseService<SysPermissionMapper,SysPermission>{
     /**
      *根据userId获取用户去重以后的权限列表
