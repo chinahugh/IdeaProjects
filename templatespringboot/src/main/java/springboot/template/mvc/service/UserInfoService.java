@@ -3,7 +3,7 @@ package springboot.template.mvc.service;
 import org.springframework.stereotype.Service;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.mapper.UserInfoMapper;
-import springboot.template.mvc.service.base.BaseService;
+import springboot.template.mvc.service.impl.BaseServiceImpl;
 
 /**
  * @Auther HUGH
@@ -11,6 +11,6 @@ import springboot.template.mvc.service.base.BaseService;
  * @Description UserInfoService
  */
 @Service("userInfoService")
-public class UserInfoService extends BaseService<UserInfoMapper,UserInfo> {
+public class UserInfoService extends BaseServiceImpl<UserInfoMapper,UserInfo> {
 
 }

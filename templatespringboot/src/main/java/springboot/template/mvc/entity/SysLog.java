@@ -1,6 +1,6 @@
 package springboot.template.mvc.entity;
 
-import springboot.template.mvc.entity.base.BaseEntity;
+import springboot.template.mvc.entity.base.DateEntity;
 
 import java.util.Date;
 
@@ -11,7 +11,7 @@ import java.util.Date;
  *
  *
  */
-public class SysLog extends BaseEntity {
+public class SysLog extends DateEntity {
     private static final long serialVersionUID = -4984063160181217360L;
     public SysLog(){
       super();

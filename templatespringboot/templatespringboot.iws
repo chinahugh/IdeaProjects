@@ -5,106 +5,466 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eaa6df4-faf0-4d00-85aa-09b9fdf41dbe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/example/A.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/example/B.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/example/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainDayController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/SearchEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/BaseService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainDayService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/util/TimeTagUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/intercepter/InterceptorConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/sys/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/test/A.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/test/B.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainMonthServiceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/ProData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/ProMain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/ProDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/ProMainMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/ProMainService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/shiro/ShiroUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/springboot/com/ProDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/springboot/com/ProMainMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/springboot/template/mvc/mapper/ProDataMapperTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/springboot/template/mvc/mapper/ProMainMapperTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../database/.ideaDataSources/a0513c01-f6a7-436c-b7ad-18a168f18bf7.xml" afterPath="$PROJECT_DIR$/../database/.ideaDataSources/a0513c01-f6a7-436c-b7ad-18a168f18bf7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../database/database.ipr" afterPath="$PROJECT_DIR$/../database/database.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../database/database.iws" afterPath="$PROJECT_DIR$/../database/database.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/lecf.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/run.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/runDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/runPressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/skip.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/skipDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/step.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/stepDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/stop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/stopDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/GridBagEx.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/OpenBookIcon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/blue-ball-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/blue-ball.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/class-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/constructor-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/constructors.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/cyan-ball-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/cyan-ball.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/error-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/exception-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/green-ball-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/green-ball.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/interface-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/magenta-ball-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/magenta-ball.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/method-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/methods.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/package-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/red-ball-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/red-ball.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/variable-index.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/variables.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/yellow-ball-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/images/yellow-ball.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/run.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/runDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/skip.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/skipDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/step.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/stepDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/stop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/stopDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/.AlgThread.java.swp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/run.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/runDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/skip.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/skipDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/step.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/stepDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/stop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/stopDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/run.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/runDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/skip.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/skipDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/step.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/stepDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/stop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/stopDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/run.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/runDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/runPressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/skip.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/skipDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/step.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/stepDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/stop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/stopDisabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/Arc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/BD.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/BD/BD.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/BD/BD1.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/BD/FB.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/BD1.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/BlockDiagram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/DrawingObj.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/FB.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/FunctionBlock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/IOPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/LabelledBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/SubscriptedLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/SummingPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/TextFrame.bk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/TransformPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/epm.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/BD/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/ImageButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/bin_sort/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/DrawingObj.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/Histogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/ImageButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/IntMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/Legend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/ShadowLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/TableCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/TablePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/AlgAnimApp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/AlgAnimFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/AlgThread.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/AllNames.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/ComBox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/ComPanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/ControlPanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/DrawingObj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/DrawingPanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/Histogram.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/ImageButton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/IntMatrix.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/LFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/Legend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/Node.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/ShadowLabel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/TableCanvas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/TablePanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/TextFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/TextPanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/packages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/common/doc/tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/Arrow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/ClassInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/CostMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/Edge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/ExtraFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/Forest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/GraphDij.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/GraphMST.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/GraphPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/LegendPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/PriorityQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.circle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.dij0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.dij1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.dij2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.dij_ori" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.mst0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.mst1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.mst2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/graph.mst_ori" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/Arrow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/ClassInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/CostMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/Edge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/ExtraFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/Forest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/GraphDij.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/GraphMST.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/GraphPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/LegendPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/PriorityQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/dijkstra/old/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/BinTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/Heap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/Histogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/TableCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/TablePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/hash/textfile.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/Heap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/heap_sort/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/TreeUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/hard.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/huffman.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/huffman.prj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/plds210.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/huffman/tts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/TreeUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/hard.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/huffman.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/huffman.prj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/plds210.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/ins_sort/tts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/make_tar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/DimIndicator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/FloatingBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/IntMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/OptMatMult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/Parenthesis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/Subscript.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/matmult/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/AlgAA_com.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Arrow.backup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Arrow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/ClassInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/CostMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Edge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Forest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/GraphDij.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/GraphMST.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/GraphPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/LegendPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Node.backup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/PriorityQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/dijkstra.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.circle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.dij0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.dij1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.dij2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.dij_ori" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.mst0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.mst1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.mst2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/graph.mst_ori" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/mst.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/old/Edge.backup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/mst/old/ExtraFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/AlgAnimApp.java.or" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/BinTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/DrawingObj.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/IntMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/OBSAnim.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/OBSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/opt_bin/tts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/Heap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/p_queue/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/SpeedBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/StatsPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/Stick.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/StickPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/tq_new.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/tqs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/q_sort/tqs_new.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/DrawingObj.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/ImageButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/Legend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/ShadowLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/Stick.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/quick_sort/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/ImageButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/radix_sort/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/Arrow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/ClassInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/DataPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/Edge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/FlowPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/IntList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/RBNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/RBTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/ShadowLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/nothing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/red_black/old/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/AlgAnimApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/AlgAnimFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/AlgThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/ComBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/ComPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/ControlPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/DrawingObj.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/DrawingPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/Histogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/ImageButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/IntMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/LFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/ShadowLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/TableCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/TablePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/TextFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/TextPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/algorithm/dowload/template/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/DictController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDictService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/impl/SysDictServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/sys/dict/insert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/sys/dict/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/sys/dict/update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/sys/menu/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/sys/menu/update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/springboot/template/mvc/service/impl/SysDictServiceImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../space1/space1.iws" afterPath="$PROJECT_DIR$/../space1/space1.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/TemplatespringbootApplication.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/TemplatespringbootApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/util/TestMain.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/util/TestMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/aspect/IdType.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/aspect/IdType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/aspect/SysLogAspect.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/aspect/SysLogAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/config/ShiroConfig.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/config/ShiroConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/config/SwaggerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/config/SwaggerConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainDay.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainDay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainMonthMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainMonthMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainDayService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainDayService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/shiro/CustomRealm.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/shiro/CustomRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/BaseController.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/BaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/global/util/Md5Utils.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/global/util/Md5Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/MenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/RedisController.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/RedisController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/Testcontroller.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/Testcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/UserInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/UserInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/ViewPath.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/ViewPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDepartment.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDepartment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDict.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDict.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysLog.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysLog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysPermission.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysPermission.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysRole.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/UserInfo.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/UserInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/BaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/BaseEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/DateEntity.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/DateEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/RedisService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/RedisService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDepartmentMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDepartmentMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDictMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDictMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysLogMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysLogMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysPermissionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysPermissionMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysRoleMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysRoleMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/UserInfoMapper.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/UserInfoMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysLogService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysLogService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysPermissionService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysPermissionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysRoleService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysRoleService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/UserInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/UserInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/base/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/base/BaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/util/DateUtils.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/util/DateUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysLogMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysPermissionMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysPermissionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/UserInfoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/UserInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysDictMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysDictMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/ace.min.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/ace.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/error-404.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/error-404.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/update.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/update.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/update.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/update.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templatespringboot.iml" afterPath="$PROJECT_DIR$/templatespringboot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templatespringboot.ipr" afterPath="$PROJECT_DIR$/templatespringboot.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templatespringboot.iws" afterPath="$PROJECT_DIR$/templatespringboot.iws" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/BaseService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/util/TestMain.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TestMain.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/springboot/com/util/TimeTagUtils.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TimeTagUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/base/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/impl/BaseServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -128,12 +488,110 @@
     <favorites_list name="templatespringboot" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="update.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/update.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="XmMainDayServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+            <state relative-caret-position="7425">
+              <caret line="322" column="5" lean-forward="false" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Testcontroller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/Testcontroller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1675">
+              <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+              <folding>
+                <element signature="e#2996#2997#0" expanded="true" />
+                <element signature="e#3017#3018#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/stream/Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14000">
+              <caret line="606" column="6" lean-forward="false" selection-start-line="606" selection-start-column="6" selection-end-line="606" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryOperator.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/BinaryOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Integer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14500">
+              <caret line="613" column="22" lean-forward="false" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comparator.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Comparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10775">
+              <caret line="463" column="69" lean-forward="false" selection-start-line="463" selection-start-column="69" selection-end-line="463" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeTagUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TimeTagUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2475">
+              <caret line="99" column="45" lean-forward="false" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TestMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JUnit4Builder.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/builders/JUnit4Builder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,11 +606,11 @@
         <option value="Jsp File" />
         <option value="taglib" />
         <option value="HTML File" />
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="thymeleaf" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -161,16 +619,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>o =</find>
-      <find>name not null</find>
-      <find>springboot.template.mvc.mapper</find>
-      <find>ProData</find>
-      <find>CHAR</find>
-      <find>jdbcType=CHAR</find>
-      <find>Override</find>
-      <find>deleteDate</find>
-      <find>Null usernames are not allowed by this realm</find>
-      <find>Autowired</find>
       <find>Resource</find>
       <find>@Resource</find>
       <find>pro_main_id</find>
@@ -191,6 +639,16 @@
       <find>col-sm-6</find>
       <find>XainMonthId</find>
       <find>提交</find>
+      <find>for=&quot;form-field-1-1&quot;</find>
+      <find>quartz.version</find>
+      <find>commons-codec.version</find>
+      <find>nekohtml.version</find>
+      <find>aspectj.version</find>
+      <find>jedis.version</find>
+      <find>guava.version</find>
+      <find>commons-lang3.version</find>
+      <find>remark</find>
+      <find>&quot;assets/</find>
     </findStrings>
     <replaceStrings>
       <replace>username</replace>
@@ -203,6 +661,8 @@
       <replace>XainMonthId</replace>
       <replace />
       <replace>col-sm-7</replace>
+      <replace>remarks</replace>
+      <replace>&quot;/static/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -211,57 +671,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/aspect/SysLogAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/base/BaseService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainMonthServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainMonthMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/springboot/com/XmMainDayMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/springboot/com/XmMainMonthMapper.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/SearchEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDepartment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDict.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysPermission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysRole.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/date-time/locales/bootstrap-datepicker.sw.js" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainMonth.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/shiro/CustomRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test/B.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/Testcontroller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/shiro/ShiroSessionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/shiro/ShiroSession.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test/A.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/1bbe2f4535e7dfb295.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/intercepter/InterceptorConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/config/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysPermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/MenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/sys/menu.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/mainmonth/list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainDay.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/DateEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/ViewPath.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/update.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/a/form-elements.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/list.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainDayController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainMonthMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysLogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDepartmentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysPermissionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysRoleMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainDay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/SysDict.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDictMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDict.java" />
+        <option value="$PROJECT_DIR$/src/test/java/springboot/template/mvc/service/impl/SysDictServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/global/util/Md5Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysDictMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/TemplatespringbootApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/base/BaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysLogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysPermissionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysRoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDictService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/impl/SysDictServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/base/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/impl/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/DictController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/sys/dict/update.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/update.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/update.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/sys/menu/update.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/sys/dict/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/sys/dict/insert.html" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/Testcontroller.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/error-404.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main.html" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/TimeEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TimeTagUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TestMain.java" />
       </list>
     </option>
   </component>
@@ -384,7 +844,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>SpringAutowiredFieldsWarningInspection</id>
+            <id>AlibabaAvoidCommentBehindStatement</id>
           </State>
         </selected-state>
       </profile-state>
@@ -406,7 +866,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -479,6 +938,28 @@
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -500,6 +981,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -510,7 +1002,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
@@ -520,8 +1012,53 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
@@ -529,6 +1066,43 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
@@ -579,6 +1153,15 @@
               <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -654,44 +1237,27 @@
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,7 +1273,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../database/database.ipr" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -721,8 +1287,36 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="springboot.template.mvc.service.impl" />
       <recent name="springboot.com.mvc.service" />
       <recent name="springboot.template.mvc.mapper" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="springboot.template.mvc.mapper.UserInfoMapper" />
+      <recent name="springboot.template.mvc.mapper.base.BaseMapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="springboot.template.mvc.service.impl" />
+      <recent name="springboot.template.mvc.service" />
+      <recent name="springboot.com.mvc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates\sys\menu" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\web\WEB-INF\static" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates\sys\dict" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates\pro\xmDay" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\static" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\java\springboot\template\global" />
+      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="springboot.template.mvc.service" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="springboot.template.global.shiro" />
@@ -730,23 +1324,6 @@
       <recent name="springboot.template.mvc.service.serviceimpl" />
       <recent name="springboot.template.mvc.controller" />
       <recent name="springboot.template.mvc.service.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates\pro\xmDay" />
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\static" />
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\java\springboot\template\global" />
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates" />
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources\templates\a" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="springboot.template.mvc.mapper.UserInfoMapper" />
-      <recent name="springboot.template.mvc.mapper.base.BaseMapper" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\web\WEB-INF\static" />
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main" />
-      <recent name="D:\IdeaProjects\IdeaProjects\templatespringboot\src\main\resources" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1478,45 +2055,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.TemplatespringbootApplication">
-    <configuration name="TemplatespringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="springboot.TemplatespringbootApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <module name="templatespringboot" />
-      <envs />
-    </configuration>
-    <configuration name="TimeTagUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SysDictServiceImplTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="springboot.com.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="springboot.com.util.TimeTagUtils" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="templatespringboot" />
-      <envs />
-    </configuration>
-    <configuration name="XmMainDayServiceTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="springboot.com.mvc.service.*" />
+          <option name="PATTERN" value="springboot.template.mvc.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="templatespringboot" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="springboot.com.mvc.service" />
-      <option name="MAIN_CLASS_NAME" value="springboot.com.mvc.service.XmMainDayServiceTest" />
-      <option name="METHOD_NAME" value="get" />
+      <option name="PACKAGE_NAME" value="springboot.template.mvc.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="springboot.template.mvc.service.impl.SysDictServiceImplTest" />
+      <option name="METHOD_NAME" value="list" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1529,10 +2080,61 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="TemplatespringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springboot.TemplatespringbootApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="templatespringboot" />
+      <envs />
+    </configuration>
+    <configuration name="TestMain.mapreduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="springboot.com.mvc.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="templatespringboot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="springboot.com.mvc.util" />
+      <option name="MAIN_CLASS_NAME" value="springboot.com.mvc.util.TestMain" />
+      <option name="METHOD_NAME" value="mapreduce" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TimeTagUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="springboot.com.mvc.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="springboot.com.mvc.util.TimeTagUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="templatespringboot" />
+      <envs />
+    </configuration>
     <configuration name="XmMainDayServiceTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="springboot.com.mvc.service.*" />
+          <option name="PATTERN" value="springboot.template.mvc.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1557,7 +2159,7 @@
     <configuration name="XmMainDayServiceTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="springboot.com.mvc.service.*" />
+          <option name="PATTERN" value="springboot.template.mvc.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1567,31 +2169,6 @@
       <option name="PACKAGE_NAME" value="springboot.com.mvc.service" />
       <option name="MAIN_CLASS_NAME" value="springboot.com.mvc.service.XmMainDayServiceTest" />
       <option name="METHOD_NAME" value="list" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="XmMainMonthServiceTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="springboot.com.mvc.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="templatespringboot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="springboot.com.mvc.service" />
-      <option name="MAIN_CLASS_NAME" value="springboot.com.mvc.service.XmMainMonthServiceTest" />
-      <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1688,18 +2265,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.TemplatespringbootApplication" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.insert" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.XmMainMonthServiceTest.get" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TimeTagUtils" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.list" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.get" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TimeTagUtils" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.list" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SysDictServiceImplTest.list" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestMain.mapreduce" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.insert" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.list" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.get" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TimeTagUtils" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.XmMainMonthServiceTest.get" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestMain.mapreduce" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TimeTagUtils" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SysDictServiceImplTest.list" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.list" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.XmMainDayServiceTest.insert" />
       </list>
     </recent_temporary>
   </component>
@@ -1787,45 +2364,57 @@
       <workItem from="1534937192294" duration="15965000" />
       <workItem from="1535028933922" duration="692000" />
       <workItem from="1535029805025" duration="1226000" />
+      <workItem from="1535379644996" duration="3160000" />
+      <workItem from="1535466348395" duration="3280000" />
+      <workItem from="1535551540383" duration="7206000" />
+      <workItem from="1535640924301" duration="2717000" />
+      <workItem from="1535724513924" duration="4742000" />
+      <workItem from="1535797262357" duration="613000" />
+      <workItem from="1535980614234" duration="2430000" />
+      <workItem from="1536068430162" duration="2728000" />
+      <workItem from="1536154767141" duration="4945000" />
+      <workItem from="1536242225887" duration="6017000" />
+      <workItem from="1536460920852" duration="8296000" />
+      <workItem from="1536767447044" duration="701000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XmMainDayServiceTest_get - 2018.08.11 at 21h 25m 48s.xml">
-      <configuration name="XmMainDayServiceTest.get" configurationId="JUnit" />
+    <history-entry file="SysDictServiceImplTest_list - 2018.09.04 at 22h 25m 25s.xml">
+      <configuration name="SysDictServiceImplTest.list" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="XmMainDayServiceTest_insert - 2018.08.22 at 20h 38m 50s.xml">
-      <configuration name="XmMainDayServiceTest.insert" configurationId="JUnit" />
+    <history-entry file="SysDictServiceImplTest_list - 2018.09.04 at 22h 26m 09s.xml">
+      <configuration name="SysDictServiceImplTest.list" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="XmMainDayServiceTest_insert - 2018.08.22 at 20h 42m 48s.xml">
-      <configuration name="XmMainDayServiceTest.insert" configurationId="JUnit" />
+    <history-entry file="SysDictServiceImplTest_list - 2018.09.05 at 21h 40m 49s.xml">
+      <configuration name="SysDictServiceImplTest.list" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.09 at 22h 33m 25s.xml">
+    <history-entry file="SysDictServiceImplTest_list - 2018.09.06 at 22h 12m 58s.xml">
+      <configuration name="SysDictServiceImplTest.list" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain_mapreduce - 2018.09.09 at 12h 42m 25s.xml">
+      <configuration name="TestMain.mapreduce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain_mapreduce - 2018.09.09 at 12h 42m 36s.xml">
+      <configuration name="TestMain.mapreduce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain_mapreduce - 2018.09.09 at 12h 43m 02s.xml">
+      <configuration name="TestMain.mapreduce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain_mapreduce - 2018.09.09 at 12h 43m 10s.xml">
+      <configuration name="TestMain.mapreduce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmMainDayServiceTest_list - 2018.08.29 at 22h 17m 35s.xml">
       <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.09 at 22h 36m 19s.xml">
-      <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.09 at 22h 37m 50s.xml">
-      <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.09 at 22h 39m 05s.xml">
-      <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.09 at 22h 41m 47s.xml">
-      <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.09 at 22h 43m 16s.xml">
-      <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmMainDayServiceTest_list - 2018.08.22 at 20h 37m 54s.xml">
+    <history-entry file="XmMainDayServiceTest_list - 2018.08.29 at 22h 21m 19s.xml">
       <configuration name="XmMainDayServiceTest.list" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442217000" />
+    <option name="totallyTimeSpent" value="489052000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -1836,39 +2425,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49598715" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44047618" sideWeight="0.5120385" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30411255" sideWeight="0.5232745" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4534632" sideWeight="0.52541465" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16158374" sideWeight="0.49455675" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23701298" sideWeight="0.4836811" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36038962" sideWeight="0.4836811" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18298556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.48261103" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49812734" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30411255" sideWeight="0.47672552" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4199134" sideWeight="0.47458535" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16372392" sideWeight="0.5054432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49812734" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4004329" sideWeight="0.49812734" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21134296" sideWeight="0.47582206" order="0" side_tool="false" content_ui="combo" x="235" y="114" width="411" height="924" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20385233" sideWeight="0.47582206" order="0" side_tool="false" content_ui="combo" x="235" y="114" width="411" height="924" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49812734" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2059925" sideWeight="0.52417797" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18298556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17977528" sideWeight="0.518851" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2651515" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16318887" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Byte Code Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="866" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37770563" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -1884,9 +2472,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44047618" sideWeight="0.5120385" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30411255" sideWeight="0.5232745" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4534632" sideWeight="0.52541465" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16158374" sideWeight="0.49455675" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23701298" sideWeight="0.4836811" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36038962" sideWeight="0.4836811" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16318887" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -1895,22 +2483,22 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18298556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2651515" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27056277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49598715" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.48261103" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37770563" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49812734" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30411255" sideWeight="0.47672552" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4199134" sideWeight="0.47458535" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16372392" sideWeight="0.5054432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49812734" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4004329" sideWeight="0.49812734" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21134296" sideWeight="0.47582206" order="0" side_tool="false" content_ui="combo" x="235" y="114" width="411" height="924" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19582665" sideWeight="0.47582206" order="0" side_tool="false" content_ui="combo" x="235" y="114" width="411" height="924" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49812734" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2059925" sideWeight="0.52417797" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1926,386 +2514,431 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1750">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/Configuration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="266" column="14" lean-forward="false" selection-start-line="266" selection-start-column="14" selection-end-line="266" selection-end-column="14" />
+        <state relative-caret-position="-254">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/XMLMapperBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/SysDictMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+        <state relative-caret-position="100">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/springboot/template/SysDictMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="80" column="49" lean-forward="false" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainMonth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="80" column="26" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/mainmonth/list.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/a/buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="730" column="81" lean-forward="false" selection-start-line="730" selection-start-column="63" selection-end-line="730" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.2.RELEASE/spring-boot-autoconfigure-2.0.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/ResourceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        <state relative-caret-position="1625">
+          <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <marker date="1536159478396" expanded="true" signature="2829:2952" ph="select from sys_dict" />
+            <marker date="1536159478396" expanded="true" signature="3081:3195" ph="select from sys_dict" />
+            <marker date="1536159478396" expanded="true" signature="5818:7173" ph="update sys_d... " />
+            <marker date="1536159478396" expanded="true" signature="7257:7309" ph="DELETE WHERE... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="2700">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state relative-caret-position="1925">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/TemplatespringbootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="782" column="0" lean-forward="false" selection-start-line="782" selection-start-column="0" selection-end-line="782" selection-end-column="0" />
+        <state relative-caret-position="250">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysPermissionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="927" column="0" lean-forward="false" selection-start-line="927" selection-start-column="0" selection-end-line="927" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="852" column="0" lean-forward="false" selection-start-line="852" selection-start-column="0" selection-end-line="852" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/springboot/com/XmMainDayMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/UserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="176" column="37" lean-forward="true" selection-start-line="176" selection-start-column="37" selection-end-line="176" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/springboot/com/mvc/service/XmMainMonthServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Comparator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysRoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="463" column="69" lean-forward="false" selection-start-line="463" selection-start-column="69" selection-end-line="463" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0-sources.jar!/com/fasterxml/jackson/annotation/JsonFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3307">
-          <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.22/fastjson-1.2.22-sources.jar!/com/alibaba/fastjson/serializer/SerializerFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/global/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="84" column="48" lean-forward="true" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="48" />
+        <state relative-caret-position="250">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/DateEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDepartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="250">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/springboot/template/mvc/service/impl/SysDictServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sys/menu/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="-311">
+          <caret line="60" column="87" lean-forward="false" selection-start-line="60" selection-start-column="87" selection-end-line="60" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/List.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="110" column="36" lean-forward="false" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
+        <state relative-caret-position="-250">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Collection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="143" column="17" lean-forward="false" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/ViewPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/a/form-elements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="944" column="50" lean-forward="true" selection-start-line="944" selection-start-column="50" selection-end-line="944" selection-end-column="50" />
+        <state relative-caret-position="-1450">
+          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="88" column="54" lean-forward="false" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="54" />
+        <state relative-caret-position="102">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0-sources.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/a/tables.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="302">
+          <caret line="1114" column="73" lean-forward="true" selection-start-line="1112" selection-start-column="64" selection-end-line="1114" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysDictService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="69" lean-forward="false" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/SysLogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE-sources.jar!/org/springframework/boot/web/embedded/tomcat/TomcatWebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="337" column="37" lean-forward="true" selection-start-line="337" selection-start-column="37" selection-end-line="337" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="250">
+          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/xmDay/update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="66" column="28" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="79" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="1600">
+          <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/list.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sys/menu/update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="127" column="33" lean-forward="false" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="3025">
+          <caret line="121" column="64" lean-forward="false" selection-start-line="121" selection-start-column="64" selection-end-line="121" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainDayController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sys/dict/update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/base/BaseEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/DictController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        <state relative-caret-position="775">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sys/dict/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="47" selection-start-column="7" selection-end-line="49" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="325">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/BaseService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/a/buttons.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="18300">
+          <caret line="732" column="69" lean-forward="false" selection-start-line="732" selection-start-column="63" selection-end-line="732" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="-414">
+          <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-          <folding>
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pro/xmMain/update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+        <state relative-caret-position="25">
+          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sys/dict/insert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="51" column="68" lean-forward="false" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error-404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="140" column="7" lean-forward="true" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="44" column="79" lean-forward="true" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/XmMainDayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/NullPointerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="58" column="11" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/TimeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/impl/SysDictServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#2435#0" expanded="true" />
+            <marker date="1536242956540" expanded="false" signature="1327:1338" ph=" { " />
+            <marker date="1536242956540" expanded="false" signature="1350:1356" ph=" }" />
+            <marker date="1536242956540" expanded="false" signature="1484:1495" ph=" { " />
+            <marker date="1536242956540" expanded="false" signature="1504:1510" ph=" }" />
+            <marker date="1536242956540" expanded="false" signature="1642:1653" ph=" { " />
+            <marker date="1536242956540" expanded="false" signature="1662:1668" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/service/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/entity/XmMainDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+          <folding>
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/SysDict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+          <folding>
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1782#1783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TimeTagUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="99" column="45" lean-forward="false" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14500">
+          <caret line="613" column="22" lean-forward="false" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10775">
+          <caret line="463" column="69" lean-forward="false" selection-start-line="463" selection-start-column="69" selection-end-line="463" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/controller/Testcontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1675">
+          <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+          <folding>
+            <element signature="e#2996#2997#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7425">
+          <caret line="322" column="5" lean-forward="false" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/builders/JUnit4Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/BinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14000">
+          <caret line="606" column="6" lean-forward="false" selection-start-line="606" selection-start-column="6" selection-end-line="606" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/util/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -2370,7 +3003,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2378,7 +3010,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.springframework:spring-oxm:5.0.6.RELEASE</last-edited>
+          <last-edited>Maven: com.alibaba:druid-spring-boot-starter:1.1.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

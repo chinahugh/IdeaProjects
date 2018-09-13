@@ -4,19 +4,20 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import springboot.com.mvc.entity.XmMainDay;
-import springboot.com.mvc.entity.XmMainMonth;
 import springboot.com.mvc.mapper.XmMainDayMapper;
 import springboot.com.mvc.service.XmMainDayService;
 import springboot.com.mvc.service.XmMainMonthService;
-import springboot.com.util.TimeTagUtils;
+import springboot.com.mvc.util.TimeTagUtils;
 import springboot.template.global.exception.ServiceException;
 import springboot.template.global.util.UUIDUtils;
-import springboot.template.mvc.util.DateUtils;
+import springboot.template.mvc.entity.SysDict;
+import springboot.template.mvc.service.SysDictService;
 
 import javax.annotation.Resource;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -26,11 +27,14 @@ import java.util.List;
  * @Description XmMainDayServiceImpl
  */
 @Service
+@Transactional(rollbackFor = ServiceException.class)
 public class XmMainDayServiceImpl implements XmMainDayService {
     @Resource
     private XmMainDayMapper xmMainDayMapper;
     @Resource
     private XmMainMonthService xmMainMonthService;
+    @Autowired
+    private SysDictService sysDictService;
 
     /**
      * 查找一个实例
@@ -39,6 +43,7 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      * @return
      */
     @Override
+    @Transactional(rollbackFor = ServiceException.class, readOnly = true)
     public XmMainDay get(String id) {
         return xmMainDayMapper.get(id);
     }
@@ -50,6 +55,7 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      * @return
      */
     @Override
+    @Transactional(rollbackFor = ServiceException.class, readOnly = true)
     public XmMainDay select(XmMainDay entity) {
         return xmMainDayMapper.select(entity);
     }
@@ -61,13 +67,16 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      * @return
      */
     @Override
+    @Transactional(rollbackFor = ServiceException.class)
     public int deleteByKey(String id) {
         if (StringUtils.isBlank(id)) {
             return 0;
         }
         XmMainDay xmMainDay = xmMainDayMapper.get(id);
+        //设置失效，不删除 TODO
         xmMainDay.setIsDisable(1);
         xmMainDayMapper.update(xmMainDay);
+        upMouth(xmMainDay);
         return 0;
     }
 
@@ -81,9 +90,11 @@ public class XmMainDayServiceImpl implements XmMainDayService {
     public int insert(XmMainDay entity) {
         //设置id
         entity.setId(UUIDUtils.getUUid());
-        entity(entity);
+        setTag(entity);
+         /*记录时间插入或更新*/
+        entity.initDateEntity();
         int a = xmMainDayMapper.insert(entity);
-        jsMainMounth(entity);
+        upMouth(entity);
         return a;
     }
 
@@ -95,10 +106,12 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      */
     @Override
     public int update(XmMainDay entity) {
-        entity(entity);
-        xmMainDayMapper.update(entity);
-        jsMainMounth(entity);
-        return 1;
+        setTag(entity);
+         /*记录时间插入或更新*/
+        entity.initDateEntity();
+        int update = xmMainDayMapper.update(entity);
+        upMouth(entity);
+        return update;
     }
 
     /**
@@ -108,6 +121,18 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      * @return
      */
     @Override
+    public List<XmMainDay> list(XmMainDay entity) {
+        return xmMainDayMapper.list(entity);
+    }
+
+    /**
+     * 列表
+     *
+     * @param entity
+     * @return
+     */
+    @Override
+    @Transactional(rollbackFor = ServiceException.class, readOnly = true)
     public PageInfo<XmMainDay> list(XmMainDay entity, Page<XmMainDay> page) {
         if (entity == null) {
             return null;
@@ -129,13 +154,28 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      *
      * @param entity
      */
-    private void entity(XmMainDay entity) {
-        /*上班标志*/
-        entity.setmTag(TimeTagUtils.getmTag(entity.getmData()));
-        /*下班标志*/
-        entity.setpTag(TimeTagUtils.getpTag(entity.getpData()));
-        /*记录时间插入或更新*/
-        entity.initDateEntity();
+    private void setTag(XmMainDay entity) {
+        if (entity.getNewCreate()) {
+            /*上班标志*/
+            entity.setmTag(TimeTagUtils.getmTag(entity.getmData()));
+            /*下班标志*/
+            entity.setpTag(TimeTagUtils.getpTag(entity.getpData()));
+        } else {
+            SysDict sysDict = new SysDict();
+            sysDict.setType("main_day_tag");
+            List<SysDict> list = sysDictService.list(sysDict);
+            for (SysDict d : list) {
+                String lable = d.getLable();
+                if (lable.equalsIgnoreCase(entity.getmData()))
+                {
+                    entity.setmTag(Integer.parseInt(d.getValue()));
+                }
+                if (lable.equalsIgnoreCase(entity.getpData()))
+                {
+                    entity.setpTag(Integer.parseInt(d.getValue()));
+                }
+            }
+        }
     }
 
     /**
@@ -143,49 +183,142 @@ public class XmMainDayServiceImpl implements XmMainDayService {
      *
      * @param entity
      */
-    private void jsMainMounth(XmMainDay entity) {
+    private void upMouth(XmMainDay entity) {
         XmMainDay xmMainDay = new XmMainDay();
-        if (StringUtils.isBlank(entity.getMainMonthId())) {
+       if (StringUtils.isBlank(entity.getMainMonthId())) {
             throw new ServiceException("XmMainDay中mainMonthId为NULL");
         }
         xmMainDay.setMainMonthId(entity.getMainMonthId());
+        xmMainDay.setIsDisable(0);
         List<XmMainDay> list = xmMainDayMapper.list(xmMainDay);
-        if (list != null && list.size() > 0) {
+        SysDict sysDict = new SysDict();
+        sysDict.setType("main_day_tag");
+        List<SysDict> dicts = sysDictService.list(sysDict);
+        dicts.sort(Comparator.comparing(o -> new Integer(o.getValue())));
+//        list.stream().map(d->d.getmTag()).reduce()
+        /* if (list != null && list.size() > 0) {
             XmMainMonth month = xmMainMonthService.get(entity.getMainMonthId());
+            //正常
+            int zccount = 0;
+            //出勤
+            int cqcount = 0;
             //早退
             int ztcount = 0;
             //迟到
             int cdcount = 0;
             //未打卡
             int wdkcount = 0;
-            //未上班
-            int wsbcount = 0;
+            //旷工
+            int kgcount = 0;
             for (XmMainDay xd : list) {
-                //整体上班数据异常按未上班算
-                if (xd.getmTag().intValue() == TimeTagUtils.TAG_QT.intValue()
-                        && xd.getpTag().intValue() == TimeTagUtils.TAG_QT.intValue()) {
-                    wsbcount++;
-                    continue;
-                }
-                //早晚都未打卡即未上班
-                if (xd.getmTag().intValue() == TimeTagUtils.TAG_WDK.intValue()
-                        && xd.getpTag().intValue() == TimeTagUtils.TAG_WDK.intValue()) {
-                    wsbcount++;
-                } else {
-                    //迟到
-                    if (xd.getmTag().intValue() == TimeTagUtils.TAG_CD.intValue()) {
-                        cdcount++;
+                switch (xd.getmTag()) {//TODO
+                    case 0://早上正常
+                    {
+                        switch (xd.getpTag()) {//下午
+                            case 0://正常
+                            {
+                                zccount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 1://早退
+                            {
+                                ztcount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 2://未打卡
+                            {
+                                wdkcount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 3://其它，数据不正确，整天按旷工处理
+                            {
+                                kgcount++;
+                                break;
+                            }
+                            default:
+                                break;
+                        }
+                        break;
                     }
-                    //早退
-                    if (xd.getpTag().intValue() == TimeTagUtils.TAG_ZT.intValue()) {
-                        ztcount++;
+                    case 1://早上迟到
+                        switch (xd.getpTag()) {//下午
+                            case 0://正常
+                            {
+                                cqcount++;
+                                cdcount++;
+                                break;
+                            }
+                            case 1://早退
+                            {
+                                cdcount++;
+                                ztcount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 2://未打卡
+                            {
+                                cdcount++;
+                                wdkcount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 3://其它，数据不正确，整天按旷工处理
+                            {
+                                kgcount++;
+                                break;
+                            }
+                            default:
+                                break;
+                        }
+                        break;
+                    case 2://早上未打卡
+                        switch (xd.getpTag()) {//下午
+                            case 0://正常
+                            {
+                                wdkcount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 1://早退
+                            {
+                                wdkcount++;
+                                ztcount++;
+                                cqcount++;
+                                break;
+                            }
+                            case 2://未打卡
+                            {
+                                kgcount++;
+                                break;
+                            }
+                            case 3://其它，数据不正确，整天按旷工处理
+                            {
+                                kgcount++;
+                                break;
+                            }
+                            default:
+                                break;
+                        }
+                        break;
+                    case 3://早上 数据不正确，整天按旷工处理
+                    {
+                        kgcount++;
+                        break;
                     }
+                    default:
+                        break;
                 }
             }
             month.setCd(cdcount);
             month.setZt(ztcount);
-            month.setSjcqts(DateUtils.getMonthDays(month.getSysMonth()) - wsbcount);
-            xmMainMonthService.update(month);
-        }
+            month.setSj(zccount);
+            month.setKg(kgcount);
+            month.setWdk(wdkcount);
+            month.setSjcqts(cqcount);*/
+//            xmMainMonthService.update(month);
+//        }
     }
 }

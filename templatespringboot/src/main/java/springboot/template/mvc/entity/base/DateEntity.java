@@ -109,7 +109,7 @@ public class DateEntity extends BaseEntity {
     }
 
     public void initDateEntity() {
-        if (this.createTime == null) {
+        if (this.isNewCreate) {
             this.updateTime = DateUtils.getNow();
         } else {
             this.updateTime = DateUtils.getNow();

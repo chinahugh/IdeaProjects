@@ -7,8 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import springboot.com.mvc.entity.XmMainDay;
+import springboot.template.global.util.UUIDUtils;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -44,13 +47,18 @@ public class XmMainDayServiceTest {
 
     @Test
     public void list() throws Exception {
-        List<XmMainDay> list = xmMainDayService.list(new XmMainDay(), new Page<>()).getList();
-        int i = 0;
-        for (XmMainDay xd : list) {
+        XmMainDay xmMainDay = new XmMainDay();
+//        xmMainDay.setIsDisable(1);
+        List<XmMainDay> list = xmMainDayService.list(xmMainDay, new Page<>()).getList();
 
-xmMainDayService.update(xd);
+        Set<XmMainDay> set=new HashSet<>(list);
+//        list.stream().forEach(x->xmMainDayService.deleteByKey(x.getId()));
+        for (XmMainDay xd : set) {
+            xd.setId(UUIDUtils.getUUid());
+            xd.setMainMonthId("14f8f2cc10904c3fb200b67060a01ac82");
+            xmMainDayService.insert(xd);
         }
-        System.out.println();
+        System.out.println(set.size());
     }
 
     @Test

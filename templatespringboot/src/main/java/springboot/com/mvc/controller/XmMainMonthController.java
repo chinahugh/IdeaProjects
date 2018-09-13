@@ -58,17 +58,14 @@ public class XmMainMonthController extends BaseController {
         return "pro/xmMain/list";
     }
 
-    @RequestMapping("update/{id}")
-    public String update(@PathVariable("id")String id) {
-        XmMainMonth xmMainMonth = null;
-        if (StringUtils.isNotBlank(id)) {
-             xmMainMonth = xmMainMonthService.get(id);
-        }
+    @RequestMapping("update")
+    public String update(XmMainMonth xmMainMonth) {
+
         if (xmMainMonth == null) {
             return "pro/xmMain/list";
         }
         xmMainMonthService.update(xmMainMonth);
-        return "pro/xmMain/list";
+        return INDEX;
     }
     @RequestMapping("deleteByKey/{id}")
     public String deleteByKey(@PathVariable("id")String id) {

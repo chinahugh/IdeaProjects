@@ -12,4 +12,8 @@ public class Md5Utils {
         Md5Hash admin = new Md5Hash("admin");
         System.out.println(admin.toString());
     }
+    public static String getMd5(String str){
+        Md5Hash admin = new Md5Hash(str);
+        return admin.toString();
+    }
 }

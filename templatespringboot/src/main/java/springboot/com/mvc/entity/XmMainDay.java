@@ -33,11 +33,11 @@ public class XmMainDay extends DateEntity {
      */
     private String pData;
     /**
-     * 标志 0正常 1 迟到 2 未打卡 3 其它
+     * 标志 0正常 1 迟到 2 未打卡 3 外出 4异常
      */
     private Integer mTag;
     /**
-     * 标志 0正常 1 早退 2 未打卡 3 其它
+     * 标志 0正常 1 早退 2 未打卡 3 外出 4异常
      */
     private Integer pTag;
     /**

@@ -1,6 +1,7 @@
 package springboot.com.mvc.service;
 
 import springboot.com.mvc.entity.XmMainMonth;
+import springboot.template.mvc.service.BaseService;
 
 /**
  * @Auther HUGH

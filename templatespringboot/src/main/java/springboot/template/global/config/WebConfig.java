@@ -105,15 +105,19 @@ public class WebConfig extends WebMvcConfigurationSupport {
             @Nullable
             @Override
             public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex) {
+                ModelAndView modelAndView = new ModelAndView();
+                modelAndView.setViewName("/templates/error-404.html");
+
 //                LOGGER.error(ex.getMessage(),ex);
                 //根据异常类型确定返回数据
                 R result = getResuleByHeandleException(request, handler, ex);
                 //响应结果
                 responseResult(response, result);
-                return new ModelAndView();
+                return modelAndView;
             }
         };
     }
+
 
     /**
      * swagger-ui设置，因为继承WebMvcConfigurationSupport之后，静态文件映射会出现问题，需要重新指定静态资源
@@ -132,32 +136,31 @@ public class WebConfig extends WebMvcConfigurationSupport {
                 .addResourceLocations("classpath:/static/");
         registry.addResourceHandler("/templates/**")
                 .addResourceLocations("classpath:/templates/");
-
         super.addResourceHandlers(registry);
     }
+
     private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
         if (e instanceof ServiceException) {
-            LOGGER.error("ServiceException",e);
+            LOGGER.error("ServiceException", e);
             return RR.error(e.getMessage());
         }
         if (e instanceof NoHandlerFoundException) {
-            LOGGER.error("NoHandlerFoundException",e);
+            LOGGER.error("NoHandlerFoundException", e);
             return RR.error("接口 [" + request.getRequestURI() + "] 不存在");
         }
         if (e instanceof HttpRequestMethodNotSupportedException) {
-            LOGGER.error("HttpRequestMethodNotSupportedException",e);
+            LOGGER.error("HttpRequestMethodNotSupportedException", e);
             return RR.error(RC.INTERNAL_SERVER_ERROR, "接口 [" + request.getRequestURI() + "] 不能使用GET访问");
         }
         if (handler instanceof HandlerMethod) {
-            LOGGER.error("HandlerMethod",e);
+            LOGGER.error("HandlerMethod", e);
             HandlerMethod handlerMethod = (HandlerMethod) handler;
             String msg = String.format("接口 [%s] 出现异常，方法：%s.%s，异常摘要：%s", request.getRequestURI(),
                     handlerMethod.getBean().getClass().getName(), handlerMethod.getMethod().getName(), e.getMessage());
             return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
         }
-        LOGGER.error(e.getMessage(),e);
-        String msg="接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员"+e.getMessage();
-
+        LOGGER.error(e.getMessage(), e);
+        String msg = "接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员" + e.getMessage();
         return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
     }
 
@@ -168,7 +171,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
         try {
             response.getWriter().write(JSON.toJSONString(result, SerializerFeature.WriteMapNullValue));
         } catch (IOException ex) {
-            LOGGER.error(ex.getMessage(),ex);
+            LOGGER.error(ex.getMessage(), ex);
         }
     }
 
@@ -194,9 +197,10 @@ public class WebConfig extends WebMvcConfigurationSupport {
         return supportedMediaTypes;
     }
 
-    public InterceptorConfig interceptorConfig(){
+    public InterceptorConfig interceptorConfig() {
         return new InterceptorConfig();
     }
+
     /**
      * Override this method to add Spring MVC interceptors for
      * pre- and post-processing of controller invocation.
@@ -206,7 +210,6 @@ public class WebConfig extends WebMvcConfigurationSupport {
      */
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
-      registry.addInterceptor(interceptorConfig());
+        registry.addInterceptor(interceptorConfig());
     }
-    
 }

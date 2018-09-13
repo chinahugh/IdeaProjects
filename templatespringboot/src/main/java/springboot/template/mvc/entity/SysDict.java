@@ -35,7 +35,7 @@ public class SysDict extends DateEntity {
     private Integer sort;
 
     /** 备注*/
-    private String remark;
+    private String remarks;
 
 
     /**
@@ -158,28 +158,11 @@ public class SysDict extends DateEntity {
         this.sort = sort;
     }
 
-    /**
-     *
-     *  sys_dict.remark
-     *
-     * @return the value of sys_dict.remark
-     *
-
-     */
-    public String getRemark() {
-        return remark;
+    public String getRemarks() {
+        return remarks;
     }
 
-    /**
-     *
-     *  sys_dict.remark
-     *
-     * @param remark the value for sys_dict.remark
-     *
-
-     */
-    public void setRemark(String remark) {
-        this.remark = remark;
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
-
 }

@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RR;
+import springboot.template.global.util.Md5Utils;
 import springboot.template.global.util.ShiroUtils;
 import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.SysPermissionService;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
@@ -37,7 +39,8 @@ public class LoginController extends BaseController {
     @RequestMapping(value = "login", method = RequestMethod.POST)
     @ResponseBody
     public R login(@RequestParam(value = "userName", required = false) String userName,
-                   @RequestParam(value = "userPassword", required = false) String userPassword) {
+                   @RequestParam(value = "userPassword", required = false) String userPassword,
+                   HttpServletResponse response) {
         System.out.println("getUserPassword " + userName + " getUserName " + userPassword);
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userName, userPassword);
@@ -67,7 +70,12 @@ public class LoginController extends BaseController {
            * ExpiredCredentialsException（过期的凭证）等
            * */
         HashMap<String, Object> map = new HashMap<>(1);
-        map.put("user", SecurityUtils.getSubject().getPrincipal());
+        UserInfo userInfo = (UserInfo) SecurityUtils.getSubject().getPrincipal();
+        map.put("user", userInfo);
+        Cookie name = new Cookie("name", Md5Utils.getMd5(userInfo.getName()));
+        Cookie password = new Cookie("password", Md5Utils.getMd5(userInfo.getUserPassword()));
+        response.addCookie(name);
+        response.addCookie(password);
         return RR.ok(map);
     }
 
@@ -78,7 +86,7 @@ public class LoginController extends BaseController {
         UserInfo userInfo = ShiroUtils.getUserInfo();
         List<SysPermission> userPermissions = sysPermissionService.getUserPermissions(userInfo.getId());
         StringBuilder sb = new StringBuilder();
-        for (SysPermission p : userPermissions) {
+/*        for (SysPermission p : userPermissions) {
             if ("1".equals(p.getFatherId())) {
                 System.out.println(p);
                 List<SysPermission> chide = chide(p, userPermissions);
@@ -91,7 +99,9 @@ public class LoginController extends BaseController {
                     }
                 }
             }
-        }
+        }*/
+        sb.append("<li class='list-group-item '><a href='/sys/dict/list'>字典列表</a></li>");
+        sb.append("<li class='list-group-item '><a href='/pro/xmMain/list'>数据处理</a></li>");
         map.put("menu", sb.toString());
         map.put("list", userPermissions);
         return RR.ok(map);

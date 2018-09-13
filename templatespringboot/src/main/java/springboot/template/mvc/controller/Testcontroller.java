@@ -86,4 +86,8 @@ public class Testcontroller {
 //    public String B(){
 //        return "test/B";
 //    }
+@RequestMapping("main")
+public String main(){
+    return "main";
+}
 }

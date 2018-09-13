@@ -4,7 +4,6 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import springboot.com.mvc.entity.XmMainMonth;
@@ -22,6 +21,7 @@ import java.util.List;
  * @Description XmMainMonthServiceImpl
  */
 @Service
+@Transactional(rollbackFor = Exception.class,readOnly = true)
 public class XmMainMonthServiceImpl implements XmMainMonthService {
     @Resource
     private XmMainMonthMapper xmMainMonthMapper;
@@ -44,16 +44,20 @@ public class XmMainMonthServiceImpl implements XmMainMonthService {
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class,readOnly = false)
     public int deleteByKey(String id) {
         if (StringUtils.isBlank(id)) {
             return 0;
         }
         XmMainMonth xmMainMonth = xmMainMonthMapper.get(id);
+        //设置失效，不删除 TODO
         xmMainMonth.setIsDisable(1);
-        return xmMainMonthMapper.update(xmMainMonth);
+        int update = xmMainMonthMapper.update(xmMainMonth);
+        return update;
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class,readOnly = false)
     public int insert(XmMainMonth entity) {
         if (entity == null) {
             return 0;
@@ -64,7 +68,7 @@ public class XmMainMonthServiceImpl implements XmMainMonthService {
     }
 
     @Override
-    @Transactional(rollbackFor = ServiceException.class)
+    @Transactional(rollbackFor = ServiceException.class,readOnly = false)
     public int update(XmMainMonth entity) {
         if (entity == null) {
             return 0;

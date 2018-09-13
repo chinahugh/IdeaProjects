@@ -8,7 +8,7 @@
         <result column="lable" jdbcType="VARCHAR" property="lable"/>
         <result column="value" jdbcType="VARCHAR" property="value"/>
         <result column="sort" jdbcType="INTEGER" property="sort"/>
-        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="remarks" jdbcType="VARCHAR" property="remarks"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="create_user_id" jdbcType="VARCHAR" property="createUserId"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
@@ -19,7 +19,7 @@
      FROM sys_dict a
   </sql>
     <sql id="Base_Column_List">
-        a.id, a.name, a.type, a.lable, a.value, a.sort, a.remark, a.create_time,
+        a.id, a.name, a.type, a.lable, a.value, a.sort, a.remarks, a.create_time,
         a.create_user_id, a.update_time, a.update_user_id, a.is_disable
   </sql>
     <sql id="where">
@@ -41,8 +41,8 @@
         <if test="sort != null">
             AND  sort = #{sort,jdbcType=INTEGER}
         </if>
-        <if test="remark != null">
-            AND  remark = #{remark,jdbcType=VARCHAR}
+        <if test="remarks != null">
+            AND  remarks = #{remarks,jdbcType=VARCHAR}
         </if>
         <if test="createTime != null">
             AND  create_time = #{createTime,jdbcType=TIMESTAMP}
@@ -63,7 +63,7 @@
     <select id="get" parameterType="java.lang.String" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-        from sys_dict
+       <include refid="From"/>
         where id = #{id,jdbcType=VARCHAR}
     </select>
     <select id="select" parameterType="springboot.template.mvc.entity.SysDict" resultMap="BaseResultMap">
@@ -94,8 +94,8 @@
             <if test="sort != null">
                 sort,
             </if>
-            <if test="remark != null">
-                remark,
+            <if test="remarks != null">
+                remarks,
             </if>
             <if test="createTime != null">
                 create_time,
@@ -132,8 +132,8 @@
             <if test="sort != null">
                 #{sort,jdbcType=INTEGER},
             </if>
-            <if test="remark != null">
-                #{remark,jdbcType=VARCHAR},
+            <if test="remarks != null">
+                #{remarks,jdbcType=VARCHAR},
             </if>
             <if test="createTime != null">
                 #{createTime,jdbcType=TIMESTAMP},
@@ -170,8 +170,8 @@
             <if test="sort != null">
                 sort = #{sort,jdbcType=INTEGER},
             </if>
-            <if test="remark != null">
-                remark = #{remark,jdbcType=VARCHAR},
+            <if test="remarks != null">
+                remarks = #{remarks,jdbcType=VARCHAR},
             </if>
             <if test="createTime != null">
                 create_time = #{createTime,jdbcType=TIMESTAMP},
@@ -196,7 +196,9 @@
        WHERE id=#{id}
    </delete>
     <select id="list" parameterType="springboot.template.mvc.entity.SysDict" resultMap="BaseResultMap">
-        SELECT <include refid="From"/>
+        SELECT
+        <include refid="Base_Column_List"/>
+        <include refid="From"/>
         <where>
             <include refid="where"/>
         </where>
