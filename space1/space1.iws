@@ -12,466 +12,419 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/lecf.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/run.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/runDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/runPressed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/skip.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/skipDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/stepDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/stop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/stopDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/GridBagEx.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/OpenBookIcon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/blue-ball-small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/blue-ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/class-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/constructor-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/constructors.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/cyan-ball-small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/cyan-ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/error-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/exception-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/green-ball-small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/green-ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/interface-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/magenta-ball-small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/magenta-ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/method-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/methods.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/package-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/red-ball-small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/red-ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/variable-index.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/variables.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/yellow-ball-small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/yellow-ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/run.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/runDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/skip.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/skipDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/stepDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/stop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/stopDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/.AlgThread.java.swp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/run.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/runDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/skip.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/skipDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/stepDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/stop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/stopDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/run.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/runDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/skip.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/skipDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stepDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stopDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/run.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/runDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/runPressed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/skip.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/skipDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/stepDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/stop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/stopDisabled.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/Arc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/BD.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/BD1.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/FB.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD1.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BlockDiagram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/DrawingObj.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/FB.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/FunctionBlock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/IOPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/LabelledBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/SubscriptedLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/SummingPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TextFrame.bk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TransformPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/epm.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/ImageButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/DrawingObj.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Histogram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ImageButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/IntMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Legend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ShadowLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TableCanvas.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TablePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AlgAnimApp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AlgAnimFrame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AlgThread.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AllNames.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ComBox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ComPanel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ControlPanel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/DrawingObj.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/DrawingPanel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/Histogram.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ImageButton.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/IntMatrix.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/LFrame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/Legend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/Node.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ShadowLabel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TableCanvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TablePanel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TextFrame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TextPanel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/packages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Arrow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ClassInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/CostMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Edge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ExtraFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Forest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Graph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/GraphDij.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/GraphMST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/GraphPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/LegendPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/PriorityQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Tree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.circle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij_ori" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst_ori" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Arrow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ClassInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/CostMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Edge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ExtraFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Forest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Graph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/GraphDij.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/GraphMST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/GraphPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/LegendPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/PriorityQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Tree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/BinTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/Heap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/Histogram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TableCanvas.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TablePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/textfile.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/Heap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/TreeUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/hard.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/huffman.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/huffman.prj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/plds210.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/tts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/TreeUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/hard.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/huffman.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/huffman.prj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/plds210.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/tts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/make_tar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/DimIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/FloatingBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/IntMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/OptMatMult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/Parenthesis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/Subscript.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAA_com.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Arrow.backup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Arrow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/ClassInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/CostMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Edge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Forest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Graph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/GraphDij.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/GraphMST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/GraphPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/LegendPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Node.backup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/PriorityQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Tree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/dijkstra.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.circle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij_ori" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst_ori" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/mst.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/old/Edge.backup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/old/ExtraFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgAnimApp.java.or" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/BinTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/DrawingObj.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/IntMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/OBSAnim.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/OBSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/tts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/Heap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/SpeedBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/StatsPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/Stick.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/StickPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/tq_new.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/tqs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/tqs_new.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/DrawingObj.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ImageButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/Legend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ShadowLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/Stick.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/ImageButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/Arrow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/ClassInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/DataPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/Edge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/FlowPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/IntList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/RBNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/RBTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/ShadowLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/nothing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/old/Graph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/AlgAnimApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/AlgAnimFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/AlgThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ComBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ComPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ControlPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/DrawingObj.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/DrawingPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/Histogram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ImageButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/IntMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/LFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ShadowLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TableCanvas.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TablePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TextFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TextPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/DictController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysDictService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/impl/SysDictServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/sys/dict/insert.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/sys/dict/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/sys/dict/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/sys/menu/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/sys/menu/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/template/mvc/service/impl/SysDictServiceImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/Arc.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/BD.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/BD1.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/FB.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD1.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BlockDiagram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/DrawingObj.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/FB.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/FunctionBlock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/IOPoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/LabelledBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/SubscriptedLabel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/SummingPoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TextFrame.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/TransformPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/epm.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/lecf.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/ImageButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/run.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/runDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/runPressed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/skip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/skipDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/step.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/stepDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/stop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/bin_sort/stopDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/DrawingObj.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Histogram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ImageButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/IntMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Legend.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/ShadowLabel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TableCanvas.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TablePanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AlgAnimApp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AlgAnimFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AlgThread.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/AllNames.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ComBox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ComPanel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ControlPanel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/DrawingObj.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/DrawingPanel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/Histogram.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ImageButton.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/IntMatrix.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/LFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/Legend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/Node.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/ShadowLabel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TableCanvas.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TablePanel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TextFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/TextPanel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/GridBagEx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/OpenBookIcon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/blue-ball-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/blue-ball.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/class-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/constructor-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/constructors.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/cyan-ball-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/cyan-ball.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/error-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/exception-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/green-ball-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/green-ball.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/interface-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/magenta-ball-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/magenta-ball.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/method-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/methods.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/package-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/red-ball-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/red-ball.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/variable-index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/variables.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/yellow-ball-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/images/yellow-ball.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/packages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/doc/tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/run.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/runDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/skip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/skipDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/step.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/stepDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/stop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/common/stopDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Arrow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ClassInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/CostMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Edge.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/ExtraFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Forest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Graph.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/GraphDij.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/GraphMST.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/GraphPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/LegendPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/PriorityQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/Tree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.circle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.dij_ori" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/graph.mst_ori" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Arrow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ClassInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/CostMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Edge.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/ExtraFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Forest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Graph.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/GraphDij.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/GraphMST.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/GraphPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/LegendPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/PriorityQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/old/Tree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/.AlgThread.java.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/BinTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/Heap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/Histogram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TableCanvas.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TablePanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/hash/textfile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/Heap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/TreeUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/hard.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/huffman.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/huffman.prj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/plds210.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/huffman/tts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/TreeUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/hard.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/huffman.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/huffman.prj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/plds210.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/ins_sort/tts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/make_tar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/DimIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/FloatingBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/IntMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/OptMatMult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/Parenthesis.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/Subscript.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/run.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/runDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/skip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/skipDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/step.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/stepDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/stop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/stopDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAA_com.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Arrow.backup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Arrow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/ClassInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/CostMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Edge.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Forest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Graph.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/GraphDij.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/GraphMST.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/GraphPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/LegendPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Node.backup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/PriorityQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/Tree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/dijkstra.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.circle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.dij_ori" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/graph.mst_ori" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/mst.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/old/Edge.backup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/old/ExtraFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgAnimApp.java.or" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/BinTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/DrawingObj.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/IntMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/OBSAnim.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/OBSearch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/tts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/Heap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/p_queue/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/SpeedBar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/StatsPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/Stick.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/StickPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/tq_new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/tqs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/q_sort/tqs_new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/DrawingObj.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ImageButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/Legend.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/ShadowLabel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/Stick.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/run.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/runDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/skip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/skipDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/step.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stepDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stopDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/ImageButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/Arrow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/ClassInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/DataPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/Edge.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/FlowPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/IntList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/RBNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/RBTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/ShadowLabel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/nothing.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/red_black/old/Graph.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/AlgAnimApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/AlgAnimFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/AlgThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ComBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ComPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ControlPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/DrawingObj.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/DrawingPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/Histogram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ImageButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/IntMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/LFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/Node.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/ShadowLabel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TableCanvas.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TablePanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TextFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/TextPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/run.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/runDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/runPressed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/skip.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/skipDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/step.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/stepDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/stop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/stopDisabled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java/src/com/algorithm/dowload/template/test.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/space1.iws" afterPath="$PROJECT_DIR$/space1.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/pom.xml" afterPath="$PROJECT_DIR$/../templatespringboot/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/controller/XmMainMonthController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/entity/XmMainDay.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/entity/XmMainDay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/mapper/XmMainDayMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/mapper/XmMainMonthMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/mapper/XmMainMonthMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/XmMainDayService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/XmMainDayService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainDayServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/serviceimpl/XmMainMonthServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/WebConfig.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/util/Md5Utils.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/util/Md5Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/LoginController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/Testcontroller.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/Testcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysDict.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysDict.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysLog.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/SysLog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/base/DateEntity.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/base/DateEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysDepartmentMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysDepartmentMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysDictMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysDictMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysLogMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysPermissionMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysPermissionMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysRoleMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/SysRoleMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/UserInfoMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/UserInfoMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysLogService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysLogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysPermissionService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysPermissionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysRoleService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysRoleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/SysDictMapper.xml" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/template/SysDictMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/rebel.xml" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/rebel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/error-404.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/error-404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/main.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmDay/list.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmDay/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmDay/update.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmDay/update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmMain/list.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmMain/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmMain/update.html" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/templates/pro/xmMain/update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.ipr" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/BaseService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/BaseService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/util/TestMain.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/util/TestMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/util/TimeTagUtils.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/util/TimeTagUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/base/BaseService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/impl/BaseServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../springcloud/pom.xml" afterPath="$PROJECT_DIR$/../springcloud/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../springcloud/src/main/java/springcloud/SpringcloudApplication.java" afterPath="$PROJECT_DIR$/../springcloud/src/main/java/springcloud/SpringcloudApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../springcloud/src/test/java/springcloud/SpringcloudApplicationTests.java" afterPath="$PROJECT_DIR$/../springcloud/src/test/java/springcloud/SpringcloudApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../springcloud/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../springcloud/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
     <ignored path="$PROJECT_DIR$/web_maven/target/" />
@@ -500,81 +453,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AlgAnimFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java">
+      <file leaf-file-name="MavenClean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="-344">
+              <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawingObj.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/DrawingObj.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stop.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stop.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stopDisabled.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/stopDisabled.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-553">
-              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/run.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlgAnimApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runDisabled.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/runDisabled.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -629,7 +514,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Java/src/com/java/focus/thread/readme.md" />
         <option value="$PROJECT_DIR$/Java/src/com/java/core/system/SystemArraycopy.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/core/collections/map/Map.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/core/collections/map/Hello.java" />
@@ -680,6 +564,7 @@
         <option value="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/IntMatrix.java" />
         <option value="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/OptMatMult.java" />
         <option value="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/AlgThread.java" />
+        <option value="$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java" />
       </list>
     </option>
   </component>
@@ -856,6 +741,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -872,6 +758,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -902,14 +789,20 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -962,7 +855,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Game2048">
+  <component name="RunManager" selected="Application.MavenClean">
     <configuration name="All_maven" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.5" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1073,14 +966,14 @@
       <module name="Java" />
       <envs />
     </configuration>
-    <configuration name="GridLayoutTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MavenClean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.java.focus.swing.code.*" />
+          <option name="PATTERN" value="com.tools.file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.java.focus.swing.code.GridLayoutTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tools.file.MavenClean" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1467,19 +1360,19 @@
       <item index="0" class="java.lang.String" itemvalue="Maven.generate" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.All_maven" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 9.0.2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GridLayoutTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MyFirstGui" />
-      <item index="5" class="java.lang.String" itemvalue="Application.test" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Demo1" />
-      <item index="7" class="java.lang.String" itemvalue="Application.Game2048" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MyFirstGui" />
+      <item index="4" class="java.lang.String" itemvalue="Application.test" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Demo1" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Game2048" />
+      <item index="7" class="java.lang.String" itemvalue="Application.MavenClean" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Game2048" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Demo1" />
-        <item index="2" class="java.lang.String" itemvalue="Application.test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MyFirstGui" />
-        <item index="4" class="java.lang.String" itemvalue="Application.GridLayoutTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MavenClean" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Game2048" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Demo1" />
+        <item index="3" class="java.lang.String" itemvalue="Application.test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MyFirstGui" />
       </list>
     </recent_temporary>
   </component>
@@ -1633,6 +1526,7 @@
       <workItem from="1533570386202" duration="851000" />
       <workItem from="1536411959050" duration="4198000" />
       <workItem from="1536589894689" duration="2319000" />
+      <workItem from="1537019693942" duration="1365000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1726,7 +1620,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249346000" />
+    <option name="totallyTimeSpent" value="250711000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1739,6 +1633,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1749,6 +1644,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986623" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1760,10 +1656,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3538961" sideWeight="0.49705726" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2034632" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18512574" sideWeight="0.49078727" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18726592" sideWeight="0.49078727" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16265382" sideWeight="0.50921273" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.49652222" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19818376" sideWeight="0.504329" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1771,10 +1666,10 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2552167" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.49652222" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1865,7 +1760,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1887,20 +1782,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/event/ActionEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4795">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/event/ActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/java/focus/swing/code/BorderLayoutDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1933,7 +1814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1941,10 +1821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#598#599#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1952,7 +1828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1960,7 +1835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1972,7 +1846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1980,7 +1853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1988,18 +1860,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/game/Game2048.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/game/Game2048.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2013,7 +1877,6 @@
         <state split_layout="SECOND">
           <first_editor relative-caret-position="225">
             <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -2023,7 +1886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2046,7 +1908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2054,7 +1915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2062,7 +1922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2080,7 +1939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2088,7 +1946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2096,7 +1953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2053">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2104,7 +1960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2112,7 +1967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2120,9 +1974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="480" column="29" lean-forward="true" selection-start-line="480" selection-start-column="29" selection-end-line="480" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2145,7 +1996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7600">
           <caret line="325" column="16" lean-forward="false" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2153,9 +2003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2167,17 +2014,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/DrawingObj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="200">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
@@ -2195,7 +2034,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="250">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
@@ -2203,7 +2042,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/TextPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-553">
+        <state relative-caret-position="450">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
@@ -2219,15 +2058,35 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/runPressed.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/radix_sort/runPressed.gif" />
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAA_com.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding />
         </state>
       </provider>
