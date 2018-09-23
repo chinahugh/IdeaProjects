@@ -1,5 +1,4 @@
-/*
-package springcloud;
+package springcloud.eurekaclient;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,11 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringcloudApplicationTests {
+public class EurekaClientApplicationTests {
 
 	@Test
 	public void contextLoads() {
 	}
 
 }
-*/

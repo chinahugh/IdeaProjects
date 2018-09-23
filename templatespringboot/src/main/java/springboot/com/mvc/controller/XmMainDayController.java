@@ -52,6 +52,7 @@ public class XmMainDayController extends BaseController {
             return INDEX;
         }
         model.addAttribute("entity", xmMainDay);
+        model.addAttribute("userName",null);
         return "/pro/xmDay/update";
     }
 
