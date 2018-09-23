@@ -1,5 +1,5 @@
 #! /bin/bash 
-read -t 36000  -p "请输入信息" msg
+read -t 36000  -p "请输入本次提交信息 " msg
 echo start push...
 echo "***************************************************************************">>push.log
 date >>push.log
