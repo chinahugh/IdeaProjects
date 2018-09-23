@@ -1,6 +1,7 @@
 #! /bin/bash 
 echo start push...
 echo "***************************************************************************">>push.log
+echo "message >> $1">>push.log
 date >>push.log
 git add . >>push.log 2>&1
 git commit -m $1 >>push.log 2>&1
