@@ -9,24 +9,24 @@
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <!--google工具类-->
-      <!--  <dependency>
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>25.1-jre</version>
-            &lt;!&ndash; or, for Android: &ndash;&gt;
-          &lt;!&ndash;  <version>25.1-android</version>&ndash;&gt;
-        </dependency>-->
+            <!-- or, for Android: -->
+          <!--  <version>25.1-android</version>-->
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.44</version>
         </dependency>
 
-       <!-- <dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.9</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
