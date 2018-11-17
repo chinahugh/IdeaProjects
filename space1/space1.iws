@@ -12,7 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface">
-      <change beforePath="$PROJECT_DIR$/space1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/space1.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/CloudHystrix8083.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/src/main/java/cloudhystrix/CloudHystrix8083Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/src/main/java/cloudhystrix/hello/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/src/main/java/cloudhystrix/hello/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Hystrix-8083/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/Cloud-Client-9000/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/Cloud-Client-9000/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/SpringCloud.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/SpringCloud.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/SpringCloud.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/SpringCloud.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/space1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/space1.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
@@ -66,41 +77,55 @@
     <session id="-67882763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="clj" value="1" />
+          <entry key="classpath" value="1" />
+          <entry key="clj" value="3" />
           <entry key="gitattributes" value="1" />
+          <entry key="groovy" value="1" />
+          <entry key="iml" value="1" />
           <entry key="ipr" value="1" />
-          <entry key="java" value="2" />
+          <entry key="java" value="4" />
+          <entry key="js" value="2" />
+          <entry key="kt" value="3" />
+          <entry key="project" value="1" />
+          <entry key="propertites" value="1" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="IDEA_MODULE" value="1" />
           <entry key="IDEA_PROJECT" value="1" />
-          <entry key="JAVA" value="2" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scratch" value="2" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="4" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Kotlin" value="3" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Properties" value="1" />
+          <entry key="Scratch" value="6" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Kotlin" value="12" />
           <entry key="Scratch" value="13" />
         </counts>
       </usages-collector>
@@ -108,6 +133,7 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="kt" value="12" />
           <entry key="sql" value="13" />
         </counts>
       </usages-collector>
@@ -119,29 +145,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93efd03b-bd1a-4529-86e8-4504dabd5fd0/console.sql">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/blockchain/demo1/Block.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/designpatterns/design/factory/code/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+            <state relative-caret-position="250">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java">
+        <entry file="file://$PROJECT_DIR$/maven/src/main/resources/generator.propertites">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="100">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maven/src/main/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maven/maven.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/maven/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="519">
+              <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/mapper/ProductMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -197,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Java/src/com/java/core/collections/map/Hello.java" />
         <option value="$PROJECT_DIR$/Java/src/com/tools/print/PrintDemo.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/audition/DeleteMostChar.java" />
         <option value="$PROJECT_DIR$/Java/src/com/tools/chat/ChatServer.java" />
@@ -246,8 +295,9 @@
         <option value="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/OptMatMult.java" />
         <option value="$PROJECT_DIR$/Java/src/com/algorithm/dowload/matmult/AlgThread.java" />
         <option value="$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java" />
-        <option value="$PROJECT_DIR$/maven/pom.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93efd03b-bd1a-4529-86e8-4504dabd5fd0/console.sql" />
+        <option value="$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/dao/ProductMapper.kt" />
+        <option value="$PROJECT_DIR$/maven/pom.xml" />
       </list>
     </option>
   </component>
@@ -403,47 +453,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="All_maven" type="cbb8eebc:String" user="All_maven" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="All_maven" type="cbb8eebc:String" user="All_maven" />
+              <item name="web_maven" type="cbb8eebc:String" user="web_maven" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
               <item name="maven" type="462c0819:PsiDirectoryNode" />
@@ -495,40 +524,48 @@
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="slx" type="462c0819:PsiDirectoryNode" />
+              <item name="zsxt" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="slx" type="462c0819:PsiDirectoryNode" />
+              <item name="zsxt" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="slx" type="462c0819:PsiDirectoryNode" />
+              <item name="zsxt" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="All_maven" type="cbb8eebc:String" user="All_maven" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="All_maven" type="cbb8eebc:String" user="All_maven" />
-              <item name="web_maven" type="cbb8eebc:String" user="web_maven" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +588,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25144747" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1039,6 +1076,11 @@
       <workItem from="1541307439479" duration="318000" />
       <workItem from="1541770788458" duration="1719000" />
       <workItem from="1541838856424" duration="1333000" />
+      <workItem from="1542373005754" duration="621000" />
+      <workItem from="1542417240123" duration="1140000" />
+      <workItem from="1542418403058" duration="14000" />
+      <workItem from="1542418421227" duration="48000" />
+      <workItem from="1542418552973" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1132,7 +1174,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256707000" />
+    <option name="totallyTimeSpent" value="258607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,7 +1189,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49078727" visible="true" weight="0.20364584" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49078727" visible="true" weight="0.2144" />
       <window_info id="Structure" order="1" weight="0.24986623" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50921273" side_tool="true" weight="0.16265382" />
@@ -1157,14 +1199,14 @@
       <window_info id="Web" order="7" sideWeight="0.504329" side_tool="true" weight="0.19818376" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49652222" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49653333" weight="0.35263157" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49653333" weight="0.35237068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286638" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50346667" side_tool="true" weight="0.35344827" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.19372295" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.19288793" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.2025862" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3297414" />
@@ -1304,54 +1346,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Java/src/com/example/aaa.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/elems/a.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/a.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/b.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/example/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/example/B.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/example/Demo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/game/Game2048.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/java/audition/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="225">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/opt_bin/Makefile" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/BD.form" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/BD1.form" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD/FB.form" />
-    <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/AlgAnimApp.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/heap_sort/AlgAnimApp.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/DrawingObj.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/BD/BD.form" />
@@ -1379,9 +1373,6 @@
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/dijkstra/AlgAnimApp.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/quick_sort/AlgAnimFrame.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/com/algorithm/dowload/mst/AlgAA_com.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.clj">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/saddas.java" />
     <entry file="file://$PROJECT_DIR$/space1.ipr">
       <provider selected="true" editor-type-id="text-editor">
@@ -1413,7 +1404,7 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93efd03b-bd1a-4529-86e8-4504dabd5fd0/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state relative-caret-position="1325">
           <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
         </state>
       </provider>
@@ -1425,11 +1416,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/HTML-JavaScript.html.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.clj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/JSON-Clojure.json.clj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/dao/pro.kt" />
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/dao/ProductMapper.kt" />
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/model/Product.kt" />
+    <entry file="file://$PROJECT_DIR$/Java/src/com/blockchain/demo1/Block.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/designpatterns/design/factory/code/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/resources/generator.propertites">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/maven.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/mapper/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/maven/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="519">
+          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1488,7 +1537,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>web</last-edited>
+          <last-edited>maven</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

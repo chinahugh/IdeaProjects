@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="CloudClient9000" />
         <module name="CloudFeign8082" />
+        <module name="CloudHystrix8083" />
         <module name="CloudRibbon8081" />
         <module name="CloudServer8080" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="CloudClient9000" target="1.8" />
       <module name="CloudFeign8082" target="1.8" />
+      <module name="CloudHystrix8083" target="1.8" />
       <module name="CloudRibbon8081" target="1.8" />
       <module name="CloudServer8080" target="1.8" />
       <module name="SpringCloud" target="1.8" />
@@ -24,6 +26,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Cloud-Client-9000" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Cloud-Feign-8082" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Hystrix-8083" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Cloud-Ribbon-8081" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Cloud-Server-8080" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
@@ -69,6 +72,10 @@
     </profile>
     <version value="1.0" />
   </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../.." />
+    <option name="OPEN_IN_BROWSER" value="false" />
+  </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="sourceMapEmbedSources" />
   </component>
@@ -89,6 +96,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cloud-Client-9000/CloudClient9000.iml" filepath="$PROJECT_DIR$/Cloud-Client-9000/CloudClient9000.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cloud-Feign-8082/CloudFeign8082.iml" filepath="$PROJECT_DIR$/Cloud-Feign-8082/CloudFeign8082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Hystrix-8083/CloudHystrix8083.iml" filepath="$PROJECT_DIR$/Cloud-Hystrix-8083/CloudHystrix8083.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cloud-Ribbon-8081/CloudRibbon8081.iml" filepath="$PROJECT_DIR$/Cloud-Ribbon-8081/CloudRibbon8081.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cloud-Server-8080/CloudServer8080.iml" filepath="$PROJECT_DIR$/Cloud-Server-8080/CloudServer8080.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud.iml" filepath="$PROJECT_DIR$/SpringCloud.iml" />
@@ -209,6 +217,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.6/jackson-datatype-jsr310-2.9.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.module:jackson-module-afterburner:2.9.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-afterburner/2.9.6/jackson-module-afterburner-2.9.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-afterburner/2.9.6/jackson-module-afterburner-2.9.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-afterburner/2.9.6/jackson-module-afterburner-2.9.6-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.9.6">
@@ -385,6 +404,39 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.12/hystrix-core-1.5.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-javanica:1.5.12">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-metrics-event-stream:1.5.12">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.12/hystrix-metrics-event-stream-1.5.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.12/hystrix-metrics-event-stream-1.5.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.12/hystrix-metrics-event-stream-1.5.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-serialization:1.5.12">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-serialization/1.5.12/hystrix-serialization-1.5.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-serialization/1.5.12/hystrix-serialization-1.5.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-serialization/1.5.12/hystrix-serialization-1.5.12-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.netflix.netflix-commons:netflix-commons-util:0.3.0">
@@ -783,6 +835,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.25.Final/netty-transport-4.1.25.Final-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: io.reactivex:rxjava-reactive-streams:1.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: io.reactivex:rxjava:1.3.8">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar!/" />
@@ -968,6 +1031,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.commons:commons-lang3:3.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.commons:commons-math:2.2">
@@ -1179,6 +1253,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/hdrhistogram/HdrHistogram/2.1.10/HdrHistogram-2.1.10-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.hdrhistogram:HdrHistogram:2.1.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.hibernate.validator:hibernate-validator:6.0.10.Final">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.0.10.Final/hibernate-validator-6.0.10.Final.jar!/" />
@@ -1243,6 +1328,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.reactivestreams:reactive-streams:1.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.skyscreamer:jsonassert:1.5.0">
@@ -1562,6 +1658,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/2.0.0.RELEASE/spring-cloud-starter-netflix-eureka-server-2.0.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.0.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.0.0.RELEASE/spring-cloud-starter-netflix-hystrix-2.0.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.0.0.RELEASE/spring-cloud-starter-netflix-hystrix-2.0.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.0.0.RELEASE/spring-cloud-starter-netflix-hystrix-2.0.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-ribbon:2.0.0.RELEASE">

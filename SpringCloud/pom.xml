@@ -13,6 +13,7 @@
         <module>Cloud-Client-9000</module>
         <module>Cloud-Ribbon-8081</module>
         <module>Cloud-Feign-8082</module>
+        <module>Cloud-Hystrix-8083</module>
     </modules>
 
     <properties>
