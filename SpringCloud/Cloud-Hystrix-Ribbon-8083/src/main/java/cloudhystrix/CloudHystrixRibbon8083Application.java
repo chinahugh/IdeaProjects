@@ -18,9 +18,9 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 @EnableEurekaClient
 @EnableHystrix
-public class CloudHystrix8083Application {
+public class CloudHystrixRibbon8083Application {
     public static void main(String[] args) {
-        SpringApplication.run(CloudHystrix8083Application.class, args);
+        SpringApplication.run(CloudHystrixRibbon8083Application.class, args);
     }
     @Bean
     @LoadBalanced

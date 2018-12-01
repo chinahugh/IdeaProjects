@@ -16,8 +16,12 @@ public class HelloController {
     @Resource
     private HelloService helloService;
 
-    @RequestMapping("/hello/{name}")
-    public String hello(@PathVariable String name) {
-        return helloService.hello(name);
+    @RequestMapping("/a/hello/{name}")
+    public String helloa(@PathVariable String name) {
+        return helloService.helloa(name);
+    }
+    @RequestMapping("/b/hello/{name}")
+    public String hellob(@PathVariable String name) {
+        return helloService.hellob(name);
     }
 }

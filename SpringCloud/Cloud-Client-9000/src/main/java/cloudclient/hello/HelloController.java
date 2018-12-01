@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description HelloController
  */
 @RestController
+@RequestMapping("b")
 public class HelloController {
     @Value("${server.port}")
     private String port;

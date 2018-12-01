@@ -49,7 +49,7 @@ public class ChangeFileNameUtils {
     @Test
     public void  test(){
         String path="E:/Videos/神盾局4";
-        List<String> newFileNames=new ArrayList<String>(16);
+        List<String> newFileNames= new ArrayList<>(16);
         File[] files = new File(path).listFiles();
         List<File> fileList= Arrays.asList(files);
         File remfile=null;

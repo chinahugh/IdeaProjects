@@ -17,8 +17,12 @@ public class HelloService {
     private RestTemplate restTemplate;
 
     @HystrixCommand(fallbackMethod = "error")
-    public String hello(String name) {
-        return restTemplate.getForObject("http://Cloud-Client/hello/" + name, String.class);
+    public String helloa(String name) {
+        return restTemplate.getForObject("http://Cloud-Client/a/hello/" + name, String.class);
+    }
+    @HystrixCommand(fallbackMethod = "error")
+    public String hellob(String name) {
+        return restTemplate.getForObject("http://Cloud-Client/b/hello/" + name, String.class);
     }
     public String error(String name){
         return name+" error !!!";

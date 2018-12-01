@@ -1,6 +1,7 @@
 package com.tools.file;
 
 import java.io.File;
+import java.util.Objects;
 
 /**
  * @Auther HUGH
@@ -24,7 +25,7 @@ public class MavenClean {
             return;
         }
         File[] files = mavenRep.listFiles();
-        checkAndDeleteFiles(files);
+        checkAndDeleteFiles(Objects.requireNonNull(files));
         System.out.println("Clean lastUpdated files and in-progess jar finished.");
         long usableSpace2 = mavenRep.getUsableSpace();
         System.out.println(usableSpace2);
@@ -34,14 +35,15 @@ public class MavenClean {
     private static boolean checkAndDeleteFiles(File[] files) {
         for (File file : files) {
             if (file.isDirectory()) {
-                if (file.listFiles().length == 0) {
+                if (Objects.requireNonNull(file.listFiles()).length == 0) {
                     // 删除空文件夹
+                    System.out.println(file.getAbsolutePath());
                     file.delete();
                 } else {
-                    boolean flag = checkAndDeleteFiles(file.listFiles());
+                    boolean flag = checkAndDeleteFiles(Objects.requireNonNull(file.listFiles()));
                     if (flag) {
                         // 删除文件夹中的文件
-                        for (File childFile : file.listFiles()) {
+                        for (File childFile : Objects.requireNonNull(file.listFiles())) {
                             childFile.delete();
                         }
                         System.out.println(file.getAbsolutePath());
