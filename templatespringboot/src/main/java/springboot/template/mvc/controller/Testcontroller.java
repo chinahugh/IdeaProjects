@@ -34,7 +34,6 @@ public class Testcontroller {
     private UserInfoService userInfoService;
     @Autowired
     private SysDepartmentService sysDepartmentService;
-
     @Value("${myconfig.id.type}")
     private String idType;
 
@@ -42,7 +41,7 @@ public class Testcontroller {
     @ResponseBody
     public PageInfo<UserInfo> list(UserInfo userInfo) {
         System.out.println("JSONArray.fromObject(userInfo) = " + JSONArray.fromObject(userInfo));
-        return userInfoService.list(userInfo,new Page());
+        return userInfoService.list(userInfo, new Page());
     }
 
     @RequestMapping("find")
@@ -65,7 +64,6 @@ public class Testcontroller {
         return RR.ok(map);
     }
 
-
     @RequestMapping("insert")
     @ResponseBody
     public UserInfo insert() {
@@ -78,16 +76,18 @@ public class Testcontroller {
         userInfoService.insert(userInfo);
         return userInfo;
     }
+
     @RequestMapping("A")
-    public String A(){
+    public String A() {
         return "test/A";
     }
-//    @RequestMapping("B")
+
+    //    @RequestMapping("B")
 //    public String B(){
 //        return "test/B";
 //    }
-@RequestMapping("main")
-public String main(){
-    return "main";
-}
+    @RequestMapping("main")
+    public String main() {
+        return "main";
+    }
 }
