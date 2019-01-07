@@ -11,7 +11,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface" />
+    <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface">
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/com/framework/hutool/cloneable/CloneableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/template/com/global/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/maven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/maven.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/main/java/com/slfj.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven/src/main/java/com/framework/log/slfj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/space1.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/space1.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/template/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/template/SpringbootApplication.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
     <ignored path="$PROJECT_DIR$/web_maven/target/" />
     <ignored path="$PROJECT_DIR$/All_maven/target/" />
@@ -67,7 +77,7 @@
     <session id="-67882763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -76,21 +86,26 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="2" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="MF" value="1" />
+          <entry key="class" value="1" />
           <entry key="classpath" value="4" />
           <entry key="clj" value="3" />
           <entry key="cmd" value="2" />
@@ -101,12 +116,12 @@
           <entry key="ico" value="1" />
           <entry key="iml" value="5" />
           <entry key="ipr" value="2" />
-          <entry key="java" value="29" />
+          <entry key="java" value="44" />
           <entry key="js" value="2" />
           <entry key="json" value="1" />
           <entry key="kt" value="3" />
           <entry key="log" value="2" />
-          <entry key="md" value="6" />
+          <entry key="md" value="7" />
           <entry key="png" value="3" />
           <entry key="pom" value="2" />
           <entry key="project" value="3" />
@@ -114,27 +129,29 @@
           <entry key="propertites" value="3" />
           <entry key="py" value="1" />
           <entry key="sql" value="2" />
-          <entry key="xml" value="15" />
+          <entry key="xml" value="18" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="Git file" value="1" />
           <entry key="HTML" value="3" />
           <entry key="IDEA_MODULE" value="5" />
           <entry key="IDEA_PROJECT" value="2" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="44" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Kotlin" value="3" />
-          <entry key="Markdown" value="5" />
+          <entry key="Manifest" value="1" />
+          <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="7" />
           <entry key="Python" value="1" />
           <entry key="Scratch" value="7" />
-          <entry key="XML" value="17" />
+          <entry key="XML" value="20" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -146,12 +163,12 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="232" />
+          <entry key="JAVA" value="406" />
           <entry key="Kotlin" value="12" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="9" />
           <entry key="Scratch" value="13" />
-          <entry key="XML" value="211" />
+          <entry key="XML" value="216" />
           <entry key="YAML" value="37" />
         </counts>
       </usages-collector>
@@ -159,12 +176,12 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="232" />
+          <entry key="java" value="406" />
           <entry key="kt" value="12" />
           <entry key="properties" value="9" />
           <entry key="sql" value="13" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="211" />
+          <entry key="xml" value="216" />
           <entry key="yml" value="37" />
         </counts>
       </usages-collector>
@@ -176,86 +193,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/pom.xml">
+        <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/focus/awt/BarcodeUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/java8/interfacee/base/HelloTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/maven.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="2100">
+              <caret line="94" column="25" lean-forward="true" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/Hello.java">
+        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/template/com/global/config/SecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="338">
+              <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
               <folding>
-                <element signature="e#88#89#0" expanded="true" />
-                <element signature="e#131#132#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/core/string/StringFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/focus/awt/BJbarcode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -311,10 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Java/src/com/designpatterns/README.md" />
-        <option value="$PROJECT_DIR$/Java/src/com/designpatterns/design/singleton/note/总结.md" />
-        <option value="$PROJECT_DIR$/Java/Dockerfile" />
-        <option value="$PROJECT_DIR$/Java/src/com/java/core/collections/list/code/List.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/core/collections/list/code/ListTest.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/audition/EquilibriumNumber.java" />
         <option value="$PROJECT_DIR$/Java/src/com/java/audition/code/DeleteMostChar.java" />
@@ -359,9 +309,13 @@
         <option value="$PROJECT_DIR$/maven/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/maven/src/main/resources/logback.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93efd03b-bd1a-4529-86e8-4504dabd5fd0/console_1.sql" />
-        <option value="$PROJECT_DIR$/springboot/pom.xml" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/java/java8/interfacee/base/HelloTest.java" />
+        <option value="$PROJECT_DIR$/maven/src/main/java/com/framework/log/slfj.java" />
         <option value="$PROJECT_DIR$/maven/pom.xml" />
+        <option value="$PROJECT_DIR$/maven/src/main/java/com/framework/hutool/cloneable/CloneableTest.java" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/template/SpringbootApplication.java" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/template/com/global/config/SecurityConfiguration.java" />
       </list>
     </option>
   </component>
@@ -545,36 +499,74 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,7 +585,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.14 (/usr/bin/python2.7)" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../git/netty" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25144747" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -632,7 +624,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.slfj">
+  <component name="RunManager" selected="JUnit.slfj.aa">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -688,12 +680,12 @@
       </method>
     </configuration>
     <configuration name="slfj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.slfj" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.log.slfj" />
       <module name="maven" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="com.framework.log.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -711,12 +703,12 @@
       <module name="maven" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="com.framework.log.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.slfj" />
+      <option name="PACKAGE_NAME" value="com.framework.log" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.log.slfj" />
       <option name="METHOD_NAME" value="aa" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -951,8 +943,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.slfj" />
         <item itemvalue="JUnit.slfj.aa" />
+        <item itemvalue="Application.slfj" />
         <item itemvalue="Application.MavenClean" />
         <item itemvalue="Application.DeleteMostChar" />
         <item itemvalue="Application.Game2048" />
@@ -1133,7 +1125,10 @@
       <workItem from="1545229158570" duration="831000" />
       <workItem from="1545317292357" duration="525000" />
       <workItem from="1545317823933" duration="17000" />
-      <workItem from="1545561780266" duration="6759000" />
+      <workItem from="1545561780266" duration="7423000" />
+      <workItem from="1545922939918" duration="2367000" />
+      <workItem from="1546780017045" duration="783000" />
+      <workItem from="1546868194583" duration="784000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1202,9 +1197,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeleteMostChar_deleteletterTest - 2018.06.21 at 18h 21m 48s.xml">
-      <configuration name="DeleteMostChar.deleteletterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DeleteMostChar_deleteletterTest - 2018.06.21 at 18h 22m 09s.xml">
       <configuration name="DeleteMostChar.deleteletterTest" configurationId="JUnit" />
     </history-entry>
@@ -1232,9 +1224,12 @@
     <history-entry file="slfj_aa - 2018.12.15 at 19h 03m 27s.xml">
       <configuration name="slfj.aa" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="slfj_aa - 2018.12.23 at 22h 35m 35s.xml">
+      <configuration name="slfj.aa" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304659000" />
+    <option name="totallyTimeSpent" value="309257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1249,7 +1244,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49174312" visible="true" weight="0.16770834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49174312" visible="true" weight="0.12746666" />
       <window_info id="Structure" order="1" weight="0.24986623" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50921273" side_tool="true" weight="0.16265382" />
@@ -1259,7 +1254,7 @@
       <window_info id="Web" order="7" sideWeight="0.504329" side_tool="true" weight="0.19818376" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49652222" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496" visible="true" weight="0.4031579" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496" weight="0.4031579" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1277,8 +1272,6 @@
       <window_info anchor="bottom" id="Messages" order="17" weight="0.33052632" />
       <window_info anchor="bottom" id="Database Changes" order="18" weight="0.3297414" />
       <window_info active="true" anchor="bottom" id="Database Console" order="19" visible="true" weight="0.3297414" />
-      <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" side_tool="true" weight="0.3296" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2552167" />
@@ -1291,6 +1284,8 @@
       <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" weight="0.32958803" />
       <window_info anchor="right" id="SciView" order="10" weight="0.32906666" />
       <window_info anchor="right" id="JRebel Setup Guide" order="11" show_stripe_button="false" weight="0.3296" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.3296" />
+      <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="13" side_tool="true" weight="0.3296" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49078727" visible="true" weight="0.16533333" />
@@ -1413,80 +1408,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Java/src/com/tools/file/ChangeFileNameUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/tools/file/MavenClean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/test/java/template/SpringbootApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slx/zsxt/model/Product.java" />
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/resources/META-INF/additional-spring-configuration-metadata.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/template/SpringbootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/template/com/global/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/.project" />
-    <entry file="file://$PROJECT_DIR$/maven/.classpath" />
-    <entry file="file://$PROJECT_DIR$/web/web/jsp/ajax/HelloWordAjax.html" />
-    <entry file="file://$PROJECT_DIR$/web/src/com/web/ajax/HelloWordAjax.java" />
-    <entry file="file://$PROJECT_DIR$/space1.ipr">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-850">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/ajax/damo/demo1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1507,10 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31625">
           <caret line="1340" column="45" selection-start-line="1340" selection-start-column="45" selection-end-line="1340" selection-end-column="45" />
-          <folding>
-            <element signature="e#51076#51077#0" expanded="true" />
-            <element signature="e#51138#51139#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1577,14 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot/mvnw.cmd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1988">
@@ -1606,29 +1515,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven/log/rolling-file-2018-12-15.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/maven/log/rolling-file-2018-12-15.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/slfj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/log/rolling-file-2018-12-15.log" />
+    <entry file="file://$PROJECT_DIR$/maven/maven/log/rolling-file-2018-12-15.log" />
     <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/core/collections/map/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1636,13 +1528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/core/string/StringFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1654,13 +1539,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/Hello.java" />
+    <entry file="file://$PROJECT_DIR$/Java/readme.md" />
+    <entry file="file://$PROJECT_DIR$/maven/README..md" />
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/audition/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/focus/awt/BarcodeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="250">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/java8/interfacee/base/HelloTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/framework/log/slfj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/core/string/StringFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1671,77 +1600,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/java/java8/interfacee/base/HelloTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/README..md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="50">
-            <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maven/maven.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="41" />
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven/src/main/java/Hello.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2.jar!/cn/hutool/core/clone/Cloneable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="150">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2000">
+          <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/framework/hutool/cloneable/CloneableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/aop/ProxyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/db/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding>
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/db/SqlRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/util/ObjectUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6325">
+          <caret line="273" column="24" selection-start-line="273" selection-start-column="24" selection-end-line="273" selection-end-column="24" />
+          <folding>
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#3899#3900#0" expanded="true" />
+            <element signature="e#3944#3945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/io/FastByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+          <folding>
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/clone/CloneSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/clone/Cloneable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/log/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/template/com/global/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/template/SpringbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.2.RELEASE/spring-security-web-5.1.2.RELEASE-sources.jar!/org/springframework/security/web/access/AccessDeniedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="94" column="25" lean-forward="true" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/template/com/global/config/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1825,7 +1825,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>Maven: org.springframework.boot:spring-boot:2.1.1.RELEASE</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

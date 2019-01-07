@@ -1,4 +1,4 @@
-package com;
+package com.framework.log;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -6,11 +6,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author HUGH
- * @Date 2018/11/26 21:36
+ * @Date 2018/11/26 21:36 日志框架学习
  * @Description slfj
  */
 public class slfj {
-    Logger logger = LoggerFactory.getLogger(com.slfj.class);
+    Logger logger = LoggerFactory.getLogger(slfj.class);
 
     public static void main(String[] args) {
         slfj slfj = new slfj();
@@ -28,7 +28,6 @@ public class slfj {
     }
     @Test
     public void aa(){
-        Object o;
         logger.debug(new RuntimeException("asd").getMessage());
     }
 }
