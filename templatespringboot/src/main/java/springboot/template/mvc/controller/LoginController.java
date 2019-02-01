@@ -102,6 +102,7 @@ public class LoginController extends BaseController {
         }*/
         sb.append("<li class='list-group-item '><a href='/sys/dict/list'>字典列表</a></li>");
         sb.append("<li class='list-group-item '><a href='/pro/xmMain/list'>数据处理</a></li>");
+        sb.append("<li class='list-group-item '><a href='/pro/import/list'>数据导入</a></li>");
         map.put("menu", sb.toString());
         map.put("list", userPermissions);
         return RR.ok(map);

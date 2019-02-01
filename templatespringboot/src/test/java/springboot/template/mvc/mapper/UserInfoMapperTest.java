@@ -27,7 +27,8 @@ public class UserInfoMapperTest {
 @Test
     public void select() {
     UserInfo userInfo = new UserInfo();
-    userInfo.setUserName("admin");
+   userInfo.setUserName("admin");
+   // userInfo.setNoID(2);
     UserInfo select = userInfoMappr.select(userInfo);
     System.out.println("select = " + select);
 }

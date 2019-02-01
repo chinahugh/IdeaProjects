@@ -376,4 +376,27 @@ public class XmMainMonth extends DateEntity {
     public void setXmMainDays(List<XmMainDay> xmMainDays) {
         this.xmMainDays = xmMainDays;
     }
+
+    @Override
+    public String toString() {
+        return "XmMainMonth{" +
+                "userId='" + userId + '\'' +
+                ", sort=" + sort +
+                ", sysYear=" + sysYear +
+                ", sysMonth=" + sysMonth +
+                ", ycqts=" + ycqts +
+                ", sjcqts=" + sjcqts +
+                ", sj=" + sj +
+                ", bj=" + bj +
+                ", nj=" + nj +
+                ", hj=" + hj +
+                ", qq=" + qq +
+                ", kg=" + kg +
+                ", wdk=" + wdk +
+                ", cd=" + cd +
+                ", zt=" + zt +
+                ", remarks='" + remarks + '\'' +
+                ", xmMainDays=" + xmMainDays +
+                '}';
+    }
 }

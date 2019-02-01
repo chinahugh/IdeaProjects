@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61335491-e73c-4925-8023-4aa427a1aad9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/note/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/audition/DeleteMostChar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/audition/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/audition/SupperClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/core/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/core/collections/map/Hello.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/core/collections/map/linkedhashmap/LinkedHashMapTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/java/core/string/StringHello.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../space1/Java/src/com/tools/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/singleton/note/总结.md" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/singleton/note/总结.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../space1/Java/src/com/tools/print/PrintDemo.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/tools/print/PrintDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../space1/space1.ipr" afterPath="$PROJECT_DIR$/../space1/space1.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../space1/space1.iws" afterPath="$PROJECT_DIR$/../space1/space1.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../space1/web/web/jsp/ajax/HelloWordAjax.html" afterPath="$PROJECT_DIR$/../space1/web/web/jsp/ajax/HelloWordAjax.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/demo/Circle.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/code/Circle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/demo/FactoryPatternDemo.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/code/FactoryPatternDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/demo/Rectangle.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/code/Rectangle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/demo/Shape.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/code/Shape.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/demo/ShapeFactory.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/code/ShapeFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/demo/Square.java" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/code/Square.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/etc/factory-method.png" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/note/factory-method.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/etc/factory-method.ucls" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/note/factory-method.ucls" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/etc/factory-method_1.png" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/design/factory/note/factory-method_1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/readme.md" afterPath="$PROJECT_DIR$/../space1/Java/src/com/designpatterns/README.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7a8282c5-665d-4f86-94c0-28a810a97330.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../space1/space1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../space1/space1.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,42 +15,46 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand>
       <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="wll" type="e3449647:DbNodeDescriptor" />
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-195895430">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a8282c5-665d-4f86-94c0-28a810a97330/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34725">
-              <caret line="1389" column="121" lean-forward="false" selection-start-line="1389" selection-start-column="121" selection-end-line="1389" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pro_depart" pinned="false" current-in-tab="true">
-        <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/wll.pro_depart">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="-122">
+              <caret line="1389" column="115" selection-start-line="1389" selection-start-column="115" selection-end-line="1389" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -109,7 +91,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -118,29 +100,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="G:/BaiduNetdiskDownload/shaanxi_tongchuanhu.sql" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="G:/BaiduNetdiskDownload/shaanxi_tongchuanhu.sql" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,85 +132,39 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SbtLocalSettings">
@@ -242,12 +172,12 @@
       <projects_view />
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
     <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -272,46 +202,49 @@
       <workItem from="1525872910688" duration="1889000" />
       <workItem from="1526219811796" duration="901000" />
       <workItem from="1530263326768" duration="710000" />
+      <workItem from="1547041135765" duration="41000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19018000" />
+    <option name="totallyTimeSpent" value="19059000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986595" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11503478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47835737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2295345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35497835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="DB Browser" order="2" weight="0.2295345" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info active="true" id="Database" order="4" visible="true" weight="0.11466666" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.2496" />
+      <window_info id="Structure" order="6" weight="0.25" />
+      <window_info id="JRebel" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.47835737" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.35497835" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
+      <window_info anchor="bottom" id="JRebel Executor" order="13" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Maven Projects" order="2" />
+      <window_info anchor="right" id="Mybatis datasource" order="3" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,17 +253,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database.iws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://view:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/information_schema.INNODB_BUFFER_PAGE" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console.sql" />
@@ -343,265 +268,66 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cb0e6dd9-3258-494c-af2a-bc4adacefef8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.barcodbind">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.barcode">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.barcode2">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/db_database25.tb_medicine">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/db_database25.tb_category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.barcodbind" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.barcode" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.barcode2" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/db_database25.tb_medicine" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/db_database25.tb_category" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a8282c5-665d-4f86-94c0-28a810a97330/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/mysql.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.supplier">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.relaymsg">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.shanxi_shangluo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://[mysql]sessions\mysql Sessions" />
-    <entry file="db://[mysql]sessions\mysql Sessions" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/mysql.user" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.supplier" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.relaymsg" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/xhfwdb.product" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.shanxi_shangluo" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a8282c5-665d-4f86-94c0-28a810a97330/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a8282c5-665d-4f86-94c0-28a810a97330/console_3.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="db://[mysql]tables\shanxi_shangluo\sys_role_menu" />
     <entry file="db://[mysql]sessions\mysql Sessions" />
     <entry file="db://[mysql]consoles\mysql" />
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/ssm.user_t">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/jfinal_demo.blog">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.act_id_group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.pro_pppxm_ydjz">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.pro_xm_vali">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.sys_sms2">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.sys_sms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_order_item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.order_">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.orderitem">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.property">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/ssm.product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_hi_identitylink">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_hi_taskinst">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_id_membership">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_re_procdef">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/ssm.user_t" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/jfinal_demo.blog" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.act_id_group" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.pro_pppxm_ydjz" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.pro_xm_vali" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.sys_sms2" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shanxi_shangluo.sys_sms" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_user" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_product" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_order_item" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/shop.store_order" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.category" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.order_" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.orderitem" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.property" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tmall.product" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/ssm.product" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_hi_identitylink" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_hi_taskinst" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_id_membership" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/tongchuan.act_re_procdef" />
+    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/wll.pro_depart" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a8282c5-665d-4f86-94c0-28a810a97330/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34725">
-          <caret line="1389" column="121" lean-forward="false" selection-start-line="1389" selection-start-column="121" selection-end-line="1389" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2d1081/7a8282c5-665d-4f86-94c0-28a810a97330/wll.pro_depart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="-122">
+          <caret line="1389" column="115" selection-start-line="1389" selection-start-column="115" selection-end-line="1389" selection-end-column="115" />
         </state>
       </provider>
     </entry>

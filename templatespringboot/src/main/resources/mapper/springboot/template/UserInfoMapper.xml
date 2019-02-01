@@ -6,6 +6,7 @@
         <result column="user_name" jdbcType="VARCHAR" property="userName"/>
         <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="no_id" jdbcType="INTEGER" property="noId"/>
         <result column="department_id" jdbcType="VARCHAR" property="departmentId"/>
         <result column="phone" jdbcType="VARCHAR" property="phone"/>
         <result column="adress" jdbcType="VARCHAR" property="adress"/>
@@ -26,7 +27,7 @@
     </resultMap>
     <sql id="From"> from user_info a </sql>
     <sql id="Base_Column_List">
-        id, user_name, user_password,name, department_id, phone, adress, email, born, sex, img,
+        id, user_name, user_password,name, no_id,department_id, phone, adress, email, born, sex, img,
         remarks, this_login_ip, this_login_time, last_login_ip, last_login_time, create_time,
         create_user_id, update_time, update_user_id, is_disable
     </sql>
@@ -42,6 +43,9 @@
         </if>
         <if test="name != null">
             AND name = #{name,jdbcType=VARCHAR}
+        </if>
+        <if test="noId != null">
+            AND no_id = #{noId,jdbcType=INTEGER}
         </if>
         <if test="departmentId != null">
             AND department_id = #{departmentId,jdbcType=VARCHAR}
@@ -104,7 +108,7 @@
     <select id="select" parameterType="springboot.template.mvc.entity.UserInfo" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-       <include refid="From"/>
+        <include refid="From"/>
         <where>
             <include refid="where"/>
         </where>
@@ -124,6 +128,9 @@
             </if>
             <if test="name != null">
                 name,
+            </if>
+            <if test="no_id != null">
+                no_id,
             </if>
             <if test="userPassword != null">
                 user_password,
@@ -190,6 +197,9 @@
             <if test="name != null">
                 #{name,jdbcType=VARCHAR},
             </if>
+            <if test="no_id != null">
+                #{noId,jdbcType=INTEGER},
+            </if>
             <if test="userPassword != null">
                 #{userPassword,jdbcType=VARCHAR},
             </if>
@@ -255,6 +265,9 @@
             <if test="name != null">
                 name = #{name,jdbcType=VARCHAR},
             </if>
+            <if test="no_id != null">
+                name = #{noId,jdbcType=INTEGER},
+            </if>
             <if test="userPassword != null">
                 user_password = #{userPassword,jdbcType=VARCHAR},
             </if>
@@ -319,7 +332,7 @@
         <where>
             <include refid="where"/>
             <if test="userName != null">
-                OR user_name  LIKE concat('%',#{userName,jdbcType=VARCHAR},'%')
+                OR user_name LIKE concat('%',#{userName,jdbcType=VARCHAR},'%')
             </if>
         </where>
     </select>

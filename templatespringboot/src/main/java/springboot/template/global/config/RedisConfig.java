@@ -1,3 +1,4 @@
+/*
 package springboot.template.global.config;
 
 import org.slf4j.Logger;
@@ -12,11 +13,13 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import redis.clients.jedis.JedisPoolConfig;
 
+*/
 /**
  * @Auther HUGH
  * @Date 2018/6/10
  * @Description RedisConfig  redis配置
- */
+ *//*
+
 @Configuration
 @EnableCaching   //开启缓存
 public class RedisConfig extends CachingConfigurerSupport {
@@ -41,3 +44,4 @@ public class RedisConfig extends CachingConfigurerSupport {
         return new StringRedisTemplate(getConnectionFactory());
     }
 }
+*/

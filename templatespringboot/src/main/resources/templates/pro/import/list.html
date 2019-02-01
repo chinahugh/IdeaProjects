@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script th:src="@{/static/js/jquery.min.js}" src="/static/js/jquery.min.js"></script>
+    <script th:src="@{/static/js/bootstrap.main.js}" src="/static/css/bootstrap.min.js"></script>
+    <link th:href="@{/static/css/bootstrap.min.css}" href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <title>数据导入</title>
+</head>
+<body>
+<div class="container">
+<!--   <form action="/pro/import/import" method="port" >
+       <input name="file" th:type="" >
+       <input type="submit">
+   </form>-->
+    <form th:action="@{/pro/import/import}" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileUpload" />
+        <input type="submit" value="上传文件" />
+    </form>
+
+</div>
+</body>
+</html>
