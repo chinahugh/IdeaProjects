@@ -11,7 +11,6 @@ import java.util.Set;
 public class UserInfo extends DateEntity {
     private static final long serialVersionUID = -8715672633099090133L;
 
-
     public UserInfo() {
         super();
     }
@@ -83,6 +82,15 @@ public class UserInfo extends DateEntity {
     private Set<String> roles;
     private Set<String> permissions;
     private Integer noId;
+
+    public Integer getNoId() {
+        return noId;
+    }
+
+    public void setNoId(Integer noId) {
+        this.noId = noId;
+    }
+
     /**
      * user_info.user_name
      *
@@ -388,13 +396,5 @@ public class UserInfo extends DateEntity {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getNoId() {
-        return noId;
-    }
-
-    public void setNoId(Integer noId) {
-        this.noId = noId;
     }
 }

@@ -36,12 +36,16 @@ public class ShiroConfig {
         return new CustomRealm();
     }
 
+    /**
+     * setUsePrefix(false)用于解决一个奇怪的bug。在引入spring aop的情况下。
+     * 在@Controller注解的类的方法中加入@RequiresRole注解，会导致该方法无法映射请求，导致返回404。
+     * 加入这项配置能解决这个bug
+     *
+     * @return
+     */
     @Bean
     public static DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {
         DefaultAdvisorAutoProxyCreator creator = new DefaultAdvisorAutoProxyCreator();
-//         setUsePrefix(false)用于解决一个奇怪的bug。在引入spring aop的情况下。
-//         在@Controller注解的类的方法中加入@RequiresRole注解，会导致该方法无法映射请求，导致返回404。
-//         加入这项配置能解决这个bug
         creator.setUsePrefix(true);
         return creator;
     }
@@ -95,8 +99,10 @@ public class ShiroConfig {
         filterMap.put("/static/**", "anon");
         filterMap.put("/login", "anon");
         filterMap.put("/logout", "anon");
-//        filterMap.put("/favicon.ico", "anon");
-//        filterMap.put("/captcha.jpg", "anon");
+        filterMap.put("/favicon.ico", "anon");
+        filterMap.put("/captcha.jpg", "anon");
+        filterMap.put("/druid/**", "anon");
+        filterMap.put("/hello", "anon");
         filterMap.put("/**", "authc");
         shiroFilter.setFilterChainDefinitionMap(filterMap);
         return shiroFilter;
@@ -107,10 +113,10 @@ public class ShiroConfig {
         return new LifecycleBeanPostProcessor();
     }
 
-    @Bean
     /**
      * 加入注解的使用，不加入这个注解不生效
      */
+    @Bean
     public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(SecurityManager securityManager) {
         AuthorizationAttributeSourceAdvisor advisor = new AuthorizationAttributeSourceAdvisor();
         advisor.setSecurityManager(securityManager);

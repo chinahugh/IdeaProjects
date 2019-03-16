@@ -26,8 +26,7 @@ public class ShiroUtils {
      * @return
      */
     public static UserInfo getUserInfo() {
-        UserInfo userInfo = (UserInfo) getSubject().getPrincipal();
-        return userInfo;
+        return (UserInfo) getSubject().getPrincipal();
     }
 
     /**
@@ -35,7 +34,6 @@ public class ShiroUtils {
      * @return
      */
     public static Session getSession() {
-        Session session = getSubject().getSession();
-        return session;
+        return getSubject().getSession();
     }
 }

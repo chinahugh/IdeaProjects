@@ -1,4 +1,4 @@
-package springboot.template.mvc.mapper.base;
+package springboot.template.mvc.mapper;
 
 import springboot.template.mvc.entity.base.BaseEntity;
 

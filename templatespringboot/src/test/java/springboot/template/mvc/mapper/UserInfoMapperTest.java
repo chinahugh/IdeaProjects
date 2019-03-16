@@ -2,17 +2,18 @@ package springboot.template.mvc.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import springboot.template.mvc.entity.UserInfo;
+import springboot.template.mvc.mapper.base.UserInfoMapper;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class UserInfoMapperTest {
-    @Autowired
+    @Resource
     private UserInfoMapper userInfoMappr;
     @Test
     public void  setUserInfoMappr(){
@@ -21,7 +22,7 @@ public class UserInfoMapperTest {
 
     @Test
     public void get() {
-        System.out.println("userInfoMappr.get(\"1\") = " + userInfoMappr.get("1"));
+        System.out.println("userInfoMappr.get(1) = " + userInfoMappr.get("1"));
     }
 
 @Test

@@ -23,96 +23,79 @@
     <![endif]-->
 </head>
 
-<body class="no-skin">
-<div id="navbar" class="navbar navbar-default">
+<body>
 
-    <div class="navbar-container" id="navbar-container">
-        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
-            <span class="icon-bar"></span>
 
-            <span class="icon-bar"></span>
+<div class="col-xs-12">
+    <!-- PAGE CONTENT BEGINS -->
 
-            <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-header pull-left">
-            <a href="index.html" class="navbar-brand">
-                <small>
-                    <img src="/static/avatars/logo.png" alt=""/>
-                </small>
-            </a>
-        </div>
+    <!-- #section:pages/error -->
+    <div class="error-container">
+        <div class="well">
+            <h1 class="grey lighter smaller">
+											<span class="blue bigger-125">
+												<i class="ace-icon fa fa-sitemap"></i>
+												404
+											</span>
+                页面找不到
+            </h1>
 
-        <div class="navbar-buttons navbar-header pull-right" role="navigation">
-            <ul class="nav ace-nav">
-                <li class="light-blue">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="/static/avatars/user.jpg" alt="Jason's Photo"/>
-                        <span class="user-info">
-									欢迎您<br/>
-									陈子昂
-								</span>
+            <hr/>
+            <h3 class="lighter smaller">我们其实也很想帮您找到页面，但是我们也是无能为力了!</h3>
 
-                        <i class="ace-icon fa fa-caret-down"></i>
-                    </a>
+            <div>
+                <form class="form-search">
+												<span class="input-icon align-middle">
+													<i class="ace-icon fa fa-search"></i>
 
-                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-cog"></i>
-                                系统设置
-                            </a>
-                        </li>
+													<input type="text" class="search-query" placeholder="搜索一下帮助方法..."/>
+												</span>
+                    <button class="btn btn-sm" type="button">走你!</button>
+                </form>
 
-                        <li>
-                            <a href="profile.html">
-                                <i class="ace-icon fa fa-user"></i>
-                                个人信息设置
-                            </a>
-                        </li>
+                <div class="space"></div>
+                <h4 class="smaller">你还可以尝试一下以下好玩的东西:</h4>
 
-                        <li class="divider"></li>
+                <ul class="list-unstyled spaced inline bigger-110 margin-15">
+                    <li>
+                        <i class="ace-icon fa fa-hand-o-right blue"></i>
+                        重新尝试刷新一下本页面
+                    </li>
 
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-power-off"></i>
-                                登出
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="main-container" id="main-container">
-    <div class="main-content">
-        <div class="breadcrumbs" id="breadcrumbs">
-            <ul class="breadcrumb">
-                <li>
-                    <i class="ace-icon fa fa-home home-icon"></i>
-                    <a href="index.html">UI库首页</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">空白页</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page-content">
-            <div class="page-content-area">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="center">
-                            <img src="/static/avatars/jugong.jpg">
-                        </div>
-                    </div>
-                </div>
+                    <li>
+                        <i class="ace-icon fa fa-hand-o-right blue"></i>
+                        阅读帮助文档
+                    </li>
+
+                    <li>
+                        <i class="ace-icon fa fa-hand-o-right blue"></i>
+                        联系我们
+                    </li>
+                </ul>
+            </div>
+
+            <hr/>
+            <div class="space"></div>
+
+            <div class="center">
+                <a href="javascript:history.back()" class="btn btn-grey">
+                    <i class="ace-icon fa fa-arrow-left"></i>
+                    返回上一页
+                </a>
+
+                <a href="/templates/index.html" class="btn btn-primary">
+                    <i class="ace-icon fa fa-tachometer"></i>
+                    去主页
+                </a>
             </div>
         </div>
     </div>
-    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-        <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-    </a>
-</div>
+
+    <!-- /section:pages/error -->
+
+    <!-- PAGE CONTENT ENDS -->
+</div><!-- /.col -->
+
 
 <!-- basic scripts -->
 

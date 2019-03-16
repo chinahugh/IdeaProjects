@@ -19,6 +19,7 @@ public class XmMainMonth extends DateEntity {
 
     /** */
     private String userId;
+    private String userName;
     /**
      * 排序
      */
@@ -377,10 +378,19 @@ public class XmMainMonth extends DateEntity {
         this.xmMainDays = xmMainDays;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     @Override
     public String toString() {
         return "XmMainMonth{" +
                 "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
                 ", sort=" + sort +
                 ", sysYear=" + sysYear +
                 ", sysMonth=" + sysMonth +

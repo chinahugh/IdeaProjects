@@ -3,12 +3,12 @@ package springboot.com.mvc.service;
 import com.github.pagehelper.Page;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import springboot.com.mvc.entity.XmMainDay;
 import springboot.template.global.util.UUIDUtils;
 
+import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -16,9 +16,9 @@ import java.util.Set;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class XmMainDayServiceTest {
-    @Autowired
+    @Resource
     private XmMainDayService xmMainDayService;
-    @Autowired
+    @Resource
     private XmMainMonthService xmMainMonthService;
 
     @Test

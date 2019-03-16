@@ -7,14 +7,8 @@ import java.io.Serializable;
  * @Date 2018/6/9
  * @Description ServiceException 自定义异常
  */
-
-
 public class ServiceException extends RuntimeException implements Serializable {
     private static final long serialVersionUID = -7763139086868275378L;
-
-    public ServiceException() {
-        super();
-    }
 
     public ServiceException(String message) {
         super(message);

@@ -1,11 +1,10 @@
-package springboot.template.mvc.mapper;
+package springboot.template.mvc.mapper.base;
 
-import org.springframework.stereotype.Repository;
 import springboot.template.mvc.entity.SysRole;
-import springboot.template.mvc.mapper.base.BaseMapper;
+import springboot.template.mvc.mapper.BaseMapper;
 
 import java.util.List;
-@Repository
+
 public interface SysRoleMapper extends BaseMapper<SysRole> {
     List<SysRole> getUserRoles(String userId);
 }

@@ -10,6 +10,12 @@
 <body>
 <div class="container-fluid">
     <h1 class="text-center jamboree">月信息统计列表</h1>
+
+    <div class="row">
+        <div class=".col-xs-6">
+            <button class="btn btn-danger" onclick="upmonth()">更新月数据</button>
+        </div>
+    </div>
     <div class="page-content">
         <div class="page-content-area">
             <div class="row">
@@ -43,21 +49,19 @@
                                     <th style="text-align: center">操作</th>
                                 </tr>
                                 </thead>
-
                                 <tbody>
                                 <tr th:each="o:${list.list}">
-                                    <td name="id" style="text-align: center" th:text="${o.id}" hidden></td>
                                     <td style="text-align: center">
                                         <label class="position-relative">
                                             <input type="checkbox" class="ace"/>
                                             <span class="lbl"></span>
                                         </label>
                                     </td>
-                                    <td style="text-align: center">
-                                        <button th:text="${o.userId}" th:value="${o.id}"
-                                                onclick="xmDay(this)"></button>
-                                    </td><!--姓名-->
-                                    <td style="text-align: center" th:text="${o.sysYear+'-'+o.sysMonth}">年月</td><!--年月-->
+                                  <!--  <td id="id" style="text-align: center" th:value="${o.id}" hidden></td>-->
+                                    <td style="text-align: center" th:text="${o.userName}" onclick="xmDay(this)" th:value="${o.id}">姓名</td>
+                                    <!--姓名-->
+                                    <td style="text-align: center" th:text="${o.sysYear+'-'+o.sysMonth}">年月</td>
+                                    <!--年月-->
                                     <td style="text-align: center" th:text="${o.ycqts}">应出勤天数</td>  <!--应出勤天数-->
                                     <td style="text-align: center" th:text="${o.sjcqts}">实际出勤天数</td> <!--实际出勤天数-->
                                     <td style="text-align: center" th:text="${o.sj}">正常天数</td>    <!--事假天数-->
@@ -71,7 +75,7 @@
                                     <td style="text-align: center" th:text="${o.zt}">早退次数</td>    <!--早退次数-->
                                     <td style="text-align: center" th:text="${o.remarks}">备注</td>   <!--备注-->
                                     <td style="text-align: center">
-                                        <div class=" hidden-xs btn-group">
+                                        <div class="hidden-xs btn-group">
                                             <button th:value="${o.id}" class="btn btn-sm btn-primary"
                                                     onclick="update(this)">修改
                                             </button>
@@ -86,34 +90,27 @@
                             </table>
                         </div>
                     </div>
-
-
                     <div class="hr hr-18 dotted hr-double"></div>
-
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
 <script>
-    function update(o) {
-        var id = o.value;
-        console.log(o.value);
+    function update() {
+        var id=o.value;
         window.location.href = "/pro/xmMain/get/" + id;
     }
-
     function xmDay(o) {
-        var id = o.value;
-        console.log(o.value);
+       var id=o.value;
         window.location.href = "/pro/xmDay/list?mainMonthId=" + id;
     }
-
-    function deleteByKey(o) {
-        var id = o.value;
-        console.log(o.value);
+    function deleteByKey() {
+        var id=o.value;
         window.location.href = "/pro/xmMain/deleteByKey/" + id;
+    }
+    function upmonth() {
+        window.location.href = "/pro/xmMain/upMouth";
     }
 </script>
 </body>

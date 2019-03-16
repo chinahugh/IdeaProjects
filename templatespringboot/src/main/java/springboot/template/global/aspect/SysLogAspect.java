@@ -2,11 +2,12 @@ package springboot.template.global.aspect;
 
 import com.alibaba.fastjson.JSON;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.springframework.beans.factory.annotation.Autowired;
 import springboot.template.global.exception.ServiceException;
 import springboot.template.global.util.ShiroUtils;
 import springboot.template.mvc.entity.SysLog;
 import springboot.template.mvc.service.SysLogService;
+
+import javax.annotation.Resource;
 
 /**
  * @Auther HUGH
@@ -16,7 +17,7 @@ import springboot.template.mvc.service.SysLogService;
 
 public class SysLogAspect {
     private boolean is_savelog = true;
-    @Autowired
+    @Resource
     private SysLogService sysLogService;
 
 //    @Around("execution(* springboot.template.mvc..*(..))")

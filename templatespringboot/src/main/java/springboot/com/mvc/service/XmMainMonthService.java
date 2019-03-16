@@ -10,7 +10,9 @@ import springboot.template.mvc.service.BaseService;
  */
 
 public interface XmMainMonthService extends BaseService<XmMainMonth> {
+    void update();
 
+    void upMouth(String mainMonthId);
     /**
      * 以isDisable=0为前提获取XmMainMonth.sysYear、sysMonth下的全月数据
      *

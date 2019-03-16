@@ -2,19 +2,21 @@ package springboot.template.mvc.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import springboot.template.mvc.entity.SysDepartment;
 import springboot.template.mvc.entity.SysPermission;
-import springboot.template.mvc.entity.SysRole;
+import springboot.template.mvc.mapper.base.SysDepartmentMapper;
+import springboot.template.mvc.mapper.base.SysPermissionMapper;
+import springboot.template.mvc.mapper.base.SysRoleMapper;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SysDepartmentMapperTest {
-    @Autowired
+    @Resource
     private SysDepartmentMapper sysDepartmentMapper;
 
     @Test
@@ -59,9 +61,9 @@ public class SysDepartmentMapperTest {
         sysDepartment.setFatherId("0");
         System.out.println(" = " + sysDepartmentMapper.list(sysDepartment));
     }
-    @Autowired
+    @Resource
     private SysRoleMapper sysRoleMapper;
-    @Autowired
+    @Resource
     private SysPermissionMapper sysPermissionMapper;
     @Test
     public void AA(){

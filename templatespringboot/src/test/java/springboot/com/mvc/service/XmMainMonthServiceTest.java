@@ -1,21 +1,21 @@
 package springboot.com.mvc.service;
 
 import com.github.pagehelper.Page;
-import net.sf.json.JSONArray;
+//import net.sf.json.JSONArray;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import springboot.com.mvc.entity.XmMainMonth;
 import springboot.template.global.util.UUIDUtils;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class XmMainMonthServiceTest {
-    @Autowired
+    @Resource
     private XmMainMonthService xmMainMonthService;
 
 
@@ -47,7 +47,7 @@ public class XmMainMonthServiceTest {
         xmMainMonth.setUserId("1");
 //        xmMainMonth.setIsDisable(null);
         List<XmMainMonth> list = xmMainMonthService.list(xmMainMonth,new Page<>()).getList();
-        System.out.println(JSONArray.fromObject(list));
+//        System.out.println(JSONArray.fromObject(list));
     }
 
     @Test

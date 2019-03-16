@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="text-center jumbotron" th:text="${userName}个人月打卡信息修改">个人月打卡信息修改</h1>
+    <h1 class="text-center jumbotron" th:text="个人月打卡信息修改">个人月打卡信息修改</h1>
     <div class="main-content">
         <div class="page-content">
             <div class="page-content-area">
@@ -22,7 +22,7 @@
                                 <label class="col-sm-2 control-label no-padding-right"> 日期：</label>
 
                                 <div class="col-sm-2">
-                                    <input name="sysDay" th:value="${entity.sysDay}" class="col-xs-4 col-sm-9"
+                                    <input name="sysDay" th:value="${entity.sysDay}" class="form-control"
                                            readonly=""/>
                                 </div>
                             </div>
@@ -31,13 +31,15 @@
 
                                 <div class="col-sm-2">
                                     <input name="mData" placeholder="早上打卡时间" th:value="${entity.mData}"
-                                           class=" col-xs-4 col-sm-9" maxlength="5"/>
+                                           class="form-control" maxlength="5" readonly=""/>
                                 </div>
                                 <label class="col-sm-2 control-label no-padding-right">早上打卡标志： </label>
 
                                 <div class="col-sm-2">
-                                    <input name="mTag" placeholder="早上打卡标志" th:value="${entity.mTag}"
-                                           class=" col-xs-4 col-sm-9" maxlength="1"/>
+                                    <select class="form-control" name="mTag">
+                                        <option>请选择</option>
+                                        <option th:each="c:${tagList}" th:value="${c.id}" th:text="${c.lable}"></option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -45,14 +47,15 @@
 
                                 <div class="col-sm-2">
                                     <input name="pData" placeholder="下午打卡时间" th:value="${entity.pData}"
-                                           class=" col-xs-4 col-sm-9" maxlength="5"/>
+                                           class=" form-control" maxlength="5" readonly=""/>
                                 </div>
                                 <label class="col-sm-2 control-label no-padding-right">
                                     下午打卡标志：</label>
-
                                 <div class="col-sm-2">
-                                    <input name="pTag" placeholder="下午打卡标志" th:value="${entity.pTag}"
-                                           class="col-xs-4 col-sm-9" maxlength="1"/>
+                                    <select class="form-control" name="pTag">
+                                        <option>请选择</option>
+                                        <option th:each="c:${tagList}" th:value="${c.id}" th:text="${c.lable}"></option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">

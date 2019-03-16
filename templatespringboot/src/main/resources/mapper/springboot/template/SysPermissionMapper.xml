@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="springboot.template.mvc.mapper.SysPermissionMapper">
+<mapper namespace="springboot.template.mvc.mapper.base.SysPermissionMapper">
     <resultMap id="BaseResultMap" type="springboot.template.mvc.entity.SysPermission">
         <id column="id" jdbcType="VARCHAR" property="id"/>
         <result column="url" jdbcType="VARCHAR" property="url"/>
@@ -244,7 +244,7 @@
         SELECT DISTINCT
         <include refid="Base_Column_List"/>
         FROM sys_permission a
-         JOIN sys_role_permission b ON a.id=b.permission_id
-         JOIN sys_user_role c ON c.role_id=b.role_id AND c.user_id=#{userId}
+        LEFT JOIN sys_role_permission b ON a.id=b.permission_id
+        LEFT JOIN sys_user_role c ON c.role_id=b.role_id AND c.user_id=#{userId}
     </select>
 </mapper>

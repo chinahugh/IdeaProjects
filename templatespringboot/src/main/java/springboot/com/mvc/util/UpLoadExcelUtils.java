@@ -8,6 +8,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
 import springboot.template.global.exception.EN;
 import springboot.template.global.exception.ServiceException;
@@ -23,12 +24,12 @@ import java.util.List;
  */
 public class UpLoadExcelUtils {
     Logger logger = LoggerFactory.getLogger(UpLoadExcelUtils.class);
-  /*  @Value("${myconfig.sheet.sheetPage:0}")
+    @Value("${myconfig.sheet.sheetPage:0}")
     private int sheetPage;
     @Value("${myconfig.sheet.startRow:0}")
     private static int startRow;
     private int noidRow = 3;
-    private int nameRow = 11;*/
+    private int nameRow = 11;
     public static String xls = "xls";
     public static String xlsx = "xlsx";
 
@@ -53,6 +54,7 @@ public class UpLoadExcelUtils {
             for (int cellNum = firstCellNum; cellNum < lastCellNum; cellNum++) {
                 Cell cell = row.getCell(cellNum);
                 cells[cellNum] = getCellValue(cell);
+
             }
             list.add(cells);
         }
@@ -110,7 +112,7 @@ public class UpLoadExcelUtils {
                 }
             }
         } catch (IOException e) {
-            new ServiceException(EN.UP_LOAD_FILE_FAIL);
+           throw  new ServiceException(EN.UP_LOAD_FILE_FAIL,e);
         }
         return workbook;
     }

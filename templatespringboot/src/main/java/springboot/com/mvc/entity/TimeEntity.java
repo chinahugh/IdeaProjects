@@ -1,6 +1,6 @@
 package springboot.com.mvc.entity;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import springboot.template.global.exception.ServiceException;
 
 import java.io.Serializable;

@@ -24,7 +24,6 @@ import springboot.template.global.exception.ServiceException;
 import springboot.template.global.intercepter.InterceptorConfig;
 import springboot.template.global.result.R;
 import springboot.template.global.result.RC;
-import springboot.template.global.result.RR;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -106,18 +105,16 @@ public class WebConfig extends WebMvcConfigurationSupport {
             @Override
             public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex) {
                 ModelAndView modelAndView = new ModelAndView();
-                modelAndView.setViewName("/templates/error-404.html");
-
-//                LOGGER.error(ex.getMessage(),ex);
+                modelAndView.setViewName("error-404");
+            //    LOGGER.error(ex.getMessage(), ex);
                 //根据异常类型确定返回数据
                 R result = getResuleByHeandleException(request, handler, ex);
                 //响应结果
-                responseResult(response, result);
+              //  responseResult(response, result);
                 return modelAndView;
             }
         };
     }
-
 
     /**
      * swagger-ui设置，因为继承WebMvcConfigurationSupport之后，静态文件映射会出现问题，需要重新指定静态资源
@@ -126,42 +123,46 @@ public class WebConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-        registry.addResourceHandler("/favicon.ico")
-                .addResourceLocations("classpath:/static/favicon.ico");
-        registry.addResourceHandler("/static/**")
-                .addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/templates/**")
-                .addResourceLocations("classpath:/templates/");
+        registry.addResourceHandler("/swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/favicon.ico").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
         super.addResourceHandlers(registry);
     }
 
     private R getResuleByHeandleException(HttpServletRequest request, Object handler, Exception e) {
+        String msg;
         if (e instanceof ServiceException) {
-            LOGGER.error("ServiceException", e);
-            return RR.error(e.getMessage());
+            msg = e.getMessage();
+            LOGGER.error(msg, e);
+            return R.error(msg);
         }
         if (e instanceof NoHandlerFoundException) {
-            LOGGER.error("NoHandlerFoundException", e);
-            return RR.error("接口 [" + request.getRequestURI() + "] 不存在");
+            msg = "接口 [" + request.getRequestURI() + "] 不存在";
+            LOGGER.error(msg, e);
+            return R.error(msg);
         }
+//        if (e instanceof PageNotFound) {
+//            msg = "接口 [" + request.getRequestURI() + "] 不存在";
+//            LOGGER.error(msg, e);
+//            return R.error(msg);
+//        }
         if (e instanceof HttpRequestMethodNotSupportedException) {
-            LOGGER.error("HttpRequestMethodNotSupportedException", e);
-            return RR.error(RC.INTERNAL_SERVER_ERROR, "接口 [" + request.getRequestURI() + "] 不能使用GET访问");
+            msg = "接口 [" + request.getRequestURI() + "] 不能使用GET访问";
+            LOGGER.error(msg, e);
+            return R.error(RC.INTERNAL_SERVER_ERROR, msg);
         }
         if (handler instanceof HandlerMethod) {
-            LOGGER.error("HandlerMethod", e);
             HandlerMethod handlerMethod = (HandlerMethod) handler;
-            String msg = String.format("接口 [%s] 出现异常，方法：%s.%s，异常摘要：%s", request.getRequestURI(),
+            msg = String.format("接口 [%s] 出现异常，方法：%s.%s，异常摘要：%s", request.getRequestURI(),
                     handlerMethod.getBean().getClass().getName(), handlerMethod.getMethod().getName(), e.getMessage());
-            return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
+            LOGGER.error(msg, e);
+            return R.error(RC.INTERNAL_SERVER_ERROR, msg);
         }
-        LOGGER.error(e.getMessage(), e);
-        String msg = "接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员" + e.getMessage();
-        return RR.error(RC.INTERNAL_SERVER_ERROR, msg);
+        msg = "接口 [" + request.getRequestURI() + "] 内部错误，请联系管理员" + e.getMessage();
+        LOGGER.error(msg, e);
+        return R.error(RC.INTERNAL_SERVER_ERROR, msg);
     }
 
     private void responseResult(HttpServletResponse response, R result) {

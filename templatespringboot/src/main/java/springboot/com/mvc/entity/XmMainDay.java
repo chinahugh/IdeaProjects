@@ -35,11 +35,11 @@ public class XmMainDay extends DateEntity {
     /**
      * 标志 0正常 1 迟到 2 未打卡 3 外出 4异常
      */
-    private Integer mTag;
+    private String mTag;
     /**
      * 标志 0正常 1 早退 2 未打卡 3 外出 4异常
      */
-    private Integer pTag;
+    private String pTag;
     /**
      * 备注
      */
@@ -105,7 +105,7 @@ public class XmMainDay extends DateEntity {
      *
      * @return the value of xm_main_day.m_tag
      */
-    public Integer getmTag() {
+    public String getmTag() {
         return mTag;
     }
 
@@ -114,7 +114,7 @@ public class XmMainDay extends DateEntity {
      *
      * @param mTag the value for xm_main_day.m_tag
      */
-    public void setmTag(Integer mTag) {
+    public void setmTag(String mTag) {
         this.mTag = mTag;
     }
 
@@ -123,7 +123,7 @@ public class XmMainDay extends DateEntity {
      *
      * @return the value of xm_main_day.p_tag
      */
-    public Integer getpTag() {
+    public String getpTag() {
         return pTag;
     }
 
@@ -132,7 +132,7 @@ public class XmMainDay extends DateEntity {
      *
      * @param pTag the value for xm_main_day.p_tag
      */
-    public void setpTag(Integer pTag) {
+    public void setpTag(String pTag) {
         this.pTag = pTag;
     }
 

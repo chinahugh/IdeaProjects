@@ -9,10 +9,11 @@ import springboot.template.mvc.entity.base.DateEntity;
  */
 public class ExcelEntity extends DateEntity {
     private static final long serialVersionUID = -2105444202350031582L;
-private String name;
-private String noId;
-private String departmentName;
-private String[][] cqData;
+    private String name;
+    private String noId;
+    private String departmentName;
+    private String[][] cqData;
+
     public ExcelEntity() {
         super();
     }

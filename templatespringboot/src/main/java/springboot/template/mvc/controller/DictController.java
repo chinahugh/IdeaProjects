@@ -1,7 +1,6 @@
 package springboot.template.mvc.controller;
 
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import springboot.template.mvc.entity.SysDict;
 import springboot.template.mvc.service.SysDictService;
 
+import javax.annotation.Resource;
 import java.util.Comparator;
 import java.util.List;
 
@@ -21,7 +21,7 @@ import java.util.List;
 @Controller
 @RequestMapping(value = "/sys/dict/", method = RequestMethod.GET)
 public class DictController extends BaseController {
-    @Autowired
+    @Resource
     private SysDictService sysDictService;
 
     @RequestMapping("get/{id}")

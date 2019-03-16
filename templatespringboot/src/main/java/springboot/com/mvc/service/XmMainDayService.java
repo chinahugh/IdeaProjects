@@ -11,4 +11,5 @@ import springboot.template.mvc.service.BaseService;
 
 public interface XmMainDayService extends BaseService<XmMainDay> {
 
+
 }

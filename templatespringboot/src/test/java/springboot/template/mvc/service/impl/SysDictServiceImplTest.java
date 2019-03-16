@@ -2,18 +2,18 @@ package springboot.template.mvc.service.impl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import springboot.template.mvc.entity.SysDict;
 import springboot.template.mvc.service.SysDictService;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class SysDictServiceImplTest {
-    @Autowired
+    @Resource
     private SysDictService sysDictService;
     @Test
     public void get() throws Exception {

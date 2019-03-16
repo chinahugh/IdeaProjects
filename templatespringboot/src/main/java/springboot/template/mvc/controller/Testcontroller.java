@@ -5,8 +5,6 @@ import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import net.sf.json.JSONArray;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
-import springboot.template.global.result.RR;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.SysDepartmentService;
 import springboot.template.mvc.service.UserInfoService;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,9 +28,9 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "/", method = RequestMethod.GET)
 public class Testcontroller {
-    @Autowired
+    @Resource
     private UserInfoService userInfoService;
-    @Autowired
+    @Resource
     private SysDepartmentService sysDepartmentService;
     @Value("${myconfig.id.type}")
     private String idType;
@@ -40,7 +38,7 @@ public class Testcontroller {
     @RequestMapping("list")
     @ResponseBody
     public PageInfo<UserInfo> list(UserInfo userInfo) {
-        System.out.println("JSONArray.fromObject(userInfo) = " + JSONArray.fromObject(userInfo));
+//        System.out.println("JSONArray.fromObject(userInfo) = " + JSONArray.fromObject(userInfo));
         return userInfoService.list(userInfo, new Page());
     }
 
@@ -49,19 +47,19 @@ public class Testcontroller {
     @ApiOperation(value = "查询用户", notes = "根据用户ID查询用户")
     @ApiImplicitParams({@ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "String", paramType = "query")})
     public R find(@RequestParam String id, Map map) {
-        map.put("user", userInfoService.get(id));
         System.out.println(userInfoService.get(id));
-        return RR.ok(map);
+        return R.ok().put("user", userInfoService.get(id));
     }
 
-    @RequestMapping("hello")
+
     @ResponseBody
-    public R hello(String hello, HashMap<String, Object> map) {
+    @RequestMapping(value = "hello",method = RequestMethod.GET)
+    public UserInfo hello(String hello, HashMap<String, Object> map) {
         map.put("sysdepartment", hello);
         map.put("sysdepartment2", hello);
         UserInfo userInfo = userInfoService.get("1");
         map.put("user", userInfo);
-        return RR.ok(map);
+        return userInfo;
     }
 
     @RequestMapping("insert")

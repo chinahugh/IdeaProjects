@@ -1,6 +1,6 @@
 package springboot.com.mvc.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,6 +9,8 @@ import org.springframework.web.multipart.MultipartFile;
 import springboot.com.mvc.service.ImportFileService;
 import springboot.template.mvc.controller.BaseController;
 
+import javax.annotation.Resource;
+
 /**
  * @author HUGH
  * @Date 2019/1/9 21:53
@@ -16,8 +18,9 @@ import springboot.template.mvc.controller.BaseController;
  */
 @Controller
 @RequestMapping("/pro/import")
+@Api("文件导入")
 public class ImportFileController extends BaseController {
-    @Autowired
+    @Resource
     private ImportFileService importFileService;
 
     @RequestMapping("list")
@@ -30,6 +33,17 @@ public class ImportFileController extends BaseController {
         if (file != null && !file.isEmpty() && file.getSize() > 0) {
             logger.info("upload file: {}  size: {}", file.getOriginalFilename(), file.getSize());
             importFileService.importFile(file);
+            return INDEX;
+        } else {
+            return INDEX;
+        }
+
+    }
+    @RequestMapping(value = "importPerson", method = RequestMethod.POST)
+    public String importPerson(@RequestParam("fileUpload") MultipartFile file) {
+        if (file != null && !file.isEmpty() && file.getSize() > 0) {
+            logger.info("upload file: {}  size: {}", file.getOriginalFilename(), file.getSize());
+            importFileService.importPerson(file);
             return INDEX;
         } else {
             return INDEX;

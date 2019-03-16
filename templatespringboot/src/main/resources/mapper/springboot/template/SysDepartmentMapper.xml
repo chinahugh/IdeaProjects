@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="springboot.template.mvc.mapper.SysDepartmentMapper">
+<mapper namespace="springboot.template.mvc.mapper.base.SysDepartmentMapper">
     <resultMap id="BaseResultMap" type="springboot.template.mvc.entity.SysDepartment">
         <id column="id" jdbcType="VARCHAR" property="id"/>
         <result column="department_name" jdbcType="VARCHAR" property="departmentName"/>

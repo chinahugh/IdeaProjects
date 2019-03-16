@@ -16,4 +16,10 @@ public interface ImportFileService {
      * @param uploadfile
      */
     void importFile(MultipartFile uploadfile);
+
+    /**
+     * 上传用户列表
+     * @param file
+     */
+    void importPerson(MultipartFile file);
 }

@@ -7,8 +7,8 @@
         <result column="sys_day" jdbcType="INTEGER" property="sysDay"/>
         <result column="m_data" jdbcType="VARCHAR" property="mData"/>
         <result column="p_data" jdbcType="VARCHAR" property="pData"/>
-        <result column="m_tag" jdbcType="INTEGER" property="mTag"/>
-        <result column="p_tag" jdbcType="INTEGER" property="pTag"/>
+        <result column="m_tag" jdbcType="VARCHAR" property="mTag"/>
+        <result column="p_tag" jdbcType="VARCHAR" property="pTag"/>
         <result column="remarks" jdbcType="VARCHAR" property="remarks"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="create_user_id" jdbcType="VARCHAR" property="createUserId"/>
@@ -35,10 +35,10 @@
             AND p_data = #{pData,jdbcType=VARCHAR}
         </if>
         <if test="mTag != null">
-            AND m_tag = #{mTag,jdbcType=INTEGER}
+            AND m_tag = #{mTag,jdbcType=VARCHAR}
         </if>
         <if test="pTag != null">
-            AND p_tag = #{pTag,jdbcType=INTEGER}
+            AND p_tag = #{pTag,jdbcType=VARCHAR}
         </if>
         <if test="sysDay != null">
             AND sys_day = #{sysDay,jdbcType=INTEGER}
@@ -137,10 +137,10 @@
                 #{pData,jdbcType=VARCHAR},
             </if>
             <if test="mTag != null">
-                #{mTag,jdbcType=INTEGER},
+                #{mTag,jdbcType=VARCHAR},
             </if>
             <if test="pTag != null">
-                #{pTag,jdbcType=INTEGER},
+                #{pTag,jdbcType=VARCHAR},
             </if>
             <if test="sysDay != null">
                 #{sysDay,jdbcType=INTEGER},
@@ -178,10 +178,10 @@
                 p_data = #{pData,jdbcType=VARCHAR},
             </if>
             <if test="mTag != null">
-                m_tag = #{mTag,jdbcType=INTEGER},
+                m_tag = #{mTag,jdbcType=VARCHAR},
             </if>
             <if test="pTag != null">
-                p_tag = #{pTag,jdbcType=INTEGER},
+                p_tag = #{pTag,jdbcType=VARCHAR},
             </if>
             <if test="sysDay != null">
                 sys_day = #{sysDay,jdbcType=INTEGER},
@@ -214,5 +214,19 @@
         <where>
             <include refid="WHERE"/>
         </where>
+    </select>
+    <select id="count" parameterType="springboot.com.mvc.entity.MapperParameterType"
+            resultType="springboot.com.mvc.entity.MapperResultType">
+        select user_id, sys_month, sys_year, c.m_tag, c.p_tag,count(1) as count
+          from (select a.id, b.user_id, a.sys_day, b.sys_month, b.sys_year, a.is_disable, a.m_tag, a.p_tag
+                  from xm_main_day a
+                  left join xm_main_month b on b.id = a.main_month_id
+                   where a.is_disable = 0
+                   and b.is_disable = 0) c
+          where c.m_tag in <foreach  collection="mTag" item="rl" open="("  separator=","  close=")"> #{rl} </foreach>
+            and c.p_tag in <foreach  collection="pTag" item="rl" open="("  separator=","  close=")"> #{rl} </foreach>
+            and c.sys_month=#{sysMonth}
+            and c.sys_year=#{sysYear}
+          group by c.user_id, c.sys_month, c.sys_year,c.p_tag,c.m_tag;
     </select>
 </mapper>

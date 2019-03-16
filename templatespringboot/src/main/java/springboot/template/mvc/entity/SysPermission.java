@@ -261,4 +261,25 @@ public class SysPermission extends DateEntity {
         this.remarks = remarks;
     }
 
+    @Override
+    public String toString() {
+        return "SysPermission{" +
+                "url='" + url + '\'' +
+                ", urlName='" + urlName + '\'' +
+                ", urlImg='" + urlImg + '\'' +
+                ", type=" + type +
+                ", fatherId='" + fatherId + '\'' +
+                ", fatherIds='" + fatherIds + '\'' +
+                ", sort=" + sort +
+                ", permission='" + permission + '\'' +
+                ", remarks='" + remarks + '\'' +
+                ", createTime=" + createTime +
+                ", createUserId='" + createUserId + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateUserId='" + updateUserId + '\'' +
+                ", isNewCreate=" + isNewCreate +
+                ", id='" + id + '\'' +
+                ", isDisable=" + isDisable +
+                '}';
+    }
 }

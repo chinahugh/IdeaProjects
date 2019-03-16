@@ -2,49 +2,39 @@ package springboot.template.global.result;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @Auther HUGH
  * @Date 2018/6/9
- * @Description RetResult
+ * @Description RetResult 将结果转化为封装后的结果
  */
-
-public class R  implements Serializable {
+public class R extends HashMap implements Serializable {
     private static final long serialVersionUID = -4306581789984092527L;
-    private int code;
-    private String msg;
-    private Map<String,Object> data ;
+    private static final String SUCCESS = "SUCCESS";
 
-    public R() {
-    }
-    public R(RC code, String msg, Map<String, Object> data) {
-        this.code = code.code;
-        this.msg = msg;
-        this.data = data;
+    public R(RC code, String msg) {
+        put("code", code.code);
+        put("msg", msg);
     }
 
-    public int getCode() {
-         return code;
+    public static R ok() {
+        return ok(SUCCESS);
     }
 
-    public void setCode(RC code) {
-        this.code = code.code;
+    public static R ok(String msg) {
+        return new R(RC.SUCCESS, msg);
     }
 
-    public String getMsg() {
-        return msg;
+    public static R error(String message) {
+        return error(RC.FAIL, message);
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public static R error(RC code, String message) {
+        return new R(code, message);
     }
 
-    public Map<String, Object> getData() {
-        return data;
-    }
-
-    public void setData(Map<String, Object> data) {
-        this.data = data;
+    public R put(String name, Object data) {
+        super.put(name, data);
+        return this;
     }
 }

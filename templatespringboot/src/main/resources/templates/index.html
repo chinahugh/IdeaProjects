@@ -11,8 +11,8 @@
 <div class="container">
     <div class="panel panel-default">
         <div class="panel-body">
-           <h1> 目录</h1>
-            <a class="col-xs-10"  th:href="@{/logout}">登出</a>
+           <h1>目录</h1>
+            <a class="col-xs-10"  href="/logout">登出</a>
         </div>
         <div class="panel-footer">
             <ul class="list-group" id="menu">
@@ -30,7 +30,7 @@
             success:function (result) {
                 if(result.code===200){
                     console.log(JSON.stringify(result));
-                   $("ul").append(result.data.menu);
+                   $("ul").append(result.menu);
                 }
             }
         })

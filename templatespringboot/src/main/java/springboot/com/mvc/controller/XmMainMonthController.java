@@ -2,8 +2,7 @@ package springboot.com.mvc.controller;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,8 +13,9 @@ import springboot.com.mvc.entity.XmMainMonth;
 import springboot.com.mvc.service.XmMainDayService;
 import springboot.com.mvc.service.XmMainMonthService;
 import springboot.template.global.result.R;
-import springboot.template.global.result.RR;
 import springboot.template.mvc.controller.BaseController;
+
+import javax.annotation.Resource;
 
 /**
  * @Auther HUGH
@@ -25,9 +25,9 @@ import springboot.template.mvc.controller.BaseController;
 @Controller
 @RequestMapping(value = "/pro/xmMain/", method = RequestMethod.GET)
 public class XmMainMonthController extends BaseController {
-    @Autowired
+    @Resource
     private XmMainMonthService xmMainMonthService;
-    @Autowired
+    @Resource
     private XmMainDayService xmMainDayService;
 
     @ModelAttribute
@@ -38,21 +38,19 @@ public class XmMainMonthController extends BaseController {
         }
         return xmMainMonth;
     }
+
     @RequestMapping("get/{id}")
-    public String get(@PathVariable("id")String id,Model model) {
+    public String get(@PathVariable("id") String id, Model model) {
         XmMainMonth xmMainMonth = xmMainMonthService.get(id);
         if (xmMainMonth == null) {
             return "/pro/xmMain/list";
         }
-        model.addAttribute("entity",xmMainMonth);
+        model.addAttribute("entity", xmMainMonth);
         return "/pro/xmMain/update";
     }
 
     @RequestMapping("list")
     public String list(XmMainMonth xmMainMonth, Model model) {
-        if (xmMainMonth == null) {
-            xmMainMonth=new XmMainMonth();
-        }
         PageInfo<XmMainMonth> list = xmMainMonthService.list(xmMainMonth, new Page<>());
         model.addAttribute("list", list);
         return "pro/xmMain/list";
@@ -60,15 +58,15 @@ public class XmMainMonthController extends BaseController {
 
     @RequestMapping("update")
     public String update(XmMainMonth xmMainMonth) {
-
         if (xmMainMonth == null) {
             return "pro/xmMain/list";
         }
         xmMainMonthService.update(xmMainMonth);
         return INDEX;
     }
+
     @RequestMapping("deleteByKey/{id}")
-    public String deleteByKey(@PathVariable("id")String id) {
+    public String deleteByKey(@PathVariable("id") String id) {
         if (StringUtils.isBlank(id)) {
             return "pro/xmMain/list";
         }
@@ -79,6 +77,13 @@ public class XmMainMonthController extends BaseController {
     @RequestMapping("insert")
     public R insert(XmMainMonth xmMainMonth) {
         xmMainMonthService.insert(xmMainMonth);
-        return RR.ok();
+        return R.ok();
+    }
+
+    @RequestMapping("upMouth")
+    public String upMouth() {
+        logger.info("upmonth");
+        xmMainMonthService.update();
+        return INDEX;
     }
 }

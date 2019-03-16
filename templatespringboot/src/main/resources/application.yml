@@ -1,10 +1,10 @@
 #server访问端口
 server:
   port: 8080
-debug: true
+#debug: true
 #spring 配置
 spring:
-#数据库
+  #数据库
   datasource:
     name: datasource
     type: com.alibaba.druid.pool.DruidDataSource
@@ -26,77 +26,78 @@ spring:
       time-between-eviction-runs-millis: 60000
       #一个连接在池中最小生存的时间
       min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 'x'
+      validation-query: SELECT 1
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
       #打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
+    thymeleaf:
+      cache: false
+      mode: HTML5
+      prefix: classpath:/templates/
+      suffix: .html
+      encoding: utf-8
+      servlet:
+        content-type: text/html
+      check-template-location: true
   #rides
-#  redis:
-#    database: 0
-#    host: 127.0.0.1
-#    password:
-#    port: 6379
-#    timeout: 1000
-#    jedis:
-#      pool:
-#        max-wait: 10
-#        max-active: 8
-#        max-idle: 8
-#        min-idle: 0
-  thymeleaf:
-    cache: false
-    mode: HTML5
-    prefix: classpath:/templates/
-    suffix: .html
-    encoding: utf-8
-    check-template: true
-    servlet:
-      content-type: text/html
-  aop:
-    proxy-target-class: true
-    auto: true
-  mvc:
-  #出现 404 错误时, 直接抛出异常
-    throw-exception-if-no-handler-found: true
-  resources:
-  #不要为资源文件建立映射.
-    static-locations: /static/
-    add-mappings: false
+  #  redis:
+  #    database: 0
+  #    host: 127.0.0.1
+  #    password:
+  #    port: 6379
+  #    timeout: 1000
+  #    jedis:
+  #      pool:
+  #        max-wait: 10
+  #        max-active: 8
+  #        max-idle: 8
+  #        min-idle: 0
+
+  #  aop:
+  #    proxy-target-class: true
+  #    auto: true
+  #  mvc:
+  #  #出现 404 错误时, 直接抛出异常
+  #    throw-exception-if-no-handler-found: true
   servlet:
     #文件上传
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
 mybatis:
-  mapper-locations: classpath:mapper/**/*.xml
+  mapper-locations: classpath:/mapper/**/*.xml
   type-aliases-package: springboot.template.mvc.entity,springboot.com.mvc.entity
   # 打印sql
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+    aggressive-lazy-loading: true
 #pagehelper分页插件
 pagehelper:
-  helperDialect: mysql
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
   page-size-zero: true
   offset-as-page-num: 10
-logging:
-  config: classpath:log4j2.yml
+  helper-dialect: mysql
+swagger:
+  base-path: /*
+  exclude-path: /ops/**,/error
+  base-package: springboot
 #項目自身配置
 myconfig:
   id:
-     type: 2
+    type: 2
   excel:
     sheetPage: 2
     startRow: 4
     keySet:
-      cqsj: 4
-      name: 5
-      userId: 11
+    cqsj: 4
+    name: 5
+    userId: 11
+
 
 

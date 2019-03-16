@@ -1,6 +1,7 @@
 package springboot.template.global.util;
 
 import org.apache.shiro.crypto.hash.Md5Hash;
+import org.junit.Test;
 
 /**
  * @Auther HUGH
@@ -8,11 +9,13 @@ import org.apache.shiro.crypto.hash.Md5Hash;
  * @Description Md5
  */
 public class Md5Utils {
-    public static void main(String[] args) {
-        Md5Hash admin = new Md5Hash("admin");
-        System.out.println(admin.toString());
+    @Test
+    public void main() {
+        String admin = getMd5("admin");
+        System.out.println(admin.length());
     }
-    public static String getMd5(String str){
+
+    public static String getMd5(String str) {
         Md5Hash admin = new Md5Hash(str);
         return admin.toString();
     }
