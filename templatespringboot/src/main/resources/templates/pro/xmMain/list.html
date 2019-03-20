@@ -57,9 +57,11 @@
                                             <span class="lbl"></span>
                                         </label>
                                     </td>
-                                  <!--  <td id="id" style="text-align: center" th:value="${o.id}" hidden></td>-->
-                                    <td style="text-align: center" th:text="${o.userName}" onclick="xmDay(this)" th:value="${o.id}">姓名</td>
-                                    <!--姓名-->
+                                    <!--  <td id="id" style="text-align: center" th:value="${o.id}" hidden></td>-->
+                                    <td style="text-align: center">
+                                        <a th:href="${'/pro/xmDay/list?mainMonthId='+o.id}" th:text="${o.userName}"
+                                           th:value="${o.id}">姓名</a>
+                                    </td>                                   <!--姓名-->
                                     <td style="text-align: center" th:text="${o.sysYear+'-'+o.sysMonth}">年月</td>
                                     <!--年月-->
                                     <td style="text-align: center" th:text="${o.ycqts}">应出勤天数</td>  <!--应出勤天数-->
@@ -97,18 +99,16 @@
     </div>
 </div>
 <script>
-    function update() {
-        var id=o.value;
-        window.location.href = "/pro/xmMain/get/" + id;
+    function update(o) {
+        var id = o.value;
+        window.location.href = "/pro/xmMain/get/?id=" + id;
     }
-    function xmDay(o) {
-       var id=o.value;
-        window.location.href = "/pro/xmDay/list?mainMonthId=" + id;
-    }
-    function deleteByKey() {
-        var id=o.value;
+
+    function deleteByKey(o) {
+        var id = o.value;
         window.location.href = "/pro/xmMain/deleteByKey/" + id;
     }
+
     function upmonth() {
         window.location.href = "/pro/xmMain/upMouth";
     }

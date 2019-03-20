@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import springboot.template.global.result.R;
 import springboot.template.mvc.entity.SysPermission;
 import springboot.template.mvc.service.SysPermissionService;
@@ -21,9 +20,8 @@ import javax.annotation.Resource;
  * @Description MenuController
  */
 @Controller
-@ResponseBody
 @RequestMapping(value = "/sys/menu/", method = RequestMethod.GET)
-public class MenuController extends BaseController{
+public class MenuController extends BaseController {
     @Resource
     private SysPermissionService sysPermissionService;
 
@@ -33,31 +31,25 @@ public class MenuController extends BaseController{
         if (StringUtils.isNotEmpty(id)) {
             sysPermission = sysPermissionService.get(id);
         }
-        if (sysPermission == null) {
-            sysPermission = new SysPermission();
-        }
         return sysPermission;
     }
 
     @RequestMapping("list")
     @RequiresPermissions("sys:menu:list")
     public R list(SysPermission sysPermission) {
-
-        PageInfo<SysPermission> list = sysPermissionService.list(sysPermission, new Page(1,10));
-
-        return R.ok().put("entity", sysPermission).put("list",list);
+        PageInfo<SysPermission> list = sysPermissionService.list(sysPermission, new Page(1, 10));
+        return R.ok().put("entity", sysPermission).put("list", list);
     }
 
     @RequestMapping("save")
-    @ResponseBody
-    public R save(SysPermission sysPermission){
+    public R save(SysPermission sysPermission) {
         sysPermissionService.insert(sysPermission);
         return R.ok();
     }
+
     @RequestMapping("update")
-    @ResponseBody
-    public R update(SysPermission sysPermission){
-        sysPermissionService.insert(sysPermission);
+    public R update(SysPermission sysPermission) {
+        sysPermissionService.update(sysPermission);
         return R.ok();
     }
 }

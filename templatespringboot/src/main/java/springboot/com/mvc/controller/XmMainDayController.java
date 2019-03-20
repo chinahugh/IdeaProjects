@@ -19,6 +19,7 @@ import springboot.template.mvc.entity.SysDict;
 import springboot.template.mvc.entity.UserInfo;
 import springboot.template.mvc.service.SysDictService;
 import springboot.template.mvc.service.UserInfoService;
+import springboot.template.mvc.util.DictUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -51,15 +52,14 @@ public class XmMainDayController extends BaseController {
         return xmMainDay;
     }
 
-    @RequestMapping("get/{id}")
-    public String get(@PathVariable("id") String id, Model model) {
-        logger.info("id =>" + id);
-        XmMainDay xmMainDay = xmMainDayService.get(id);
+    @RequestMapping("get")
+    public String get(XmMainDay xmMainDay, Model model) {
+        logger.info("id =>" + xmMainDay);
         if (xmMainDay == null) {
             return INDEX;
         }
         SysDict sysDict = new SysDict();
-        sysDict.setType(MAIN_DAY_TAG);
+        sysDict.setType(DictUtils.MAIN_DAY_TAG);
         List<SysDict> tagList = sysDictService.list(sysDict);
         model.addAttribute("entity", xmMainDay);
         model.addAttribute("userName", "wll");

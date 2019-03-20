@@ -99,6 +99,7 @@ public class SysPermissionServiceImpl implements SysPermissionService {
     @Override
     public List<SysPermission> list(SysPermission entity) {
         List  list = sysPermissionMapper.list(entity);
+        list.sort((o1, o2) -> ((SysPermission)o1).getSort().compareTo(((SysPermission)o2).getSort()));
         return list;
     }
 

@@ -39,9 +39,8 @@ public class XmMainMonthController extends BaseController {
         return xmMainMonth;
     }
 
-    @RequestMapping("get/{id}")
-    public String get(@PathVariable("id") String id, Model model) {
-        XmMainMonth xmMainMonth = xmMainMonthService.get(id);
+    @RequestMapping("get")
+    public String get(XmMainMonth xmMainMonth, Model model) {
         if (xmMainMonth == null) {
             return "/pro/xmMain/list";
         }

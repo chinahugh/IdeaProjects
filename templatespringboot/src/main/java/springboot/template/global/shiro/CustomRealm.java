@@ -88,6 +88,7 @@ public class CustomRealm extends AuthorizingRealm {
             throw new AccountException("Null usernames are not allowed by this realm");
         }
         UserInfo userInfo = new UserInfo();
+        userInfo.setIsDisable(null);
         userInfo.setUserName(username);
         //通过用户名，查找密码
         UserInfo oneUser = userInfoService.select(userInfo);

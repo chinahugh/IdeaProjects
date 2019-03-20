@@ -36,7 +36,6 @@ public class DictController extends BaseController {
         model.addAttribute("entity",entity);
         return "sys/dict/update";
     }
-
     @RequestMapping("list")
     public String list(SysDict sysDict, Model model) {
         List<SysDict> list = sysDictService.list(sysDict);
