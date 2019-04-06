@@ -99,7 +99,8 @@ public class Editor extends JFrame {
 	public void addListener() {
 		fontSizeBox.addItemListener(
 				new ItemListener() {
-			public void itemStateChanged(ItemEvent e) {
+			@Override
+            public void itemStateChanged(ItemEvent e) {
 				JComboBox<Integer> b = 
 						(JComboBox<Integer>) e.getSource();
 				Integer i = (Integer) b.getSelectedItem();
@@ -109,18 +110,21 @@ public class Editor extends JFrame {
 			}
 		});
 		exitFileMenuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			@Override
+            public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
 		});
 		openFileMenuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			@Override
+            public void actionPerformed(ActionEvent e) {
 				fileChooser.showOpenDialog(Editor.this);
 			}
 		});
 
 		class EditListener implements ActionListener {
-			public void actionPerformed(ActionEvent e) {
+			@Override
+            public void actionPerformed(ActionEvent e) {
 				Object o = e.getSource();
 				if ((o == copyEditMenuItem) || (o == copyBtn) || (o == copyPopupMenuItem)) {
 					editArea.copy();
@@ -145,23 +149,28 @@ public class Editor extends JFrame {
 		pastePopupMenuItem.addActionListener(l);
 
 		editArea.addMouseListener(new MouseListener() {
-			public void mouseClicked(MouseEvent e) {
+			@Override
+            public void mouseClicked(MouseEvent e) {
 			}
 
-			public void mouseEntered(MouseEvent e) {
+			@Override
+            public void mouseEntered(MouseEvent e) {
 			}
 
-			public void mousePressed(MouseEvent e) {
+			@Override
+            public void mousePressed(MouseEvent e) {
 				mouseReleased(e);
 			}
 
-			public void mouseReleased(MouseEvent e) {
+			@Override
+            public void mouseReleased(MouseEvent e) {
 				if (e.isPopupTrigger()) {
 					popupMenu.show(editArea, e.getX(), e.getY());
 				}
 			}
 
-			public void mouseExited(MouseEvent e) {
+			@Override
+            public void mouseExited(MouseEvent e) {
 			}
 		});
 	}

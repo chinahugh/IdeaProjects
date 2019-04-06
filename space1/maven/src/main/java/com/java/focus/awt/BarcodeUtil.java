@@ -1,8 +1,11 @@
 package com.java.focus.awt;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
+import org.krysalis.barcode4j.impl.code128.Code128Bean;
+import org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider;
+import org.krysalis.barcode4j.tools.UnitConv;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
@@ -10,14 +13,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
-import org.krysalis.barcode4j.impl.code39.Code39Bean;
-import org.krysalis.barcode4j.impl.pdf417.PDF417Bean;
-import org.krysalis.barcode4j.impl.code128.Code128Bean;
-import org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider;
-import org.krysalis.barcode4j.tools.UnitConv;
 
 /**
  * 条形码工具类
@@ -121,7 +116,7 @@ public class BarcodeUtil {
             try {
                 out.close();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
+                //TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

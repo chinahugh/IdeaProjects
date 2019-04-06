@@ -38,8 +38,7 @@ public class Testcontroller {
     @RequestMapping("list")
     @ResponseBody
     public PageInfo<UserInfo> list(UserInfo userInfo) {
-//        System.out.println("JSONArray.fromObject(userInfo) = " + JSONArray.fromObject(userInfo));
-        return userInfoService.list(userInfo, new Page());
+      return userInfoService.list(userInfo, new Page());
     }
 
     @RequestMapping("find")
@@ -51,9 +50,8 @@ public class Testcontroller {
         return R.ok().put("user", userInfoService.get(id));
     }
 
-
     @ResponseBody
-    @RequestMapping(value = "hello",method = RequestMethod.GET)
+    @RequestMapping(value = "hello", method = RequestMethod.GET)
     public UserInfo hello(String hello, HashMap<String, Object> map) {
         map.put("sysdepartment", hello);
         map.put("sysdepartment2", hello);
@@ -80,12 +78,13 @@ public class Testcontroller {
         return "test/A";
     }
 
-    //    @RequestMapping("B")
-//    public String B(){
-//        return "test/B";
-//    }
     @RequestMapping("main")
     public String main() {
         return "main";
+    }
+
+    @RequestMapping("buttons")
+    public String buttons() {
+        return "buttons";
     }
 }

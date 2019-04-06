@@ -68,7 +68,8 @@ public class GridCardLayoutDemo extends JFrame {
 			// 适配器类主要是解决接口中所有方法都需要实现的问题设计的
 			// 适配器类中的所有方法都没有逻辑，只有签名
 			labels[i].addMouseListener(new MouseAdapter() {
-				public void mouseClicked(MouseEvent e) {
+				@Override
+                public void mouseClicked(MouseEvent e) {
 					Object obj = e.getSource();
 					for (int j = 0; j < 5; j++) {
 						if (obj == labels[j]) {

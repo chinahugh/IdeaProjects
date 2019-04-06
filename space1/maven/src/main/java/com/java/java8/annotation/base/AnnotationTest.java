@@ -1,9 +1,7 @@
 package com.java.java8.annotation.base;
 
-import javafx.util.Pair;
 import org.junit.Test;
 
-import javax.swing.text.View;
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +43,7 @@ public class AnnotationTest {
     }
     @Test
     public void getAnnotations() throws ClassNotFoundException, NoSuchMethodException {
-        Annotation[] tests = com.java.java8.annotation.base.Test.class.getMethod("test").getAnnotations();
+        Annotation[] tests = com.java.java8.annotation.base.TTest.class.getMethod("test").getAnnotations();
        for (Annotation a:tests){
            System.out.println(a);
        }

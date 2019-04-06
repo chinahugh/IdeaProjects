@@ -23,7 +23,8 @@ public class Card{
 			JButton btn = new JButton("btn " + i);
 			btn.setSize(30, 20);
 			btn.addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent e){
+				@Override
+                public void actionPerformed(ActionEvent e){
 					CardLayout cl = 
 						(CardLayout)contentPane.getLayout();
 					cl.next(contentPane);
@@ -38,7 +39,8 @@ public class Card{
 
 	public static void main(String... args){
 		(new Thread(){
-			public void run(){
+			@Override
+            public void run(){
 				(new Card("card")).go();
 			}
 		}).start();

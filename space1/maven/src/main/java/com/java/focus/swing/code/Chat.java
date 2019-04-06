@@ -95,7 +95,8 @@ public class Chat extends JFrame implements ActionListener {
 	}
 
 	class ReceiverThread extends Thread {
-		public void run() {
+		@Override
+        public void run() {
 			try {
 				byte[] buffer = new byte[1024];
 				while (true) {
@@ -118,7 +119,8 @@ public class Chat extends JFrame implements ActionListener {
 		}
 	}
 
-	public void actionPerformed(ActionEvent e) {
+	@Override
+    public void actionPerformed(ActionEvent e) {
 		if ((e.getSource() == sendBtn) || (e.getSource() == chatTxt)) {
 			String str = chatTxt.getText().trim();
 			String name = userTxt.getText().trim();
@@ -151,7 +153,8 @@ public class Chat extends JFrame implements ActionListener {
 
 	public static void main(String... args) {
 		(new Thread() {
-			public void run() {
+			@Override
+            public void run() {
 				(new Chat("Chat Room")).setVisible(true);
 			}
 		}).start();

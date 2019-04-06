@@ -54,7 +54,8 @@ public class CalFrame {
 		contentPane.add(exitBtn);
 
 		class BtnClick implements ActionListener {
-			public void actionPerformed(ActionEvent e) {
+			@Override
+            public void actionPerformed(ActionEvent e) {
 				Object o = e.getSource();
 				int i = Integer.parseInt(txtField1.getText());
 				int j = Integer.parseInt(txtField2.getText());

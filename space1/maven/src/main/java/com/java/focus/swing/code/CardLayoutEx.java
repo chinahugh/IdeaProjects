@@ -24,7 +24,8 @@ public class CardLayoutEx{
 			btn[i] = new JButton("Button" + i);
 			btn[i].addActionListener(
 				new ActionListener(){
-				public void actionPerformed(ActionEvent e){
+				@Override
+                public void actionPerformed(ActionEvent e){
 					CardLayout cl = 
 						(CardLayout)contentPane.getLayout();
 					cl.next(contentPane);

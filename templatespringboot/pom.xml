@@ -92,6 +92,7 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.9</version>
         </dependency>
+        <!--swagger-->
         <dependency>
             <groupId>com.didispace</groupId>
             <artifactId>spring-boot-starter-swagger</artifactId>
@@ -132,7 +133,7 @@
         <!--</exclusions>-->
         <!--</dependency>-->
         <!--Swagger-->
-        <dependency>
+       <!-- <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.7.0</version>
@@ -147,7 +148,7 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.7.0</version>
-        </dependency>
+        </dependency>-->
         <!--google java工具类-->
         <dependency>
             <groupId>com.google.guava</groupId>
