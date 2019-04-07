@@ -13,7 +13,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * @Description RedisTemplate
  */
 public class RedisTemplate {
-    private static String localhost ="192.168.197.129";
+    private static String localhost ="192.168.197.133";
     private static Logger logger= LoggerFactory.getLogger(RedisTemplate.class);
     private static JedisPool pool = null;
 
@@ -26,12 +26,12 @@ public class RedisTemplate {
 
         JedisPool pool = getPool();
         logger.info(new JSONObject(pool).toString());
-        setx("a",1,"123123");
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        setx("a",1000,"123123");
+//        try {
+//            Thread.sleep(1001);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         logger.info(get("a"));
     }
     /**

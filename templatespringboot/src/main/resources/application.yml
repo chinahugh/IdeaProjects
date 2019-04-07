@@ -39,22 +39,22 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     encoding: utf-8
+    check-template-location: true
     servlet:
       content-type: text/html
-    check-template-location: true
-  #rides
-  #  redis:
-  #    database: 0
-  #    host: 127.0.0.1
-  #    password:
-  #    port: 6379
-  #    timeout: 1000
-  #    jedis:
-  #      pool:
-  #        max-wait: 10
-  #        max-active: 8
-  #        max-idle: 8
-  #        min-idle: 0
+  rides
+    redis:
+      database: 0
+      host: 127.0.0.1
+      password: redis
+      port: 6379
+#      timeout: 1000
+      jedis:
+        pool:
+#          max-wait: 10
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
 
   #  aop:
   #    proxy-target-class: true
