@@ -17,4 +17,4 @@ echo "**************************************************************************
 echo "开始备份数据库..."
 "$MYSQL_HOME/bin/mysqldump.exe" -uroot -proot -A >mysql.sql
 echo "备份数据库完成..."
-read -t 36000
+read -t 36000 -p "按任意键结束"
