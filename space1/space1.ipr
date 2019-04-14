@@ -498,6 +498,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/All_maven" />
     <file type="web" url="file://$PROJECT_DIR$/h" />
+    <type id="Spring" />
   </component>
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
