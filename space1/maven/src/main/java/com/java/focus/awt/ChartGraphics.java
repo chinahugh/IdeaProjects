@@ -1,3 +1,4 @@
+/*
 package com.java.focus.awt;
 
 import com.sun.image.codec.jpeg.JPEGCodec;
@@ -13,11 +14,13 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+*/
 /**
  * @Author: hugh
  * @Time: 12/9/17
  * discraption:
- */
+ *//*
+
 public class ChartGraphics {
     private BufferedImage image;
     private int imageWidth = 300;  //图片的宽度
@@ -140,26 +143,30 @@ public class ChartGraphics {
     }
 
     public static void main(String[] args) {
-       /* ChartGraphics cg = new ChartGraphics();
+       */
+/* ChartGraphics cg = new ChartGraphics();
         try {
             cg.graphicsGeneration("ewew", "1", "12", "1.jpg");
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }*//*
+
         Font gfont = new Font("宋体", Font.PLAIN, 3);
        mergeImagee("title",50,50,gfont);
 
 
     }
 
-    /**
+    */
+/**
      * 文字图片
      * @param titlemsg
      * @param width
      * @param height
      * @param titleFont
      * @return
-     */
+     *//*
+
     public static File mergeImagee(String titlemsg, int width, int height, Font titleFont) {
     String path="";
         System.out.println(width);
@@ -196,4 +203,4 @@ public class ChartGraphics {
         }
         return titleFile;
     }
-}
+}*/

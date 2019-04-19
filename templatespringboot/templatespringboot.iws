@@ -8,9 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../apicloud/Hello" beforeDir="false" afterPath="$PROJECT_DIR$/../apicloud/Hello" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../apicloud/HelloApp" beforeDir="false" afterPath="$PROJECT_DIR$/../apicloud/HelloApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../push.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../push.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templatespringboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/templatespringboot.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,7 +76,7 @@
     <session id="-833191346">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -119,7 +116,7 @@
           <entry key="html" value="61" />
           <entry key="iml" value="1" />
           <entry key="iws" value="1" />
-          <entry key="java" value="546" />
+          <entry key="java" value="547" />
           <entry key="js" value="2" />
           <entry key="json" value="7" />
           <entry key="log" value="18" />
@@ -143,7 +140,7 @@
           <entry key="HTML" value="61" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="IDEA_WORKSPACE" value="1" />
-          <entry key="JAVA" value="546" />
+          <entry key="JAVA" value="547" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1" />
@@ -188,18 +185,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/buttons.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6375">
-              <caret line="255" column="10" selection-start-line="255" selection-start-column="10" selection-end-line="255" selection-end-column="10" />
-              <folding>
-                <element signature="e#8844#8849#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
@@ -209,11 +194,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="-1">
               <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1550">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -455,7 +449,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1938" />
@@ -599,6 +593,17 @@
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="templatespringboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="templatespringboot" type="b2602c69:ProjectViewProjectNode" />
@@ -2217,7 +2222,7 @@
       <workItem from="1554294778932" duration="5223000" />
       <workItem from="1554604122802" duration="1526000" />
       <workItem from="1554641142538" duration="18000" />
-      <workItem from="1555211129360" duration="60000" />
+      <workItem from="1555211129360" duration="1633000" />
     </task>
     <servers />
   </component>
@@ -2254,7 +2259,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="641098000" />
+    <option name="totallyTimeSpent" value="642671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2266,10 +2271,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" x="235" y="114" width="411" height="924" id="Project" order="0" sideWeight="0.47907948" visible="true" weight="0.1776" />
+      <window_info content_ui="combo" x="235" y="114" width="411" height="924" id="Project" order="0" sideWeight="0.47907948" visible="true" weight="0.1776" />
       <window_info id="Structure" order="1" weight="0.18293333" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.518851" side_tool="true" weight="0.17977528" />
@@ -2279,7 +2283,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3114224" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.38685346" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.47626665" visible="true" weight="0.2965368" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.47626665" weight="0.32575756" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.35452586" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -2361,9 +2365,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/app.log">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/springboot/com/mvc/controller/ImportFileController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -2692,8 +2693,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="-1">
           <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/template/mvc/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1550">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>

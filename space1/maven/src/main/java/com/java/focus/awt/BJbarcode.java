@@ -1,10 +1,13 @@
+/*
 package com.java.focus.awt;
 
+*/
 /**
  * @Author: hugh
  * @Time: 2018/01/20 9:45 AM
  * @Discraption:
- */
+ *//*
+
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
@@ -24,14 +27,16 @@ import sun.misc.BASE64Encoder;
 
 public class BJbarcode {
 
-    /**
+    */
+/**
      * 128条形码
      *
      * @param strBarCode 条形码：0-100位
      * @param dimension  商品条形码：尺寸
      * @param barheight  商品条形码：高度
      * @return 图片(Base64编码)
-     */
+     *//*
+
     public static String generateBarCode128(String strBarCode, String dimension, String barheight) {
 
 
@@ -70,14 +75,16 @@ public class BJbarcode {
     }
 
 
-    /**
+    */
+/**
      * 商品条形码
      *
      * @param strBarCode 商品条形码：13位
      * @param dimension  商品条形码：尺寸
      * @param barheight  商品条形码：高度
      * @return 图片(Base64编码)
-     */
+     *//*
+
     public static String generateBarCode(String strBarCode, String dimension, String barheight) {
 // 		isNumeric 是否是数值
 //    	校验。。。。。
@@ -129,10 +136,12 @@ public class BJbarcode {
         }
     }
 
-    /**
+    */
+/**
      * @param args
      * @throws InvalidAtributeException
-     */
+     *//*
+
     public static void main(String[] args) throws InvalidAtributeException {
 
         String encode = BJbarcode.generateBarCode("6936983800013", "0.5", "30");
@@ -145,3 +154,4 @@ public class BJbarcode {
     }
 
 }
+*/

@@ -351,7 +351,7 @@ UNLOCK TABLES;
 --
 
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index');
+INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',3,1,'id'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_diff_pfx01',4,1,'id'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx01',0,1,'permission_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx02',0,1,'permission_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx01',0,1,'user_id'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx02',0,1,'user_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'create_user_id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'create_user_id,id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'department_id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'department_id,id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'update_user_id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'update_user_id,id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_diff_pfx01',4,1,'id'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_diff_pfx01',31,1,'id'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx01',2,1,'user_id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx02',4,1,'user_id,id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_diff_pfx01',4,1,'id'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 
 --
@@ -359,7 +359,7 @@ INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','
 --
 
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_table_stats` VALUES ('mysql','component','2019-04-13 11:36:07',0,1,0),('mysql','gtid_executed','2019-04-13 11:36:07',0,1,0),('sys','sys_config','2019-04-13 11:36:07',6,1,0);
+INSERT  IGNORE INTO `innodb_table_stats` VALUES ('mysql','component','2019-04-13 11:36:07',0,1,0),('mysql','gtid_executed','2019-04-13 11:36:07',0,1,0),('sys','sys_config','2019-04-13 11:36:07',6,1,0),('templatespringboot','sys_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_dict','2019-04-14 03:03:00',3,1,0),('templatespringboot','sys_log','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_permission','2019-04-14 03:03:30',4,1,0),('templatespringboot','sys_role','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_permission','2019-04-14 03:03:00',0,1,2),('templatespringboot','sys_user_role','2019-04-14 03:03:00',0,1,2),('templatespringboot','user_info','2019-04-14 03:09:23',4,1,3),('templatespringboot','xm_main_day','2019-04-14 03:03:10',31,1,0),('templatespringboot','xm_main_month','2019-04-14 03:03:20',4,1,1);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 
 --
@@ -907,6 +907,389 @@ CREATE TABLE IF NOT EXISTS `slow_log` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Current Database: `templatespringboot`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `templatespringboot` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
+
+USE `templatespringboot`;
+
+--
+-- Table structure for table `sys_department`
+--
+
+DROP TABLE IF EXISTS `sys_department`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_department` (
+  `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `department_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '部门名称',
+  `father_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '父部门id',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL,
+  `create_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `update_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '是否禁用 0 否 1 是',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='部门表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_department`
+--
+
+LOCK TABLES `sys_department` WRITE;
+/*!40000 ALTER TABLE `sys_department` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_department` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_dict`
+--
+
+DROP TABLE IF EXISTS `sys_dict`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_dict` (
+  `id` varchar(64) NOT NULL,
+  `name` varchar(100) NOT NULL COMMENT '字典名称',
+  `type` varchar(100) NOT NULL COMMENT '字典类型',
+  `lable` varchar(100) NOT NULL COMMENT '字典码',
+  `value` varchar(100) NOT NULL COMMENT '字典值',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `create_user_id` varchar(64) DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_user_id` varchar(64) DEFAULT NULL,
+  `is_disable` int(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否禁用 0 否 1 是',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='数据字典表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_dict`
+--
+
+LOCK TABLES `sys_dict` WRITE;
+/*!40000 ALTER TABLE `sys_dict` DISABLE KEYS */;
+INSERT INTO `sys_dict` VALUES ('1','上班打卡标志','main_day_tag','正常','0',1,NULL,NULL,NULL,NULL,NULL,0),('2','上班打卡标志','main_day_tag','事假','1',2,NULL,NULL,NULL,NULL,NULL,0),('3','上班打卡标志','main_day_tag','缺勤','2',3,NULL,NULL,NULL,NULL,NULL,0);
+/*!40000 ALTER TABLE `sys_dict` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_log`
+--
+
+DROP TABLE IF EXISTS `sys_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_log` (
+  `id` varchar(64) NOT NULL,
+  `username` varchar(50) DEFAULT NULL COMMENT '用户名',
+  `operation` varchar(50) DEFAULT NULL COMMENT '用户操作',
+  `method` varchar(200) DEFAULT NULL COMMENT '请求方法',
+  `params` varchar(5000) DEFAULT NULL COMMENT '请求参数',
+  `time` bigint(20) NOT NULL COMMENT '执行时长(毫秒)',
+  `succeed` varchar(255) DEFAULT NULL COMMENT '是否成功',
+  `ip` varchar(64) DEFAULT NULL COMMENT 'IP地址',
+  `create_date` datetime DEFAULT NULL COMMENT '创建时间',
+  `message` text COMMENT '结果信息',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统日志';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_log`
+--
+
+LOCK TABLES `sys_log` WRITE;
+/*!40000 ALTER TABLE `sys_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_permission`
+--
+
+DROP TABLE IF EXISTS `sys_permission`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_permission` (
+  `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `url` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '程序对应url地址',
+  `url_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '名称',
+  `url_img` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '图标',
+  `type` int(1) NOT NULL COMMENT '类型 0 url 1 按钮',
+  `father_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '父id',
+  `father_ids` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '所有父id '',''分割',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `permission` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '权限 标识',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `create_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `update_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '是否禁用 0 否 1是',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='权限目录表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_permission`
+--
+
+LOCK TABLES `sys_permission` WRITE;
+/*!40000 ALTER TABLE `sys_permission` DISABLE KEYS */;
+INSERT INTO `sys_permission` VALUES ('1','/index','主目录',NULL,0,NULL,NULL,1,'anon',NULL,NULL,NULL,NULL,NULL,0),('2','/menu','目录修改',NULL,0,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,0),('6ab8a973fa774cd3b1c40f63f31292fd','www.mycodes.net/154/9651.htm','url',NULL,1,'1',NULL,1,'project:sbkjzkg:delete',NULL,NULL,NULL,NULL,NULL,0),('c3ebb8abcb1147618a0a333f0d4234a0','www.mycodes.net/154/9651.htm','url',NULL,1,'1',NULL,1,'project:sbkjzkg:delete',NULL,'2018-07-31 20:15:43','1',NULL,NULL,0);
+/*!40000 ALTER TABLE `sys_permission` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role`
+--
+
+DROP TABLE IF EXISTS `sys_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_role` (
+  `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '角色名称',
+  `role_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '角色名称，用于显示',
+  `role_value` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '角色值，用于权限判断',
+  `father_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '父角色id',
+  `department_id` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '部门id',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `create_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `update_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `is_disable` int(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否禁用 0 否 1 是',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role`
+--
+
+LOCK TABLES `sys_role` WRITE;
+/*!40000 ALTER TABLE `sys_role` DISABLE KEYS */;
+INSERT INTO `sys_role` VALUES ('1','admin','admin',NULL,'1',0,NULL,'2018-08-12 12:34:55',NULL,'2018-08-12 12:34:55',NULL,0);
+/*!40000 ALTER TABLE `sys_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role_department`
+--
+
+DROP TABLE IF EXISTS `sys_role_department`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_role_department` (
+  `role_id` varchar(64) NOT NULL COMMENT '角色id',
+  `department_id` varchar(64) NOT NULL COMMENT '部门id'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role_department`
+--
+
+LOCK TABLES `sys_role_department` WRITE;
+/*!40000 ALTER TABLE `sys_role_department` DISABLE KEYS */;
+INSERT INTO `sys_role_department` VALUES ('1','1');
+/*!40000 ALTER TABLE `sys_role_department` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role_permission`
+--
+
+DROP TABLE IF EXISTS `sys_role_permission`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_role_permission` (
+  `role_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '角色id',
+  `permission_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '目录表id',
+  KEY `FK_role_permission_sys_role` (`role_id`),
+  KEY `FK_role_permission_sys_permission` (`permission_id`),
+  CONSTRAINT `FK_role_permission_sys_permission` FOREIGN KEY (`permission_id`) REFERENCES `sys_permission` (`id`),
+  CONSTRAINT `FK_role_permission_sys_role` FOREIGN KEY (`role_id`) REFERENCES `sys_role` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色权限表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role_permission`
+--
+
+LOCK TABLES `sys_role_permission` WRITE;
+/*!40000 ALTER TABLE `sys_role_permission` DISABLE KEYS */;
+INSERT INTO `sys_role_permission` VALUES ('1','1');
+/*!40000 ALTER TABLE `sys_role_permission` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_user_role`
+--
+
+DROP TABLE IF EXISTS `sys_user_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_user_role` (
+  `user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户ID',
+  `role_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '角色id',
+  KEY `FK_user_role_user_info` (`user_id`),
+  KEY `FK_user_role_sys_role` (`role_id`),
+  CONSTRAINT `FK_user_role_sys_role` FOREIGN KEY (`role_id`) REFERENCES `sys_role` (`id`),
+  CONSTRAINT `FK_user_role_user_info` FOREIGN KEY (`user_id`) REFERENCES `user_info` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户角色表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_user_role`
+--
+
+LOCK TABLES `sys_user_role` WRITE;
+/*!40000 ALTER TABLE `sys_user_role` DISABLE KEYS */;
+INSERT INTO `sys_user_role` VALUES ('1','1');
+/*!40000 ALTER TABLE `sys_user_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_info`
+--
+
+DROP TABLE IF EXISTS `user_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `user_info` (
+  `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `no_id` int(11) DEFAULT NULL COMMENT '工号',
+  `user_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '登录名',
+  `user_password` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '密码',
+  `name` varchar(50) NOT NULL COMMENT '姓名',
+  `department_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '部门id',
+  `phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '电话',
+  `adress` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '地址',
+  `email` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '邮箱',
+  `born` datetime DEFAULT NULL COMMENT '出生日期',
+  `sex` int(1) DEFAULT '0' COMMENT '性别(1 男 2 女 0未知)',
+  `img` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '头像',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '备注',
+  `this_login_ip` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '0' COMMENT '本次登录ip',
+  `this_login_time` datetime DEFAULT NULL COMMENT '本次登录时间',
+  `last_login_ip` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '0' COMMENT '上次登录ip',
+  `last_login_time` datetime DEFAULT NULL COMMENT '上次登录时间',
+  `create_time` datetime DEFAULT NULL,
+  `create_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `update_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '是否禁用 0否 1是 2 待审核',
+  PRIMARY KEY (`id`),
+  KEY `FK_create_user_id` (`create_user_id`),
+  KEY `FK_update_user_id` (`update_user_id`),
+  KEY `FK_department_id` (`department_id`),
+  CONSTRAINT `FK_create_user_id` FOREIGN KEY (`create_user_id`) REFERENCES `user_info` (`id`),
+  CONSTRAINT `FK_department_id` FOREIGN KEY (`department_id`) REFERENCES `sys_department` (`id`),
+  CONSTRAINT `FK_update_user_id` FOREIGN KEY (`update_user_id`) REFERENCES `user_info` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户信息表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_info`
+--
+
+LOCK TABLES `user_info` WRITE;
+/*!40000 ALTER TABLE `user_info` DISABLE KEYS */;
+INSERT INTO `user_info` VALUES ('1',NULL,'admin','admin','','1',NULL,NULL,NULL,'2018-06-10 16:01:54',0,NULL,NULL,NULL,NULL,NULL,NULL,'2018-06-10 16:02:04','1','2018-06-10 16:02:06','1',0),('2',NULL,'wll','21232f297a57a5a743894a0e4a801fc3','','1',NULL,NULL,NULL,'2018-06-10 16:01:54',1,NULL,NULL,NULL,NULL,NULL,NULL,'2018-06-10 16:02:04','1','2018-06-10 16:02:06','1',0),('4230e70216fb417b9ee7869131ae0a5b',NULL,'qweqwewq','21232f297a57a5a743894a0e4a801fc3','',NULL,NULL,'是打发斯蒂芬水电费',NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,'2018-07-31 22:38:33',NULL,NULL,NULL,1),('9b57c9c82c8d4d289194d8db8ee10d13',NULL,'123123','21232f297a57a5a743894a0e4a801fc3','',NULL,NULL,'123123',NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,'2018-07-31 22:59:19',NULL,NULL,NULL,0);
+/*!40000 ALTER TABLE `user_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `xm_main_day`
+--
+
+DROP TABLE IF EXISTS `xm_main_day`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `xm_main_day` (
+  `id` varchar(64) NOT NULL,
+  `main_month_id` varchar(64) NOT NULL COMMENT 'pro_main_id',
+  `sys_day` int(2) NOT NULL COMMENT '系统 日（1-31）',
+  `m_data` varchar(50) DEFAULT '0' COMMENT '早上数据',
+  `p_data` varchar(50) DEFAULT '0' COMMENT '下午数据',
+  `m_tag` int(1) DEFAULT '0' COMMENT '标志 0正常 1 迟到 2 未打卡 3 其它',
+  `p_tag` int(1) DEFAULT '0' COMMENT '标志 0正常 1 早退 2 未打卡 3 其它',
+  `remarks` varchar(255) DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `create_user_id` varchar(64) DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `update_user_id` varchar(64) DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '状态（0 正常 1失效 2 审核）',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='数据日主表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `xm_main_day`
+--
+
+LOCK TABLES `xm_main_day` WRITE;
+/*!40000 ALTER TABLE `xm_main_day` DISABLE KEYS */;
+INSERT INTO `xm_main_day` VALUES ('032b93f6235e4fbd92d7522a5909f600','14f8f2cc10904c3fb200b67060a01ac8',22,'09:00','18:20',0,0,NULL,'2018-08-09 22:24:10',NULL,'2018-08-09 22:43:14',NULL,0),('041ee411fe404de2a86cf39be4d6ff97','14f8f2cc10904c3fb200b67060a01ac8',9,'08:40','17:20',0,1,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('04e4a82107be46c19da00e97c97303ff','14f8f2cc10904c3fb200b67060a01ac8',27,'09:40','17:20',1,1,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('086bc543051d41c08a8a9303c8893ffb','14f8f2cc10904c3fb200b67060a01ac8',31,'09:40','18:00',1,0,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('1bc43d8c671c4067855a88c5afd9bb4b','14f8f2cc10904c3fb200b67060a01ac8',5,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('1fc5d632f5b44f95980ee0263d73c7cc','14f8f2cc10904c3fb200b67060a01ac8',24,'08:40','17:56',0,1,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:14',NULL,0),('2a2efd4290d747e89d19bd9b732d1089','14f8f2cc10904c3fb200b67060a01ac8',8,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:14',NULL,0),('3957eff002b64fb884d6e5f2f69ce880','14f8f2cc10904c3fb200b67060a01ac8',30,'09:00','asd',0,3,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:14',NULL,0),('3ebb072f69d04bebaab56d69f3d39b9f','14f8f2cc10904c3fb200b67060a01ac8',21,'09:01','18:20',1,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('4092f2fa29b740669d738eac4b2e2ac6','14f8f2cc10904c3fb200b67060a01ac8',10,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('5ce583d6459e4afc8d3fc45a2ad7fd00','14f8f2cc10904c3fb200b67060a01ac8',26,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('5f8989f13ebc4cc6b7691cdaef7258fc','14f8f2cc10904c3fb200b67060a01ac8',12,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('72a0cb7b55cb4a27a3343032cc850105','14f8f2cc10904c3fb200b67060a01ac8',14,'08:40','18:00',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('730f452927264be287caf3d86fed3640','14f8f2cc10904c3fb200b67060a01ac8',6,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('78ff6fd0865346ee9912e75a4dd4660b','14f8f2cc10904c3fb200b67060a01ac8',13,'08:40','17:56',0,1,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('817d83140b8b4b658bbc24f089da6239','14f8f2cc10904c3fb200b67060a01ac8',25,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('8d6e28a192b04dafad0dfcdaa094aaf9','14f8f2cc10904c3fb200b67060a01ac8',11,'09:00','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('93b38c014e694e94be0e727e2b92ac39','14f8f2cc10904c3fb200b67060a01ac8',20,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('9624b30d8a084bdd888851764962f8ff','14f8f2cc10904c3fb200b67060a01ac8',7,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('a1fa34f1707542bc9219da22fb50a8f6','14f8f2cc10904c3fb200b67060a01ac8',28,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('a836336ce044418d9c1c0d8956f2378f','14f8f2cc10904c3fb200b67060a01ac8',16,'dssd','asd',3,3,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('a973c681ca9d46eb898699d588143943','14f8f2cc10904c3fb200b67060a01ac8',3,'08:40','18:00',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('aa4c0a2cd3a246deb6562b78990cbb42','14f8f2cc10904c3fb200b67060a01ac8',19,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('adc6d24be44e478c85076563b9bf4ec5','14f8f2cc10904c3fb200b67060a01ac8',23,'08:40','17:56',0,1,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('af81a25b36444821a4e107c3fa7bd7af','14f8f2cc10904c3fb200b67060a01ac8',2,'09:01','18:20',1,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('b019d078a482433c8d866cd188f167c9','14f8f2cc10904c3fb200b67060a01ac8',15,'09:01','18:20',1,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('c5b682f15e9b45fc96b6bc3cc2442dec','14f8f2cc10904c3fb200b67060a01ac8',18,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('e2226251a81a4dafa486b319c529e1b0','14f8f2cc10904c3fb200b67060a01ac8',29,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('e5fd51be7496414794435109b4e550aa','14f8f2cc10904c3fb200b67060a01ac8',4,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:16',NULL,0),('fa3424022260448dacd678e250179c6d','14f8f2cc10904c3fb200b67060a01ac8',17,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:16',NULL,0),('fcf5d991930e48898e973c984a745de2','14f8f2cc10904c3fb200b67060a01ac8',1,'08:40','18:00',0,0,NULL,'2018-08-09 21:35:26','1','2018-08-09 22:43:16',NULL,0);
+/*!40000 ALTER TABLE `xm_main_day` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `xm_main_month`
+--
+
+DROP TABLE IF EXISTS `xm_main_month`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `xm_main_month` (
+  `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `sys_year` int(4) NOT NULL COMMENT '系统 年',
+  `sys_month` int(2) NOT NULL COMMENT '系统 月',
+  `ycqts` int(2) DEFAULT NULL COMMENT '应出勤天数',
+  `sjcqts` int(2) DEFAULT NULL COMMENT '实际出勤天数',
+  `sj` int(2) DEFAULT NULL COMMENT '事假天数',
+  `bj` int(2) DEFAULT NULL COMMENT '病假天数',
+  `nj` int(2) DEFAULT NULL COMMENT '年假天数',
+  `hj` int(2) DEFAULT NULL COMMENT '婚假天数',
+  `qq` int(2) DEFAULT NULL COMMENT '缺勤天数',
+  `kg` int(2) DEFAULT NULL COMMENT '旷工天数',
+  `wdk` int(2) DEFAULT NULL COMMENT '忘打卡次数',
+  `cd` int(2) DEFAULT NULL COMMENT '迟到次数',
+  `zt` int(2) DEFAULT NULL COMMENT '早退次数',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `create_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `update_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '状态（0 正常 1失效 2 审核）',
+  PRIMARY KEY (`id`),
+  KEY `FK_xm_main_month_user_info` (`user_id`),
+  CONSTRAINT `FK_xm_main_month_user_info` FOREIGN KEY (`user_id`) REFERENCES `user_info` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='数据月主表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `xm_main_month`
+--
+
+LOCK TABLES `xm_main_month` WRITE;
+/*!40000 ALTER TABLE `xm_main_month` DISABLE KEYS */;
+INSERT INTO `xm_main_month` VALUES ('14f8f2cc10904c3fb200b67060a01ac8','1',3,2018,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,'2018-08-04 21:57:57',NULL,NULL,NULL,0),('14f8f2cc10904c3fb200b67060a01ac82','2',3,2018,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-08-04 21:57:57',NULL,NULL,NULL,0),('23b9feb5f9da4ce0b59c6835ad666fc3','2',22,2018,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),('760583d6266d4843bc2dcaddfccb933a','1',3,2018,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-08-05 20:06:05',NULL,NULL,NULL,0);
+/*!40000 ALTER TABLE `xm_main_month` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Current Database: `test`
 --
 
@@ -924,4 +1307,4 @@ USE `test`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-14 10:52:31
+-- Dump completed on 2019-04-14 11:10:35
