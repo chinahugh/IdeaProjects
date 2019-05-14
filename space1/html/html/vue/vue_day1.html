@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <script src="../../js/vue/vue.js"></script>
 </head>
+
 <body>
-$END$
+    <div id="app">
+        <div>{{day1}}</div>
+        <hr>
+        <div>
+            <p v-html="day2"></p>
+            <p v-text="day2"></p>
+        </div>
+        <hr>
+        <div @click="click">点击我</div>
+        <hr>
+        <div>
+            <h1><div v-bind:title="day3">鼠标放一会</div></h1>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                day1: "kkkk",
+                day2: "<h1>v-html与v-text区别 1.v-html,2.v-text</h1>",
+                day3:"v-bind:title缩写:title"
+            },
+            methods: {
+                click: function () {
+                    this.day1 = this.day2;
+                    alert("v-on:click")
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
