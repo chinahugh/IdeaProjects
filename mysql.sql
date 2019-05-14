@@ -351,7 +351,7 @@ UNLOCK TABLES;
 --
 
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',3,1,'id'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_diff_pfx01',4,1,'id'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx01',0,1,'permission_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx02',0,1,'permission_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx01',0,1,'user_id'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx02',0,1,'user_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'create_user_id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'create_user_id,id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'department_id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'department_id,id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'update_user_id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'update_user_id,id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_diff_pfx01',4,1,'id'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_diff_pfx01',31,1,'id'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx01',2,1,'user_id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx02',4,1,'user_id,id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_diff_pfx01',4,1,'id'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index');
+INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','size',1,NULL,'Number of pages in the index'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','size',1,NULL,'Number of pages in the index'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','n_diff_pfx02',0,1,'SCHED_NAME,CALENDAR_NAME'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','size',1,NULL,'Number of pages in the index'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx04',1,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,JOB_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx04',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,INSTANCE_NAME,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,ENTRY_ID'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,JOB_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx02',0,1,'SCHED_NAME,REQUESTS_RECOVERY'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx03',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx04',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME,JOB_GROUP'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','size',1,NULL,'Number of pages in the index'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','n_diff_pfx02',2,1,'SCHED_NAME,LOCK_NAME'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','size',1,NULL,'Number of pages in the index'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','size',1,NULL,'Number of pages in the index'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','size',1,NULL,'Number of pages in the index'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,CALENDAR_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx06',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx06',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','schedule_job','PRIMARY','2019-05-05 14:07:45','n_diff_pfx01',0,1,'job_id'),('renren','schedule_job','PRIMARY','2019-05-05 14:07:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job','PRIMARY','2019-05-05 14:07:45','size',1,NULL,'Number of pages in the index'),('renren','schedule_job_log','PRIMARY','2019-05-05 14:07:46','n_diff_pfx01',0,1,'log_id'),('renren','schedule_job_log','PRIMARY','2019-05-05 14:07:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job_log','PRIMARY','2019-05-05 14:07:46','size',1,NULL,'Number of pages in the index'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','n_diff_pfx01',0,1,'job_id'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','n_diff_pfx02',0,1,'job_id,log_id'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','size',1,NULL,'Number of pages in the index'),('renren','sys_config','PRIMARY','2019-05-05 14:07:41','n_diff_pfx01',0,1,'id'),('renren','sys_config','PRIMARY','2019-05-05 14:07:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_config','PRIMARY','2019-05-05 14:07:41','size',1,NULL,'Number of pages in the index'),('renren','sys_config','param_key','2019-05-05 14:07:41','n_diff_pfx01',0,1,'param_key'),('renren','sys_config','param_key','2019-05-05 14:07:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_config','param_key','2019-05-05 14:07:41','size',1,NULL,'Number of pages in the index'),('renren','sys_dept','PRIMARY','2019-05-05 14:07:44','n_diff_pfx01',5,1,'dept_id'),('renren','sys_dept','PRIMARY','2019-05-05 14:07:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dept','PRIMARY','2019-05-05 14:07:44','size',1,NULL,'Number of pages in the index'),('renren','sys_dict','PRIMARY','2019-05-05 14:08:04','n_diff_pfx01',3,1,'id'),('renren','sys_dict','PRIMARY','2019-05-05 14:08:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dict','PRIMARY','2019-05-05 14:08:04','size',1,NULL,'Number of pages in the index'),('renren','sys_dict','type','2019-05-05 14:08:04','n_diff_pfx01',1,1,'type'),('renren','sys_dict','type','2019-05-05 14:08:04','n_diff_pfx02',3,1,'type,code'),('renren','sys_dict','type','2019-05-05 14:08:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dict','type','2019-05-05 14:08:04','size',1,NULL,'Number of pages in the index'),('renren','sys_log','PRIMARY','2019-05-11 02:24:01','n_diff_pfx01',2,1,'id'),('renren','sys_log','PRIMARY','2019-05-11 02:24:01','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_log','PRIMARY','2019-05-11 02:24:01','size',1,NULL,'Number of pages in the index'),('renren','sys_menu','PRIMARY','2019-05-05 14:07:54','n_diff_pfx01',39,1,'menu_id'),('renren','sys_menu','PRIMARY','2019-05-05 14:07:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_menu','PRIMARY','2019-05-05 14:07:54','size',1,NULL,'Number of pages in the index'),('renren','sys_oss','PRIMARY','2019-05-05 14:07:44','n_diff_pfx01',0,1,'id'),('renren','sys_oss','PRIMARY','2019-05-05 14:07:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_oss','PRIMARY','2019-05-05 14:07:44','size',1,NULL,'Number of pages in the index'),('renren','sys_role','PRIMARY','2019-05-05 14:07:36','n_diff_pfx01',0,1,'role_id'),('renren','sys_role','PRIMARY','2019-05-05 14:07:36','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role','PRIMARY','2019-05-05 14:07:36','size',1,NULL,'Number of pages in the index'),('renren','sys_role_dept','PRIMARY','2019-05-05 14:07:40','n_diff_pfx01',0,1,'id'),('renren','sys_role_dept','PRIMARY','2019-05-05 14:07:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role_dept','PRIMARY','2019-05-05 14:07:40','size',1,NULL,'Number of pages in the index'),('renren','sys_role_menu','PRIMARY','2019-05-05 14:07:38','n_diff_pfx01',0,1,'id'),('renren','sys_role_menu','PRIMARY','2019-05-05 14:07:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role_menu','PRIMARY','2019-05-05 14:07:38','size',1,NULL,'Number of pages in the index'),('renren','sys_user','PRIMARY','2019-05-05 14:07:35','n_diff_pfx01',0,1,'user_id'),('renren','sys_user','PRIMARY','2019-05-05 14:07:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user','PRIMARY','2019-05-05 14:07:35','size',1,NULL,'Number of pages in the index'),('renren','sys_user','username','2019-05-05 14:07:35','n_diff_pfx01',0,1,'username'),('renren','sys_user','username','2019-05-05 14:07:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user','username','2019-05-05 14:07:35','size',1,NULL,'Number of pages in the index'),('renren','sys_user_role','PRIMARY','2019-05-05 14:07:37','n_diff_pfx01',0,1,'id'),('renren','sys_user_role','PRIMARY','2019-05-05 14:07:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user_role','PRIMARY','2019-05-05 14:07:37','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',3,1,'id'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_diff_pfx01',4,1,'id'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx01',0,1,'permission_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx02',0,1,'permission_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx01',0,1,'user_id'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx02',0,1,'user_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'create_user_id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'create_user_id,id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'department_id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'department_id,id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'update_user_id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'update_user_id,id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_diff_pfx01',4,1,'id'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_diff_pfx01',31,1,'id'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx01',2,1,'user_id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx02',4,1,'user_id,id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_diff_pfx01',4,1,'id'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 
 --
@@ -359,7 +359,7 @@ INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','
 --
 
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_table_stats` VALUES ('mysql','component','2019-04-13 11:36:07',0,1,0),('mysql','gtid_executed','2019-04-13 11:36:07',0,1,0),('sys','sys_config','2019-04-13 11:36:07',6,1,0),('templatespringboot','sys_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_dict','2019-04-14 03:03:00',3,1,0),('templatespringboot','sys_log','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_permission','2019-04-14 03:03:30',4,1,0),('templatespringboot','sys_role','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_permission','2019-04-14 03:03:00',0,1,2),('templatespringboot','sys_user_role','2019-04-14 03:03:00',0,1,2),('templatespringboot','user_info','2019-04-14 03:09:23',4,1,3),('templatespringboot','xm_main_day','2019-04-14 03:03:10',31,1,0),('templatespringboot','xm_main_month','2019-04-14 03:03:20',4,1,1);
+INSERT  IGNORE INTO `innodb_table_stats` VALUES ('mysql','component','2019-04-13 11:36:07',0,1,0),('mysql','gtid_executed','2019-04-13 11:36:07',0,1,0),('renren','qrtz_blob_triggers','2019-05-05 14:07:53',0,1,1),('renren','qrtz_calendars','2019-05-05 14:07:54',0,1,0),('renren','qrtz_cron_triggers','2019-05-11 02:20:38',1,1,0),('renren','qrtz_fired_triggers','2019-05-11 02:23:48',1,1,6),('renren','qrtz_job_details','2019-05-05 14:07:59',0,1,0),('renren','qrtz_locks','2019-05-05 14:48:21',2,1,0),('renren','qrtz_paused_trigger_grps','2019-05-05 14:07:55',0,1,0),('renren','qrtz_scheduler_state','2019-05-11 02:21:00',1,1,0),('renren','qrtz_simple_triggers','2019-05-11 02:23:48',0,1,0),('renren','qrtz_simprop_triggers','2019-05-05 14:07:52',0,1,0),('renren','qrtz_triggers','2019-05-11 02:23:58',1,1,12),('renren','schedule_job','2019-05-05 14:07:45',0,1,0),('renren','schedule_job_log','2019-05-05 14:07:46',0,1,1),('renren','sys_config','2019-05-05 14:07:41',0,1,1),('renren','sys_dept','2019-05-05 14:07:44',5,1,0),('renren','sys_dict','2019-05-05 14:08:04',3,1,1),('renren','sys_log','2019-05-11 02:24:01',2,1,0),('renren','sys_menu','2019-05-05 14:07:54',39,1,0),('renren','sys_oss','2019-05-05 14:07:44',0,1,0),('renren','sys_role','2019-05-05 14:07:36',0,1,0),('renren','sys_role_dept','2019-05-05 14:07:40',0,1,0),('renren','sys_role_menu','2019-05-05 14:07:38',0,1,0),('renren','sys_user','2019-05-05 14:07:35',0,1,1),('renren','sys_user_role','2019-05-05 14:07:37',0,1,0),('sys','sys_config','2019-04-13 11:36:07',6,1,0),('templatespringboot','sys_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_dict','2019-04-14 03:03:00',3,1,0),('templatespringboot','sys_log','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_permission','2019-04-14 03:03:30',4,1,0),('templatespringboot','sys_role','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_permission','2019-04-14 03:03:00',0,1,2),('templatespringboot','sys_user_role','2019-04-14 03:03:00',0,1,2),('templatespringboot','user_info','2019-04-14 03:09:23',4,1,3),('templatespringboot','xm_main_day','2019-04-14 03:03:10',31,1,0),('templatespringboot','xm_main_month','2019-04-14 03:03:20',4,1,1);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 
 --
@@ -907,6 +907,715 @@ CREATE TABLE IF NOT EXISTS `slow_log` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Current Database: `renren`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `renren` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin */;
+
+USE `renren`;
+
+--
+-- Table structure for table `qrtz_blob_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_blob_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_blob_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `BLOB_DATA` blob,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  KEY `SCHED_NAME` (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `qrtz_blob_triggers_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_blob_triggers`
+--
+
+LOCK TABLES `qrtz_blob_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_blob_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_blob_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_calendars`
+--
+
+DROP TABLE IF EXISTS `qrtz_calendars`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_calendars` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `CALENDAR_NAME` varchar(200) NOT NULL,
+  `CALENDAR` blob NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`CALENDAR_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_calendars`
+--
+
+LOCK TABLES `qrtz_calendars` WRITE;
+/*!40000 ALTER TABLE `qrtz_calendars` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_calendars` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_cron_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_cron_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_cron_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `CRON_EXPRESSION` varchar(120) NOT NULL,
+  `TIME_ZONE_ID` varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `qrtz_cron_triggers_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_cron_triggers`
+--
+
+LOCK TABLES `qrtz_cron_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_cron_triggers` DISABLE KEYS */;
+INSERT INTO `qrtz_cron_triggers` VALUES ('RenrenScheduler','TASK_1','DEFAULT','0 0/30 * * * ?','Asia/Singapore');
+/*!40000 ALTER TABLE `qrtz_cron_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_fired_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_fired_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_fired_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `ENTRY_ID` varchar(95) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `INSTANCE_NAME` varchar(200) NOT NULL,
+  `FIRED_TIME` bigint(13) NOT NULL,
+  `SCHED_TIME` bigint(13) NOT NULL,
+  `PRIORITY` int(11) NOT NULL,
+  `STATE` varchar(16) NOT NULL,
+  `JOB_NAME` varchar(200) DEFAULT NULL,
+  `JOB_GROUP` varchar(200) DEFAULT NULL,
+  `IS_NONCONCURRENT` varchar(1) DEFAULT NULL,
+  `REQUESTS_RECOVERY` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`ENTRY_ID`),
+  KEY `IDX_QRTZ_FT_TRIG_INST_NAME` (`SCHED_NAME`,`INSTANCE_NAME`),
+  KEY `IDX_QRTZ_FT_INST_JOB_REQ_RCVRY` (`SCHED_NAME`,`INSTANCE_NAME`,`REQUESTS_RECOVERY`),
+  KEY `IDX_QRTZ_FT_J_G` (`SCHED_NAME`,`JOB_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_FT_JG` (`SCHED_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_FT_T_G` (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  KEY `IDX_QRTZ_FT_TG` (`SCHED_NAME`,`TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_fired_triggers`
+--
+
+LOCK TABLES `qrtz_fired_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_fired_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_fired_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_job_details`
+--
+
+DROP TABLE IF EXISTS `qrtz_job_details`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_job_details` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `JOB_NAME` varchar(200) NOT NULL,
+  `JOB_GROUP` varchar(200) NOT NULL,
+  `DESCRIPTION` varchar(250) DEFAULT NULL,
+  `JOB_CLASS_NAME` varchar(250) NOT NULL,
+  `IS_DURABLE` varchar(1) NOT NULL,
+  `IS_NONCONCURRENT` varchar(1) NOT NULL,
+  `IS_UPDATE_DATA` varchar(1) NOT NULL,
+  `REQUESTS_RECOVERY` varchar(1) NOT NULL,
+  `JOB_DATA` blob,
+  PRIMARY KEY (`SCHED_NAME`,`JOB_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_J_REQ_RECOVERY` (`SCHED_NAME`,`REQUESTS_RECOVERY`),
+  KEY `IDX_QRTZ_J_GRP` (`SCHED_NAME`,`JOB_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_job_details`
+--
+
+LOCK TABLES `qrtz_job_details` WRITE;
+/*!40000 ALTER TABLE `qrtz_job_details` DISABLE KEYS */;
+INSERT INTO `qrtz_job_details` VALUES ('RenrenScheduler','TASK_1','DEFAULT',NULL,'io.renren.modules.job.utils.ScheduleJob','0','0','0','0',_binary '�\�\0sr\0org.quartz.JobDataMap���迩�\�\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�\�\��\�](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap\�.�(v\n\�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap\��\�`\�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0\rJOB_PARAM_KEYsr\0.io.renren.modules.job.entity.ScheduleJobEntity\0\0\0\0\0\0\0\0L\0beanNamet\0Ljava/lang/String;L\0\ncreateTimet\0Ljava/util/Date;L\0cronExpressionq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0paramsq\0~\0	L\0remarkq\0~\0	L\0statust\0Ljava/lang/Integer;xpt\0testTasksr\0java.util.Datehj�KYt\0\0xpw\0\0j�Rw8xt\00 0/30 * * * ?sr\0java.lang.Long;�\�̏#\�\0J\0valuexr\0java.lang.Number����\��\0\0xp\0\0\0\0\0\0\0t\0renrent\0参数测试sr\0java.lang.Integer⠤\���8\0I\0valuexq\0~\0\0\0\0\0x\0');
+/*!40000 ALTER TABLE `qrtz_job_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_locks`
+--
+
+DROP TABLE IF EXISTS `qrtz_locks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_locks` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `LOCK_NAME` varchar(40) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`LOCK_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_locks`
+--
+
+LOCK TABLES `qrtz_locks` WRITE;
+/*!40000 ALTER TABLE `qrtz_locks` DISABLE KEYS */;
+INSERT INTO `qrtz_locks` VALUES ('RenrenScheduler','STATE_ACCESS'),('RenrenScheduler','TRIGGER_ACCESS');
+/*!40000 ALTER TABLE `qrtz_locks` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_paused_trigger_grps`
+--
+
+DROP TABLE IF EXISTS `qrtz_paused_trigger_grps`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_paused_trigger_grps` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_paused_trigger_grps`
+--
+
+LOCK TABLES `qrtz_paused_trigger_grps` WRITE;
+/*!40000 ALTER TABLE `qrtz_paused_trigger_grps` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_paused_trigger_grps` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_scheduler_state`
+--
+
+DROP TABLE IF EXISTS `qrtz_scheduler_state`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_scheduler_state` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `INSTANCE_NAME` varchar(200) NOT NULL,
+  `LAST_CHECKIN_TIME` bigint(13) NOT NULL,
+  `CHECKIN_INTERVAL` bigint(13) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`INSTANCE_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_scheduler_state`
+--
+
+LOCK TABLES `qrtz_scheduler_state` WRITE;
+/*!40000 ALTER TABLE `qrtz_scheduler_state` DISABLE KEYS */;
+INSERT INTO `qrtz_scheduler_state` VALUES ('RenrenScheduler','DESKTOP-2IDF7R51557541227737',1557542160884,15000);
+/*!40000 ALTER TABLE `qrtz_scheduler_state` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_simple_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_simple_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_simple_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `REPEAT_COUNT` bigint(7) NOT NULL,
+  `REPEAT_INTERVAL` bigint(12) NOT NULL,
+  `TIMES_TRIGGERED` bigint(10) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `qrtz_simple_triggers_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_simple_triggers`
+--
+
+LOCK TABLES `qrtz_simple_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_simple_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_simple_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_simprop_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_simprop_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_simprop_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `STR_PROP_1` varchar(512) DEFAULT NULL,
+  `STR_PROP_2` varchar(512) DEFAULT NULL,
+  `STR_PROP_3` varchar(512) DEFAULT NULL,
+  `INT_PROP_1` int(11) DEFAULT NULL,
+  `INT_PROP_2` int(11) DEFAULT NULL,
+  `LONG_PROP_1` bigint(20) DEFAULT NULL,
+  `LONG_PROP_2` bigint(20) DEFAULT NULL,
+  `DEC_PROP_1` decimal(13,4) DEFAULT NULL,
+  `DEC_PROP_2` decimal(13,4) DEFAULT NULL,
+  `BOOL_PROP_1` varchar(1) DEFAULT NULL,
+  `BOOL_PROP_2` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `qrtz_simprop_triggers_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_simprop_triggers`
+--
+
+LOCK TABLES `qrtz_simprop_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_simprop_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_simprop_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `JOB_NAME` varchar(200) NOT NULL,
+  `JOB_GROUP` varchar(200) NOT NULL,
+  `DESCRIPTION` varchar(250) DEFAULT NULL,
+  `NEXT_FIRE_TIME` bigint(13) DEFAULT NULL,
+  `PREV_FIRE_TIME` bigint(13) DEFAULT NULL,
+  `PRIORITY` int(11) DEFAULT NULL,
+  `TRIGGER_STATE` varchar(16) NOT NULL,
+  `TRIGGER_TYPE` varchar(8) NOT NULL,
+  `START_TIME` bigint(13) NOT NULL,
+  `END_TIME` bigint(13) DEFAULT NULL,
+  `CALENDAR_NAME` varchar(200) DEFAULT NULL,
+  `MISFIRE_INSTR` smallint(2) DEFAULT NULL,
+  `JOB_DATA` blob,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  KEY `IDX_QRTZ_T_J` (`SCHED_NAME`,`JOB_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_T_JG` (`SCHED_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_T_C` (`SCHED_NAME`,`CALENDAR_NAME`),
+  KEY `IDX_QRTZ_T_G` (`SCHED_NAME`,`TRIGGER_GROUP`),
+  KEY `IDX_QRTZ_T_STATE` (`SCHED_NAME`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_N_STATE` (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_N_G_STATE` (`SCHED_NAME`,`TRIGGER_GROUP`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_NEXT_FIRE_TIME` (`SCHED_NAME`,`NEXT_FIRE_TIME`),
+  KEY `IDX_QRTZ_T_NFT_ST` (`SCHED_NAME`,`TRIGGER_STATE`,`NEXT_FIRE_TIME`),
+  KEY `IDX_QRTZ_T_NFT_MISFIRE` (`SCHED_NAME`,`MISFIRE_INSTR`,`NEXT_FIRE_TIME`),
+  KEY `IDX_QRTZ_T_NFT_ST_MISFIRE` (`SCHED_NAME`,`MISFIRE_INSTR`,`NEXT_FIRE_TIME`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_NFT_ST_MISFIRE_GRP` (`SCHED_NAME`,`MISFIRE_INSTR`,`NEXT_FIRE_TIME`,`TRIGGER_GROUP`,`TRIGGER_STATE`),
+  CONSTRAINT `qrtz_triggers_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `JOB_NAME`, `JOB_GROUP`) REFERENCES `qrtz_job_details` (`SCHED_NAME`, `JOB_NAME`, `JOB_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_triggers`
+--
+
+LOCK TABLES `qrtz_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_triggers` DISABLE KEYS */;
+INSERT INTO `qrtz_triggers` VALUES ('RenrenScheduler','TASK_1','DEFAULT','TASK_1','DEFAULT',NULL,1557541800000,-1,5,'PAUSED','CRON',1557067669000,0,NULL,2,_binary '�\�\0sr\0org.quartz.JobDataMap���迩�\�\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�\�\��\�](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap\�.�(v\n\�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap\��\�`\�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0\rJOB_PARAM_KEYsr\0.io.renren.modules.job.entity.ScheduleJobEntity\0\0\0\0\0\0\0\0L\0beanNamet\0Ljava/lang/String;L\0\ncreateTimet\0Ljava/util/Date;L\0cronExpressionq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0paramsq\0~\0	L\0remarkq\0~\0	L\0statust\0Ljava/lang/Integer;xpt\0testTasksr\0java.util.Datehj�KYt\0\0xpw\0\0j�	\�8xt\00 0/30 * * * ?sr\0java.lang.Long;�\�̏#\�\0J\0valuexr\0java.lang.Number����\��\0\0xp\0\0\0\0\0\0\0t\0renrent\0参数测试sr\0java.lang.Integer⠤\���8\0I\0valuexq\0~\0\0\0\0\0x\0');
+/*!40000 ALTER TABLE `qrtz_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `schedule_job`
+--
+
+DROP TABLE IF EXISTS `schedule_job`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `schedule_job` (
+  `job_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '任务id',
+  `bean_name` varchar(200) DEFAULT NULL COMMENT 'spring bean名称',
+  `params` varchar(2000) DEFAULT NULL COMMENT '参数',
+  `cron_expression` varchar(100) DEFAULT NULL COMMENT 'cron表达式',
+  `status` tinyint(4) DEFAULT NULL COMMENT '任务状态  0：正常  1：暂停',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`job_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='定时任务';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `schedule_job`
+--
+
+LOCK TABLES `schedule_job` WRITE;
+/*!40000 ALTER TABLE `schedule_job` DISABLE KEYS */;
+INSERT INTO `schedule_job` VALUES (1,'testTask','renren','0 0/30 * * * ?',1,'参数测试','2019-05-05 22:07:47');
+/*!40000 ALTER TABLE `schedule_job` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `schedule_job_log`
+--
+
+DROP TABLE IF EXISTS `schedule_job_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `schedule_job_log` (
+  `log_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '任务日志id',
+  `job_id` bigint(20) NOT NULL COMMENT '任务id',
+  `bean_name` varchar(200) DEFAULT NULL COMMENT 'spring bean名称',
+  `params` varchar(2000) DEFAULT NULL COMMENT '参数',
+  `status` tinyint(4) NOT NULL COMMENT '任务状态    0：成功    1：失败',
+  `error` varchar(2000) DEFAULT NULL COMMENT '失败信息',
+  `times` int(11) NOT NULL COMMENT '耗时(单位：毫秒)',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`log_id`),
+  KEY `job_id` (`job_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='定时任务日志';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `schedule_job_log`
+--
+
+LOCK TABLES `schedule_job_log` WRITE;
+/*!40000 ALTER TABLE `schedule_job_log` DISABLE KEYS */;
+INSERT INTO `schedule_job_log` VALUES (1,1,'testTask','renren',0,NULL,1,'2019-05-11 02:23:49');
+/*!40000 ALTER TABLE `schedule_job_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_config`
+--
+
+DROP TABLE IF EXISTS `sys_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_config` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `param_key` varchar(50) DEFAULT NULL COMMENT 'key',
+  `param_value` varchar(2000) DEFAULT NULL COMMENT 'value',
+  `status` tinyint(4) DEFAULT '1' COMMENT '状态   0：隐藏   1：显示',
+  `remark` varchar(500) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `param_key` (`param_key`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统配置信息表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_config`
+--
+
+LOCK TABLES `sys_config` WRITE;
+/*!40000 ALTER TABLE `sys_config` DISABLE KEYS */;
+INSERT INTO `sys_config` VALUES (1,'CLOUD_STORAGE_CONFIG_KEY','{\"aliyunAccessKeyId\":\"\",\"aliyunAccessKeySecret\":\"\",\"aliyunBucketName\":\"\",\"aliyunDomain\":\"\",\"aliyunEndPoint\":\"\",\"aliyunPrefix\":\"\",\"qcloudBucketName\":\"\",\"qcloudDomain\":\"\",\"qcloudPrefix\":\"\",\"qcloudSecretId\":\"\",\"qcloudSecretKey\":\"\",\"qiniuAccessKey\":\"NrgMfABZxWLo5B-YYSjoE8-AZ1EISdi1Z3ubLOeZ\",\"qiniuBucketName\":\"ios-app\",\"qiniuDomain\":\"http://7xqbwh.dl1.z0.glb.clouddn.com\",\"qiniuPrefix\":\"upload\",\"qiniuSecretKey\":\"uIwJHevMRWU0VLxFvgy0tAcOdGqasdtVlJkdy6vV\",\"type\":1}',0,'云存储配置信息');
+/*!40000 ALTER TABLE `sys_config` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_dept`
+--
+
+DROP TABLE IF EXISTS `sys_dept`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_dept` (
+  `dept_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `parent_id` bigint(20) DEFAULT NULL COMMENT '上级部门ID，一级部门为0',
+  `name` varchar(50) DEFAULT NULL COMMENT '部门名称',
+  `order_num` int(11) DEFAULT NULL COMMENT '排序',
+  `del_flag` tinyint(4) DEFAULT '0' COMMENT '是否删除  -1：已删除  0：正常',
+  PRIMARY KEY (`dept_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='部门管理';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_dept`
+--
+
+LOCK TABLES `sys_dept` WRITE;
+/*!40000 ALTER TABLE `sys_dept` DISABLE KEYS */;
+INSERT INTO `sys_dept` VALUES (1,0,'人人开源集团',0,0),(2,1,'长沙分公司',1,0),(3,1,'上海分公司',2,0),(4,3,'技术部',0,0),(5,3,'销售部',1,0);
+/*!40000 ALTER TABLE `sys_dept` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_dict`
+--
+
+DROP TABLE IF EXISTS `sys_dict`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_dict` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL COMMENT '字典名称',
+  `type` varchar(100) NOT NULL COMMENT '字典类型',
+  `code` varchar(100) NOT NULL COMMENT '字典码',
+  `value` varchar(1000) NOT NULL COMMENT '字典值',
+  `order_num` int(11) DEFAULT '0' COMMENT '排序',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  `del_flag` tinyint(4) DEFAULT '0' COMMENT '删除标记  -1：已删除  0：正常',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `type` (`type`,`code`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='数据字典表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_dict`
+--
+
+LOCK TABLES `sys_dict` WRITE;
+/*!40000 ALTER TABLE `sys_dict` DISABLE KEYS */;
+INSERT INTO `sys_dict` VALUES (1,'性别','sex','0','女',0,NULL,0),(2,'性别','sex','1','男',1,NULL,0),(3,'性别','sex','2','未知',3,NULL,0);
+/*!40000 ALTER TABLE `sys_dict` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_log`
+--
+
+DROP TABLE IF EXISTS `sys_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_log` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL COMMENT '用户名',
+  `operation` varchar(50) DEFAULT NULL COMMENT '用户操作',
+  `method` varchar(200) DEFAULT NULL COMMENT '请求方法',
+  `params` varchar(5000) DEFAULT NULL COMMENT '请求参数',
+  `time` bigint(20) NOT NULL COMMENT '执行时长(毫秒)',
+  `ip` varchar(64) DEFAULT NULL COMMENT 'IP地址',
+  `create_date` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统日志';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_log`
+--
+
+LOCK TABLES `sys_log` WRITE;
+/*!40000 ALTER TABLE `sys_log` DISABLE KEYS */;
+INSERT INTO `sys_log` VALUES (1,'admin','立即执行任务','io.renren.modules.job.controller.ScheduleJobController.run()','[1]',28,'0:0:0:0:0:0:0:1','2019-05-11 02:23:34'),(2,'admin','暂停定时任务','io.renren.modules.job.controller.ScheduleJobController.pause()','[1]',19,'0:0:0:0:0:0:0:1','2019-05-11 02:24:01');
+/*!40000 ALTER TABLE `sys_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_menu`
+--
+
+DROP TABLE IF EXISTS `sys_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_menu` (
+  `menu_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `parent_id` bigint(20) DEFAULT NULL COMMENT '父菜单ID，一级菜单为0',
+  `name` varchar(50) DEFAULT NULL COMMENT '菜单名称',
+  `url` varchar(200) DEFAULT NULL COMMENT '菜单URL',
+  `perms` varchar(500) DEFAULT NULL COMMENT '授权(多个用逗号分隔，如：user:list,user:create)',
+  `type` int(11) DEFAULT NULL COMMENT '类型   0：目录   1：菜单   2：按钮',
+  `icon` varchar(50) DEFAULT NULL COMMENT '菜单图标',
+  `order_num` int(11) DEFAULT NULL COMMENT '排序',
+  PRIMARY KEY (`menu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='菜单管理';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_menu`
+--
+
+LOCK TABLES `sys_menu` WRITE;
+/*!40000 ALTER TABLE `sys_menu` DISABLE KEYS */;
+INSERT INTO `sys_menu` VALUES (1,0,'系统管理',NULL,NULL,0,'fa fa-cog',0),(2,1,'管理员管理','modules/sys/user.html',NULL,1,'fa fa-user',1),(3,1,'角色管理','modules/sys/role.html',NULL,1,'fa fa-user-secret',2),(4,1,'菜单管理','modules/sys/menu.html',NULL,1,'fa fa-th-list',3),(5,1,'SQL监控','druid/sql.html',NULL,1,'fa fa-bug',4),(6,1,'定时任务','modules/job/schedule.html',NULL,1,'fa fa-tasks',5),(7,6,'查看',NULL,'sys:schedule:list,sys:schedule:info',2,NULL,0),(8,6,'新增',NULL,'sys:schedule:save',2,NULL,0),(9,6,'修改',NULL,'sys:schedule:update',2,NULL,0),(10,6,'删除',NULL,'sys:schedule:delete',2,NULL,0),(11,6,'暂停',NULL,'sys:schedule:pause',2,NULL,0),(12,6,'恢复',NULL,'sys:schedule:resume',2,NULL,0),(13,6,'立即执行',NULL,'sys:schedule:run',2,NULL,0),(14,6,'日志列表',NULL,'sys:schedule:log',2,NULL,0),(15,2,'查看',NULL,'sys:user:list,sys:user:info',2,NULL,0),(16,2,'新增',NULL,'sys:user:save,sys:role:select',2,NULL,0),(17,2,'修改',NULL,'sys:user:update,sys:role:select',2,NULL,0),(18,2,'删除',NULL,'sys:user:delete',2,NULL,0),(19,3,'查看',NULL,'sys:role:list,sys:role:info',2,NULL,0),(20,3,'新增',NULL,'sys:role:save,sys:menu:perms',2,NULL,0),(21,3,'修改',NULL,'sys:role:update,sys:menu:perms',2,NULL,0),(22,3,'删除',NULL,'sys:role:delete',2,NULL,0),(23,4,'查看',NULL,'sys:menu:list,sys:menu:info',2,NULL,0),(24,4,'新增',NULL,'sys:menu:save,sys:menu:select',2,NULL,0),(25,4,'修改',NULL,'sys:menu:update,sys:menu:select',2,NULL,0),(26,4,'删除',NULL,'sys:menu:delete',2,NULL,0),(27,1,'参数管理','modules/sys/config.html','sys:config:list,sys:config:info,sys:config:save,sys:config:update,sys:config:delete',1,'fa fa-sun-o',6),(29,1,'系统日志','modules/sys/log.html','sys:log:list',1,'fa fa-file-text-o',7),(30,1,'文件上传','modules/oss/oss.html','sys:oss:all',1,'fa fa-file-image-o',6),(31,1,'部门管理','modules/sys/dept.html',NULL,1,'fa fa-file-code-o',1),(32,31,'查看',NULL,'sys:dept:list,sys:dept:info',2,NULL,0),(33,31,'新增',NULL,'sys:dept:save,sys:dept:select',2,NULL,0),(34,31,'修改',NULL,'sys:dept:update,sys:dept:select',2,NULL,0),(35,31,'删除',NULL,'sys:dept:delete',2,NULL,0),(36,1,'字典管理','modules/sys/dict.html',NULL,1,'fa fa-bookmark-o',6),(37,36,'查看',NULL,'sys:dict:list,sys:dict:info',2,NULL,6),(38,36,'新增',NULL,'sys:dict:save',2,NULL,6),(39,36,'修改',NULL,'sys:dict:update',2,NULL,6),(40,36,'删除',NULL,'sys:dict:delete',2,NULL,6);
+/*!40000 ALTER TABLE `sys_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_oss`
+--
+
+DROP TABLE IF EXISTS `sys_oss`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_oss` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `url` varchar(200) DEFAULT NULL COMMENT 'URL地址',
+  `create_date` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='文件上传';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_oss`
+--
+
+LOCK TABLES `sys_oss` WRITE;
+/*!40000 ALTER TABLE `sys_oss` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_oss` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role`
+--
+
+DROP TABLE IF EXISTS `sys_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_role` (
+  `role_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(100) DEFAULT NULL COMMENT '角色名称',
+  `remark` varchar(100) DEFAULT NULL COMMENT '备注',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '部门ID',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role`
+--
+
+LOCK TABLES `sys_role` WRITE;
+/*!40000 ALTER TABLE `sys_role` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role_dept`
+--
+
+DROP TABLE IF EXISTS `sys_role_dept`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_role_dept` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '部门ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色与部门对应关系';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role_dept`
+--
+
+LOCK TABLES `sys_role_dept` WRITE;
+/*!40000 ALTER TABLE `sys_role_dept` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_role_dept` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_role_menu`
+--
+
+DROP TABLE IF EXISTS `sys_role_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_role_menu` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
+  `menu_id` bigint(20) DEFAULT NULL COMMENT '菜单ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色与菜单对应关系';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_role_menu`
+--
+
+LOCK TABLES `sys_role_menu` WRITE;
+/*!40000 ALTER TABLE `sys_role_menu` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_role_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_user`
+--
+
+DROP TABLE IF EXISTS `sys_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_user` (
+  `user_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL COMMENT '用户名',
+  `password` varchar(100) DEFAULT NULL COMMENT '密码',
+  `salt` varchar(20) DEFAULT NULL COMMENT '盐',
+  `email` varchar(100) DEFAULT NULL COMMENT '邮箱',
+  `mobile` varchar(100) DEFAULT NULL COMMENT '手机号',
+  `status` tinyint(4) DEFAULT NULL COMMENT '状态  0：禁用   1：正常',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '部门ID',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统用户';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_user`
+--
+
+LOCK TABLES `sys_user` WRITE;
+/*!40000 ALTER TABLE `sys_user` DISABLE KEYS */;
+INSERT INTO `sys_user` VALUES (1,'admin','e1153123d7d180ceeb820d577ff119876678732a68eef4e6ffc0b1f06a01f91b','YzcmCZNvbXocrsz9dm8e','root@renren.io','13612345678',1,1,'2016-11-11 11:11:11');
+/*!40000 ALTER TABLE `sys_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_user_role`
+--
+
+DROP TABLE IF EXISTS `sys_user_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sys_user_role` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户ID',
+  `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户与角色对应关系';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_user_role`
+--
+
+LOCK TABLES `sys_user_role` WRITE;
+/*!40000 ALTER TABLE `sys_user_role` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sys_user_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Current Database: `templatespringboot`
 --
 
@@ -1307,4 +2016,4 @@ USE `test`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-19 22:14:03
+-- Dump completed on 2019-05-14 23:01:19
