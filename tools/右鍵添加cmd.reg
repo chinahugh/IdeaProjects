@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\Directory\Background\shell\在此处打开CMD]
+"ShowBasedOnVelocityId"=dword:00639bc8
+[HKEY_CLASSES_ROOT\Directory\Background\shell\在此处打开CMD\command]
+@="cmd.exe /s /k pushd \"%V\""

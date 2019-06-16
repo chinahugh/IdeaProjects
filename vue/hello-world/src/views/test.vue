@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dev>{{msg}}</dev>
+    <div>{{msg}}</div>
     <button type="button" @click="add">添加</button>
   </div>
 </template>

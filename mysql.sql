@@ -18,6 +18,1659 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Current Database: `jmall_platform`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `jmall_platform` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `jmall_platform`;
+
+--
+-- Table structure for table `action_log`
+--
+
+DROP TABLE IF EXISTS `action_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `action_log` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
+  `username` varchar(50) DEFAULT NULL COMMENT '用户名',
+  `operation` varchar(50) DEFAULT NULL COMMENT '用户操作',
+  `time` int(11) DEFAULT NULL COMMENT '响应时间',
+  `method` varchar(200) DEFAULT NULL COMMENT '请求方法',
+  `params` varchar(5000) DEFAULT NULL COMMENT '请求参数',
+  `ip` varchar(64) DEFAULT NULL COMMENT 'IP地址',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2849 DEFAULT CHARSET=utf8 COMMENT='系统日志';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `action_log`
+--
+
+LOCK TABLES `action_log` WRITE;
+/*!40000 ALTER TABLE `action_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `action_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `approve_flow_define`
+--
+
+DROP TABLE IF EXISTS `approve_flow_define`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `approve_flow_define` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `flow_type` int(11) DEFAULT NULL COMMENT '流程类型',
+  `step_desc` varchar(100) DEFAULT NULL COMMENT '步骤描述',
+  `next_step_id` int(11) DEFAULT NULL COMMENT '下一步id',
+  `pre_step_id` int(11) DEFAULT NULL COMMENT '上一步id',
+  `call_back` varchar(1000) DEFAULT NULL COMMENT '流程回调',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `approve_flow_define`
+--
+
+LOCK TABLES `approve_flow_define` WRITE;
+/*!40000 ALTER TABLE `approve_flow_define` DISABLE KEYS */;
+INSERT INTO `approve_flow_define` VALUES (1,1,'待提交申请',2,-1,'com.jxx.kg.admin.approve.callback.ProductMerchantStartCallBack'),(2,1,'代理商处理中',3,1,'com.jxx.kg.admin.approve.callback.ProductFactorApproveCallBack'),(3,1,'平台审核中',0,2,'com.jxx.kg.admin.approve.callback.ProductPlatformApproveCallBack'),(4,2,'待提交申请',5,-1,NULL),(5,2,'代理商处理中',6,4,NULL),(6,2,'平台审核中',0,5,NULL);
+/*!40000 ALTER TABLE `approve_flow_define` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `approve_his`
+--
+
+DROP TABLE IF EXISTS `approve_his`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `approve_his` (
+  `his_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '历史信息主键',
+  `instance_id` bigint(20) NOT NULL COMMENT '对应实例id',
+  `user_id` bigint(20) NOT NULL COMMENT '处理人id',
+  `step_id` int(11) DEFAULT NULL COMMENT '处理步骤',
+  `dept_id` bigint(20) NOT NULL COMMENT '处理人所在部门',
+  `approve_state` tinyint(4) DEFAULT NULL COMMENT '处理结果：通过、未通过（退回）',
+  `approve_detail` varchar(3000) DEFAULT NULL COMMENT '处理详细信息',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '处理时间',
+  PRIMARY KEY (`his_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='审批历史表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `approve_his`
+--
+
+LOCK TABLES `approve_his` WRITE;
+/*!40000 ALTER TABLE `approve_his` DISABLE KEYS */;
+INSERT INTO `approve_his` VALUES (1,1,181826,NULL,20,NULL,'申请提交，开始流转！',1559033502),(2,1,181827,NULL,19,1,'通过',1559034083),(3,1,181818,NULL,1,0,'123',1559034095),(4,1,181827,NULL,19,1,'通过',1559044226),(5,1,181818,NULL,1,1,'通过',1559049209);
+/*!40000 ALTER TABLE `approve_his` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `approve_run`
+--
+
+DROP TABLE IF EXISTS `approve_run`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `approve_run` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `pre_run_step_id` bigint(20) DEFAULT NULL COMMENT '上一步骤id',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '部门id',
+  `step_id` int(11) DEFAULT NULL COMMENT '步骤id',
+  `task_id` bigint(20) DEFAULT NULL COMMENT '任务id',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `approve_run`
+--
+
+LOCK TABLES `approve_run` WRITE;
+/*!40000 ALTER TABLE `approve_run` DISABLE KEYS */;
+/*!40000 ALTER TABLE `approve_run` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `approve_task`
+--
+
+DROP TABLE IF EXISTS `approve_task`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `approve_task` (
+  `task_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '任务id',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '处理人id',
+  `dept_id` bigint(20) DEFAULT NULL COMMENT '部门id',
+  `task_type` tinyint(4) NOT NULL COMMENT '任务类型:商品/商家',
+  `instance_id` bigint(20) NOT NULL COMMENT '实例id',
+  `step_id` int(20) NOT NULL COMMENT '当前step id',
+  `current_run_step_id` int(11) DEFAULT NULL COMMENT '当前步骤执行id，用于回退',
+  `pre_run_step_id` int(11) DEFAULT NULL COMMENT '上一步骤执行id，用于回退',
+  `approve_state` tinyint(4) DEFAULT NULL COMMENT '处理状态:1:正常状态：0：被驳回',
+  `create_time` bigint(20) NOT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`task_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='审批实时任务表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `approve_task`
+--
+
+LOCK TABLES `approve_task` WRITE;
+/*!40000 ALTER TABLE `approve_task` DISABLE KEYS */;
+/*!40000 ALTER TABLE `approve_task` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `areas`
+--
+
+DROP TABLE IF EXISTS `areas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `areas` (
+  `id` varchar(10) NOT NULL COMMENT '城市编码',
+  `parent_id` varchar(10) DEFAULT NULL COMMENT '父级编码',
+  `level_type` tinyint(4) DEFAULT NULL COMMENT '级别',
+  `name` varchar(100) DEFAULT NULL COMMENT '名称',
+  `short_name` varchar(100) DEFAULT NULL COMMENT '简称',
+  `path` varchar(100) DEFAULT NULL COMMENT '路径信息',
+  `merger_name` varchar(200) DEFAULT NULL COMMENT '归并名称',
+  `merger_short_name` varchar(200) DEFAULT NULL COMMENT '归并简称名称',
+  `zip_code` varchar(6) DEFAULT NULL COMMENT '邮政编码',
+  `pinyin` varchar(20) DEFAULT NULL COMMENT '全拼',
+  `jianpin` varchar(20) DEFAULT NULL COMMENT '简拼',
+  `first_char` char(1) DEFAULT NULL COMMENT '首字母',
+  `longitude` varchar(50) DEFAULT NULL COMMENT '经度',
+  `latitude` varchar(50) DEFAULT NULL COMMENT '纬度',
+  `state` tinyint(4) DEFAULT '1' COMMENT '状态：1：正常',
+  `remark` varchar(100) DEFAULT NULL COMMENT '备注',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `areas`
+--
+
+LOCK TABLES `areas` WRITE;
+/*!40000 ALTER TABLE `areas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `areas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_dept`
+--
+
+DROP TABLE IF EXISTS `auth_dept`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_dept` (
+  `dept_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `parent_id` bigint(20) DEFAULT NULL COMMENT '上级部门ID，一级部门为0',
+  `name` varchar(50) DEFAULT NULL COMMENT '部门名称',
+  `dept_type` tinyint(4) DEFAULT NULL COMMENT '部门类别（客服/运营/商家）',
+  `order_num` int(11) DEFAULT NULL COMMENT '排序',
+  `state` tinyint(4) DEFAULT '0' COMMENT '是否删除  0：已删除  1：正常',
+  `path` varchar(100) DEFAULT NULL COMMENT '路径（不包含自身）',
+  PRIMARY KEY (`dept_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='部门管理';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_dept`
+--
+
+LOCK TABLES `auth_dept` WRITE;
+/*!40000 ALTER TABLE `auth_dept` DISABLE KEYS */;
+INSERT INTO `auth_dept` VALUES (1,0,'总部平台',0,1,1,'0'),(19,1,'江苏代理商',1,1,1,'0/1'),(20,19,'商家',2,2,1,'0/1/19'),(21,19,'客服',3,3,1,'0/1/19'),(22,19,'运营',4,4,1,'0/1/19');
+/*!40000 ALTER TABLE `auth_dept` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_menu`
+--
+
+DROP TABLE IF EXISTS `auth_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_menu` (
+  `menu_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `parent_id` bigint(20) DEFAULT NULL COMMENT '父菜单ID，一级菜单为0',
+  `name` varchar(50) DEFAULT NULL COMMENT '菜单名称',
+  `url` varchar(200) DEFAULT NULL COMMENT '菜单URL',
+  `perms` varchar(500) DEFAULT NULL COMMENT '授权(多个用逗号分隔，如：user:list,user:create)',
+  `type` int(11) DEFAULT NULL COMMENT '类型   0：目录   1：菜单   2：按钮',
+  `icon` varchar(50) DEFAULT NULL COMMENT '菜单图标',
+  `order_num` int(11) DEFAULT NULL COMMENT '排序',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '修改时间',
+  `path` varchar(100) DEFAULT NULL COMMENT '当前路径信息',
+  PRIMARY KEY (`menu_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=165 DEFAULT CHARSET=utf8 COMMENT='菜单管理';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_menu`
+--
+
+LOCK TABLES `auth_menu` WRITE;
+/*!40000 ALTER TABLE `auth_menu` DISABLE KEYS */;
+INSERT INTO `auth_menu` VALUES (1,0,'基础数据','','',0,'fa fa-bars',1,20170809224947,NULL,'0'),(2,3,'菜单权限','auth/menu/','auth:menu:menu',1,'fa fa-th-list',2,20170809225515,NULL,'0/3'),(3,0,'系统权限','','',0,'fa fa-desktop',0,20170809230655,20170814141343,'0'),(6,3,'用户中心','auth/user/','auth:user:page',1,'fa fa-user',0,20170810141211,NULL,'0/3'),(7,3,'角色管理','auth/role','auth:role:role',1,'fa fa-paw',1,20170810141319,NULL,'0/3'),(12,6,'新增','','auth:user:add',2,'',0,20170814105135,NULL,'0/3/6'),(13,6,'编辑','','auth:user:edit',2,'',0,20170814105206,NULL,'0/3/6'),(14,6,'删除',NULL,'auth:user:remove',2,NULL,0,20170814105224,NULL,'0/3/6'),(15,7,'新增','','auth:role:add',2,'',0,20170814105637,NULL,'0/3/7'),(20,2,'新增','','auth:menu:add',2,'',0,20170814105932,NULL,'0/3/2'),(21,2,'编辑','','auth:menu:edit',2,'',0,20170814105956,NULL,'0/3/2'),(22,2,'删除','','auth:menu:remove',2,'',0,20170814110026,NULL,'0/3/2'),(24,6,'批量删除','','auth:user:batchRemove',2,'',0,20170814172718,NULL,'0/3/6'),(25,6,'停用',NULL,'auth:user:disable',2,NULL,0,20170814172743,NULL,'0/3/6'),(26,6,'重置密码','','auth:user:resetPwd',2,'',0,20170814172834,NULL,'0/3/6'),(27,91,'系统日志','monitor/log','monitor:log',1,'fa fa-warning',0,20170814221153,NULL,'0/91'),(28,27,'刷新',NULL,'auth:log:list',2,NULL,0,20170814223022,NULL,'0/91/27'),(29,27,'删除',NULL,'auth:log:remove',2,NULL,0,20170814223043,NULL,'0/91/27'),(30,27,'清空',NULL,'auth:log:clear',2,NULL,0,20170814223102,NULL,'0/91/27'),(55,7,'编辑','','auth:role:edit',2,'',NULL,NULL,NULL,'0/3/7'),(56,7,'删除','','auth:role:remove',2,NULL,NULL,NULL,NULL,'0/3/7'),(57,91,'运行监控','druid/index.html','',1,'fa fa-caret-square-o-right',1,NULL,NULL,'0/91'),(61,2,'批量删除','','auth:menu:batchRemove',2,NULL,NULL,NULL,NULL,'0/3/2'),(62,7,'批量删除','','auth:role:batchRemove',2,NULL,NULL,NULL,NULL,'0/3/7'),(72,77,'定时任务','common/job','common:taskScheduleJob',1,'fa fa-hourglass-1',4,NULL,NULL,'0/77'),(73,3,'组织架构','auth/dept','auth:dept:dept',1,'fa fa-users',3,NULL,NULL,'0/3'),(74,73,'增加','auth/dept/add','auth:dept:add',2,NULL,1,NULL,NULL,'0/3/73'),(75,73,'刪除','auth/dept/remove','auth:dept:remove',2,NULL,2,NULL,NULL,'0/3/73'),(76,73,'编辑','auth/dept/edit','auth:dept:edit',2,NULL,3,NULL,NULL,'0/3/73'),(77,0,'系统管理','','',0,'fa fa-gear',4,NULL,NULL,'0'),(78,1,'数据字典','basedata/dict','basedata:dict:dict',1,'fa fa-book',1,NULL,NULL,'0/1'),(79,78,'增加','basedata/dict/add','basedata:dict:add',2,'',2,NULL,NULL,'0/1/78'),(80,78,'编辑','basedata/dict/edit','basedata:dict:edit',2,'',2,NULL,NULL,'0/1/78'),(81,78,'删除','basedata/dict/remove','basedata:dict:remove',2,'',3,NULL,NULL,'0/1/78'),(83,78,'批量删除','basedata/dict/batchRemove','basedata:dict:batchRemove',2,'',4,NULL,NULL,'0/1/78'),(84,0,'消息中心','','',0,'fa fa-laptop',5,NULL,NULL,'0'),(85,84,'通知管理','common/notice','common:notice:notice',1,'fa fa-pencil-square',NULL,NULL,NULL,'0/84'),(86,85,'新增','common/notice/add','common:notice:add',2,'fa fa-plus',1,NULL,NULL,'0/84/85'),(87,85,'编辑','common/notice/edit','common:notice:edit',2,'fa fa-pencil-square-o',2,NULL,NULL,'0/84/85'),(88,85,'删除','common/notice/remove','common:notice:remove',2,'fa fa-minus',NULL,NULL,NULL,'0/84/85'),(89,85,'批量删除','common/notice/batchRemove','common:notice:batchRemove',2,'',NULL,NULL,NULL,'0/84/85'),(90,84,'我的通知','common/notice/selfNotify','',1,'fa fa-envelope-square',NULL,NULL,NULL,'0/84'),(91,0,'系统监控','','',0,'fa fa-video-camera',5,NULL,NULL,'0'),(106,2,'角色树列表','auth/menu/menuTreePage','auth:menu:menuTreePage',2,'fa fa-beer',5,1553158563025,1553158563025,'0/3/2'),(107,78,'数据字典类型管理','basedata/dict/typelistpage','basedata:dicttype:typelistpage',1,'',2,1553244190387,1553244190387,'0/1/78'),(108,107,'类别添加/修改页面','basedata/dict/typeadd','basedata:dicttype:typeadd',2,'',0,1553244396084,1553244396084,'0/1/78/107'),(110,107,'获取类别浏览数据','basedata/dict/typelist','basedata:dicttype:typelist',2,'',2,1553244661894,1553244661894,'0/1/78/107'),(111,107,'保存类别信息','basedata/dict/typesave','basedata:dicttype:typesave',2,'',2,1553244705245,1553244705245,'0/1/78/107'),(112,107,'更新类别信息','basedata/dict/typeupdate','basedata:dicttype:typeupdate',2,'',2,1553244739568,1553244739568,'0/1/78/107'),(113,107,'移除类别信息','basedata/dict/removetype','basedata:dicttype:removetype',2,'',2,1553244772901,1553244772901,'0/1/78/107'),(114,107,'批量移除类别信息','basedata/dict/batchRemoveType','basedata:dicttype:batchRemoveType',2,'',2,1553244803974,1553244803974,'0/1/78/107'),(119,78,'添加/修改页面','dictsubform/{formtype}/{id}','basedata:dictsubform:dictsubform',1,'',2,1553830852718,1553830852718,'0/1/78'),(120,2,'添加/修改页面','subform/{formtype}/{id}','auth:menu:subform',1,'',1,1553831084954,1553831084954,'0/3/2'),(121,6,'添加/修改页面','subform/{formtype}/{id}','auth:user:subform',0,'',1,1553831274285,1553831274285,'0/3/6'),(122,7,'添加/修改页面','subform/{formtype}/{id}','auth:role:subform',0,'',2,1553831337432,1553831337432,'0/3/7'),(123,73,'添加/修改页面','subform/{formtype}/{id}','auth:dept:subform',1,'',2,1553831380472,1553831380472,'0/3/73'),(124,1,'商品分类','basedata/productcategory','basedata:productcategory:page',0,'fa fa-bars',2,1554800706962,1554800706962,'0/1'),(125,124,'商品分类列表','basedata/productcategory/listCategory','basedata:productcategory:listCategory',2,'fa fa-bookmark',1,1554800847085,1554800847085,'0/1/124'),(126,124,'商品分类添加/修改页面','basedata/productcategory/subform','basedata:productcategory:subform',2,'fa fa-battery-3',2,1554801084670,1554801084670,'0/1/124'),(127,124,'添加商品类别','basedata/productcategory/addCategory','basedata:productcategory:addCategory',2,'fa fa-battery-3',3,1554801121261,1554801121261,'0/1/124'),(128,124,'更新商品类别','basedata/productcategory/updateCategory','basedata:productcategory:updateCategory',2,'fa fa-bell',2,1554801153756,1554801153756,'0/1/124'),(129,124,'删除商品类别','basedata/productcategory/removeCategory','basedata:productcategory:removeCategory',2,'fa fa-bed',3,1554801189237,1554801189237,'0/1/124'),(130,0,'商品中心','product','',0,'fa fa-university',2,1554885566126,1554885566126,'0'),(131,130,'添加商品','mains/product/subform/1/0','mains:product:subform',0,'fa fa-adjust',1,1554885718654,1554885718654,'0/130'),(132,1,'商品属性','basedata/pfk','basedata:pfk:page',1,'fa fa-battery-2',3,1554889964758,1554889964758,'0/1'),(133,130,'运费模板','mains/ftemplate/template','mains:ftemplate:template',1,'fa fa-bar-chart',2,1555472163398,1555472163398,'0/130'),(134,130,'商品管理','mains/product','mains:product:product',0,'fa fa-adjust',0,1557753429224,1557753429224,'0/130'),(135,0,'待办事项','----','',0,'fa fa-calendar-check-o',4,1557826378351,1557826378351,'0'),(136,135,'审核中心','approve','mains:approve:page',1,'',0,1557826421454,1557826421454,'0/135'),(138,133,'添加/修改页面','subform/{formtype}/{id}','mains:ftemplate:subform',1,'fa fa-address-book',1,1557987908059,1557987908059,'0/130/133'),(139,133,'添加运费模板','mains/ftemplate/addTemplate','mains:ftemplate:addtemplate',1,'fa fa-arrows',2,1557987945992,1557987945992,'0/130/133'),(140,133,'获取运费模板列表','mains/ftemplate/list','mains:ftemplate:template',1,'fa fa-arrows',3,1557987987959,1557987987959,'0/130/133'),(141,133,'所有运费模板','mains/ftemplate/allfeight','mains:ftemplate:allfeight',1,'fa fa-arrows',4,1557988021254,1557988021254,'0/130/133'),(142,134,'添加/修改页面','mains/product/subform/{formtype}/{id}','mains:product:subform',1,'fa fa-arrows',1,1557988248273,1557988248273,'0/130/134'),(143,134,'商品列表查询','mains/product/list','mains:product:list',1,'fa fa-arrows',2,1557988280010,1557988280010,'0/130/134'),(144,134,'添加商品','mains/product/add','mains:product:add',1,'fa fa-arrows',3,1557988345758,1557988345758,'0/130/134'),(145,134,'统计类别数量','mains/product/countProductState','mains:product:countProductState',1,'fa fa-arrows',4,1557988388782,1557988388782,'0/130/134'),(146,136,'查询审核列表','approve/list','mains:approve:list',1,'fa fa-arrows',1,1557988519238,1557988519238,'0/135/136'),(147,136,'撤回申请','approve/recall/{taskId}','mains:approve:recall',1,'fa fa-arrows',2,1557988549132,1557988549132,'0/135/136'),(148,136,'开启审核','approve/approve','mains:approve:approve',2,'fa fa-arrows',3,1557988588428,1557988588428,'0/135/136'),(149,136,'审核计数','mains/approve/countState','mains:approve:countState',2,'fa fa-arrows',4,1558179591647,1558179591647,'0/135/136'),(150,151,'审核历史','mains/approve/taskHistory','mains:approve:taskHistory',2,'fa fa-arrows',5,1558179620744,1558179620744,'0/136/151'),(151,0,'审核历史页面','mains/approve/hispage','mains:approve:hispage',2,'fa fa-arrows',7,1558179668822,1558179668822,'0/136'),(152,134,'商品申请','mains/product/applyAudit','mains:product:applyAudit',2,'fa fa-arrows',5,1558179741527,1558179741527,'0/130/134'),(153,6,'查询用户列表','auth/user/list','auth:user:user',2,'fa fa-arrows',1,1558187821411,1558187821411,'0/3/6'),(155,134,'获取商品字段信息','mains/product/getFields/{productId}','mains:product:getFields',2,'fa fa-arrows',4,1558403804064,1558403804064,'0/130/134'),(156,134,'获取商品sku信息','mains/approve/getSku','mains:product:getSku',2,'fa fa-arrows',6,1558407913056,1558407913056,'0/130/134'),(157,134,'获取修改的地市信息','mains/product/getAreaStr/{id}','mains:product:getAreaStr',2,'fa fa-arrows',5,1558420433880,1558420433880,'0/130/134'),(158,134,'商品修改','mains/product/update','mains:product:update',2,'fa fa-arrows',1,1558422441570,1558422441570,'0/130/134'),(159,0,'运营中心','----','',0,'fa fa-flag',7,1558769721299,1558769721299,'0'),(160,159,'Banner管理','home/banner','home:banner:page',1,'fa fa-arrows',1,1558770930156,1558770930156,'0/159'),(161,159,'优惠券','home/coupon','home:coupon:page',1,'fa fa-arrows',2,1559027394768,1559027394768,'0/159'),(163,134,'上下架操作','mains/product/updatePublishState/{type}/{productId}','mains:product:updatePublishState',2,'fa fa-arrows',3,1559052915328,1559052915328,'0/130/134'),(164,159,'活动管理','home/activity','home:activity:page',1,'fa fa-arrows',3,1559272171654,1559272171654,'0/159');
+/*!40000 ALTER TABLE `auth_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_role`
+--
+
+DROP TABLE IF EXISTS `auth_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_role` (
+  `role_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(100) DEFAULT NULL COMMENT '角色名称',
+  `role_sign` varchar(100) DEFAULT NULL COMMENT '角色标识',
+  `remark` varchar(100) DEFAULT NULL COMMENT '备注',
+  `user_id_create` bigint(255) DEFAULT NULL COMMENT '创建用户id',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COMMENT='角色';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_role`
+--
+
+LOCK TABLES `auth_role` WRITE;
+/*!40000 ALTER TABLE `auth_role` DISABLE KEYS */;
+INSERT INTO `auth_role` VALUES (1,'超级用户角色','admin','拥有部分最高权限',2,20170812004352,1553853148),(10,'代理商',NULL,'代理商',181818,1557986817,1559052930),(11,'商家',NULL,'商家',181818,1557986835,1558422452),(12,'代理商客服',NULL,'代理商客服',181818,1557986854,1558187328),(13,'代理商运营',NULL,'代理商运营',181824,1558187357,1558187357);
+/*!40000 ALTER TABLE `auth_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_role_menu`
+--
+
+DROP TABLE IF EXISTS `auth_role_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_role_menu` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
+  `menu_id` bigint(20) DEFAULT NULL COMMENT '菜单ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4662 DEFAULT CHARSET=utf8 COMMENT='角色与菜单对应关系';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_role_menu`
+--
+
+LOCK TABLES `auth_role_menu` WRITE;
+/*!40000 ALTER TABLE `auth_role_menu` DISABLE KEYS */;
+INSERT INTO `auth_role_menu` VALUES (367,44,1),(368,44,32),(369,44,33),(370,44,34),(371,44,35),(372,44,28),(373,44,29),(374,44,30),(375,44,38),(376,44,4),(377,44,27),(378,45,38),(379,46,3),(380,46,20),(381,46,21),(382,46,22),(383,46,23),(384,46,11),(385,46,12),(386,46,13),(387,46,14),(388,46,24),(389,46,25),(390,46,26),(391,46,15),(392,46,2),(393,46,6),(394,46,7),(598,50,38),(632,38,42),(737,51,38),(738,51,39),(739,51,40),(740,51,41),(741,51,4),(742,51,32),(743,51,33),(744,51,34),(745,51,35),(746,51,27),(747,51,28),(748,51,29),(749,51,30),(750,51,1),(1064,54,53),(1095,55,2),(1096,55,6),(1097,55,7),(1098,55,3),(1099,55,50),(1100,55,49),(1101,55,1),(1856,53,28),(1857,53,29),(1858,53,30),(1859,53,27),(1860,53,57),(1861,53,71),(1862,53,48),(1863,53,72),(1864,53,1),(1865,53,7),(1866,53,55),(1867,53,56),(1868,53,62),(1869,53,15),(1870,53,2),(1871,53,61),(1872,53,20),(1873,53,21),(1874,53,22),(2084,56,68),(2085,56,60),(2086,56,59),(2087,56,58),(2088,56,51),(2089,56,50),(2090,56,49),(2243,48,72),(2247,63,-1),(2248,63,84),(2249,63,85),(2250,63,88),(2251,63,87),(2252,64,84),(2253,64,89),(2254,64,88),(2255,64,87),(2256,64,86),(2257,64,85),(2258,65,89),(2259,65,88),(2260,65,86),(2262,67,48),(2263,68,88),(2264,68,87),(2265,69,89),(2266,69,88),(2267,69,86),(2268,69,87),(2269,69,85),(2270,69,84),(2271,70,85),(2272,70,89),(2273,70,88),(2274,70,87),(2275,70,86),(2276,70,84),(2278,72,59),(2279,73,48),(2284,76,85),(2285,76,89),(2286,76,88),(2287,76,87),(2288,76,86),(2289,76,84),(2292,78,88),(2293,78,87),(2294,78,NULL),(2295,78,NULL),(2296,78,NULL),(2308,80,87),(2309,80,86),(2310,80,-1),(2311,80,84),(2312,80,85),(2328,79,72),(2329,79,48),(2330,79,77),(2331,79,84),(2332,79,89),(2333,79,88),(2334,79,87),(2335,79,86),(2336,79,85),(2337,79,-1),(2338,77,89),(2339,77,88),(2340,77,87),(2341,77,86),(2342,77,85),(2343,77,84),(2344,77,72),(2345,77,-1),(2346,77,77),(2974,57,93),(2975,57,99),(2976,57,95),(2977,57,101),(2978,57,96),(2979,57,94),(2980,57,-1),(2981,58,93),(2982,58,99),(2983,58,95),(2984,58,101),(2985,58,96),(2986,58,94),(2987,58,-1),(2988,59,97),(2989,59,98),(2990,59,-1),(3140,75,71),(3141,75,79),(3142,75,80),(3143,75,81),(3144,75,83),(3145,75,78),(3146,75,1),(3147,75,-1),(3665,1,7),(3666,1,12),(3667,1,13),(3668,1,14),(3669,1,15),(3670,1,24),(3671,1,25),(3672,1,26),(3673,1,27),(3674,1,28),(3675,1,29),(3676,1,30),(3677,1,55),(3678,1,56),(3679,1,62),(3680,1,74),(3681,1,75),(3682,1,76),(3683,1,122),(3684,1,3),(3685,1,6),(3686,1,73),(3687,1,91),(4592,11,130),(4593,11,131),(4594,11,133),(4595,11,134),(4596,11,138),(4597,11,139),(4598,11,140),(4599,11,141),(4600,11,142),(4601,11,143),(4602,11,144),(4603,11,145),(4604,11,150),(4605,11,151),(4606,11,152),(4607,11,155),(4608,11,156),(4609,11,157),(4610,11,158),(4636,10,130),(4637,10,131),(4638,10,133),(4639,10,134),(4640,10,135),(4641,10,136),(4642,10,138),(4643,10,139),(4644,10,140),(4645,10,141),(4646,10,142),(4647,10,143),(4648,10,144),(4649,10,145),(4650,10,146),(4651,10,147),(4652,10,148),(4653,10,149),(4654,10,150),(4655,10,151),(4656,10,152),(4657,10,155),(4658,10,156),(4659,10,157),(4660,10,158),(4661,10,163);
+/*!40000 ALTER TABLE `auth_role_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_token`
+--
+
+DROP TABLE IF EXISTS `auth_token`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_token` (
+  `user_id` bigint(20) NOT NULL COMMENT '用户id',
+  `access_token` varchar(100) DEFAULT NULL COMMENT '用户token',
+  `expire_time` bigint(20) DEFAULT NULL COMMENT '过期时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `unique_token` (`access_token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_token`
+--
+
+LOCK TABLES `auth_token` WRITE;
+/*!40000 ALTER TABLE `auth_token` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_token` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_user`
+--
+
+DROP TABLE IF EXISTS `auth_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_user` (
+  `user_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL COMMENT '用户名',
+  `name` varchar(100) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL COMMENT '密码',
+  `dept_id` bigint(20) DEFAULT NULL,
+  `final_user_id` bigint(20) DEFAULT NULL COMMENT '所属用户编号：所属代理商、商家',
+  `email` varchar(100) DEFAULT NULL COMMENT '邮箱',
+  `mobile` varchar(100) DEFAULT NULL COMMENT '手机号',
+  `status` tinyint(255) DEFAULT '1' COMMENT '状态 0:禁用，1:正常',
+  `user_id_create` bigint(255) DEFAULT NULL COMMENT '创建用户id',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '修改时间',
+  `sex` bigint(32) DEFAULT NULL COMMENT '性别',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=181828 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_user`
+--
+
+LOCK TABLES `auth_user` WRITE;
+/*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
+INSERT INTO `auth_user` VALUES (181818,'jxxxxAdmin','怼死他','a7bc2677caf616a677e05af181e874da',1,NULL,'admin@example.com','17699999999',1,1,20170815214039,20170815214100,0),(181821,'zzhou','张洲','f58a1aa55e78aa8562d08f43331f20d9',1,NULL,'zzhou@jxx.com','15852245304',1,NULL,NULL,NULL,0),(181822,'hyquan','胡昱全','7cd2cd8b5185696b7d9e3c806797f3e6',1,NULL,'hyq@jxx.com','15852245304',1,NULL,NULL,NULL,0),(181823,'super','超级管理员','0645ca25c11fd05418407e175fb8d95e',1,NULL,'super@jxx.com','15852245304',1,NULL,NULL,NULL,0),(181825,'lisi','李四','8585cafe2ed25de50a153b748899cf4a',21,NULL,'test@gmail.com','15852245304',1,NULL,NULL,NULL,0),(181826,'wangwu','王五','19e6f642c146ffce671f7f300fa2fea6',20,NULL,'tets@gmail.com','15852245304',1,NULL,NULL,NULL,0),(181827,'zhangsan','张三','4370f620b4467c0c5eb6aa8e2eef874c',19,NULL,'zhangsan@qq.com','15852254602',1,NULL,NULL,NULL,0);
+/*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_user_role`
+--
+
+DROP TABLE IF EXISTS `auth_user_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `auth_user_role` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户ID',
+  `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=150 DEFAULT CHARSET=utf8 COMMENT='用户与角色对应关系';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_user_role`
+--
+
+LOCK TABLES `auth_user_role` WRITE;
+/*!40000 ALTER TABLE `auth_user_role` DISABLE KEYS */;
+INSERT INTO `auth_user_role` VALUES (73,30,48),(74,30,49),(75,30,50),(76,31,48),(77,31,49),(78,31,52),(79,32,48),(80,32,49),(81,32,50),(82,32,51),(83,32,52),(84,33,38),(85,33,49),(86,33,52),(87,34,50),(88,34,51),(89,34,52),(124,NULL,48),(140,181818,1),(141,181823,1),(144,181825,12),(147,181827,10),(148,181826,11);
+/*!40000 ALTER TABLE `auth_user_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `banner`
+--
+
+DROP TABLE IF EXISTS `banner`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `banner` (
+  `banner_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `position` int(11) NOT NULL COMMENT '位置（排序）',
+  `banner_name` varchar(255) DEFAULT NULL COMMENT '名称',
+  `content` varchar(255) DEFAULT NULL COMMENT '内容',
+  `module_id` int(11) DEFAULT NULL COMMENT '所属板块',
+  `media_type` int(11) NOT NULL COMMENT '跳转形式：',
+  `banner_link` varchar(1000) NOT NULL COMMENT '跳转链接',
+  `image_url` varchar(1000) DEFAULT NULL COMMENT '路径',
+  `start_time` bigint(20) DEFAULT NULL COMMENT '开始时间',
+  `end_time` bigint(20) DEFAULT NULL COMMENT '结束时间',
+  `enabled` tinyint(4) NOT NULL DEFAULT '1' COMMENT '启用状态',
+  PRIMARY KEY (`banner_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='广告Banner图片';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `banner`
+--
+
+LOCK TABLES `banner` WRITE;
+/*!40000 ALTER TABLE `banner` DISABLE KEYS */;
+INSERT INTO `banner` VALUES (1,12,'123','qweqwe',-1,2,'1qweqwe','https://jxx-test.oss-cn-beijing.aliyuncs.com/181818/2019-05-25/c7cd2464f8f444dfb62d64321dfffe08.jpeg',NULL,NULL,1),(2,12,'987987asdasd','asd',2,1,'asdasd','https://jxx-test.oss-cn-beijing.aliyuncs.com/181818/2019-05-25/ad21acaeff174a448a2c8ef8387dac6b.jpeg',NULL,NULL,0),(3,12,'asdas','qweqwe',-2,2,'123123','https://jxx-test.oss-cn-beijing.aliyuncs.com/181818/2019-05-26/50c7a8423ede47af8d80ae24ebd5b625.jpeg',NULL,NULL,0),(4,123,'213','123123',1,1,'123123123',NULL,NULL,NULL,1),(5,2,'test','123',3,1,'123','https://jxx-test.oss-cn-beijing.aliyuncs.com/181818/2019-05-25/b5187a7b93374ae0a06470f0a4b0107c.jpeg',NULL,NULL,1);
+/*!40000 ALTER TABLE `banner` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `coupon`
+--
+
+DROP TABLE IF EXISTS `coupon`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `coupon` (
+  `coupon_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '优惠券id',
+  `coupon_name` varchar(255) DEFAULT NULL COMMENT '优惠券名称',
+  `start_time` bigint(255) DEFAULT NULL COMMENT '开始时间',
+  `end_time` bigint(255) DEFAULT NULL COMMENT '结束时间',
+  `receive` int(11) DEFAULT NULL COMMENT '每人限领',
+  `coupon_type_id` int(11) DEFAULT NULL COMMENT '优惠券类型id',
+  PRIMARY KEY (`coupon_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `coupon`
+--
+
+LOCK TABLES `coupon` WRITE;
+/*!40000 ALTER TABLE `coupon` DISABLE KEYS */;
+INSERT INTO `coupon` VALUES (1,'促销',1558368000000,1560182400000,3,1),(19,'231',1559232000000,1561824000000,3,1),(21,'促销11',1558108800000,1560182400000,2,1);
+/*!40000 ALTER TABLE `coupon` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `coupon_goods`
+--
+
+DROP TABLE IF EXISTS `coupon_goods`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `coupon_goods` (
+  `goods_id` int(11) NOT NULL COMMENT '商品id',
+  `coupon_id` int(11) NOT NULL COMMENT '优惠券id'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `coupon_goods`
+--
+
+LOCK TABLES `coupon_goods` WRITE;
+/*!40000 ALTER TABLE `coupon_goods` DISABLE KEYS */;
+INSERT INTO `coupon_goods` VALUES (2,19),(1,21);
+/*!40000 ALTER TABLE `coupon_goods` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `coupon_type`
+--
+
+DROP TABLE IF EXISTS `coupon_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `coupon_type` (
+  `coupon_type_id` int(255) NOT NULL AUTO_INCREMENT COMMENT '优惠券类型id',
+  `coupon_type_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '优惠券类型名称',
+  `describes` varchar(255) DEFAULT NULL COMMENT '描述',
+  PRIMARY KEY (`coupon_type_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `coupon_type`
+--
+
+LOCK TABLES `coupon_type` WRITE;
+/*!40000 ALTER TABLE `coupon_type` DISABLE KEYS */;
+INSERT INTO `coupon_type` VALUES (1,'商品立减券',NULL);
+/*!40000 ALTER TABLE `coupon_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dict`
+--
+
+DROP TABLE IF EXISTS `dict`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `dict` (
+  `id` bigint(64) NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '标签名',
+  `detail_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '详细名称',
+  `value` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '数据值',
+  `kind_code` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '类型',
+  `description` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '描述',
+  `sort` decimal(10,0) DEFAULT NULL COMMENT '排序（升序）',
+  `parent_id` bigint(64) DEFAULT '0' COMMENT '父级编号',
+  `create_by` bigint(64) DEFAULT NULL COMMENT '创建者',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_by` bigint(64) DEFAULT NULL COMMENT '更新者',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '备注信息',
+  `del_flag` tinyint(1) DEFAULT '0' COMMENT '删除标记',
+  PRIMARY KEY (`id`),
+  KEY `sys_dict_value` (`value`),
+  KEY `sys_dict_label` (`name`),
+  KEY `sys_dict_del_flag` (`del_flag`)
+) ENGINE=InnoDB AUTO_INCREMENT=163 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='字典表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dict`
+--
+
+LOCK TABLES `dict` WRITE;
+/*!40000 ALTER TABLE `dict` DISABLE KEYS */;
+INSERT INTO `dict` VALUES (134,'正常','正常','1','admin_account_status','账号正常状态',1,0,1,1553519399,NULL,NULL,'账号正常状态',0),(135,'冻结','冻结','0','admin_account_status','账号封禁状态',0,0,1,1553519443,NULL,NULL,'',0),(141,'单选框','单选框','1','formtype','单选框-form表单类型',1,0,181818,1554964896,NULL,NULL,'',0),(142,'复选框','复选框','2','formtype','复选框-form表单类型',2,0,181818,1554964939,NULL,NULL,'',0),(143,'文本框','文本框','3','formtype','文本框-form表单类型',3,0,181818,1554964973,NULL,NULL,'',0),(144,'立刻上架','立刻上架','1','putawaytime','立刻上架',1,0,181818,1555060650,NULL,NULL,'',0),(145,'放入仓库','放入仓库','2','putawaytime','放入仓库',2,0,181818,1555060669,NULL,NULL,'',0),(146,'无忧退货','无忧退货','1','serviceguarantees','无忧退货',1,0,181818,1555061300,NULL,NULL,'',0),(147,'快速退款','快速退款','2','serviceguarantees','快速退款',2,0,181818,1555061317,NULL,NULL,'',0),(148,'正品保证','正品保证','3','serviceguarantees','正品保证',3,0,181818,1555061334,NULL,NULL,'',0),(149,'免费包邮','免费包邮','4','serviceguarantees','免费包邮',4,0,181818,1555061362,NULL,NULL,'',0),(150,'闪电发货','闪电发货','5','serviceguarantees','闪电发货',5,0,181818,1555061383,NULL,NULL,'',0),(151,'品质联盟','品质联盟','6','serviceguarantees','品质联盟',6,0,181818,1555061397,NULL,NULL,'',0),(152,'提供发票','提供发票','7','serviceguarantees','提供发票',7,0,181818,1555061411,NULL,NULL,'',0),(153,'保障服务','保障服务','8','serviceguarantees','保障服务',8,0,181818,1555061426,NULL,NULL,'',0),(154,'支持7天退换货','支持7天退换货','1','postsaleservice','支持7天退换货',1,0,181818,1555061726,NULL,NULL,'',0),(155,'不支持7天退换货','不支持7天退换货','2','postsaleservice','不支持7天退换货',2,0,181818,1555061754,NULL,NULL,'',0),(156,'买家拍下减库存','买家拍下减库存','1','inventorycountstyle','买家拍下减库存',1,0,181818,1555062062,NULL,NULL,'',0),(157,'买家付款减库存','买家付款减库存','2','inventorycountstyle','买家付款减库存',2,0,181818,1555062085,NULL,NULL,'',0),(158,'12个小时','12个小时','1','deliverytimes','12个小时',1,0,181818,1555326038,NULL,NULL,'',0),(159,'24个小时','24个小时','2','deliverytimes','24个小时',2,0,181818,1555326054,NULL,NULL,'',0),(160,'预售','预售','3','deliverytimes','预售',3,0,181818,1555326074,NULL,NULL,'',0),(161,'自定义运费','自定义运费','0','exemptionFromPostage','自定义运费',1,0,181818,1555334686,NULL,NULL,'',0),(162,'卖家承担运费','卖家承担运费','1','exemptionFromPostage','卖家承担运费',2,0,181818,1555334717,NULL,NULL,'',0);
+/*!40000 ALTER TABLE `dict` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dict_type`
+--
+
+DROP TABLE IF EXISTS `dict_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `dict_type` (
+  `kind_code` varchar(50) NOT NULL COMMENT '分类code',
+  `kind_desc` varchar(255) NOT NULL COMMENT '分类描述',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`kind_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dict_type`
+--
+
+LOCK TABLES `dict_type` WRITE;
+/*!40000 ALTER TABLE `dict_type` DISABLE KEYS */;
+INSERT INTO `dict_type` VALUES ('admin_account_status','后端管理平台账号状态',1553519344),('deliverytimes','发货时间',1555325841),('exemptionFromPostage','是否包邮',1555334655),('fddbrzjlx','法定代表人证件类型',1559225782),('formtype','表单类型',1554964853),('inventorycountstyle','库存计数',1555062022),('postsaleservice','售后服务',1555061688),('putawaytime','商品上架时间',1555060131),('serviceguarantees','服务保证',1555061236),('yyzzlx','营业执照类型',1559225875);
+/*!40000 ALTER TABLE `dict_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `feight_manner`
+--
+
+DROP TABLE IF EXISTS `feight_manner`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `feight_manner` (
+  `manner_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '运送方式id',
+  `template_id` int(11) NOT NULL COMMENT '所属模板id',
+  `apply_area` varchar(255) DEFAULT NULL COMMENT '适用区域，多个区域&隔开，默认空为全国',
+  `first_unit` int(11) DEFAULT NULL COMMENT '首件/首重/首体积',
+  `first_price` decimal(10,2) DEFAULT NULL COMMENT '首价格',
+  `extend_unit` int(11) DEFAULT NULL COMMENT '每增加件/每增加重/每增加体积',
+  `extend_price` decimal(10,2) DEFAULT NULL COMMENT '增加价格',
+  `express_type` varchar(100) DEFAULT NULL COMMENT '快递公司',
+  `default_state` tinyint(4) DEFAULT '0' COMMENT '是否默认',
+  PRIMARY KEY (`manner_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `feight_manner`
+--
+
+LOCK TABLES `feight_manner` WRITE;
+/*!40000 ALTER TABLE `feight_manner` DISABLE KEYS */;
+INSERT INTO `feight_manner` VALUES (1,4,'0',2,0.00,2,0.00,NULL,1),(2,5,'0',1,2.00,2,5.00,NULL,1),(3,5,'11',2,2.00,1,4.00,NULL,0),(4,8,'0',1,NULL,2,NULL,NULL,1),(5,8,'11',2,NULL,1,NULL,NULL,0),(6,8,'12,13',2,NULL,1,NULL,NULL,0),(7,8,'35,36',2,NULL,2,NULL,NULL,0),(8,8,'45',3,NULL,1,NULL,NULL,0),(9,8,'50,43',2,NULL,1,NULL,NULL,0),(10,9,'0',2,NULL,2,NULL,NULL,1),(11,10,'0',2,NULL,2,NULL,NULL,1),(12,11,'0',2,3.00,2,2.00,NULL,1),(13,12,'0',12,0.00,12,0.00,NULL,1),(14,12,'11',1,0.00,1,0.00,NULL,0),(15,12,'13,12,14',2,0.00,1,0.00,NULL,0),(16,12,'36,34,37,42',3,0.00,5,0.00,NULL,0),(17,12,'44,46,51',4,0.00,1,0.00,NULL,0),(18,12,'43,53,61',2,0.00,1,0.00,NULL,0),(19,12,'41,64,65',1,0.00,3,0.00,NULL,0),(20,12,'62,63',1,0.00,3,0.00,NULL,0),(21,12,'15,54',4,0.00,2,0.00,NULL,0),(22,12,'52,50,35,22',4,0.00,1,0.00,NULL,0),(23,13,'0',1,0.00,34,0.00,NULL,1),(24,14,'0',1,0.00,2,0.00,NULL,1),(25,15,'0',2,0.00,3,0.00,NULL,1),(26,16,'0',1,0.00,3,0.00,NULL,1),(27,19,'0',123,0.23,1,6.00,NULL,1),(28,21,'0',1,2.00,3,5.00,NULL,1);
+/*!40000 ALTER TABLE `feight_manner` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `feight_template`
+--
+
+DROP TABLE IF EXISTS `feight_template`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `feight_template` (
+  `template_id` int(20) NOT NULL AUTO_INCREMENT COMMENT '模板id，主键',
+  `template_name` varchar(100) NOT NULL COMMENT '模板名称',
+  `product_area` varchar(100) DEFAULT NULL COMMENT '宝贝地址（暂保留）',
+  `delivery_time` tinyint(4) DEFAULT NULL COMMENT '发货时间（暂保留）',
+  `efp_state` tinyint(4) DEFAULT '0' COMMENT 'exemption from postage 包邮状态 1：包邮',
+  `pricing_manner` tinyint(4) DEFAULT '1' COMMENT '计价方式，默认件数（1）',
+  `scip_state` tinyint(4) DEFAULT '0' COMMENT '是否指定条件包邮Specify conditions including postage',
+  `create_user_id` bigint(20) DEFAULT NULL COMMENT '创建用户',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`template_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `feight_template`
+--
+
+LOCK TABLES `feight_template` WRITE;
+/*!40000 ALTER TABLE `feight_template` DISABLE KEYS */;
+INSERT INTO `feight_template` VALUES (4,'rwer',NULL,NULL,0,1,0,181818,1555411812,1555411812),(5,'测试模板2',NULL,NULL,0,1,0,181818,1555413711,1555413711),(6,'test1',NULL,NULL,1,1,0,181818,1555477894,1555477894),(7,'编号2',NULL,NULL,1,1,0,181818,1555478193,1555478193),(8,'标准模板',NULL,NULL,0,1,0,181818,1555478304,1555478304),(9,'3',NULL,NULL,0,1,0,181818,1555478467,1555478467),(10,'3',NULL,NULL,0,1,0,181818,1555478575,1555478575),(11,'3',NULL,NULL,0,1,0,181818,1555478711,1555478711),(12,'测试测试',NULL,NULL,0,1,0,181818,1555479154,1555479154),(13,'123',NULL,NULL,0,1,0,181818,1555479178,1555479178),(14,'4',NULL,NULL,0,1,0,181818,1555479189,1555479189),(15,'1',NULL,NULL,0,1,0,181818,1555479314,1555479314),(16,'1',NULL,NULL,0,1,0,181818,1555479321,1555479321),(17,'tetewwuwuwuwuew',NULL,NULL,1,1,0,181818,1555483494,1555483494),(18,'测试测试测试测试测试',NULL,NULL,1,1,0,181818,1555483561,1555483561),(19,'test',NULL,NULL,0,1,0,181818,1555670131,1555670131),(20,'小李飞刀包邮',NULL,NULL,1,1,0,181826,1557988916,1557988916),(21,'Test',NULL,NULL,0,1,0,181826,1558318745,1558318745);
+/*!40000 ALTER TABLE `feight_template` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `member`
+--
+
+DROP TABLE IF EXISTS `member`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `member` (
+  `uid` bigint(20) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL COMMENT '用户名',
+  `nickname` varchar(100) DEFAULT NULL COMMENT '昵称',
+  `password` varchar(50) DEFAULT NULL COMMENT '密码',
+  `email` varchar(100) DEFAULT NULL COMMENT '邮箱',
+  `phone_number` varchar(100) DEFAULT NULL COMMENT '手机号',
+  `wx_union_id` varchar(250) DEFAULT NULL COMMENT '微信应用唯一标识符',
+  `expiry` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否过期',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否被锁定',
+  `revoked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否已被删除',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '修改时间',
+  `sex` tinyint(1) DEFAULT NULL COMMENT '性别: 真为男，假为女',
+  `age` int(11) DEFAULT NULL COMMENT '年龄',
+  `revoked_time` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`uid`) USING BTREE,
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `phone_number` (`phone_number`),
+  UNIQUE KEY `applet_open_id` (`wx_union_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=181839 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `member`
+--
+
+LOCK TABLES `member` WRITE;
+/*!40000 ALTER TABLE `member` DISABLE KEYS */;
+INSERT INTO `member` VALUES (181829,'user_158178755693',NULL,NULL,NULL,'15651543052',NULL,0,0,0,20190522214240,20190522221742,NULL,NULL,NULL),(181830,'user_363985971609',NULL,NULL,NULL,NULL,NULL,0,0,0,20190528200749,20190528200749,NULL,NULL,NULL),(181831,'user_999005788399',NULL,NULL,NULL,NULL,NULL,0,0,0,20190528201530,20190528201530,NULL,NULL,NULL),(181832,'user_681291964815',NULL,NULL,NULL,NULL,NULL,0,0,0,20190529233645,20190529233645,NULL,NULL,NULL),(181833,'user_030450409312',NULL,NULL,NULL,NULL,NULL,0,0,0,20190530091542,20190530091542,NULL,NULL,NULL),(181834,'user_214328189236',NULL,NULL,NULL,NULL,NULL,0,0,0,20190530091651,20190530091651,NULL,NULL,NULL),(181835,'user_787011398433',NULL,NULL,NULL,NULL,NULL,0,0,0,20190530091823,20190530091823,NULL,NULL,NULL),(181836,'user_243569605680',NULL,NULL,NULL,NULL,NULL,0,0,0,20190530091957,20190530091957,NULL,NULL,NULL),(181837,'user_341701863363',NULL,NULL,NULL,NULL,'ooaPr5p9SVaH_fhzn1eDtERoEenc',0,0,0,20190530151814,20190530151814,NULL,NULL,NULL),(181838,NULL,'子非鱼',NULL,NULL,NULL,'ooaPr5mQJsZzlMuGIkFAXAAMQgg8',0,0,0,1559287401,NULL,1,NULL,NULL);
+/*!40000 ALTER TABLE `member` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `notice`
+--
+
+DROP TABLE IF EXISTS `notice`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `notice` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `type` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '类型',
+  `title` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '标题',
+  `content` varchar(2000) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '内容',
+  `files` varchar(2000) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '附件',
+  `status` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '状态',
+  `create_by` bigint(20) DEFAULT NULL COMMENT '创建者',
+  `create_date` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_by` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '更新者',
+  `update_date` datetime DEFAULT NULL COMMENT '更新时间',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT '备注信息',
+  `del_flag` char(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT '0' COMMENT '删除标记',
+  PRIMARY KEY (`id`),
+  KEY `oa_notify_del_flag` (`del_flag`)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='通知通告';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `notice`
+--
+
+LOCK TABLES `notice` WRITE;
+/*!40000 ALTER TABLE `notice` DISABLE KEYS */;
+INSERT INTO `notice` VALUES (41,'3','十九大召开了','十九大召开了，竟然没邀请我','','1',1,NULL,NULL,'2017-10-10 17:21:11','',NULL),(42,'3','苹果发布新手机了','有全面屏的iphoneX','','1',1,NULL,NULL,'2017-10-10 18:51:14','',NULL),(43,'3','十九大要消灭贫困人口','我还只有两三年的活头了','','1',1,NULL,NULL,'2017-10-11 09:56:35','',NULL),(44,'3','骑士又输了','捉急','','1',1,NULL,NULL,'2017-10-26 13:59:34','',NULL),(45,'3','火箭5连败','没有保罗不行呀','','1',1,NULL,NULL,'2017-12-30 12:10:20','',NULL);
+/*!40000 ALTER TABLE `notice` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `notice_record`
+--
+
+DROP TABLE IF EXISTS `notice_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `notice_record` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `notify_id` bigint(20) DEFAULT NULL COMMENT '通知通告ID',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '接受人',
+  `is_read` tinyint(1) DEFAULT '0' COMMENT '阅读标记',
+  `read_date` date DEFAULT NULL COMMENT '阅读时间',
+  PRIMARY KEY (`id`),
+  KEY `oa_notify_record_notify_id` (`notify_id`),
+  KEY `oa_notify_record_user_id` (`user_id`),
+  KEY `oa_notify_record_read_flag` (`is_read`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='通知通告发送记录';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `notice_record`
+--
+
+LOCK TABLES `notice_record` WRITE;
+/*!40000 ALTER TABLE `notice_record` DISABLE KEYS */;
+INSERT INTO `notice_record` VALUES (18,41,1,1,'2017-10-26'),(19,42,1,1,'2017-10-26'),(20,43,136,0,NULL),(21,43,133,0,NULL),(22,43,130,0,NULL),(23,43,1,1,'2017-10-26'),(24,44,1,1,'2017-12-29'),(25,45,1,1,'2018-01-02'),(26,45,135,0,NULL);
+/*!40000 ALTER TABLE `notice_record` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `opinion_feedback`
+--
+
+DROP TABLE IF EXISTS `opinion_feedback`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `opinion_feedback` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `user_id` int(11) NOT NULL COMMENT '反馈用户',
+  `feedback_phone` varchar(11) NOT NULL DEFAULT '' COMMENT '反馈手机号',
+  `feedback_detail` text COMMENT '反馈详情',
+  `feedback_pic_url` varchar(300) NOT NULL DEFAULT '' COMMENT '反馈图片',
+  `feedback_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '反馈时间',
+  `handle_state` int(4) NOT NULL DEFAULT '0' COMMENT '处理状态 0 未处理 1 已处理',
+  `handle_detail` text COMMENT '处理详情',
+  `handle_user` int(11) DEFAULT NULL COMMENT '处理人',
+  `handle_time` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='意见反馈';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `opinion_feedback`
+--
+
+LOCK TABLES `opinion_feedback` WRITE;
+/*!40000 ALTER TABLE `opinion_feedback` DISABLE KEYS */;
+/*!40000 ALTER TABLE `opinion_feedback` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_category`
+--
+
+DROP TABLE IF EXISTS `product_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_category` (
+  `category_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '类别主键',
+  `category_name` varchar(60) NOT NULL COMMENT '类别名称',
+  `category_desc` text COMMENT '类别描述',
+  `category_parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父节点id',
+  `category_path` varchar(100) DEFAULT '0' COMMENT '层级',
+  `order_num` tinyint(4) DEFAULT NULL COMMENT '排序编号',
+  `category_status` tinyint(4) NOT NULL DEFAULT '1' COMMENT '状态1：正常，0：禁用',
+  `create_time` bigint(20) NOT NULL COMMENT '插入时间',
+  `category_icon` varchar(100) DEFAULT NULL COMMENT '图标信息',
+  PRIMARY KEY (`category_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_category`
+--
+
+LOCK TABLES `product_category` WRITE;
+/*!40000 ALTER TABLE `product_category` DISABLE KEYS */;
+INSERT INTO `product_category` VALUES (1,'服装配饰','服装配饰',0,'0',1,1,1554802284,'fa fa-arrows'),(2,'有机农产','有机农产',0,'0',2,1,1554802300,'fa fa-arrows'),(3,'膳食保健','膳食保健',0,'0',3,1,1554802318,'fa fa-arrows'),(4,'运动器械','运动器械',0,'0',4,1,1554802332,'fa fa-arrows'),(5,'数码电器','数码电器',0,'0',5,1,1554802346,'fa fa-arrows'),(6,'身体护理','身体护理',0,'0',6,1,1554802374,'fa fa-arrows'),(7,'家居生活','家居生活',0,'0',7,1,1554802392,'fa fa-arrows'),(8,'健康日化','健康日化',0,'0',8,1,1554802410,'fa fa-arrows'),(9,'智力开发','智力开发',0,'0',9,1,1554802424,'fa fa-arrows'),(10,'内裤','内裤',1,'0/1',1,0,1554803045,'fa fa-arrows-h'),(11,'内衣','内衣',1,'0/1',2,0,1554803058,'fa fa-arrows-h'),(12,'袜子','袜子',1,'0/1',3,0,1554803079,'fa fa-arrows-h'),(13,'大衣','大衣',1,'0/1',4,0,1554803095,'fa fa-arrows-h'),(14,'家居服','家居服',1,'0/1',5,0,1554803111,'fa fa-arrows-h'),(15,'衬衫','衬衫',1,'0/1',6,0,1554803124,'fa fa-arrows-h'),(16,'外套','外套',1,'0/1',7,0,1554803137,'fa fa-arrows-h'),(17,'新鲜水果','新鲜水果',2,'0/2',1,0,1554803158,'fa fa-arrows-h'),(18,'精选肉类','精选肉类',2,'0/2',2,0,1554803175,'fa fa-arrows-h'),(19,'地方农产','地方农产',2,'0/2',3,0,1554803191,'fa fa-arrows-h'),(20,'海鲜水产','海鲜水产',2,'0/2',4,0,1554803210,'fa fa-arrows-h'),(21,'休闲食品','休闲食品',2,'0/2',5,0,1554803232,'fa fa-arrows-h'),(22,'蔬菜蛋品','蔬菜蛋品',2,'0/2',6,0,1554803282,'fa fa-arrows-h'),(23,'粮油调味','粮油调味',2,'0/2',7,0,1554803301,'fa fa-arrows-h'),(24,'test',NULL,0,'0',1,0,1554899512,NULL),(25,'电脑办公','',0,'0',10,0,1554950154,''),(26,'笔记本','',25,'0/25',1,0,1554950166,''),(27,'轻薄本','',25,'0/25',2,0,1554950174,'');
+/*!40000 ALTER TABLE `product_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_comments`
+--
+
+DROP TABLE IF EXISTS `product_comments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_comments` (
+  `comment_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `product_id` int(11) NOT NULL COMMENT '商品id',
+  `order_id` int(11) NOT NULL COMMENT '订单id',
+  `customer_id` int(11) NOT NULL COMMENT '用户id',
+  `content` text NOT NULL COMMENT '评论内容',
+  `pic_urls` varchar(500) NOT NULL DEFAULT '' COMMENT '图片上传路径',
+  `audit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '评论时间',
+  `audit_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '评论类别：差、中、好',
+  `star_count` tinyint(1) NOT NULL DEFAULT '0' COMMENT '商品评级星数',
+  `member_ip` varchar(20) NOT NULL DEFAULT '' COMMENT '评论IP',
+  `update_count` int(3) NOT NULL DEFAULT '0' COMMENT '评论修改次数',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '评论最后修改时间',
+  `state` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`comment_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='商品评论表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_comments`
+--
+
+LOCK TABLES `product_comments` WRITE;
+/*!40000 ALTER TABLE `product_comments` DISABLE KEYS */;
+INSERT INTO `product_comments` VALUES (1,1,1,1,'测试商品评论','','2019-05-14 13:39:34',1,5,'',0,'2019-05-14 13:39:34',1),(2,1,1,1,'好棒的体验','','2019-05-14 13:50:12',1,4,'',0,'2019-05-14 13:50:12',1),(3,1,1,1,'好棒的体验2','','2019-05-15 01:27:59',1,4,'',0,'2019-05-15 01:27:59',1);
+/*!40000 ALTER TABLE `product_comments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_comments_additional`
+--
+
+DROP TABLE IF EXISTS `product_comments_additional`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_comments_additional` (
+  `replay_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '追评id',
+  `comment_id` int(11) NOT NULL COMMENT '评论id',
+  `comment_person` int(11) NOT NULL COMMENT '评论人员id',
+  `content` text NOT NULL COMMENT '追平内容',
+  `audit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '追评时间',
+  `audit_person_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '追评人员类型',
+  `member_ip` varchar(20) NOT NULL DEFAULT '' COMMENT '追评ip',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后一次更新时间',
+  `state` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`replay_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='商品追评表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_comments_additional`
+--
+
+LOCK TABLES `product_comments_additional` WRITE;
+/*!40000 ALTER TABLE `product_comments_additional` DISABLE KEYS */;
+INSERT INTO `product_comments_additional` VALUES (1,1,1,'追加评论','2019-05-15 06:56:05',0,'','2019-05-15 06:56:05',1),(2,1,1,'追加评论2','2019-05-15 06:57:29',0,'','2019-05-15 06:57:29',1);
+/*!40000 ALTER TABLE `product_comments_additional` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_field_group`
+--
+
+DROP TABLE IF EXISTS `product_field_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_field_group` (
+  `group_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '属性组id',
+  `category_id` int(11) NOT NULL COMMENT '所属分类id',
+  `group_name` varchar(100) NOT NULL COMMENT '属性组名称',
+  `group_code` varchar(100) DEFAULT NULL COMMENT '属性组编号',
+  `order_num` tinyint(4) DEFAULT NULL COMMENT '排序编号',
+  `parent_group_id` int(11) DEFAULT '0' COMMENT '继承自属性id',
+  `group_path` varchar(255) DEFAULT '0' COMMENT '继承路径',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `group_state` tinyint(4) DEFAULT '1' COMMENT '状态：1：正常；0：禁用 2:待用',
+  PRIMARY KEY (`group_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_field_group`
+--
+
+LOCK TABLES `product_field_group` WRITE;
+/*!40000 ALTER TABLE `product_field_group` DISABLE KEYS */;
+INSERT INTO `product_field_group` VALUES (1,0,'商品公共规格属性','commonSpecMes',3,0,'0',1554948748,1);
+/*!40000 ALTER TABLE `product_field_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_field_key`
+--
+
+DROP TABLE IF EXISTS `product_field_key`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_field_key` (
+  `field_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '属性id',
+  `group_id` int(11) NOT NULL COMMENT '所属商品属性组id',
+  `field_code` varchar(30) NOT NULL COMMENT '字段code值',
+  `field_name` varchar(30) NOT NULL COMMENT '字段名称',
+  `placeholder` varchar(30) DEFAULT NULL COMMENT '字段提示信息',
+  `field_desc` varchar(100) DEFAULT NULL COMMENT '字段描述',
+  `form_type` tinyint(4) DEFAULT NULL COMMENT '表单类型',
+  `numeric_state` tinyint(4) DEFAULT '0' COMMENT '字段是否为数字',
+  `kind_code` varchar(50) DEFAULT NULL COMMENT '字典类型（多选时出现）',
+  `order_num` int(11) DEFAULT NULL COMMENT '字段排序',
+  `searching` tinyint(4) DEFAULT '0' COMMENT '是否做搜索字段',
+  `min_v` int(11) DEFAULT NULL COMMENT '最小长度/最小值',
+  `max_v` int(11) unsigned zerofill DEFAULT NULL COMMENT '最大长度/最大值',
+  `required` tinyint(4) DEFAULT '0' COMMENT '是否必须',
+  `verify_code` varchar(255) DEFAULT NULL COMMENT '其他验证字段',
+  `default_value` varchar(255) DEFAULT NULL COMMENT '默认值',
+  `crete_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `key_state` tinyint(4) DEFAULT '1' COMMENT '状态：1：正常；0：禁用 2：待用',
+  PRIMARY KEY (`field_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_field_key`
+--
+
+LOCK TABLES `product_field_key` WRITE;
+/*!40000 ALTER TABLE `product_field_key` DISABLE KEYS */;
+INSERT INTO `product_field_key` VALUES (1,1,'material','材料/成分','请输入商品材料/成分信息','',3,0,'',1,0,0,00000000200,1,'','',1554972167,1),(2,1,'weight','重量（kg）','请输入商品重量信息','',3,1,'',2,0,0,00009999999,1,'','',1554981294,1),(3,1,'suitablePeople','适用人群','请填写商品的适用人群','',3,0,'',NULL,0,0,00000000016,1,'','',1554981849,1),(4,1,'productPlaceOrigin','商品产地','请填写商品产地','',3,0,'',4,0,0,00000000016,1,'','',1554981958,1),(5,1,'brand','品牌','请输入商品品牌信息','',3,0,'',0,0,0,00000000020,1,'','',1555059194,1);
+/*!40000 ALTER TABLE `product_field_key` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_field_relation`
+--
+
+DROP TABLE IF EXISTS `product_field_relation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_field_relation` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '商品属性关联主键id',
+  `product_id` bigint(20) NOT NULL COMMENT '商品id',
+  `field_id` bigint(20) NOT NULL COMMENT '属性id',
+  `field_value` text NOT NULL COMMENT '属性值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_field_relation`
+--
+
+LOCK TABLES `product_field_relation` WRITE;
+/*!40000 ALTER TABLE `product_field_relation` DISABLE KEYS */;
+INSERT INTO `product_field_relation` VALUES (51,15,1,'qwe'),(52,15,2,'33'),(53,15,3,'qwe'),(54,15,4,'aa'),(55,15,5,'大裤衩'),(56,16,1,'123'),(57,16,2,'123'),(58,16,3,'123'),(59,16,4,'123'),(60,16,5,'123'),(61,17,1,'qwe'),(62,17,2,'12'),(63,17,3,'qwe'),(64,17,4,'qwe'),(65,17,5,'qwe'),(66,13,1,'123'),(67,13,2,'12'),(68,13,3,'qwe'),(69,13,4,'qwde'),(70,13,5,'asadsd'),(96,18,1,'123'),(97,18,2,'123'),(98,18,3,'123'),(99,18,4,'123'),(100,18,5,'123'),(101,1,1,'ces阿萨德'),(102,1,2,'2'),(103,1,3,'ces阿萨德'),(104,1,4,'ces阿萨德'),(105,1,5,'ces阿萨德');
+/*!40000 ALTER TABLE `product_field_relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_module_relation`
+--
+
+DROP TABLE IF EXISTS `product_module_relation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_module_relation` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主关联id',
+  `product_id` bigint(20) NOT NULL COMMENT '商品id',
+  `module_id` int(11) NOT NULL COMMENT '模块id',
+  `imageUrl` varchar(1000) NOT NULL COMMENT '商品图片',
+  `order_time` bigint(20) DEFAULT NULL COMMENT '排序时间',
+  `order_num` int(11) DEFAULT NULL COMMENT '排序编号',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='商品模块关联';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_module_relation`
+--
+
+LOCK TABLES `product_module_relation` WRITE;
+/*!40000 ALTER TABLE `product_module_relation` DISABLE KEYS */;
+INSERT INTO `product_module_relation` VALUES (1,1,2,'[]',156666,3),(2,3,2,'[]',123213,2),(3,2,2,'[]',123123,1),(4,4,3,'[]',111,2),(5,5,3,'[]',121234,12),(6,6,3,'[]',21,2),(7,7,2,'[]',156666,2);
+/*!40000 ALTER TABLE `product_module_relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_sku`
+--
+
+DROP TABLE IF EXISTS `product_sku`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_sku` (
+  `sku_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'sku主键',
+  `product_id` bigint(20) NOT NULL COMMENT '商品主键',
+  `sku_spc1` varchar(30) DEFAULT NULL COMMENT '（销售属性）规格1',
+  `sku_spc2` varchar(30) DEFAULT NULL COMMENT '（销售属性）规格2',
+  `sku_code` varchar(255) DEFAULT NULL COMMENT 'sku编码',
+  `sku_url` text COMMENT '主图',
+  `merchant_settlement_price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '商家结算价',
+  `generalize_brokerage_percent` decimal(10,2) DEFAULT '0.00' COMMENT '推广佣金比例',
+  `platform_share_percent` decimal(10,2) DEFAULT '0.00' COMMENT '平台分成',
+  `market_price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '市场价',
+  `selling_price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '售价',
+  `current_stock` int(11) DEFAULT NULL COMMENT '当前库存',
+  `sale_num` int(11) DEFAULT NULL COMMENT '销量',
+  `lock_stock` int(11) DEFAULT NULL COMMENT '锁定库存',
+  `state` tinyint(4) NOT NULL COMMENT '状态：1：正常',
+  PRIMARY KEY (`sku_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_sku`
+--
+
+LOCK TABLES `product_sku` WRITE;
+/*!40000 ALTER TABLE `product_sku` DISABLE KEYS */;
+INSERT INTO `product_sku` VALUES (1,1,'null','null','','https://jxx-test.oss-cn-beijing.aliyuncs.com/181826/2019-05-28/e50ee6941ae24f37873e535a21c93209.png',0.00,0.00,0.00,0.00,0.00,11,0,0,1);
+/*!40000 ALTER TABLE `product_sku` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_spu`
+--
+
+DROP TABLE IF EXISTS `product_spu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `product_spu` (
+  `product_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '商品id',
+  `product_name` varchar(255) NOT NULL COMMENT '商品名称',
+  `product_slogan` varchar(255) NOT NULL COMMENT '商品广告语',
+  `product_brightspot_tag` varchar(255) NOT NULL DEFAULT '[]' COMMENT '商品亮点：[json数组]',
+  `product_total_stock` int(11) DEFAULT NULL COMMENT '商品总库存',
+  `sku_spec` text COMMENT 'sku规格信息',
+  `product_keyword` varchar(255) NOT NULL COMMENT '商品关键词',
+  `category_id` int(11) NOT NULL COMMENT '商品所属分类id',
+  `factor_id` bigint(20) DEFAULT NULL COMMENT '代理商编号',
+  `merchant_id` bigint(20) DEFAULT NULL COMMENT '商家编号',
+  `audit_state` tinyint(4) NOT NULL COMMENT '审核状态审核失败，未审核，审核成功||',
+  `publish_status` tinyint(4) NOT NULL COMMENT '上架状态',
+  `putaway_time` tinyint(4) NOT NULL COMMENT '上架时间',
+  `service_guarantees` varchar(255) NOT NULL COMMENT '服务保证',
+  `postsale_service` tinyint(4) DEFAULT NULL COMMENT '售后服务',
+  `inventory_count_style` tinyint(4) DEFAULT NULL COMMENT '库存计数',
+  `service_work_time` varchar(36) DEFAULT NULL COMMENT '客服工作时间',
+  `service_work_phone` varchar(11) DEFAULT NULL COMMENT '客服工作电话',
+  `delivery_time` tinyint(4) DEFAULT NULL COMMENT '发货时间',
+  `delivery_place` varchar(10) DEFAULT NULL COMMENT '发货地址',
+  `feight_template` bigint(20) DEFAULT NULL COMMENT '运费模板',
+  `main_url` text NOT NULL COMMENT '主图',
+  `banner_url` text NOT NULL COMMENT 'banner图',
+  `detail` text COMMENT '详细信息',
+  `app_detail` text COMMENT 'app详细信息',
+  `order_num` int(11) DEFAULT NULL COMMENT '排序值',
+  `create_user_id` bigint(20) DEFAULT NULL COMMENT '创建人员',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_user_id` bigint(20) DEFAULT NULL COMMENT '最后更新人员',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '最后更新时间',
+  `state` tinyint(4) DEFAULT NULL COMMENT '状态：1：正常',
+  PRIMARY KEY (`product_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_spu`
+--
+
+LOCK TABLES `product_spu` WRITE;
+/*!40000 ALTER TABLE `product_spu` DISABLE KEYS */;
+INSERT INTO `product_spu` VALUES (1,'ces阿萨德','ces阿萨德','[\"ces阿\",\"ces阿\",\"ces阿\",\"ces阿\"]',NULL,'{\"type\":\"none\",\"item\":[]}','ces阿萨德',1,181827,181826,3,2,1,'[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\"]',1,1,'09:00:00 - 17:00:00','123',1,'46',20,'https://jxx-test.oss-cn-beijing.aliyuncs.com/181826/2019-05-28/32298144b67e464fa1717729c6f97127.jpg','[\"https://jxx-test.oss-cn-beijing.aliyuncs.com/181826/2019-05-28/32298144b67e464fa1717729c6f97127.jpg\"]','<p>asd</p>',NULL,NULL,181826,1559033502,181826,1559033502,1),(2,'c阿萨德','ces阿萨德','[\"ces阿\",\"ces阿\",\"ces阿\",\"ces阿\"]',NULL,'{\"type\":\"none\",\"item\":[]}','ces阿萨德',1,181827,181826,3,2,1,'[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\"]',1,1,'09:00:00 - 17:00:00','123',1,'46',20,'https://jxx-test.oss-cn-beijing.aliyuncs.com/181826/2019-05-28/32298144b67e464fa1717729c6f97127.jpg','[\"https://jxx-test.oss-cn-beijing.aliyuncs.com/181826/2019-05-28/32298144b67e464fa1717729c6f97127.jpg\"]','<p>asd</p>',NULL,NULL,181826,1559033502,181826,1559033502,1);
+/*!40000 ALTER TABLE `product_spu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_blob_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_blob_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_blob_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `BLOB_DATA` blob,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  KEY `SCHED_NAME` (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `QRTZ_BLOB_TRIGGERS_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_blob_triggers`
+--
+
+LOCK TABLES `qrtz_blob_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_blob_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_blob_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_calendars`
+--
+
+DROP TABLE IF EXISTS `qrtz_calendars`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_calendars` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `CALENDAR_NAME` varchar(200) NOT NULL,
+  `CALENDAR` blob NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`CALENDAR_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_calendars`
+--
+
+LOCK TABLES `qrtz_calendars` WRITE;
+/*!40000 ALTER TABLE `qrtz_calendars` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_calendars` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_cron_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_cron_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_cron_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `CRON_EXPRESSION` varchar(120) NOT NULL,
+  `TIME_ZONE_ID` varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `QRTZ_CRON_TRIGGERS_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_cron_triggers`
+--
+
+LOCK TABLES `qrtz_cron_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_cron_triggers` DISABLE KEYS */;
+INSERT INTO `qrtz_cron_triggers` VALUES ('kg_ClusteredScheduler','welcomJob','group1','0/10 * * * * ?','Asia/Shanghai');
+/*!40000 ALTER TABLE `qrtz_cron_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_fired_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_fired_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_fired_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `ENTRY_ID` varchar(95) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `INSTANCE_NAME` varchar(200) NOT NULL,
+  `FIRED_TIME` bigint(13) NOT NULL,
+  `SCHED_TIME` bigint(13) NOT NULL,
+  `PRIORITY` int(11) NOT NULL,
+  `STATE` varchar(16) NOT NULL,
+  `JOB_NAME` varchar(200) DEFAULT NULL,
+  `JOB_GROUP` varchar(200) DEFAULT NULL,
+  `IS_NONCONCURRENT` varchar(1) DEFAULT NULL,
+  `REQUESTS_RECOVERY` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`ENTRY_ID`),
+  KEY `IDX_QRTZ_FT_TRIG_INST_NAME` (`SCHED_NAME`,`INSTANCE_NAME`),
+  KEY `IDX_QRTZ_FT_INST_JOB_REQ_RCVRY` (`SCHED_NAME`,`INSTANCE_NAME`,`REQUESTS_RECOVERY`),
+  KEY `IDX_QRTZ_FT_J_G` (`SCHED_NAME`,`JOB_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_FT_JG` (`SCHED_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_FT_T_G` (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  KEY `IDX_QRTZ_FT_TG` (`SCHED_NAME`,`TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_fired_triggers`
+--
+
+LOCK TABLES `qrtz_fired_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_fired_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_fired_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_job_details`
+--
+
+DROP TABLE IF EXISTS `qrtz_job_details`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_job_details` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `JOB_NAME` varchar(200) NOT NULL,
+  `JOB_GROUP` varchar(200) NOT NULL,
+  `DESCRIPTION` varchar(250) DEFAULT NULL,
+  `JOB_CLASS_NAME` varchar(250) NOT NULL,
+  `IS_DURABLE` varchar(1) NOT NULL,
+  `IS_NONCONCURRENT` varchar(1) NOT NULL,
+  `IS_UPDATE_DATA` varchar(1) NOT NULL,
+  `REQUESTS_RECOVERY` varchar(1) NOT NULL,
+  `JOB_DATA` blob,
+  PRIMARY KEY (`SCHED_NAME`,`JOB_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_J_REQ_RECOVERY` (`SCHED_NAME`,`REQUESTS_RECOVERY`),
+  KEY `IDX_QRTZ_J_GRP` (`SCHED_NAME`,`JOB_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_job_details`
+--
+
+LOCK TABLES `qrtz_job_details` WRITE;
+/*!40000 ALTER TABLE `qrtz_job_details` DISABLE KEYS */;
+INSERT INTO `qrtz_job_details` VALUES ('kg_ClusteredScheduler','welcomJob','group1',NULL,'com.jxx.kg.admin.common.task.WelcomeJob','0','0','0','0',_binary '��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xp\0sr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0\0x\0');
+/*!40000 ALTER TABLE `qrtz_job_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_locks`
+--
+
+DROP TABLE IF EXISTS `qrtz_locks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_locks` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `LOCK_NAME` varchar(40) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`LOCK_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_locks`
+--
+
+LOCK TABLES `qrtz_locks` WRITE;
+/*!40000 ALTER TABLE `qrtz_locks` DISABLE KEYS */;
+INSERT INTO `qrtz_locks` VALUES ('kg_ClusteredScheduler','STATE_ACCESS'),('kg_ClusteredScheduler','TRIGGER_ACCESS');
+/*!40000 ALTER TABLE `qrtz_locks` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_paused_trigger_grps`
+--
+
+DROP TABLE IF EXISTS `qrtz_paused_trigger_grps`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_paused_trigger_grps` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_paused_trigger_grps`
+--
+
+LOCK TABLES `qrtz_paused_trigger_grps` WRITE;
+/*!40000 ALTER TABLE `qrtz_paused_trigger_grps` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_paused_trigger_grps` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_scheduler_state`
+--
+
+DROP TABLE IF EXISTS `qrtz_scheduler_state`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_scheduler_state` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `INSTANCE_NAME` varchar(200) NOT NULL,
+  `LAST_CHECKIN_TIME` bigint(13) NOT NULL,
+  `CHECKIN_INTERVAL` bigint(13) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`INSTANCE_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_scheduler_state`
+--
+
+LOCK TABLES `qrtz_scheduler_state` WRITE;
+/*!40000 ALTER TABLE `qrtz_scheduler_state` DISABLE KEYS */;
+INSERT INTO `qrtz_scheduler_state` VALUES ('kg_ClusteredScheduler','DKFJRO7ZDBAUOX21559289286553',1559297233990,10000);
+/*!40000 ALTER TABLE `qrtz_scheduler_state` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_simple_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_simple_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_simple_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `REPEAT_COUNT` bigint(7) NOT NULL,
+  `REPEAT_INTERVAL` bigint(12) NOT NULL,
+  `TIMES_TRIGGERED` bigint(10) NOT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `QRTZ_SIMPLE_TRIGGERS_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_simple_triggers`
+--
+
+LOCK TABLES `qrtz_simple_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_simple_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_simple_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_simprop_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_simprop_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_simprop_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `STR_PROP_1` varchar(512) DEFAULT NULL,
+  `STR_PROP_2` varchar(512) DEFAULT NULL,
+  `STR_PROP_3` varchar(512) DEFAULT NULL,
+  `INT_PROP_1` int(11) DEFAULT NULL,
+  `INT_PROP_2` int(11) DEFAULT NULL,
+  `LONG_PROP_1` bigint(20) DEFAULT NULL,
+  `LONG_PROP_2` bigint(20) DEFAULT NULL,
+  `DEC_PROP_1` decimal(13,4) DEFAULT NULL,
+  `DEC_PROP_2` decimal(13,4) DEFAULT NULL,
+  `BOOL_PROP_1` varchar(1) DEFAULT NULL,
+  `BOOL_PROP_2` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  CONSTRAINT `QRTZ_SIMPROP_TRIGGERS_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_simprop_triggers`
+--
+
+LOCK TABLES `qrtz_simprop_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_simprop_triggers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qrtz_simprop_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `qrtz_triggers`
+--
+
+DROP TABLE IF EXISTS `qrtz_triggers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `qrtz_triggers` (
+  `SCHED_NAME` varchar(120) NOT NULL,
+  `TRIGGER_NAME` varchar(200) NOT NULL,
+  `TRIGGER_GROUP` varchar(200) NOT NULL,
+  `JOB_NAME` varchar(200) NOT NULL,
+  `JOB_GROUP` varchar(200) NOT NULL,
+  `DESCRIPTION` varchar(250) DEFAULT NULL,
+  `NEXT_FIRE_TIME` bigint(13) DEFAULT NULL,
+  `PREV_FIRE_TIME` bigint(13) DEFAULT NULL,
+  `PRIORITY` int(11) DEFAULT NULL,
+  `TRIGGER_STATE` varchar(16) NOT NULL,
+  `TRIGGER_TYPE` varchar(8) NOT NULL,
+  `START_TIME` bigint(13) NOT NULL,
+  `END_TIME` bigint(13) DEFAULT NULL,
+  `CALENDAR_NAME` varchar(200) DEFAULT NULL,
+  `MISFIRE_INSTR` smallint(2) DEFAULT NULL,
+  `JOB_DATA` blob,
+  PRIMARY KEY (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`),
+  KEY `IDX_QRTZ_T_J` (`SCHED_NAME`,`JOB_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_T_JG` (`SCHED_NAME`,`JOB_GROUP`),
+  KEY `IDX_QRTZ_T_C` (`SCHED_NAME`,`CALENDAR_NAME`),
+  KEY `IDX_QRTZ_T_G` (`SCHED_NAME`,`TRIGGER_GROUP`),
+  KEY `IDX_QRTZ_T_STATE` (`SCHED_NAME`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_N_STATE` (`SCHED_NAME`,`TRIGGER_NAME`,`TRIGGER_GROUP`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_N_G_STATE` (`SCHED_NAME`,`TRIGGER_GROUP`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_NEXT_FIRE_TIME` (`SCHED_NAME`,`NEXT_FIRE_TIME`),
+  KEY `IDX_QRTZ_T_NFT_ST` (`SCHED_NAME`,`TRIGGER_STATE`,`NEXT_FIRE_TIME`),
+  KEY `IDX_QRTZ_T_NFT_MISFIRE` (`SCHED_NAME`,`MISFIRE_INSTR`,`NEXT_FIRE_TIME`),
+  KEY `IDX_QRTZ_T_NFT_ST_MISFIRE` (`SCHED_NAME`,`MISFIRE_INSTR`,`NEXT_FIRE_TIME`,`TRIGGER_STATE`),
+  KEY `IDX_QRTZ_T_NFT_ST_MISFIRE_GRP` (`SCHED_NAME`,`MISFIRE_INSTR`,`NEXT_FIRE_TIME`,`TRIGGER_GROUP`,`TRIGGER_STATE`),
+  CONSTRAINT `QRTZ_TRIGGERS_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `JOB_NAME`, `JOB_GROUP`) REFERENCES `qrtz_job_details` (`SCHED_NAME`, `JOB_NAME`, `JOB_GROUP`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qrtz_triggers`
+--
+
+LOCK TABLES `qrtz_triggers` WRITE;
+/*!40000 ALTER TABLE `qrtz_triggers` DISABLE KEYS */;
+INSERT INTO `qrtz_triggers` VALUES ('kg_ClusteredScheduler','welcomJob','group1','welcomJob','group1',NULL,1559297030000,1559297020000,5,'WAITING','CRON',1559131727000,0,NULL,0,'');
+/*!40000 ALTER TABLE `qrtz_triggers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `schedule_task`
+--
+
+DROP TABLE IF EXISTS `schedule_task`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `schedule_task` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `cron_expression` varchar(255) DEFAULT NULL COMMENT 'cron表达式',
+  `method_name` varchar(255) DEFAULT NULL COMMENT '任务调用的方法名',
+  `is_concurrent` varchar(255) DEFAULT NULL COMMENT '任务是否有状态',
+  `description` varchar(255) DEFAULT NULL COMMENT '任务描述',
+  `update_by` varchar(64) DEFAULT NULL COMMENT '更新者',
+  `bean_class` varchar(255) DEFAULT NULL COMMENT '任务执行时调用哪个类的方法 包名+类名',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `job_status` tinyint(4) DEFAULT NULL COMMENT '任务状态',
+  `job_group` varchar(255) DEFAULT NULL COMMENT '任务分组',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  `create_by` varchar(64) DEFAULT NULL COMMENT '创建者',
+  `spring_bean` varchar(255) DEFAULT NULL COMMENT 'Spring bean',
+  `job_name` varchar(255) DEFAULT NULL COMMENT '任务名',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `schedule_task`
+--
+
+LOCK TABLES `schedule_task` WRITE;
+/*!40000 ALTER TABLE `schedule_task` DISABLE KEYS */;
+INSERT INTO `schedule_task` VALUES (2,'0/3 * * * * ?','run1','1','qweqweqwe','4028ea815a3d2a8c015a3d2f8d2a0002','com.jxx.kg.admin.common.task.WelcomeJob',20170519183056,1,'group1',20170519183107,NULL,'','welcomJob');
+/*!40000 ALTER TABLE `schedule_task` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `server_start_time`
+--
+
+DROP TABLE IF EXISTS `server_start_time`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `server_start_time` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `date_time` bigint(20) NOT NULL COMMENT '启动时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COMMENT='系统启动记录';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `server_start_time`
+--
+
+LOCK TABLES `server_start_time` WRITE;
+/*!40000 ALTER TABLE `server_start_time` DISABLE KEYS */;
+INSERT INTO `server_start_time` VALUES (1,1558754086),(2,1558754224),(3,1558754518),(4,1558754550),(5,1558754576),(6,1558754874),(7,1558754964),(8,1558755039),(9,1558755433),(10,1558755460),(11,1558755490),(12,1558755530),(13,1558755632),(14,1558755778),(15,1558755803),(16,1558755879),(17,1558755969),(18,1558756262),(19,1558756371),(20,1558756454),(21,1558756476),(22,1558756565),(23,1558756655),(24,1558756695),(25,1558756804),(26,1558756832),(27,1558756863),(28,1558756944),(29,1558764561),(30,1558765551),(31,1559220456),(32,1559222070),(33,1559222751),(34,1559287870),(35,1559288042);
+/*!40000 ALTER TABLE `server_start_time` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `shop_home_module`
+--
+
+DROP TABLE IF EXISTS `shop_home_module`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `shop_home_module` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '版块id',
+  `title` varchar(255) DEFAULT NULL COMMENT '板块名称',
+  `sub_title` varchar(255) DEFAULT NULL COMMENT '子标题',
+  `default_image_url` varchar(3000) NOT NULL DEFAULT '[]' COMMENT '默认图片',
+  `pic_num` int(11) DEFAULT '1' COMMENT '图片个数',
+  `position` int(11) DEFAULT NULL COMMENT '所属位置',
+  `enabled` tinyint(4) DEFAULT '1' COMMENT '是否启用',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shop_home_module`
+--
+
+LOCK TABLES `shop_home_module` WRITE;
+/*!40000 ALTER TABLE `shop_home_module` DISABLE KEYS */;
+INSERT INTO `shop_home_module` VALUES (1,'每日上新','每日9点 折扣超前','[]',1,1,1),(2,'康购甄选','甄选只为你','[]',1,2,1),(3,'新品首发',NULL,'[]',1,3,1),(4,'健康生活','健康生活指南','[]',1,4,1);
+/*!40000 ALTER TABLE `shop_home_module` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `shop_product`
+--
+
+DROP TABLE IF EXISTS `shop_product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `shop_product` (
+  `shop_home_module_id` int(10) DEFAULT NULL COMMENT 'shop_home_module的id',
+  `product_id` bigint(20) DEFAULT NULL COMMENT '商品id',
+  `add_time` bigint(50) DEFAULT NULL COMMENT '添加时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shop_product`
+--
+
+LOCK TABLES `shop_product` WRITE;
+/*!40000 ALTER TABLE `shop_product` DISABLE KEYS */;
+INSERT INTO `shop_product` VALUES (1,1,NULL),(2,2,NULL),(3,1,NULL),(3,2,NULL),(1,2,NULL);
+/*!40000 ALTER TABLE `shop_product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `shopping_cart`
+--
+
+DROP TABLE IF EXISTS `shopping_cart`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `shopping_cart` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `user_id` int(11) NOT NULL COMMENT '用户id',
+  `product_id` int(11) NOT NULL COMMENT '商品id',
+  `product_sku_id` int(11) DEFAULT NULL COMMENT 'skuid',
+  `quantity` int(5) NOT NULL DEFAULT '1' COMMENT '商品数量',
+  `checked` tinyint(4) NOT NULL DEFAULT '0' COMMENT '是否选择',
+  `unit_price` double(11,4) NOT NULL DEFAULT '0.0000' COMMENT '单价',
+  `state` tinyint(4) NOT NULL DEFAULT '1' COMMENT '状态',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `img_url` varchar(200) NOT NULL DEFAULT '' COMMENT '商品图片路径',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='购物车';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shopping_cart`
+--
+
+LOCK TABLES `shopping_cart` WRITE;
+/*!40000 ALTER TABLE `shopping_cart` DISABLE KEYS */;
+INSERT INTO `shopping_cart` VALUES (1,1,1,1,2,1,6.8000,1,'2019-05-16 10:07:39','2019-05-16 10:07:39',''),(2,1,2,1,2,1,100.0000,0,'2019-05-16 10:12:50','2019-05-16 10:12:50',''),(3,2,2,1,3,1,100.0000,0,'2019-05-16 10:15:22','2019-05-16 10:15:22',''),(4,2,3,1,5,1,85.5800,0,'2019-05-16 10:18:36','2019-05-16 10:18:36','');
+/*!40000 ALTER TABLE `shopping_cart` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sms_client`
+--
+
+DROP TABLE IF EXISTS `sms_client`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sms_client` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '客户端id',
+  `client_name` varchar(255) DEFAULT NULL COMMENT '客户端名称',
+  `client_desc` varchar(255) DEFAULT NULL COMMENT '客户端描述',
+  `enabled` tinyint(4) DEFAULT '1' COMMENT '模板状态，1：启用，0：不启用',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='短信发送客户端信息';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sms_client`
+--
+
+LOCK TABLES `sms_client` WRITE;
+/*!40000 ALTER TABLE `sms_client` DISABLE KEYS */;
+INSERT INTO `sms_client` VALUES (1,'platform','平台',1);
+/*!40000 ALTER TABLE `sms_client` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sms_record`
+--
+
+DROP TABLE IF EXISTS `sms_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sms_record` (
+  `record_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `client_name` varchar(255) NOT NULL COMMENT '调用模块名称',
+  `phone` varchar(11) NOT NULL COMMENT '目标发送手机号',
+  `content` varchar(255) NOT NULL COMMENT '替换模板关键字的内容，json字符串',
+  `template_code` varchar(255) NOT NULL COMMENT '模板code',
+  `send_time` bigint(20) NOT NULL COMMENT '发送时间',
+  `send_status` tinyint(4) NOT NULL COMMENT '发送状态',
+  `serial_number` varchar(255) DEFAULT NULL COMMENT '流水号',
+  `send_count` bigint(20) DEFAULT NULL COMMENT '发送数量',
+  `sha1` varchar(255) DEFAULT NULL COMMENT '签名',
+  PRIMARY KEY (`record_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COMMENT='短信历史记录';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sms_record`
+--
+
+LOCK TABLES `sms_record` WRITE;
+/*!40000 ALTER TABLE `sms_record` DISABLE KEYS */;
+INSERT INTO `sms_record` VALUES (1,'testClient','15852245304','{}','testtemp',1558755984,0,'17_1000',1,'fc5e2a8fa5284e9d1c5224be5017cf878a9f3f11'),(2,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756263,0,'18_1000',1,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(3,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756371,0,'19_1000',2,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(4,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756455,0,'20_1000',3,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(5,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756493,0,'21_1000',4,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(6,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756587,0,'22_1000',5,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(7,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756656,0,'23_1000',1,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(8,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756736,0,'24_1000',1,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(9,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756804,0,'25_1000',2,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(10,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756832,0,'26_1000',3,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(11,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756864,1,'27_1000',1,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(12,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558756947,1,'28_1000',1,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(13,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558764562,0,'29_1000',2,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(14,'test','15852245304','{\"code\":\"123ws\"}','SMS_165414263',1558765551,0,'30_1000',3,'cd5a36d16de5b6124eee5055f0d46cbcdefb4bac'),(15,'platform','15852245304','{\"code\":\"484059\"}','SMS_165414263',1559220457,1,'31_1000',1,'852bd5b2c14504ea2af6ea06bc824aaba0e642cc'),(16,'platform','15852245304','{\"code\":\"022331\"}','SMS_165414263',1559220524,1,'31_1001',1,'e8006f192767052efb6ccb97659d0a1628e65ad7'),(17,'platform','15852245304','{\"code\":\"511679\"}','SMS_165414263',1559222071,1,'32_1000',1,'f7fd5858fae8f0cfaf81dc6271c10d785591a1af'),(18,'platform','15852245304','{\"code\":\"388297\"}','SMS_165414263',1559222752,1,'33_1000',1,'85785f3fac2412ca9d8039d7bef91642943bd4ea'),(19,'platform','15852245304','{\"code\":\"050324\"}','SMS_165414263',1559224030,1,'33_1001',1,'a960578820d183529f164420bf0dd5fe1c339a59'),(20,'platform','15852245304','{\"code\":\"020601\"}','SMS_165414263',1559288261,1,'35_1004',1,'d4ac1099c0da03c8410cf3c436d2b2fb49f17cda');
+/*!40000 ALTER TABLE `sms_record` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sms_template`
+--
+
+DROP TABLE IF EXISTS `sms_template`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sms_template` (
+  `template_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `template_code` varchar(255) NOT NULL COMMENT '模板code',
+  `template_desc` varchar(255) DEFAULT NULL COMMENT '模板描述',
+  `template_content` varchar(255) DEFAULT NULL COMMENT '模板内容',
+  `state` tinyint(4) DEFAULT '1' COMMENT '启用状态',
+  PRIMARY KEY (`template_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='短信模板表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sms_template`
+--
+
+LOCK TABLES `sms_template` WRITE;
+/*!40000 ALTER TABLE `sms_template` DISABLE KEYS */;
+INSERT INTO `sms_template` VALUES (1,'SMS_165414263','金熊熊登录注册验证码','您的验证码${code}，该验证码5分钟内有效，请勿泄漏于他人！',1);
+/*!40000 ALTER TABLE `sms_template` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Current Database: `mysql`
 --
 
@@ -172,7 +1825,7 @@ CREATE TABLE `engine_cost` (
 
 LOCK TABLES `engine_cost` WRITE;
 /*!40000 ALTER TABLE `engine_cost` DISABLE KEYS */;
-INSERT INTO `engine_cost` (`engine_name`, `device_type`, `cost_name`, `cost_value`, `last_update`, `comment`) VALUES ('default',0,'io_block_read_cost',NULL,'2019-04-13 11:36:07',NULL),('default',0,'memory_block_read_cost',NULL,'2019-04-13 11:36:07',NULL);
+INSERT INTO `engine_cost` (`engine_name`, `device_type`, `cost_name`, `cost_value`, `last_update`, `comment`) VALUES ('default',0,'io_block_read_cost',NULL,'2019-05-25 03:22:05',NULL),('default',0,'memory_block_read_cost',NULL,'2019-05-25 03:22:05',NULL);
 /*!40000 ALTER TABLE `engine_cost` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -351,7 +2004,7 @@ UNLOCK TABLES;
 --
 
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-05 14:07:53','size',1,NULL,'Number of pages in the index'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-05 14:07:53','size',1,NULL,'Number of pages in the index'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','n_diff_pfx02',0,1,'SCHED_NAME,CALENDAR_NAME'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_calendars','PRIMARY','2019-05-05 14:07:54','size',1,NULL,'Number of pages in the index'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-11 02:20:38','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_diff_pfx04',1,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,JOB_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_diff_pfx04',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,INSTANCE_NAME,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx02',1,1,'SCHED_NAME,ENTRY_ID'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,JOB_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-05 14:07:59','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx02',0,1,'SCHED_NAME,REQUESTS_RECOVERY'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx03',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_diff_pfx04',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME,JOB_GROUP'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-05 14:07:59','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','PRIMARY','2019-05-05 14:07:59','size',1,NULL,'Number of pages in the index'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','n_diff_pfx02',2,1,'SCHED_NAME,LOCK_NAME'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_locks','PRIMARY','2019-05-05 14:48:21','size',1,NULL,'Number of pages in the index'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-05 14:07:55','size',1,NULL,'Number of pages in the index'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_scheduler_state','PRIMARY','2019-05-11 02:21:00','size',1,NULL,'Number of pages in the index'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-11 02:23:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-05 14:07:52','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,CALENDAR_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_diff_pfx06',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx05',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_diff_pfx06',1,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_diff_pfx04',1,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_diff_pfx02',1,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_diff_pfx03',1,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','PRIMARY','2019-05-11 02:23:58','size',1,NULL,'Number of pages in the index'),('renren','schedule_job','PRIMARY','2019-05-05 14:07:45','n_diff_pfx01',0,1,'job_id'),('renren','schedule_job','PRIMARY','2019-05-05 14:07:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job','PRIMARY','2019-05-05 14:07:45','size',1,NULL,'Number of pages in the index'),('renren','schedule_job_log','PRIMARY','2019-05-05 14:07:46','n_diff_pfx01',0,1,'log_id'),('renren','schedule_job_log','PRIMARY','2019-05-05 14:07:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job_log','PRIMARY','2019-05-05 14:07:46','size',1,NULL,'Number of pages in the index'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','n_diff_pfx01',0,1,'job_id'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','n_diff_pfx02',0,1,'job_id,log_id'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job_log','job_id','2019-05-05 14:07:46','size',1,NULL,'Number of pages in the index'),('renren','sys_config','PRIMARY','2019-05-05 14:07:41','n_diff_pfx01',0,1,'id'),('renren','sys_config','PRIMARY','2019-05-05 14:07:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_config','PRIMARY','2019-05-05 14:07:41','size',1,NULL,'Number of pages in the index'),('renren','sys_config','param_key','2019-05-05 14:07:41','n_diff_pfx01',0,1,'param_key'),('renren','sys_config','param_key','2019-05-05 14:07:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_config','param_key','2019-05-05 14:07:41','size',1,NULL,'Number of pages in the index'),('renren','sys_dept','PRIMARY','2019-05-05 14:07:44','n_diff_pfx01',5,1,'dept_id'),('renren','sys_dept','PRIMARY','2019-05-05 14:07:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dept','PRIMARY','2019-05-05 14:07:44','size',1,NULL,'Number of pages in the index'),('renren','sys_dict','PRIMARY','2019-05-05 14:08:04','n_diff_pfx01',3,1,'id'),('renren','sys_dict','PRIMARY','2019-05-05 14:08:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dict','PRIMARY','2019-05-05 14:08:04','size',1,NULL,'Number of pages in the index'),('renren','sys_dict','type','2019-05-05 14:08:04','n_diff_pfx01',1,1,'type'),('renren','sys_dict','type','2019-05-05 14:08:04','n_diff_pfx02',3,1,'type,code'),('renren','sys_dict','type','2019-05-05 14:08:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dict','type','2019-05-05 14:08:04','size',1,NULL,'Number of pages in the index'),('renren','sys_log','PRIMARY','2019-05-11 02:24:01','n_diff_pfx01',2,1,'id'),('renren','sys_log','PRIMARY','2019-05-11 02:24:01','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_log','PRIMARY','2019-05-11 02:24:01','size',1,NULL,'Number of pages in the index'),('renren','sys_menu','PRIMARY','2019-05-05 14:07:54','n_diff_pfx01',39,1,'menu_id'),('renren','sys_menu','PRIMARY','2019-05-05 14:07:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_menu','PRIMARY','2019-05-05 14:07:54','size',1,NULL,'Number of pages in the index'),('renren','sys_oss','PRIMARY','2019-05-05 14:07:44','n_diff_pfx01',0,1,'id'),('renren','sys_oss','PRIMARY','2019-05-05 14:07:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_oss','PRIMARY','2019-05-05 14:07:44','size',1,NULL,'Number of pages in the index'),('renren','sys_role','PRIMARY','2019-05-05 14:07:36','n_diff_pfx01',0,1,'role_id'),('renren','sys_role','PRIMARY','2019-05-05 14:07:36','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role','PRIMARY','2019-05-05 14:07:36','size',1,NULL,'Number of pages in the index'),('renren','sys_role_dept','PRIMARY','2019-05-05 14:07:40','n_diff_pfx01',0,1,'id'),('renren','sys_role_dept','PRIMARY','2019-05-05 14:07:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role_dept','PRIMARY','2019-05-05 14:07:40','size',1,NULL,'Number of pages in the index'),('renren','sys_role_menu','PRIMARY','2019-05-05 14:07:38','n_diff_pfx01',0,1,'id'),('renren','sys_role_menu','PRIMARY','2019-05-05 14:07:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role_menu','PRIMARY','2019-05-05 14:07:38','size',1,NULL,'Number of pages in the index'),('renren','sys_user','PRIMARY','2019-05-05 14:07:35','n_diff_pfx01',0,1,'user_id'),('renren','sys_user','PRIMARY','2019-05-05 14:07:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user','PRIMARY','2019-05-05 14:07:35','size',1,NULL,'Number of pages in the index'),('renren','sys_user','username','2019-05-05 14:07:35','n_diff_pfx01',0,1,'username'),('renren','sys_user','username','2019-05-05 14:07:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user','username','2019-05-05 14:07:35','size',1,NULL,'Number of pages in the index'),('renren','sys_user_role','PRIMARY','2019-05-05 14:07:37','n_diff_pfx01',0,1,'id'),('renren','sys_user_role','PRIMARY','2019-05-05 14:07:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user_role','PRIMARY','2019-05-05 14:07:37','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2019-04-13 11:36:07','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',3,1,'id'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_diff_pfx01',4,1,'id'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-04-14 03:03:30','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx01',0,1,'permission_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_diff_pfx02',0,1,'permission_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx01',0,1,'user_id'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_diff_pfx02',0,1,'user_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-04-14 03:03:00','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'create_user_id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'create_user_id,id'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'department_id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'department_id,id'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_department_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx01',2,1,'update_user_id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_diff_pfx02',4,1,'update_user_id,id'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_diff_pfx01',4,1,'id'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','PRIMARY','2019-04-14 03:09:23','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_diff_pfx01',31,1,'id'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-04-14 03:03:10','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx01',2,1,'user_id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_diff_pfx02',4,1,'user_id,id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_diff_pfx01',4,1,'id'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-04-14 03:03:20','size',1,NULL,'Number of pages in the index');
+INSERT  IGNORE INTO `innodb_index_stats` VALUES ('jmall_platform','action_log','PRIMARY','2019-05-31 13:17:15','n_diff_pfx01',0,1,'id'),('jmall_platform','action_log','PRIMARY','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','action_log','PRIMARY','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','approve_flow_define','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',6,1,'id'),('jmall_platform','approve_flow_define','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','approve_flow_define','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','approve_his','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',5,1,'his_id'),('jmall_platform','approve_his','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','approve_his','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','approve_run','PRIMARY','2019-05-31 13:17:29','n_diff_pfx01',0,1,'id'),('jmall_platform','approve_run','PRIMARY','2019-05-31 13:17:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','approve_run','PRIMARY','2019-05-31 13:17:29','size',1,NULL,'Number of pages in the index'),('jmall_platform','approve_task','PRIMARY','2019-05-31 13:17:29','n_diff_pfx01',0,1,'task_id'),('jmall_platform','approve_task','PRIMARY','2019-05-31 13:17:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','approve_task','PRIMARY','2019-05-31 13:17:29','size',1,NULL,'Number of pages in the index'),('jmall_platform','areas','PRIMARY','2019-05-31 13:17:29','n_diff_pfx01',0,1,'id'),('jmall_platform','areas','PRIMARY','2019-05-31 13:17:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','areas','PRIMARY','2019-05-31 13:17:29','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_dept','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',5,1,'dept_id'),('jmall_platform','auth_dept','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_dept','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_menu','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',94,1,'menu_id'),('jmall_platform','auth_menu','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_menu','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_role','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',5,1,'role_id'),('jmall_platform','auth_role','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_role','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_role_menu','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',238,1,'id'),('jmall_platform','auth_role_menu','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_role_menu','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_token','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',0,1,'user_id'),('jmall_platform','auth_token','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_token','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_token','unique_token','2019-05-31 13:17:37','n_diff_pfx01',0,1,'access_token'),('jmall_platform','auth_token','unique_token','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_token','unique_token','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_user','PRIMARY','2019-05-31 13:17:37','n_diff_pfx01',7,1,'user_id'),('jmall_platform','auth_user','PRIMARY','2019-05-31 13:17:37','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_user','PRIMARY','2019-05-31 13:17:37','size',1,NULL,'Number of pages in the index'),('jmall_platform','auth_user_role','PRIMARY','2019-05-31 13:17:38','n_diff_pfx01',23,1,'id'),('jmall_platform','auth_user_role','PRIMARY','2019-05-31 13:17:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','auth_user_role','PRIMARY','2019-05-31 13:17:38','size',1,NULL,'Number of pages in the index'),('jmall_platform','banner','PRIMARY','2019-05-31 13:17:38','n_diff_pfx01',5,1,'banner_id'),('jmall_platform','banner','PRIMARY','2019-05-31 13:17:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','banner','PRIMARY','2019-05-31 13:17:38','size',1,NULL,'Number of pages in the index'),('jmall_platform','coupon','PRIMARY','2019-05-31 13:17:38','n_diff_pfx01',3,1,'coupon_id'),('jmall_platform','coupon','PRIMARY','2019-05-31 13:17:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','coupon','PRIMARY','2019-05-31 13:17:38','size',1,NULL,'Number of pages in the index'),('jmall_platform','coupon_goods','GEN_CLUST_INDEX','2019-05-31 13:17:38','n_diff_pfx01',2,1,'DB_ROW_ID'),('jmall_platform','coupon_goods','GEN_CLUST_INDEX','2019-05-31 13:17:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','coupon_goods','GEN_CLUST_INDEX','2019-05-31 13:17:38','size',1,NULL,'Number of pages in the index'),('jmall_platform','coupon_type','PRIMARY','2019-05-31 13:17:38','n_diff_pfx01',0,1,'coupon_type_id'),('jmall_platform','coupon_type','PRIMARY','2019-05-31 13:17:38','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','coupon_type','PRIMARY','2019-05-31 13:17:38','size',1,NULL,'Number of pages in the index'),('jmall_platform','dict','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',24,1,'id'),('jmall_platform','dict','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','dict','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','dict','sys_dict_del_flag','2019-05-31 13:17:39','n_diff_pfx01',1,1,'del_flag'),('jmall_platform','dict','sys_dict_del_flag','2019-05-31 13:17:39','n_diff_pfx02',24,1,'del_flag,id'),('jmall_platform','dict','sys_dict_del_flag','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','dict','sys_dict_del_flag','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','dict','sys_dict_label','2019-05-31 13:17:39','n_diff_pfx01',24,1,'name'),('jmall_platform','dict','sys_dict_label','2019-05-31 13:17:39','n_diff_pfx02',24,1,'name,id'),('jmall_platform','dict','sys_dict_label','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','dict','sys_dict_label','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','dict','sys_dict_value','2019-05-31 13:17:39','n_diff_pfx01',9,1,'value'),('jmall_platform','dict','sys_dict_value','2019-05-31 13:17:39','n_diff_pfx02',24,1,'value,id'),('jmall_platform','dict','sys_dict_value','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','dict','sys_dict_value','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','dict_type','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',10,1,'kind_code'),('jmall_platform','dict_type','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','dict_type','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','feight_manner','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',28,1,'manner_id'),('jmall_platform','feight_manner','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','feight_manner','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','feight_template','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',18,1,'template_id'),('jmall_platform','feight_template','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','feight_template','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','member','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',10,1,'uid'),('jmall_platform','member','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','member','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','member','applet_open_id','2019-05-31 13:17:39','n_diff_pfx01',3,1,'wx_union_id'),('jmall_platform','member','applet_open_id','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','member','applet_open_id','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','member','email','2019-05-31 13:17:39','n_diff_pfx01',1,1,'email'),('jmall_platform','member','email','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','member','email','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','member','phone_number','2019-05-31 13:17:39','n_diff_pfx01',2,1,'phone_number'),('jmall_platform','member','phone_number','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','member','phone_number','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','member','username','2019-05-31 13:17:39','n_diff_pfx01',10,1,'username'),('jmall_platform','member','username','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','member','username','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','notice','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',5,1,'id'),('jmall_platform','notice','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','notice','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','notice','oa_notify_del_flag','2019-05-31 13:17:40','n_diff_pfx01',1,1,'del_flag'),('jmall_platform','notice','oa_notify_del_flag','2019-05-31 13:17:40','n_diff_pfx02',5,1,'del_flag,id'),('jmall_platform','notice','oa_notify_del_flag','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','notice','oa_notify_del_flag','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','notice_record','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',9,1,'id'),('jmall_platform','notice_record','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','notice_record','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','notice_record','oa_notify_record_notify_id','2019-05-31 13:17:40','n_diff_pfx01',5,1,'notify_id'),('jmall_platform','notice_record','oa_notify_record_notify_id','2019-05-31 13:17:40','n_diff_pfx02',9,1,'notify_id,id'),('jmall_platform','notice_record','oa_notify_record_notify_id','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','notice_record','oa_notify_record_notify_id','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','notice_record','oa_notify_record_read_flag','2019-05-31 13:17:40','n_diff_pfx01',2,1,'is_read'),('jmall_platform','notice_record','oa_notify_record_read_flag','2019-05-31 13:17:40','n_diff_pfx02',9,1,'is_read,id'),('jmall_platform','notice_record','oa_notify_record_read_flag','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','notice_record','oa_notify_record_read_flag','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','notice_record','oa_notify_record_user_id','2019-05-31 13:17:40','n_diff_pfx01',5,1,'user_id'),('jmall_platform','notice_record','oa_notify_record_user_id','2019-05-31 13:17:40','n_diff_pfx02',9,1,'user_id,id'),('jmall_platform','notice_record','oa_notify_record_user_id','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','notice_record','oa_notify_record_user_id','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','opinion_feedback','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',0,1,'id'),('jmall_platform','opinion_feedback','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','opinion_feedback','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_category','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',27,1,'category_id'),('jmall_platform','product_category','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_category','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_comments','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',3,1,'comment_id'),('jmall_platform','product_comments','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_comments','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_comments_additional','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',2,1,'replay_id'),('jmall_platform','product_comments_additional','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_comments_additional','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_field_group','PRIMARY','2019-05-31 13:17:39','n_diff_pfx01',0,1,'group_id'),('jmall_platform','product_field_group','PRIMARY','2019-05-31 13:17:39','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_field_group','PRIMARY','2019-05-31 13:17:39','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_field_key','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',5,1,'field_id'),('jmall_platform','product_field_key','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_field_key','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_field_relation','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',30,1,'id'),('jmall_platform','product_field_relation','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_field_relation','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_module_relation','PRIMARY','2019-05-31 13:17:41','n_diff_pfx01',7,1,'id'),('jmall_platform','product_module_relation','PRIMARY','2019-05-31 13:17:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_module_relation','PRIMARY','2019-05-31 13:17:41','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_sku','PRIMARY','2019-05-31 13:17:40','n_diff_pfx01',0,1,'sku_id'),('jmall_platform','product_sku','PRIMARY','2019-05-31 13:17:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_sku','PRIMARY','2019-05-31 13:17:40','size',1,NULL,'Number of pages in the index'),('jmall_platform','product_spu','PRIMARY','2019-05-31 13:17:51','n_diff_pfx01',2,1,'product_id'),('jmall_platform','product_spu','PRIMARY','2019-05-31 13:17:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','product_spu','PRIMARY','2019-05-31 13:17:51','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_blob_triggers','PRIMARY','2019-05-31 13:17:13','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_blob_triggers','PRIMARY','2019-05-31 13:17:13','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_blob_triggers','PRIMARY','2019-05-31 13:17:13','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_blob_triggers','PRIMARY','2019-05-31 13:17:13','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_blob_triggers','PRIMARY','2019-05-31 13:17:13','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_blob_triggers','SCHED_NAME','2019-05-31 13:17:13','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_blob_triggers','SCHED_NAME','2019-05-31 13:17:13','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_blob_triggers','SCHED_NAME','2019-05-31 13:17:13','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_blob_triggers','SCHED_NAME','2019-05-31 13:17:13','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_blob_triggers','SCHED_NAME','2019-05-31 13:17:13','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_calendars','PRIMARY','2019-05-31 13:17:13','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_calendars','PRIMARY','2019-05-31 13:17:13','n_diff_pfx02',0,1,'SCHED_NAME,CALENDAR_NAME'),('jmall_platform','qrtz_calendars','PRIMARY','2019-05-31 13:17:13','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_calendars','PRIMARY','2019-05-31 13:17:13','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_cron_triggers','PRIMARY','2019-05-31 13:17:13','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_cron_triggers','PRIMARY','2019-05-31 13:17:13','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_cron_triggers','PRIMARY','2019-05-31 13:17:13','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_cron_triggers','PRIMARY','2019-05-31 13:17:13','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_cron_triggers','PRIMARY','2019-05-31 13:17:13','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,INSTANCE_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-31 13:17:14','n_diff_pfx04',0,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-31 13:17:14','n_diff_pfx04',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_GROUP,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,INSTANCE_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,INSTANCE_NAME,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-31 13:17:14','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_fired_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_fired_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,ENTRY_ID'),('jmall_platform','qrtz_fired_triggers','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_fired_triggers','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,JOB_NAME'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,REQUESTS_RECOVERY'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-31 13:17:14','n_diff_pfx04',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME,JOB_GROUP'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_job_details','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_job_details','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('jmall_platform','qrtz_job_details','PRIMARY','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('jmall_platform','qrtz_job_details','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_job_details','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_locks','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',1,1,'SCHED_NAME'),('jmall_platform','qrtz_locks','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',2,1,'SCHED_NAME,LOCK_NAME'),('jmall_platform','qrtz_locks','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_locks','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_paused_trigger_grps','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_paused_trigger_grps','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_paused_trigger_grps','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_paused_trigger_grps','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_scheduler_state','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_scheduler_state','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,INSTANCE_NAME'),('jmall_platform','qrtz_scheduler_state','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_scheduler_state','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_simple_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_simple_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_simple_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_simple_triggers','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_simple_triggers','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_simprop_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_simprop_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_simprop_triggers','PRIMARY','2019-05-31 13:17:14','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_simprop_triggers','PRIMARY','2019-05-31 13:17:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_simprop_triggers','PRIMARY','2019-05-31 13:17:14','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_C','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_C','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,CALENDAR_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_C','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_C','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_C','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_C','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_G','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_G','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_G','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_G','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_G','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','n_diff_pfx05',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_J','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,NEXT_FIRE_TIME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,MISFIRE_INSTR'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','n_diff_pfx05',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_STATE'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','n_diff_pfx05',0,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,MISFIRE_INSTR'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_diff_pfx05',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_diff_pfx06',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,MISFIRE_INSTR'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_diff_pfx05',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_diff_pfx06',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_STATE'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-31 13:17:15','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','qrtz_triggers','PRIMARY','2019-05-31 13:17:15','n_diff_pfx01',0,1,'SCHED_NAME'),('jmall_platform','qrtz_triggers','PRIMARY','2019-05-31 13:17:15','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('jmall_platform','qrtz_triggers','PRIMARY','2019-05-31 13:17:15','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('jmall_platform','qrtz_triggers','PRIMARY','2019-05-31 13:17:15','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','qrtz_triggers','PRIMARY','2019-05-31 13:17:15','size',1,NULL,'Number of pages in the index'),('jmall_platform','server_start_time','PRIMARY','2019-05-31 13:18:01','n_diff_pfx01',35,1,'id'),('jmall_platform','server_start_time','PRIMARY','2019-05-31 13:18:01','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','server_start_time','PRIMARY','2019-05-31 13:18:01','size',1,NULL,'Number of pages in the index'),('jmall_platform','shop_home_module','PRIMARY','2019-05-31 13:18:11','n_diff_pfx01',4,1,'id'),('jmall_platform','shop_home_module','PRIMARY','2019-05-31 13:18:11','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','shop_home_module','PRIMARY','2019-05-31 13:18:11','size',1,NULL,'Number of pages in the index'),('jmall_platform','shop_product','GEN_CLUST_INDEX','2019-05-31 13:18:21','n_diff_pfx01',5,1,'DB_ROW_ID'),('jmall_platform','shop_product','GEN_CLUST_INDEX','2019-05-31 13:18:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','shop_product','GEN_CLUST_INDEX','2019-05-31 13:18:21','size',1,NULL,'Number of pages in the index'),('jmall_platform','shopping_cart','PRIMARY','2019-05-31 13:18:31','n_diff_pfx01',4,1,'id'),('jmall_platform','shopping_cart','PRIMARY','2019-05-31 13:18:31','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','shopping_cart','PRIMARY','2019-05-31 13:18:31','size',1,NULL,'Number of pages in the index'),('jmall_platform','sms_client','PRIMARY','2019-05-31 13:17:41','n_diff_pfx01',0,1,'id'),('jmall_platform','sms_client','PRIMARY','2019-05-31 13:17:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','sms_client','PRIMARY','2019-05-31 13:17:41','size',1,NULL,'Number of pages in the index'),('jmall_platform','sms_record','PRIMARY','2019-05-31 13:18:41','n_diff_pfx01',20,1,'record_id'),('jmall_platform','sms_record','PRIMARY','2019-05-31 13:18:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','sms_record','PRIMARY','2019-05-31 13:18:41','size',1,NULL,'Number of pages in the index'),('jmall_platform','sms_template','PRIMARY','2019-05-31 13:17:41','n_diff_pfx01',0,1,'template_id'),('jmall_platform','sms_template','PRIMARY','2019-05-31 13:17:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jmall_platform','sms_template','PRIMARY','2019-05-31 13:17:41','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2019-05-25 03:22:05','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2019-05-25 03:22:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2019-05-25 03:22:05','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2019-05-25 03:22:05','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2019-05-25 03:22:05','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2019-05-25 03:22:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2019-05-25 03:22:05','size',1,NULL,'Number of pages in the index'),('renren','kq_day','PRIMARY','2019-05-26 09:23:06','n_diff_pfx01',31,1,'id'),('renren','kq_day','PRIMARY','2019-05-26 09:23:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','kq_day','PRIMARY','2019-05-26 09:23:06','size',1,NULL,'Number of pages in the index'),('renren','kq_month','FK_xm_main_month_user_info','2019-05-26 09:22:56','n_diff_pfx01',2,1,'user_id'),('renren','kq_month','FK_xm_main_month_user_info','2019-05-26 09:22:56','n_diff_pfx02',4,1,'user_id,id'),('renren','kq_month','FK_xm_main_month_user_info','2019-05-26 09:22:56','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','kq_month','FK_xm_main_month_user_info','2019-05-26 09:22:56','size',1,NULL,'Number of pages in the index'),('renren','kq_month','PRIMARY','2019-05-26 09:22:56','n_diff_pfx01',4,1,'id'),('renren','kq_month','PRIMARY','2019-05-26 09:22:56','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','kq_month','PRIMARY','2019-05-26 09:22:56','size',1,NULL,'Number of pages in the index'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_blob_triggers','PRIMARY','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_blob_triggers','SCHED_NAME','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_calendars','PRIMARY','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_calendars','PRIMARY','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,CALENDAR_NAME'),('renren','qrtz_calendars','PRIMARY','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_calendars','PRIMARY','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_cron_triggers','PRIMARY','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-25 04:37:46','n_diff_pfx04',0,1,'SCHED_NAME,INSTANCE_NAME,REQUESTS_RECOVERY,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_INST_JOB_REQ_RCVRY','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_JG','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-25 04:37:46','n_diff_pfx04',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_J_G','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TG','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,INSTANCE_NAME,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_TRIG_INST_NAME','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-25 04:37:46','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-25 04:37:46','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,ENTRY_ID'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','IDX_QRTZ_FT_T_G','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-25 04:37:46','n_diff_pfx02',0,1,'SCHED_NAME,ENTRY_ID'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-25 04:37:46','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_fired_triggers','PRIMARY','2019-05-25 04:37:46','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-25 04:37:47','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-25 04:37:47','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-25 04:37:47','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,JOB_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-25 04:37:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_GRP','2019-05-25 04:37:47','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-25 04:37:47','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-25 04:37:47','n_diff_pfx02',0,1,'SCHED_NAME,REQUESTS_RECOVERY'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-25 04:37:47','n_diff_pfx03',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-25 04:37:47','n_diff_pfx04',0,1,'SCHED_NAME,REQUESTS_RECOVERY,JOB_NAME,JOB_GROUP'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-25 04:37:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','IDX_QRTZ_J_REQ_RECOVERY','2019-05-25 04:37:47','size',1,NULL,'Number of pages in the index'),('renren','qrtz_job_details','PRIMARY','2019-05-25 04:37:47','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_job_details','PRIMARY','2019-05-25 04:37:47','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_job_details','PRIMARY','2019-05-25 04:37:47','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_job_details','PRIMARY','2019-05-25 04:37:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_job_details','PRIMARY','2019-05-25 04:37:47','size',1,NULL,'Number of pages in the index'),('renren','qrtz_locks','PRIMARY','2019-05-25 04:37:47','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_locks','PRIMARY','2019-05-25 04:37:47','n_diff_pfx02',0,1,'SCHED_NAME,LOCK_NAME'),('renren','qrtz_locks','PRIMARY','2019-05-25 04:37:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_locks','PRIMARY','2019-05-25 04:37:47','size',1,NULL,'Number of pages in the index'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-25 04:37:47','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-25 04:37:47','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-25 04:37:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_paused_trigger_grps','PRIMARY','2019-05-25 04:37:47','size',1,NULL,'Number of pages in the index'),('renren','qrtz_scheduler_state','PRIMARY','2019-06-08 12:55:01','n_diff_pfx01',1,1,'SCHED_NAME'),('renren','qrtz_scheduler_state','PRIMARY','2019-06-08 12:55:01','n_diff_pfx02',1,1,'SCHED_NAME,INSTANCE_NAME'),('renren','qrtz_scheduler_state','PRIMARY','2019-06-08 12:55:01','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_scheduler_state','PRIMARY','2019-06-08 12:55:01','size',1,NULL,'Number of pages in the index'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_simple_triggers','PRIMARY','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_simprop_triggers','PRIMARY','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,CALENDAR_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,CALENDAR_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_C','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_G','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,JOB_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','n_diff_pfx05',0,1,'SCHED_NAME,JOB_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_J','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,JOB_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,JOB_GROUP,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_JG','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NEXT_FIRE_TIME','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','n_diff_pfx05',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_MISFIRE','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','n_diff_pfx05',0,1,'SCHED_NAME,TRIGGER_STATE,NEXT_FIRE_TIME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_diff_pfx05',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_diff_pfx06',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,MISFIRE_INSTR'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_diff_pfx05',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_diff_pfx06',0,1,'SCHED_NAME,MISFIRE_INSTR,NEXT_FIRE_TIME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_NFT_ST_MISFIRE_GRP','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_GROUP,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_G_STATE','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_N_STATE','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_STATE'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-25 04:37:48','n_diff_pfx04',0,1,'SCHED_NAME,TRIGGER_STATE,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','IDX_QRTZ_T_STATE','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','qrtz_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx01',0,1,'SCHED_NAME'),('renren','qrtz_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx02',0,1,'SCHED_NAME,TRIGGER_NAME'),('renren','qrtz_triggers','PRIMARY','2019-05-25 04:37:48','n_diff_pfx03',0,1,'SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP'),('renren','qrtz_triggers','PRIMARY','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','qrtz_triggers','PRIMARY','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','schedule_job','PRIMARY','2019-05-25 04:37:48','n_diff_pfx01',0,1,'job_id'),('renren','schedule_job','PRIMARY','2019-05-25 04:37:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job','PRIMARY','2019-05-25 04:37:48','size',1,NULL,'Number of pages in the index'),('renren','schedule_job_log','PRIMARY','2019-05-25 04:37:49','n_diff_pfx01',0,1,'log_id'),('renren','schedule_job_log','PRIMARY','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job_log','PRIMARY','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','schedule_job_log','job_id','2019-05-25 04:37:49','n_diff_pfx01',0,1,'job_id'),('renren','schedule_job_log','job_id','2019-05-25 04:37:49','n_diff_pfx02',0,1,'job_id,log_id'),('renren','schedule_job_log','job_id','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','schedule_job_log','job_id','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','sys_config','PRIMARY','2019-05-25 04:37:49','n_diff_pfx01',0,1,'id'),('renren','sys_config','PRIMARY','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_config','PRIMARY','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','sys_config','param_key','2019-05-25 04:37:49','n_diff_pfx01',0,1,'param_key'),('renren','sys_config','param_key','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_config','param_key','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','sys_dept','PRIMARY','2019-05-25 04:37:49','n_diff_pfx01',0,1,'dept_id'),('renren','sys_dept','PRIMARY','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dept','PRIMARY','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','sys_dict','PRIMARY','2019-05-25 04:37:49','n_diff_pfx01',0,1,'id'),('renren','sys_dict','PRIMARY','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dict','PRIMARY','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','sys_dict','type','2019-05-25 04:37:49','n_diff_pfx01',0,1,'type'),('renren','sys_dict','type','2019-05-25 04:37:49','n_diff_pfx02',0,1,'type,code'),('renren','sys_dict','type','2019-05-25 04:37:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_dict','type','2019-05-25 04:37:49','size',1,NULL,'Number of pages in the index'),('renren','sys_log','PRIMARY','2019-05-26 10:01:04','n_diff_pfx01',29,1,'id'),('renren','sys_log','PRIMARY','2019-05-26 10:01:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_log','PRIMARY','2019-05-26 10:01:04','size',1,NULL,'Number of pages in the index'),('renren','sys_menu','PRIMARY','2019-05-26 14:14:51','n_diff_pfx01',51,1,'menu_id'),('renren','sys_menu','PRIMARY','2019-05-26 14:14:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_menu','PRIMARY','2019-05-26 14:14:51','size',1,NULL,'Number of pages in the index'),('renren','sys_oss','PRIMARY','2019-05-25 04:37:50','n_diff_pfx01',0,1,'id'),('renren','sys_oss','PRIMARY','2019-05-25 04:37:50','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_oss','PRIMARY','2019-05-25 04:37:50','size',1,NULL,'Number of pages in the index'),('renren','sys_role','PRIMARY','2019-05-26 01:21:11','n_diff_pfx01',2,1,'role_id'),('renren','sys_role','PRIMARY','2019-05-26 01:21:11','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role','PRIMARY','2019-05-26 01:21:11','size',1,NULL,'Number of pages in the index'),('renren','sys_role_dept','PRIMARY','2019-05-26 09:43:04','n_diff_pfx01',2,1,'id'),('renren','sys_role_dept','PRIMARY','2019-05-26 09:43:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role_dept','PRIMARY','2019-05-26 09:43:04','size',1,NULL,'Number of pages in the index'),('renren','sys_role_menu','PRIMARY','2019-05-26 09:43:14','n_diff_pfx01',89,1,'id'),('renren','sys_role_menu','PRIMARY','2019-05-26 09:43:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_role_menu','PRIMARY','2019-05-26 09:43:14','size',1,NULL,'Number of pages in the index'),('renren','sys_user','PRIMARY','2019-05-26 01:21:55','n_diff_pfx01',3,1,'user_id'),('renren','sys_user','PRIMARY','2019-05-26 01:21:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user','PRIMARY','2019-05-26 01:21:55','size',1,NULL,'Number of pages in the index'),('renren','sys_user','username','2019-05-26 01:21:55','n_diff_pfx01',3,1,'username'),('renren','sys_user','username','2019-05-26 01:21:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user','username','2019-05-26 01:21:55','size',1,NULL,'Number of pages in the index'),('renren','sys_user_role','PRIMARY','2019-06-08 13:03:56','n_diff_pfx01',5,1,'id'),('renren','sys_user_role','PRIMARY','2019-06-08 13:03:56','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('renren','sys_user_role','PRIMARY','2019-06-08 13:03:56','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2019-05-25 03:22:06','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2019-05-25 03:22:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2019-05-25 03:22:06','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-05-25 04:37:51','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_department','PRIMARY','2019-05-25 04:37:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_department','PRIMARY','2019-05-25 04:37:51','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-05-25 04:37:51','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_dict','PRIMARY','2019-05-25 04:37:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_dict','PRIMARY','2019-05-25 04:37:51','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-05-25 04:37:51','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_log','PRIMARY','2019-05-25 04:37:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_log','PRIMARY','2019-05-25 04:37:51','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-05-25 04:37:51','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_permission','PRIMARY','2019-05-25 04:37:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_permission','PRIMARY','2019-05-25 04:37:51','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-05-25 04:37:52','n_diff_pfx01',0,1,'id'),('templatespringboot','sys_role','PRIMARY','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role','PRIMARY','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-05-25 04:37:52','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_department','GEN_CLUST_INDEX','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-05-25 04:37:52','n_diff_pfx01',0,1,'permission_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-05-25 04:37:52','n_diff_pfx02',0,1,'permission_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_permission','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-05-25 04:37:52','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-05-25 04:37:52','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','FK_role_permission_sys_role','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-05-25 04:37:52','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_role_permission','GEN_CLUST_INDEX','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-05-25 04:37:52','n_diff_pfx01',0,1,'role_id'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-05-25 04:37:52','n_diff_pfx02',0,1,'role_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_sys_role','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-05-25 04:37:52','n_diff_pfx01',0,1,'user_id'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-05-25 04:37:52','n_diff_pfx02',0,1,'user_id,DB_ROW_ID'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','FK_user_role_user_info','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-05-25 04:37:52','n_diff_pfx01',0,1,'DB_ROW_ID'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','sys_user_role','GEN_CLUST_INDEX','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-05-25 04:37:52','n_diff_pfx01',0,1,'create_user_id'),('templatespringboot','user_info','FK_create_user_id','2019-05-25 04:37:52','n_diff_pfx02',0,1,'create_user_id,id'),('templatespringboot','user_info','FK_create_user_id','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_create_user_id','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_department_id','2019-05-25 04:37:52','n_diff_pfx01',0,1,'department_id'),('templatespringboot','user_info','FK_department_id','2019-05-25 04:37:52','n_diff_pfx02',0,1,'department_id,id'),('templatespringboot','user_info','FK_department_id','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_department_id','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-05-25 04:37:52','n_diff_pfx01',0,1,'update_user_id'),('templatespringboot','user_info','FK_update_user_id','2019-05-25 04:37:52','n_diff_pfx02',0,1,'update_user_id,id'),('templatespringboot','user_info','FK_update_user_id','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','FK_update_user_id','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','user_info','PRIMARY','2019-05-25 04:37:52','n_diff_pfx01',0,1,'id'),('templatespringboot','user_info','PRIMARY','2019-05-25 04:37:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','user_info','PRIMARY','2019-05-25 04:37:52','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-05-25 04:37:53','n_diff_pfx01',0,1,'id'),('templatespringboot','xm_main_day','PRIMARY','2019-05-25 04:37:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_day','PRIMARY','2019-05-25 04:37:53','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-05-25 04:37:53','n_diff_pfx01',0,1,'user_id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-05-25 04:37:53','n_diff_pfx02',0,1,'user_id,id'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-05-25 04:37:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','FK_xm_main_month_user_info','2019-05-25 04:37:53','size',1,NULL,'Number of pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-05-25 04:37:53','n_diff_pfx01',0,1,'id'),('templatespringboot','xm_main_month','PRIMARY','2019-05-25 04:37:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('templatespringboot','xm_main_month','PRIMARY','2019-05-25 04:37:53','size',1,NULL,'Number of pages in the index'),('vhr','adjustsalary','PRIMARY','2019-05-25 14:20:33','n_diff_pfx01',0,1,'id'),('vhr','adjustsalary','PRIMARY','2019-05-25 14:20:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','adjustsalary','PRIMARY','2019-05-25 14:20:33','size',1,NULL,'Number of pages in the index'),('vhr','adjustsalary','pid','2019-05-25 14:20:33','n_diff_pfx01',0,1,'eid'),('vhr','adjustsalary','pid','2019-05-25 14:20:33','n_diff_pfx02',0,1,'eid,id'),('vhr','adjustsalary','pid','2019-05-25 14:20:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','adjustsalary','pid','2019-05-25 14:20:33','size',1,NULL,'Number of pages in the index'),('vhr','appraise','PRIMARY','2019-05-25 14:20:35','n_diff_pfx01',0,1,'id'),('vhr','appraise','PRIMARY','2019-05-25 14:20:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','appraise','PRIMARY','2019-05-25 14:20:35','size',1,NULL,'Number of pages in the index'),('vhr','appraise','pid','2019-05-25 14:20:35','n_diff_pfx01',0,1,'eid'),('vhr','appraise','pid','2019-05-25 14:20:35','n_diff_pfx02',0,1,'eid,id'),('vhr','appraise','pid','2019-05-25 14:20:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','appraise','pid','2019-05-25 14:20:35','size',1,NULL,'Number of pages in the index'),('vhr','department','PRIMARY','2019-05-25 14:20:52','n_diff_pfx01',13,1,'id'),('vhr','department','PRIMARY','2019-05-25 14:20:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','department','PRIMARY','2019-05-25 14:20:52','size',1,NULL,'Number of pages in the index'),('vhr','employee','PRIMARY','2019-05-25 14:20:51','n_diff_pfx01',196,4,'id'),('vhr','employee','PRIMARY','2019-05-25 14:20:51','n_leaf_pages',4,NULL,'Number of leaf pages in the index'),('vhr','employee','PRIMARY','2019-05-25 14:20:51','size',5,NULL,'Number of pages in the index'),('vhr','employee','departmentId','2019-05-25 14:20:51','n_diff_pfx01',9,1,'departmentId'),('vhr','employee','departmentId','2019-05-25 14:20:51','n_diff_pfx02',196,1,'departmentId,id'),('vhr','employee','departmentId','2019-05-25 14:20:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employee','departmentId','2019-05-25 14:20:51','size',1,NULL,'Number of pages in the index'),('vhr','employee','dutyId','2019-05-25 14:20:51','n_diff_pfx01',4,1,'posId'),('vhr','employee','dutyId','2019-05-25 14:20:51','n_diff_pfx02',196,1,'posId,id'),('vhr','employee','dutyId','2019-05-25 14:20:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employee','dutyId','2019-05-25 14:20:51','size',1,NULL,'Number of pages in the index'),('vhr','employee','jobId','2019-05-25 14:20:51','n_diff_pfx01',5,1,'jobLevelId'),('vhr','employee','jobId','2019-05-25 14:20:51','n_diff_pfx02',196,1,'jobLevelId,id'),('vhr','employee','jobId','2019-05-25 14:20:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employee','jobId','2019-05-25 14:20:51','size',1,NULL,'Number of pages in the index'),('vhr','employee','nationId','2019-05-25 14:20:51','n_diff_pfx01',1,1,'nationId'),('vhr','employee','nationId','2019-05-25 14:20:51','n_diff_pfx02',196,1,'nationId,id'),('vhr','employee','nationId','2019-05-25 14:20:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employee','nationId','2019-05-25 14:20:51','size',1,NULL,'Number of pages in the index'),('vhr','employee','politicId','2019-05-25 14:20:51','n_diff_pfx01',6,1,'politicId'),('vhr','employee','politicId','2019-05-25 14:20:51','n_diff_pfx02',196,1,'politicId,id'),('vhr','employee','politicId','2019-05-25 14:20:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employee','politicId','2019-05-25 14:20:51','size',1,NULL,'Number of pages in the index'),('vhr','employee','workID_key','2019-05-25 14:20:51','n_diff_pfx01',54,1,'workID'),('vhr','employee','workID_key','2019-05-25 14:20:51','n_diff_pfx02',196,1,'workID,id'),('vhr','employee','workID_key','2019-05-25 14:20:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employee','workID_key','2019-05-25 14:20:51','size',1,NULL,'Number of pages in the index'),('vhr','employeeec','PRIMARY','2019-05-25 14:20:45','n_diff_pfx01',0,1,'id'),('vhr','employeeec','PRIMARY','2019-05-25 14:20:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employeeec','PRIMARY','2019-05-25 14:20:45','size',1,NULL,'Number of pages in the index'),('vhr','employeeec','pid','2019-05-25 14:20:45','n_diff_pfx01',0,1,'eid'),('vhr','employeeec','pid','2019-05-25 14:20:45','n_diff_pfx02',0,1,'eid,id'),('vhr','employeeec','pid','2019-05-25 14:20:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employeeec','pid','2019-05-25 14:20:45','size',1,NULL,'Number of pages in the index'),('vhr','employeeremove','PRIMARY','2019-05-25 14:20:47','n_diff_pfx01',0,1,'id'),('vhr','employeeremove','PRIMARY','2019-05-25 14:20:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employeeremove','PRIMARY','2019-05-25 14:20:47','size',1,NULL,'Number of pages in the index'),('vhr','employeeremove','pid','2019-05-25 14:20:47','n_diff_pfx01',0,1,'eid'),('vhr','employeeremove','pid','2019-05-25 14:20:47','n_diff_pfx02',0,1,'eid,id'),('vhr','employeeremove','pid','2019-05-25 14:20:47','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employeeremove','pid','2019-05-25 14:20:47','size',1,NULL,'Number of pages in the index'),('vhr','employeetrain','PRIMARY','2019-05-25 14:20:49','n_diff_pfx01',0,1,'id'),('vhr','employeetrain','PRIMARY','2019-05-25 14:20:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employeetrain','PRIMARY','2019-05-25 14:20:49','size',1,NULL,'Number of pages in the index'),('vhr','employeetrain','pid','2019-05-25 14:20:49','n_diff_pfx01',0,1,'eid'),('vhr','employeetrain','pid','2019-05-25 14:20:49','n_diff_pfx02',0,1,'eid,id'),('vhr','employeetrain','pid','2019-05-25 14:20:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','employeetrain','pid','2019-05-25 14:20:49','size',1,NULL,'Number of pages in the index'),('vhr','empsalary','PRIMARY','2019-05-25 14:20:55','n_diff_pfx01',10,1,'id'),('vhr','empsalary','PRIMARY','2019-05-25 14:20:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','empsalary','PRIMARY','2019-05-25 14:20:55','size',1,NULL,'Number of pages in the index'),('vhr','empsalary','eid','2019-05-25 14:20:55','n_diff_pfx01',10,1,'eid'),('vhr','empsalary','eid','2019-05-25 14:20:55','n_diff_pfx02',10,1,'eid,id'),('vhr','empsalary','eid','2019-05-25 14:20:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','empsalary','eid','2019-05-25 14:20:55','size',1,NULL,'Number of pages in the index'),('vhr','empsalary','empsalary_ibfk_2','2019-05-25 14:20:55','n_diff_pfx01',3,1,'sid'),('vhr','empsalary','empsalary_ibfk_2','2019-05-25 14:20:55','n_diff_pfx02',10,1,'sid,id'),('vhr','empsalary','empsalary_ibfk_2','2019-05-25 14:20:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','empsalary','empsalary_ibfk_2','2019-05-25 14:20:55','size',1,NULL,'Number of pages in the index'),('vhr','hr','PRIMARY','2019-05-25 14:20:57','n_diff_pfx01',5,1,'id'),('vhr','hr','PRIMARY','2019-05-25 14:20:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','hr','PRIMARY','2019-05-25 14:20:57','size',1,NULL,'Number of pages in the index'),('vhr','hr_role','PRIMARY','2019-05-25 14:20:59','n_diff_pfx01',12,1,'id'),('vhr','hr_role','PRIMARY','2019-05-25 14:20:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','hr_role','PRIMARY','2019-05-25 14:20:59','size',1,NULL,'Number of pages in the index'),('vhr','hr_role','hr_role_ibfk_1','2019-05-25 14:20:59','n_diff_pfx01',5,1,'hrid'),('vhr','hr_role','hr_role_ibfk_1','2019-05-25 14:20:59','n_diff_pfx02',12,1,'hrid,id'),('vhr','hr_role','hr_role_ibfk_1','2019-05-25 14:20:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','hr_role','hr_role_ibfk_1','2019-05-25 14:20:59','size',1,NULL,'Number of pages in the index'),('vhr','hr_role','rid','2019-05-25 14:20:59','n_diff_pfx01',6,1,'rid'),('vhr','hr_role','rid','2019-05-25 14:20:59','n_diff_pfx02',12,1,'rid,id'),('vhr','hr_role','rid','2019-05-25 14:20:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','hr_role','rid','2019-05-25 14:20:59','size',1,NULL,'Number of pages in the index'),('vhr','joblevel','PRIMARY','2019-05-25 14:27:53','n_diff_pfx01',8,1,'id'),('vhr','joblevel','PRIMARY','2019-05-25 14:27:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','joblevel','PRIMARY','2019-05-25 14:27:53','size',1,NULL,'Number of pages in the index'),('vhr','menu','PRIMARY','2019-05-25 14:21:04','n_diff_pfx01',28,1,'id'),('vhr','menu','PRIMARY','2019-05-25 14:21:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','menu','PRIMARY','2019-05-25 14:21:04','size',1,NULL,'Number of pages in the index'),('vhr','menu','parentId','2019-05-25 14:21:04','n_diff_pfx01',7,1,'parentId'),('vhr','menu','parentId','2019-05-25 14:21:04','n_diff_pfx02',28,1,'parentId,id'),('vhr','menu','parentId','2019-05-25 14:21:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','menu','parentId','2019-05-25 14:21:04','size',1,NULL,'Number of pages in the index'),('vhr','menu_role','PRIMARY','2019-05-25 14:21:07','n_diff_pfx01',53,1,'id'),('vhr','menu_role','PRIMARY','2019-05-25 14:21:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','menu_role','PRIMARY','2019-05-25 14:21:07','size',1,NULL,'Number of pages in the index'),('vhr','menu_role','mid','2019-05-25 14:21:07','n_diff_pfx01',22,1,'mid'),('vhr','menu_role','mid','2019-05-25 14:21:07','n_diff_pfx02',53,1,'mid,id'),('vhr','menu_role','mid','2019-05-25 14:21:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','menu_role','mid','2019-05-25 14:21:07','size',1,NULL,'Number of pages in the index'),('vhr','menu_role','rid','2019-05-25 14:21:07','n_diff_pfx01',5,1,'rid'),('vhr','menu_role','rid','2019-05-25 14:21:07','n_diff_pfx02',53,1,'rid,id'),('vhr','menu_role','rid','2019-05-25 14:21:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','menu_role','rid','2019-05-25 14:21:07','size',1,NULL,'Number of pages in the index'),('vhr','msgcontent','PRIMARY','2019-05-25 14:21:09','n_diff_pfx01',5,1,'id'),('vhr','msgcontent','PRIMARY','2019-05-25 14:21:09','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','msgcontent','PRIMARY','2019-05-25 14:21:09','size',1,NULL,'Number of pages in the index'),('vhr','nation','PRIMARY','2019-05-25 14:21:14','n_diff_pfx01',56,1,'id'),('vhr','nation','PRIMARY','2019-05-25 14:21:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','nation','PRIMARY','2019-05-25 14:21:14','size',1,NULL,'Number of pages in the index'),('vhr','oplog','PRIMARY','2019-05-25 14:21:11','n_diff_pfx01',0,1,'id'),('vhr','oplog','PRIMARY','2019-05-25 14:21:11','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','oplog','PRIMARY','2019-05-25 14:21:11','size',1,NULL,'Number of pages in the index'),('vhr','oplog','hrid','2019-05-25 14:21:11','n_diff_pfx01',0,1,'hrid'),('vhr','oplog','hrid','2019-05-25 14:21:11','n_diff_pfx02',0,1,'hrid,id'),('vhr','oplog','hrid','2019-05-25 14:21:11','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','oplog','hrid','2019-05-25 14:21:11','size',1,NULL,'Number of pages in the index'),('vhr','politicsstatus','PRIMARY','2019-05-25 14:21:17','n_diff_pfx01',13,1,'id'),('vhr','politicsstatus','PRIMARY','2019-05-25 14:21:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','politicsstatus','PRIMARY','2019-05-25 14:21:17','size',1,NULL,'Number of pages in the index'),('vhr','position','PRIMARY','2019-05-25 14:21:19','n_diff_pfx01',6,1,'id'),('vhr','position','PRIMARY','2019-05-25 14:21:19','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','position','PRIMARY','2019-05-25 14:21:19','size',1,NULL,'Number of pages in the index'),('vhr','position','name','2019-05-25 14:21:19','n_diff_pfx01',6,1,'name'),('vhr','position','name','2019-05-25 14:21:19','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','position','name','2019-05-25 14:21:19','size',1,NULL,'Number of pages in the index'),('vhr','role','PRIMARY','2019-05-25 14:21:21','n_diff_pfx01',8,1,'id'),('vhr','role','PRIMARY','2019-05-25 14:21:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','role','PRIMARY','2019-05-25 14:21:21','size',1,NULL,'Number of pages in the index'),('vhr','salary','PRIMARY','2019-05-25 14:21:24','n_diff_pfx01',3,1,'id'),('vhr','salary','PRIMARY','2019-05-25 14:21:24','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','salary','PRIMARY','2019-05-25 14:21:24','size',1,NULL,'Number of pages in the index'),('vhr','sysmsg','PRIMARY','2019-05-25 14:21:34','n_diff_pfx01',25,1,'id'),('vhr','sysmsg','PRIMARY','2019-05-25 14:21:34','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','sysmsg','PRIMARY','2019-05-25 14:21:34','size',1,NULL,'Number of pages in the index'),('vhr','sysmsg','hrid','2019-05-25 14:21:34','n_diff_pfx01',5,1,'hrid'),('vhr','sysmsg','hrid','2019-05-25 14:21:34','n_diff_pfx02',25,1,'hrid,id'),('vhr','sysmsg','hrid','2019-05-25 14:21:34','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','sysmsg','hrid','2019-05-25 14:21:34','size',1,NULL,'Number of pages in the index'),('vhr','sysmsg','sysmsg_ibfk_1','2019-05-25 14:21:34','n_diff_pfx01',5,1,'mid'),('vhr','sysmsg','sysmsg_ibfk_1','2019-05-25 14:21:34','n_diff_pfx02',25,1,'mid,id'),('vhr','sysmsg','sysmsg_ibfk_1','2019-05-25 14:21:34','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('vhr','sysmsg','sysmsg_ibfk_1','2019-05-25 14:21:34','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 
 --
@@ -359,7 +2012,7 @@ INSERT  IGNORE INTO `innodb_index_stats` VALUES ('mysql','component','PRIMARY','
 --
 
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_table_stats` VALUES ('mysql','component','2019-04-13 11:36:07',0,1,0),('mysql','gtid_executed','2019-04-13 11:36:07',0,1,0),('renren','qrtz_blob_triggers','2019-05-05 14:07:53',0,1,1),('renren','qrtz_calendars','2019-05-05 14:07:54',0,1,0),('renren','qrtz_cron_triggers','2019-05-11 02:20:38',1,1,0),('renren','qrtz_fired_triggers','2019-05-11 02:23:48',1,1,6),('renren','qrtz_job_details','2019-05-05 14:07:59',0,1,0),('renren','qrtz_locks','2019-05-05 14:48:21',2,1,0),('renren','qrtz_paused_trigger_grps','2019-05-05 14:07:55',0,1,0),('renren','qrtz_scheduler_state','2019-05-11 02:21:00',1,1,0),('renren','qrtz_simple_triggers','2019-05-11 02:23:48',0,1,0),('renren','qrtz_simprop_triggers','2019-05-05 14:07:52',0,1,0),('renren','qrtz_triggers','2019-05-11 02:23:58',1,1,12),('renren','schedule_job','2019-05-05 14:07:45',0,1,0),('renren','schedule_job_log','2019-05-05 14:07:46',0,1,1),('renren','sys_config','2019-05-05 14:07:41',0,1,1),('renren','sys_dept','2019-05-05 14:07:44',5,1,0),('renren','sys_dict','2019-05-05 14:08:04',3,1,1),('renren','sys_log','2019-05-11 02:24:01',2,1,0),('renren','sys_menu','2019-05-05 14:07:54',39,1,0),('renren','sys_oss','2019-05-05 14:07:44',0,1,0),('renren','sys_role','2019-05-05 14:07:36',0,1,0),('renren','sys_role_dept','2019-05-05 14:07:40',0,1,0),('renren','sys_role_menu','2019-05-05 14:07:38',0,1,0),('renren','sys_user','2019-05-05 14:07:35',0,1,1),('renren','sys_user_role','2019-05-05 14:07:37',0,1,0),('sys','sys_config','2019-04-13 11:36:07',6,1,0),('templatespringboot','sys_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_dict','2019-04-14 03:03:00',3,1,0),('templatespringboot','sys_log','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_permission','2019-04-14 03:03:30',4,1,0),('templatespringboot','sys_role','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_department','2019-04-14 03:03:00',0,1,0),('templatespringboot','sys_role_permission','2019-04-14 03:03:00',0,1,2),('templatespringboot','sys_user_role','2019-04-14 03:03:00',0,1,2),('templatespringboot','user_info','2019-04-14 03:09:23',4,1,3),('templatespringboot','xm_main_day','2019-04-14 03:03:10',31,1,0),('templatespringboot','xm_main_month','2019-04-14 03:03:20',4,1,1);
+INSERT  IGNORE INTO `innodb_table_stats` VALUES ('jmall_platform','action_log','2019-05-31 13:17:15',0,1,0),('jmall_platform','approve_flow_define','2019-05-31 13:17:39',6,1,0),('jmall_platform','approve_his','2019-05-31 13:17:37',5,1,0),('jmall_platform','approve_run','2019-05-31 13:17:29',0,1,0),('jmall_platform','approve_task','2019-05-31 13:17:29',0,1,0),('jmall_platform','areas','2019-05-31 13:17:29',0,1,0),('jmall_platform','auth_dept','2019-05-31 13:17:37',5,1,0),('jmall_platform','auth_menu','2019-05-31 13:17:37',94,1,0),('jmall_platform','auth_role','2019-05-31 13:17:37',5,1,0),('jmall_platform','auth_role_menu','2019-05-31 13:17:37',238,1,0),('jmall_platform','auth_token','2019-05-31 13:17:37',0,1,1),('jmall_platform','auth_user','2019-05-31 13:17:37',7,1,0),('jmall_platform','auth_user_role','2019-05-31 13:17:38',23,1,0),('jmall_platform','banner','2019-05-31 13:17:38',5,1,0),('jmall_platform','coupon','2019-05-31 13:17:38',3,1,0),('jmall_platform','coupon_goods','2019-05-31 13:17:38',2,1,0),('jmall_platform','coupon_type','2019-05-31 13:17:38',0,1,0),('jmall_platform','dict','2019-05-31 13:17:39',24,1,3),('jmall_platform','dict_type','2019-05-31 13:17:39',10,1,0),('jmall_platform','feight_manner','2019-05-31 13:17:39',28,1,0),('jmall_platform','feight_template','2019-05-31 13:17:39',18,1,0),('jmall_platform','member','2019-05-31 13:17:39',10,1,4),('jmall_platform','notice','2019-05-31 13:17:40',5,1,1),('jmall_platform','notice_record','2019-05-31 13:17:40',9,1,3),('jmall_platform','opinion_feedback','2019-05-31 13:17:39',0,1,0),('jmall_platform','product_category','2019-05-31 13:17:40',27,1,0),('jmall_platform','product_comments','2019-05-31 13:17:40',3,1,0),('jmall_platform','product_comments_additional','2019-05-31 13:17:40',2,1,0),('jmall_platform','product_field_group','2019-05-31 13:17:39',0,1,0),('jmall_platform','product_field_key','2019-05-31 13:17:40',5,1,0),('jmall_platform','product_field_relation','2019-05-31 13:17:40',30,1,0),('jmall_platform','product_module_relation','2019-05-31 13:17:41',7,1,0),('jmall_platform','product_sku','2019-05-31 13:17:40',0,1,0),('jmall_platform','product_spu','2019-05-31 13:17:51',2,1,0),('jmall_platform','qrtz_blob_triggers','2019-05-31 13:17:13',0,1,1),('jmall_platform','qrtz_calendars','2019-05-31 13:17:13',0,1,0),('jmall_platform','qrtz_cron_triggers','2019-05-31 13:17:13',0,1,0),('jmall_platform','qrtz_fired_triggers','2019-05-31 13:17:14',0,1,6),('jmall_platform','qrtz_job_details','2019-05-31 13:17:14',0,1,2),('jmall_platform','qrtz_locks','2019-05-31 13:17:14',2,1,0),('jmall_platform','qrtz_paused_trigger_grps','2019-05-31 13:17:14',0,1,0),('jmall_platform','qrtz_scheduler_state','2019-05-31 13:17:14',0,1,0),('jmall_platform','qrtz_simple_triggers','2019-05-31 13:17:14',0,1,0),('jmall_platform','qrtz_simprop_triggers','2019-05-31 13:17:14',0,1,0),('jmall_platform','qrtz_triggers','2019-05-31 13:17:15',0,1,12),('jmall_platform','server_start_time','2019-05-31 13:18:01',35,1,0),('jmall_platform','shop_home_module','2019-05-31 13:18:11',4,1,0),('jmall_platform','shop_product','2019-05-31 13:18:21',5,1,0),('jmall_platform','shopping_cart','2019-05-31 13:18:31',4,1,0),('jmall_platform','sms_client','2019-05-31 13:17:41',0,1,0),('jmall_platform','sms_record','2019-05-31 13:18:41',20,1,0),('jmall_platform','sms_template','2019-05-31 13:17:41',0,1,0),('mysql','component','2019-05-25 03:22:05',0,1,0),('mysql','gtid_executed','2019-05-25 03:22:05',0,1,0),('renren','kq_day','2019-05-26 09:23:06',31,1,0),('renren','kq_month','2019-05-26 09:22:56',4,1,1),('renren','qrtz_blob_triggers','2019-05-25 04:37:46',0,1,1),('renren','qrtz_calendars','2019-05-25 04:37:46',0,1,0),('renren','qrtz_cron_triggers','2019-05-25 04:37:46',0,1,0),('renren','qrtz_fired_triggers','2019-05-25 04:37:46',0,1,6),('renren','qrtz_job_details','2019-05-25 04:37:47',0,1,2),('renren','qrtz_locks','2019-05-25 04:37:47',0,1,0),('renren','qrtz_paused_trigger_grps','2019-05-25 04:37:47',0,1,0),('renren','qrtz_scheduler_state','2019-06-08 12:55:01',1,1,0),('renren','qrtz_simple_triggers','2019-05-25 04:37:48',0,1,0),('renren','qrtz_simprop_triggers','2019-05-25 04:37:48',0,1,0),('renren','qrtz_triggers','2019-05-25 04:37:48',0,1,12),('renren','schedule_job','2019-05-25 04:37:48',0,1,0),('renren','schedule_job_log','2019-05-25 04:37:49',0,1,1),('renren','sys_config','2019-05-25 04:37:49',0,1,1),('renren','sys_dept','2019-05-25 04:37:49',0,1,0),('renren','sys_dict','2019-05-25 04:37:49',0,1,1),('renren','sys_log','2019-05-26 10:01:04',29,1,0),('renren','sys_menu','2019-05-26 14:14:51',51,1,0),('renren','sys_oss','2019-05-25 04:37:50',0,1,0),('renren','sys_role','2019-05-26 01:21:11',2,1,0),('renren','sys_role_dept','2019-05-26 09:43:04',2,1,0),('renren','sys_role_menu','2019-05-26 09:43:14',89,1,0),('renren','sys_user','2019-05-26 01:21:55',3,1,1),('renren','sys_user_role','2019-06-08 13:03:56',5,1,0),('sys','sys_config','2019-05-25 03:22:06',6,1,0),('templatespringboot','sys_department','2019-05-25 04:37:51',0,1,0),('templatespringboot','sys_dict','2019-05-25 04:37:51',0,1,0),('templatespringboot','sys_log','2019-05-25 04:37:51',0,1,0),('templatespringboot','sys_permission','2019-05-25 04:37:51',0,1,0),('templatespringboot','sys_role','2019-05-25 04:37:52',0,1,0),('templatespringboot','sys_role_department','2019-05-25 04:37:52',0,1,0),('templatespringboot','sys_role_permission','2019-05-25 04:37:52',0,1,2),('templatespringboot','sys_user_role','2019-05-25 04:37:52',0,1,2),('templatespringboot','user_info','2019-05-25 04:37:52',0,1,3),('templatespringboot','xm_main_day','2019-05-25 04:37:53',0,1,0),('templatespringboot','xm_main_month','2019-05-25 04:37:53',0,1,1),('vhr','adjustsalary','2019-05-25 14:20:33',0,1,1),('vhr','appraise','2019-05-25 14:20:35',0,1,1),('vhr','department','2019-05-25 14:20:52',13,1,0),('vhr','employee','2019-05-25 14:20:51',196,5,6),('vhr','employeeec','2019-05-25 14:20:45',0,1,1),('vhr','employeeremove','2019-05-25 14:20:47',0,1,1),('vhr','employeetrain','2019-05-25 14:20:49',0,1,1),('vhr','empsalary','2019-05-25 14:20:55',10,1,2),('vhr','hr','2019-05-25 14:20:57',5,1,0),('vhr','hr_role','2019-05-25 14:20:59',12,1,2),('vhr','joblevel','2019-05-25 14:27:53',8,1,0),('vhr','menu','2019-05-25 14:21:04',28,1,1),('vhr','menu_role','2019-05-25 14:21:07',53,1,2),('vhr','msgcontent','2019-05-25 14:21:09',5,1,0),('vhr','nation','2019-05-25 14:21:14',56,1,0),('vhr','oplog','2019-05-25 14:21:11',0,1,1),('vhr','politicsstatus','2019-05-25 14:21:17',13,1,0),('vhr','position','2019-05-25 14:21:19',6,1,1),('vhr','role','2019-05-25 14:21:21',8,1,0),('vhr','salary','2019-05-25 14:21:24',3,1,0),('vhr','sysmsg','2019-05-25 14:21:34',25,1,2);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 
 --
@@ -519,7 +2172,7 @@ CREATE TABLE `server_cost` (
 
 LOCK TABLES `server_cost` WRITE;
 /*!40000 ALTER TABLE `server_cost` DISABLE KEYS */;
-INSERT INTO `server_cost` (`cost_name`, `cost_value`, `last_update`, `comment`) VALUES ('disk_temptable_create_cost',NULL,'2019-04-13 11:36:07',NULL),('disk_temptable_row_cost',NULL,'2019-04-13 11:36:07',NULL),('key_compare_cost',NULL,'2019-04-13 11:36:07',NULL),('memory_temptable_create_cost',NULL,'2019-04-13 11:36:07',NULL),('memory_temptable_row_cost',NULL,'2019-04-13 11:36:07',NULL),('row_evaluate_cost',NULL,'2019-04-13 11:36:07',NULL);
+INSERT INTO `server_cost` (`cost_name`, `cost_value`, `last_update`, `comment`) VALUES ('disk_temptable_create_cost',NULL,'2019-05-25 03:22:05',NULL),('disk_temptable_row_cost',NULL,'2019-05-25 03:22:05',NULL),('key_compare_cost',NULL,'2019-05-25 03:22:05',NULL),('memory_temptable_create_cost',NULL,'2019-05-25 03:22:05',NULL),('memory_temptable_row_cost',NULL,'2019-05-25 03:22:05',NULL),('row_evaluate_cost',NULL,'2019-05-25 03:22:05',NULL);
 /*!40000 ALTER TABLE `server_cost` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -672,7 +2325,7 @@ CREATE TABLE `tables_priv` (
 
 LOCK TABLES `tables_priv` WRITE;
 /*!40000 ALTER TABLE `tables_priv` DISABLE KEYS */;
-INSERT INTO `tables_priv` VALUES ('localhost','mysql','mysql.session','user','boot@connecting host','0000-00-00 00:00:00','Select',''),('localhost','sys','mysql.sys','sys_config','root@localhost','2019-04-13 11:36:07','Select','');
+INSERT INTO `tables_priv` VALUES ('localhost','mysql','mysql.session','user','boot@connecting host','0000-00-00 00:00:00','Select',''),('localhost','sys','mysql.sys','sys_config','root@localhost','2019-05-25 03:22:06','Select','');
 /*!40000 ALTER TABLE `tables_priv` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -864,7 +2517,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('%','admin','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'mysql_native_password','*4ACFE3202A5FF5CF467898FC58AAB1D615029441','N','2019-04-14 01:43:17',NULL,'N','N','N',NULL,NULL,NULL,NULL),('localhost','mysql.infoschema','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'caching_sha2_password','$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED','N','2019-04-13 11:36:07',NULL,'Y','N','N',NULL,NULL,NULL,NULL),('localhost','mysql.session','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'caching_sha2_password','$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED','N','2019-04-13 11:36:07',NULL,'Y','N','N',NULL,NULL,NULL,NULL),('localhost','mysql.sys','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'caching_sha2_password','$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED','N','2019-04-13 11:36:07',NULL,'Y','N','N',NULL,NULL,NULL,NULL),('localhost','root','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','','','','',0,0,0,0,'mysql_native_password','*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B','N','2019-04-14 01:41:41',NULL,'N','Y','Y',NULL,NULL,NULL,NULL);
+INSERT INTO `user` VALUES ('localhost','mysql.infoschema','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'caching_sha2_password','$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED','N','2019-05-25 03:22:06',NULL,'Y','N','N',NULL,NULL,NULL,NULL),('localhost','mysql.session','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'caching_sha2_password','$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED','N','2019-05-25 03:22:06',NULL,'Y','N','N',NULL,NULL,NULL,NULL),('localhost','mysql.sys','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'caching_sha2_password','$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED','N','2019-05-25 03:22:06',NULL,'Y','N','N',NULL,NULL,NULL,NULL),('localhost','root','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','','','','',0,0,0,0,'mysql_native_password','*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B','N','2019-05-25 04:47:02',0,'N','Y','Y',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -913,6 +2566,87 @@ CREATE TABLE IF NOT EXISTS `slow_log` (
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `renren` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin */;
 
 USE `renren`;
+
+--
+-- Table structure for table `kq_day`
+--
+
+DROP TABLE IF EXISTS `kq_day`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `kq_day` (
+  `id` varchar(64) NOT NULL,
+  `main_month_id` varchar(64) NOT NULL COMMENT 'pro_main_id',
+  `sys_day` int(2) NOT NULL COMMENT '系统 日（1-31）',
+  `m_data` varchar(50) DEFAULT '0' COMMENT '早上数据',
+  `p_data` varchar(50) DEFAULT '0' COMMENT '下午数据',
+  `m_tag` int(1) DEFAULT '0' COMMENT '标志 0正常 1 迟到 2 未打卡 3 其它',
+  `p_tag` int(1) DEFAULT '0' COMMENT '标志 0正常 1 早退 2 未打卡 3 其它',
+  `remarks` varchar(255) DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `create_user_id` varchar(64) DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `update_user_id` varchar(64) DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '状态（0 正常 1失效 2 审核）',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='数据日主表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `kq_day`
+--
+
+LOCK TABLES `kq_day` WRITE;
+/*!40000 ALTER TABLE `kq_day` DISABLE KEYS */;
+INSERT INTO `kq_day` VALUES ('041ee411fe404de2a86cf39be4d6ff97','14f8f2cc10904c3fb200b67060a01ac8',9,'08:40','17:20',0,1,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('04e4a82107be46c19da00e97c97303ff','14f8f2cc10904c3fb200b67060a01ac8',27,'09:40','17:20',1,1,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('086bc543051d41c08a8a9303c8893ffb','14f8f2cc10904c3fb200b67060a01ac8',31,'09:40','18:00',1,0,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('1bc43d8c671c4067855a88c5afd9bb4b','14f8f2cc10904c3fb200b67060a01ac8',5,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:53',NULL,'2018-08-09 22:43:14',NULL,0),('1fc5d632f5b44f95980ee0263d73c7cc','14f8f2cc10904c3fb200b67060a01ac8',24,'08:40','17:56',0,1,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:14',NULL,0),('2a2efd4290d747e89d19bd9b732d1089','14f8f2cc10904c3fb200b67060a01ac8',8,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:14',NULL,0),('3957eff002b64fb884d6e5f2f69ce880','14f8f2cc10904c3fb200b67060a01ac8',30,'09:00','asd',0,3,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:14',NULL,0),('3ebb072f69d04bebaab56d69f3d39b9f','14f8f2cc10904c3fb200b67060a01ac8',21,'09:01','18:20',1,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('4092f2fa29b740669d738eac4b2e2ac6','14f8f2cc10904c3fb200b67060a01ac8',10,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('5ce583d6459e4afc8d3fc45a2ad7fd00','14f8f2cc10904c3fb200b67060a01ac8',26,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('5f8989f13ebc4cc6b7691cdaef7258fc','14f8f2cc10904c3fb200b67060a01ac8',12,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('72a0cb7b55cb4a27a3343032cc850105','14f8f2cc10904c3fb200b67060a01ac8',14,'08:40','18:00',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('730f452927264be287caf3d86fed3640','14f8f2cc10904c3fb200b67060a01ac8',6,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('78ff6fd0865346ee9912e75a4dd4660b','14f8f2cc10904c3fb200b67060a01ac8',13,'08:40','17:56',0,1,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('817d83140b8b4b658bbc24f089da6239','14f8f2cc10904c3fb200b67060a01ac8',25,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('8d6e28a192b04dafad0dfcdaa094aaf9','14f8f2cc10904c3fb200b67060a01ac8',11,'09:00','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('93b38c014e694e94be0e727e2b92ac39','14f8f2cc10904c3fb200b67060a01ac8',20,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('9624b30d8a084bdd888851764962f8ff','14f8f2cc10904c3fb200b67060a01ac8',7,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('a1fa34f1707542bc9219da22fb50a8f6','14f8f2cc10904c3fb200b67060a01ac8',28,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('a836336ce044418d9c1c0d8956f2378f','14f8f2cc10904c3fb200b67060a01ac8',16,'dssd','asd',3,3,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('a973c681ca9d46eb898699d588143943','14f8f2cc10904c3fb200b67060a01ac8',3,'08:40','18:00',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('aa4c0a2cd3a246deb6562b78990cbb42','14f8f2cc10904c3fb200b67060a01ac8',19,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('adc6d24be44e478c85076563b9bf4ec5','14f8f2cc10904c3fb200b67060a01ac8',23,'08:40','17:56',0,1,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('af81a25b36444821a4e107c3fa7bd7af','14f8f2cc10904c3fb200b67060a01ac8',2,'09:01','18:20',1,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('b019d078a482433c8d866cd188f167c9','14f8f2cc10904c3fb200b67060a01ac8',15,'09:01','18:20',1,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('c5b682f15e9b45fc96b6bc3cc2442dec','14f8f2cc10904c3fb200b67060a01ac8',18,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('e2226251a81a4dafa486b319c529e1b0','14f8f2cc10904c3fb200b67060a01ac8',29,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:15',NULL,0),('e5fd51be7496414794435109b4e550aa','14f8f2cc10904c3fb200b67060a01ac8',4,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:16',NULL,0),('fa3424022260448dacd678e250179c6d','14f8f2cc10904c3fb200b67060a01ac8',17,'08:40','18:20',0,0,NULL,'2018-08-09 22:28:54',NULL,'2018-08-09 22:43:16',NULL,0),('fcf5d991930e48898e973c984a745de2','14f8f2cc10904c3fb200b67060a01ac8',1,'08:40','18:00',0,0,NULL,'2018-08-09 21:35:26','1','2018-08-09 22:43:16',NULL,0);
+/*!40000 ALTER TABLE `kq_day` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `kq_month`
+--
+
+DROP TABLE IF EXISTS `kq_month`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `kq_month` (
+  `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  `sys_year` int(4) NOT NULL COMMENT '系统 年',
+  `sys_month` int(2) NOT NULL COMMENT '系统 月',
+  `ycqts` int(2) DEFAULT NULL COMMENT '应出勤天数',
+  `sjcqts` int(2) DEFAULT NULL COMMENT '实际出勤天数',
+  `sj` int(2) DEFAULT NULL COMMENT '事假天数',
+  `bj` int(2) DEFAULT NULL COMMENT '病假天数',
+  `nj` int(2) DEFAULT NULL COMMENT '年假天数',
+  `hj` int(2) DEFAULT NULL COMMENT '婚假天数',
+  `qq` int(2) DEFAULT NULL COMMENT '缺勤天数',
+  `kg` int(2) DEFAULT NULL COMMENT '旷工天数',
+  `wdk` int(2) DEFAULT NULL COMMENT '忘打卡次数',
+  `cd` int(2) DEFAULT NULL COMMENT '迟到次数',
+  `zt` int(2) DEFAULT NULL COMMENT '早退次数',
+  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '备注',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `create_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `update_user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '状态（0 正常 1失效 2 审核）',
+  PRIMARY KEY (`id`),
+  KEY `FK_xm_main_month_user_info` (`user_id`),
+  CONSTRAINT `FK_xm_main_month_user_info` FOREIGN KEY (`user_id`) REFERENCES `user_info` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='数据月主表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `kq_month`
+--
+
+LOCK TABLES `kq_month` WRITE;
+/*!40000 ALTER TABLE `kq_month` DISABLE KEYS */;
+INSERT INTO `kq_month` VALUES ('14f8f2cc10904c3fb200b67060a01ac8','1',3,2018,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5,NULL,NULL,'2018-08-04 21:57:57',NULL,NULL,NULL,0),('14f8f2cc10904c3fb200b67060a01ac82','2',3,2018,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-08-04 21:57:57',NULL,NULL,NULL,0),('23b9feb5f9da4ce0b59c6835ad666fc3','2',22,2018,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0),('760583d6266d4843bc2dcaddfccb933a','1',3,2018,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-08-05 20:06:05',NULL,NULL,NULL,0);
+/*!40000 ALTER TABLE `kq_month` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `qrtz_blob_triggers`
@@ -1063,7 +2797,7 @@ CREATE TABLE `qrtz_job_details` (
 
 LOCK TABLES `qrtz_job_details` WRITE;
 /*!40000 ALTER TABLE `qrtz_job_details` DISABLE KEYS */;
-INSERT INTO `qrtz_job_details` VALUES ('RenrenScheduler','TASK_1','DEFAULT',NULL,'io.renren.modules.job.utils.ScheduleJob','0','0','0','0',_binary '�\�\0sr\0org.quartz.JobDataMap���迩�\�\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�\�\��\�](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap\�.�(v\n\�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap\��\�`\�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0\rJOB_PARAM_KEYsr\0.io.renren.modules.job.entity.ScheduleJobEntity\0\0\0\0\0\0\0\0L\0beanNamet\0Ljava/lang/String;L\0\ncreateTimet\0Ljava/util/Date;L\0cronExpressionq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0paramsq\0~\0	L\0remarkq\0~\0	L\0statust\0Ljava/lang/Integer;xpt\0testTasksr\0java.util.Datehj�KYt\0\0xpw\0\0j�Rw8xt\00 0/30 * * * ?sr\0java.lang.Long;�\�̏#\�\0J\0valuexr\0java.lang.Number����\��\0\0xp\0\0\0\0\0\0\0t\0renrent\0参数测试sr\0java.lang.Integer⠤\���8\0I\0valuexq\0~\0\0\0\0\0x\0');
+INSERT INTO `qrtz_job_details` VALUES ('RenrenScheduler','TASK_1','DEFAULT',NULL,'io.renren.modules.job.utils.ScheduleJob','0','0','0','0',_binary '��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0\rJOB_PARAM_KEYsr\0.io.renren.modules.job.entity.ScheduleJobEntity\0\0\0\0\0\0\0\0L\0beanNamet\0Ljava/lang/String;L\0\ncreateTimet\0Ljava/util/Date;L\0cronExpressionq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0paramsq\0~\0	L\0remarkq\0~\0	L\0statust\0Ljava/lang/Integer;xpt\0testTasksr\0java.util.Datehj�KYt\0\0xpw\0\0j�Rw8xt\00 0/30 * * * ?sr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0renrent\0参数测试sr\0java.lang.Integer⠤���8\0I\0valuexq\0~\0\0\0\0\0x\0');
 /*!40000 ALTER TABLE `qrtz_job_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1136,7 +2870,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 
 LOCK TABLES `qrtz_scheduler_state` WRITE;
 /*!40000 ALTER TABLE `qrtz_scheduler_state` DISABLE KEYS */;
-INSERT INTO `qrtz_scheduler_state` VALUES ('RenrenScheduler','DESKTOP-2IDF7R51557541227737',1557542160884,15000);
+INSERT INTO `qrtz_scheduler_state` VALUES ('RenrenScheduler','DESKTOP-2IDF7R51559998470817',1559999146885,15000);
 /*!40000 ALTER TABLE `qrtz_scheduler_state` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1251,7 +2985,7 @@ CREATE TABLE `qrtz_triggers` (
 
 LOCK TABLES `qrtz_triggers` WRITE;
 /*!40000 ALTER TABLE `qrtz_triggers` DISABLE KEYS */;
-INSERT INTO `qrtz_triggers` VALUES ('RenrenScheduler','TASK_1','DEFAULT','TASK_1','DEFAULT',NULL,1557541800000,-1,5,'PAUSED','CRON',1557067669000,0,NULL,2,_binary '�\�\0sr\0org.quartz.JobDataMap���迩�\�\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�\�\��\�](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap\�.�(v\n\�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap\��\�`\�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0\rJOB_PARAM_KEYsr\0.io.renren.modules.job.entity.ScheduleJobEntity\0\0\0\0\0\0\0\0L\0beanNamet\0Ljava/lang/String;L\0\ncreateTimet\0Ljava/util/Date;L\0cronExpressionq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0paramsq\0~\0	L\0remarkq\0~\0	L\0statust\0Ljava/lang/Integer;xpt\0testTasksr\0java.util.Datehj�KYt\0\0xpw\0\0j�	\�8xt\00 0/30 * * * ?sr\0java.lang.Long;�\�̏#\�\0J\0valuexr\0java.lang.Number����\��\0\0xp\0\0\0\0\0\0\0t\0renrent\0参数测试sr\0java.lang.Integer⠤\���8\0I\0valuexq\0~\0\0\0\0\0x\0');
+INSERT INTO `qrtz_triggers` VALUES ('RenrenScheduler','TASK_1','DEFAULT','TASK_1','DEFAULT',NULL,1557541800000,-1,5,'PAUSED','CRON',1557067669000,0,NULL,2,_binary '��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0\rJOB_PARAM_KEYsr\0.io.renren.modules.job.entity.ScheduleJobEntity\0\0\0\0\0\0\0\0L\0beanNamet\0Ljava/lang/String;L\0\ncreateTimet\0Ljava/util/Date;L\0cronExpressionq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0paramsq\0~\0	L\0remarkq\0~\0	L\0statust\0Ljava/lang/Integer;xpt\0testTasksr\0java.util.Datehj�KYt\0\0xpw\0\0j�	�8xt\00 0/30 * * * ?sr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0renrent\0参数测试sr\0java.lang.Integer⠤���8\0I\0valuexq\0~\0\0\0\0\0x\0');
 /*!40000 ALTER TABLE `qrtz_triggers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1357,7 +3091,7 @@ CREATE TABLE `sys_dept` (
   `order_num` int(11) DEFAULT NULL COMMENT '排序',
   `del_flag` tinyint(4) DEFAULT '0' COMMENT '是否删除  -1：已删除  0：正常',
   PRIMARY KEY (`dept_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='部门管理';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='部门管理';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1366,7 +3100,7 @@ CREATE TABLE `sys_dept` (
 
 LOCK TABLES `sys_dept` WRITE;
 /*!40000 ALTER TABLE `sys_dept` DISABLE KEYS */;
-INSERT INTO `sys_dept` VALUES (1,0,'人人开源集团',0,0),(2,1,'长沙分公司',1,0),(3,1,'上海分公司',2,0),(4,3,'技术部',0,0),(5,3,'销售部',1,0);
+INSERT INTO `sys_dept` VALUES (1,0,'人人开源集团',0,0),(2,1,'长沙分公司',1,0),(3,1,'上海分公司',2,0),(4,3,'技术部',10,0),(5,3,'销售部',1,0),(6,2,'test',10,0);
 /*!40000 ALTER TABLE `sys_dept` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1418,7 +3152,7 @@ CREATE TABLE `sys_log` (
   `ip` varchar(64) DEFAULT NULL COMMENT 'IP地址',
   `create_date` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统日志';
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统日志';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1427,7 +3161,7 @@ CREATE TABLE `sys_log` (
 
 LOCK TABLES `sys_log` WRITE;
 /*!40000 ALTER TABLE `sys_log` DISABLE KEYS */;
-INSERT INTO `sys_log` VALUES (1,'admin','立即执行任务','io.renren.modules.job.controller.ScheduleJobController.run()','[1]',28,'0:0:0:0:0:0:0:1','2019-05-11 02:23:34'),(2,'admin','暂停定时任务','io.renren.modules.job.controller.ScheduleJobController.pause()','[1]',19,'0:0:0:0:0:0:0:1','2019-05-11 02:24:01');
+INSERT INTO `sys_log` VALUES (1,'admin','立即执行任务','io.renren.modules.job.controller.ScheduleJobController.run()','[1]',28,'0:0:0:0:0:0:0:1','2019-05-11 02:23:34'),(2,'admin','暂停定时任务','io.renren.modules.job.controller.ScheduleJobController.pause()','[1]',19,'0:0:0:0:0:0:0:1','2019-05-11 02:24:01'),(3,'admin','保存角色','io.renren.modules.sys.controller.SysRoleController.save()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[5],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',93,'0:0:0:0:0:0:0:1','2019-05-26 01:06:42'),(4,'admin','保存用户','io.renren.modules.sys.controller.SysUserController.save()','{\"userId\":2,\"username\":\"test\",\"password\":\"04e88881c31c13cfba9cdf95dc7ef794008b19b1e8eba9550e543ab9a3195757\",\"salt\":\"EO9yPVKT2U20BnZgchVm\",\"email\":\"19988888877@163.com\",\"status\":1,\"roleIdList\":[1],\"createTime\":\"May 26, 2019 9:11:54 AM\",\"deptId\":2,\"deptName\":\"长沙分公司\"}',41,'0:0:0:0:0:0:0:1','2019-05-26 01:11:54'),(5,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[4],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',134,'0:0:0:0:0:0:0:1','2019-05-26 01:14:59'),(6,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[2],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',62,'0:0:0:0:0:0:0:1','2019-05-26 01:15:23'),(7,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[2],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',49,'0:0:0:0:0:0:0:1','2019-05-26 01:19:38'),(8,'test','保存角色','io.renren.modules.sys.controller.SysRoleController.save()','{\"roleId\":2,\"roleName\":\"hh\",\"deptId\":6,\"deptName\":\"test\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[6],\"createTime\":\"May 26, 2019 9:21:11 AM\"}',46,'0:0:0:0:0:0:0:1','2019-05-26 01:21:12'),(9,'test','保存用户','io.renren.modules.sys.controller.SysUserController.save()','{\"userId\":3,\"username\":\"hh\",\"password\":\"3192e22a3022720d897ce302ae99a12518d515414eaa0836794467fdb6eb87fa\",\"salt\":\"0HZBlNxfu4aX1zQl5gSF\",\"email\":\"18888888888@163.com\",\"status\":1,\"roleIdList\":[2],\"createTime\":\"May 26, 2019 9:21:55 AM\",\"deptId\":6,\"deptName\":\"test\"}',46,'0:0:0:0:0:0:0:1','2019-05-26 01:21:56'),(10,'test','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[2],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',51,'0:0:0:0:0:0:0:1','2019-05-26 01:22:39'),(11,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,3,19,20,4,23,24,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[2],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',148,'0:0:0:0:0:0:0:1','2019-05-26 04:03:11'),(12,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,3,19,20,4,23,24,5,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[2],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',123,'0:0:0:0:0:0:0:1','2019-05-26 05:33:21'),(13,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":2,\"roleName\":\"hh\",\"deptId\":6,\"deptName\":\"test\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40],\"deptIdList\":[6],\"createTime\":\"May 26, 2019 9:21:12 AM\"}',46,'0:0:0:0:0:0:0:1','2019-05-26 05:43:30'),(14,'admin','修改用户','io.renren.modules.sys.controller.SysUserController.update()','{\"userId\":2,\"username\":\"test\",\"salt\":\"EO9yPVKT2U20BnZgchVm\",\"email\":\"19988888877@163.com\",\"status\":1,\"roleIdList\":[1,2],\"createTime\":\"May 26, 2019 9:11:54 AM\",\"deptId\":2,\"deptName\":\"长沙分公司\"}',42,'0:0:0:0:0:0:0:1','2019-05-26 05:44:40'),(15,'admin','保存菜单','io.renren.modules.sys.controller.SysMenuController.save()','{\"menuId\":41,\"parentId\":0,\"parentName\":\"一级菜单\",\"name\":\"考勤管理\",\"type\":0,\"icon\":\"fa fa-address-book-o\",\"orderNum\":10}',29,'0:0:0:0:0:0:0:1','2019-05-26 09:36:34'),(16,'admin','修改角色','io.renren.modules.sys.controller.SysRoleController.update()','{\"roleId\":1,\"roleName\":\"test\",\"deptId\":2,\"deptName\":\"长沙分公司\",\"menuIdList\":[1,2,15,16,17,18,3,19,20,21,22,4,23,24,25,26,5,6,7,8,9,10,11,12,13,14,27,29,30,31,32,33,34,35,36,37,38,39,40,42,47,41,43,44,45,46,48,49,50,51],\"deptIdList\":[2],\"createTime\":\"May 26, 2019 9:06:42 AM\"}',119,'0:0:0:0:0:0:0:1','2019-05-26 09:42:55'),(17,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":42,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"数据日主表\",\"url\":\"modules/kq/xmmainday.html\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":6}',19,'0:0:0:0:0:0:0:1','2019-05-26 09:43:41'),(18,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":47,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"数据月主表\",\"url\":\"modules/kq/xmmainmonth.html\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":6}',10,'0:0:0:0:0:0:0:1','2019-05-26 09:44:06'),(19,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":43,\"parentId\":47,\"parentName\":\"数据月主表\",\"name\":\"查看\",\"perms\":\"kq:xmmainday:list,kq:xmmainday:info\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:44:47'),(20,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":44,\"parentId\":42,\"parentName\":\"数据日主表\",\"name\":\"新增\",\"perms\":\"kq:xmmainday:save\",\"type\":2,\"orderNum\":6}',10,'0:0:0:0:0:0:0:1','2019-05-26 09:45:05'),(21,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":45,\"parentId\":42,\"parentName\":\"数据日主表\",\"name\":\"修改\",\"perms\":\"kq:xmmainday:update\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:45:18'),(22,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":46,\"parentId\":42,\"parentName\":\"数据日主表\",\"name\":\"删除\",\"perms\":\"kq:xmmainday:delete\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:45:28'),(23,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":43,\"parentId\":42,\"parentName\":\"数据日主表\",\"name\":\"查看\",\"perms\":\"kq:xmmainday:list,kq:xmmainday:info\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:45:57'),(24,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":48,\"parentId\":47,\"parentName\":\"数据月主表\",\"name\":\"查看\",\"perms\":\"kq:xmmainmonth:list,kq:xmmainmonth:info\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:46:15'),(25,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":49,\"parentId\":47,\"parentName\":\"数据月主表\",\"name\":\"新增\",\"perms\":\"kq:xmmainmonth:save\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:46:25'),(26,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":50,\"parentId\":47,\"parentName\":\"数据月主表\",\"name\":\"修改\",\"perms\":\"kq:xmmainmonth:update\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:46:33'),(27,'test','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":51,\"parentId\":47,\"parentName\":\"数据月主表\",\"name\":\"删除\",\"perms\":\"kq:xmmainmonth:delete\",\"type\":2,\"orderNum\":6}',9,'0:0:0:0:0:0:0:1','2019-05-26 09:46:46'),(28,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":42,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"日考勤\",\"url\":\"modules/kq/xmmainday.html\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":6}',11,'0:0:0:0:0:0:0:1','2019-05-26 10:00:36'),(29,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":47,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"月考情统计\",\"url\":\"modules/kq/xmmainmonth.html\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":6}',10,'0:0:0:0:0:0:0:1','2019-05-26 10:01:04'),(30,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":42,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"日考勤统计\",\"url\":\"modules/kq/xmmainday.html\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":6}',12,'0:0:0:0:0:0:0:1','2019-05-26 10:01:15'),(31,'admin','保存菜单','io.renren.modules.sys.controller.SysMenuController.save()','{\"menuId\":52,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"数据导入\",\"type\":0,\"orderNum\":5}',11,'0:0:0:0:0:0:0:1','2019-05-26 10:17:02'),(32,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":1,\"parentId\":0,\"parentName\":\"一级菜单\",\"name\":\"系统管理\",\"type\":0,\"icon\":\"fa fa-cog\",\"orderNum\":100}',5,'0:0:0:0:0:0:0:1','2019-05-26 14:20:27'),(33,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":52,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"数据导入\",\"url\":\"/error\",\"type\":1,\"orderNum\":5}',11,'0:0:0:0:0:0:0:1','2019-06-01 01:45:17'),(34,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":52,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"数据导入\",\"url\":\"/error\",\"type\":1,\"orderNum\":5}',3,'0:0:0:0:0:0:0:1','2019-06-01 01:46:11'),(35,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":52,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"数据导入\",\"url\":\"/error\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":5}',8,'0:0:0:0:0:0:0:1','2019-06-01 01:46:39'),(36,'admin','修改菜单','io.renren.modules.sys.controller.SysMenuController.update()','{\"menuId\":42,\"parentId\":41,\"parentName\":\"考勤管理\",\"name\":\"日考勤统计\",\"url\":\"modules/kq/kqday.html\",\"type\":1,\"icon\":\"fa fa-file-code-o\",\"orderNum\":6}',8,'0:0:0:0:0:0:0:1','2019-06-08 02:27:58'),(37,'admin','修改用户','io.renren.modules.sys.controller.SysUserController.update()','{\"userId\":1,\"username\":\"admin\",\"salt\":\"YzcmCZNvbXocrsz9dm8e\",\"email\":\"root@renren.io\",\"mobile\":\"13612345678\",\"status\":1,\"roleIdList\":[1,2],\"createTime\":\"Nov 11, 2016 7:11:11 PM\",\"deptId\":1,\"deptName\":\"人人开源集团\"}',93,'0:0:0:0:0:0:0:1','2019-06-08 13:03:56');
 /*!40000 ALTER TABLE `sys_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1447,8 +3181,9 @@ CREATE TABLE `sys_menu` (
   `type` int(11) DEFAULT NULL COMMENT '类型   0：目录   1：菜单   2：按钮',
   `icon` varchar(50) DEFAULT NULL COMMENT '菜单图标',
   `order_num` int(11) DEFAULT NULL COMMENT '排序',
+  `is_disable` int(1) NOT NULL DEFAULT '0' COMMENT '状态（0 正常 1失效 2 审核)',
   PRIMARY KEY (`menu_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='菜单管理';
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='菜单管理';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1457,7 +3192,7 @@ CREATE TABLE `sys_menu` (
 
 LOCK TABLES `sys_menu` WRITE;
 /*!40000 ALTER TABLE `sys_menu` DISABLE KEYS */;
-INSERT INTO `sys_menu` VALUES (1,0,'系统管理',NULL,NULL,0,'fa fa-cog',0),(2,1,'管理员管理','modules/sys/user.html',NULL,1,'fa fa-user',1),(3,1,'角色管理','modules/sys/role.html',NULL,1,'fa fa-user-secret',2),(4,1,'菜单管理','modules/sys/menu.html',NULL,1,'fa fa-th-list',3),(5,1,'SQL监控','druid/sql.html',NULL,1,'fa fa-bug',4),(6,1,'定时任务','modules/job/schedule.html',NULL,1,'fa fa-tasks',5),(7,6,'查看',NULL,'sys:schedule:list,sys:schedule:info',2,NULL,0),(8,6,'新增',NULL,'sys:schedule:save',2,NULL,0),(9,6,'修改',NULL,'sys:schedule:update',2,NULL,0),(10,6,'删除',NULL,'sys:schedule:delete',2,NULL,0),(11,6,'暂停',NULL,'sys:schedule:pause',2,NULL,0),(12,6,'恢复',NULL,'sys:schedule:resume',2,NULL,0),(13,6,'立即执行',NULL,'sys:schedule:run',2,NULL,0),(14,6,'日志列表',NULL,'sys:schedule:log',2,NULL,0),(15,2,'查看',NULL,'sys:user:list,sys:user:info',2,NULL,0),(16,2,'新增',NULL,'sys:user:save,sys:role:select',2,NULL,0),(17,2,'修改',NULL,'sys:user:update,sys:role:select',2,NULL,0),(18,2,'删除',NULL,'sys:user:delete',2,NULL,0),(19,3,'查看',NULL,'sys:role:list,sys:role:info',2,NULL,0),(20,3,'新增',NULL,'sys:role:save,sys:menu:perms',2,NULL,0),(21,3,'修改',NULL,'sys:role:update,sys:menu:perms',2,NULL,0),(22,3,'删除',NULL,'sys:role:delete',2,NULL,0),(23,4,'查看',NULL,'sys:menu:list,sys:menu:info',2,NULL,0),(24,4,'新增',NULL,'sys:menu:save,sys:menu:select',2,NULL,0),(25,4,'修改',NULL,'sys:menu:update,sys:menu:select',2,NULL,0),(26,4,'删除',NULL,'sys:menu:delete',2,NULL,0),(27,1,'参数管理','modules/sys/config.html','sys:config:list,sys:config:info,sys:config:save,sys:config:update,sys:config:delete',1,'fa fa-sun-o',6),(29,1,'系统日志','modules/sys/log.html','sys:log:list',1,'fa fa-file-text-o',7),(30,1,'文件上传','modules/oss/oss.html','sys:oss:all',1,'fa fa-file-image-o',6),(31,1,'部门管理','modules/sys/dept.html',NULL,1,'fa fa-file-code-o',1),(32,31,'查看',NULL,'sys:dept:list,sys:dept:info',2,NULL,0),(33,31,'新增',NULL,'sys:dept:save,sys:dept:select',2,NULL,0),(34,31,'修改',NULL,'sys:dept:update,sys:dept:select',2,NULL,0),(35,31,'删除',NULL,'sys:dept:delete',2,NULL,0),(36,1,'字典管理','modules/sys/dict.html',NULL,1,'fa fa-bookmark-o',6),(37,36,'查看',NULL,'sys:dict:list,sys:dict:info',2,NULL,6),(38,36,'新增',NULL,'sys:dict:save',2,NULL,6),(39,36,'修改',NULL,'sys:dict:update',2,NULL,6),(40,36,'删除',NULL,'sys:dict:delete',2,NULL,6);
+INSERT INTO `sys_menu` VALUES (1,0,'系统管理',NULL,NULL,0,'fa fa-cog',100,0),(2,1,'管理员管理','modules/sys/user.html',NULL,1,'fa fa-user',1,0),(3,1,'角色管理','modules/sys/role.html',NULL,1,'fa fa-user-secret',2,0),(4,1,'菜单管理','modules/sys/menu.html',NULL,1,'fa fa-th-list',3,0),(5,1,'SQL监控','druid/sql.html',NULL,1,'fa fa-bug',4,0),(6,1,'定时任务','modules/job/schedule.html',NULL,1,'fa fa-tasks',5,0),(7,6,'查看',NULL,'sys:schedule:list,sys:schedule:info',2,NULL,0,0),(8,6,'新增',NULL,'sys:schedule:save',2,NULL,0,0),(9,6,'修改',NULL,'sys:schedule:update',2,NULL,0,0),(10,6,'删除',NULL,'sys:schedule:delete',2,NULL,0,0),(11,6,'暂停',NULL,'sys:schedule:pause',2,NULL,0,0),(12,6,'恢复',NULL,'sys:schedule:resume',2,NULL,0,0),(13,6,'立即执行',NULL,'sys:schedule:run',2,NULL,0,0),(14,6,'日志列表',NULL,'sys:schedule:log',2,NULL,0,0),(15,2,'查看',NULL,'sys:user:list,sys:user:info',2,NULL,0,0),(16,2,'新增',NULL,'sys:user:save,sys:role:select',2,NULL,0,0),(17,2,'修改',NULL,'sys:user:update,sys:role:select',2,NULL,0,0),(18,2,'删除',NULL,'sys:user:delete',2,NULL,0,0),(19,3,'查看',NULL,'sys:role:list,sys:role:info',2,NULL,0,0),(20,3,'新增',NULL,'sys:role:save,sys:menu:perms',2,NULL,0,0),(21,3,'修改',NULL,'sys:role:update,sys:menu:perms',2,NULL,0,0),(22,3,'删除',NULL,'sys:role:delete',2,NULL,0,0),(23,4,'查看',NULL,'sys:menu:list,sys:menu:info',2,NULL,0,0),(24,4,'新增',NULL,'sys:menu:save,sys:menu:select',2,NULL,0,0),(25,4,'修改',NULL,'sys:menu:update,sys:menu:select',2,NULL,0,0),(26,4,'删除',NULL,'sys:menu:delete',2,NULL,0,0),(27,1,'参数管理','modules/sys/config.html','sys:config:list,sys:config:info,sys:config:save,sys:config:update,sys:config:delete',1,'fa fa-sun-o',6,0),(29,1,'系统日志','modules/sys/log.html','sys:log:list',1,'fa fa-file-text-o',7,0),(30,1,'文件上传','modules/oss/oss.html','sys:oss:all',1,'fa fa-file-image-o',6,0),(31,1,'部门管理','modules/sys/dept.html',NULL,1,'fa fa-file-code-o',1,0),(32,31,'查看',NULL,'sys:dept:list,sys:dept:info',2,NULL,0,0),(33,31,'新增',NULL,'sys:dept:save,sys:dept:select',2,NULL,0,0),(34,31,'修改',NULL,'sys:dept:update,sys:dept:select',2,NULL,0,0),(35,31,'删除',NULL,'sys:dept:delete',2,NULL,0,0),(36,1,'字典管理','modules/sys/dict.html',NULL,1,'fa fa-bookmark-o',6,0),(37,36,'查看',NULL,'sys:dict:list,sys:dict:info',2,NULL,6,0),(38,36,'新增',NULL,'sys:dict:save',2,NULL,6,0),(39,36,'修改',NULL,'sys:dict:update',2,NULL,6,0),(40,36,'删除',NULL,'sys:dict:delete',2,NULL,6,0),(41,0,'考勤管理',NULL,NULL,0,'fa fa-address-book-o',10,0),(42,41,'日考勤统计','modules/kq/kqday.html',NULL,1,'fa fa-file-code-o',6,0),(43,42,'查看',NULL,'kq:kqday:list,kq:kqday:info',2,NULL,6,0),(44,42,'新增',NULL,'kq:kqday:save',2,NULL,6,0),(45,42,'修改',NULL,'kq:kqday:update',2,NULL,6,0),(46,42,'删除',NULL,'kq:kqday:delete',2,NULL,6,0),(47,41,'月考情统计','modules/kq/kqmonth.html',NULL,1,'fa fa-file-code-o',6,0),(48,47,'查看',NULL,'kq:kqmonth:list,kq:kqmonth:info',2,NULL,6,0),(49,47,'新增',NULL,'kq:kqmonth:save',2,NULL,6,0),(50,47,'修改',NULL,'kq:kqmonth:update',2,NULL,6,0),(51,47,'删除',NULL,'kq:kqmonth:delete',2,NULL,6,0),(52,41,'数据导入','/error',NULL,1,'fa fa-file-code-o',5,0);
 /*!40000 ALTER TABLE `sys_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1499,7 +3234,7 @@ CREATE TABLE `sys_role` (
   `dept_id` bigint(20) DEFAULT NULL COMMENT '部门ID',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1508,6 +3243,7 @@ CREATE TABLE `sys_role` (
 
 LOCK TABLES `sys_role` WRITE;
 /*!40000 ALTER TABLE `sys_role` DISABLE KEYS */;
+INSERT INTO `sys_role` VALUES (1,'test',NULL,2,'2019-05-26 01:06:42'),(2,'hh',NULL,6,'2019-05-26 01:21:12');
 /*!40000 ALTER TABLE `sys_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1523,7 +3259,7 @@ CREATE TABLE `sys_role_dept` (
   `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
   `dept_id` bigint(20) DEFAULT NULL COMMENT '部门ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色与部门对应关系';
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色与部门对应关系';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1532,6 +3268,7 @@ CREATE TABLE `sys_role_dept` (
 
 LOCK TABLES `sys_role_dept` WRITE;
 /*!40000 ALTER TABLE `sys_role_dept` DISABLE KEYS */;
+INSERT INTO `sys_role_dept` VALUES (9,2,6),(10,1,2);
 /*!40000 ALTER TABLE `sys_role_dept` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1547,7 +3284,7 @@ CREATE TABLE `sys_role_menu` (
   `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
   `menu_id` bigint(20) DEFAULT NULL COMMENT '菜单ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色与菜单对应关系';
+) ENGINE=InnoDB AUTO_INCREMENT=379 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='角色与菜单对应关系';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1556,6 +3293,7 @@ CREATE TABLE `sys_role_menu` (
 
 LOCK TABLES `sys_role_menu` WRITE;
 /*!40000 ALTER TABLE `sys_role_menu` DISABLE KEYS */;
+INSERT INTO `sys_role_menu` VALUES (290,2,1),(291,2,2),(292,2,15),(293,2,16),(294,2,17),(295,2,18),(296,2,3),(297,2,19),(298,2,20),(299,2,21),(300,2,22),(301,2,4),(302,2,23),(303,2,24),(304,2,25),(305,2,26),(306,2,5),(307,2,6),(308,2,7),(309,2,8),(310,2,9),(311,2,10),(312,2,11),(313,2,12),(314,2,13),(315,2,14),(316,2,27),(317,2,29),(318,2,30),(319,2,31),(320,2,32),(321,2,33),(322,2,34),(323,2,35),(324,2,36),(325,2,37),(326,2,38),(327,2,39),(328,2,40),(329,1,1),(330,1,2),(331,1,15),(332,1,16),(333,1,17),(334,1,18),(335,1,3),(336,1,19),(337,1,20),(338,1,21),(339,1,22),(340,1,4),(341,1,23),(342,1,24),(343,1,25),(344,1,26),(345,1,5),(346,1,6),(347,1,7),(348,1,8),(349,1,9),(350,1,10),(351,1,11),(352,1,12),(353,1,13),(354,1,14),(355,1,27),(356,1,29),(357,1,30),(358,1,31),(359,1,32),(360,1,33),(361,1,34),(362,1,35),(363,1,36),(364,1,37),(365,1,38),(366,1,39),(367,1,40),(368,1,42),(369,1,47),(370,1,41),(371,1,43),(372,1,44),(373,1,45),(374,1,46),(375,1,48),(376,1,49),(377,1,50),(378,1,51);
 /*!40000 ALTER TABLE `sys_role_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1578,7 +3316,7 @@ CREATE TABLE `sys_user` (
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统用户';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='系统用户';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1587,7 +3325,7 @@ CREATE TABLE `sys_user` (
 
 LOCK TABLES `sys_user` WRITE;
 /*!40000 ALTER TABLE `sys_user` DISABLE KEYS */;
-INSERT INTO `sys_user` VALUES (1,'admin','e1153123d7d180ceeb820d577ff119876678732a68eef4e6ffc0b1f06a01f91b','YzcmCZNvbXocrsz9dm8e','root@renren.io','13612345678',1,1,'2016-11-11 11:11:11');
+INSERT INTO `sys_user` VALUES (1,'admin','e1153123d7d180ceeb820d577ff119876678732a68eef4e6ffc0b1f06a01f91b','YzcmCZNvbXocrsz9dm8e','root@renren.io','13612345678',1,1,'2016-11-11 11:11:11'),(2,'test','04e88881c31c13cfba9cdf95dc7ef794008b19b1e8eba9550e543ab9a3195757','EO9yPVKT2U20BnZgchVm','19988888877@163.com',NULL,1,2,'2019-05-26 01:11:54'),(3,'hh','3192e22a3022720d897ce302ae99a12518d515414eaa0836794467fdb6eb87fa','0HZBlNxfu4aX1zQl5gSF','18888888888@163.com',NULL,1,6,'2019-05-26 01:21:56');
 /*!40000 ALTER TABLE `sys_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1603,7 +3341,7 @@ CREATE TABLE `sys_user_role` (
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户ID',
   `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户与角色对应关系';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户与角色对应关系';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1612,6 +3350,7 @@ CREATE TABLE `sys_user_role` (
 
 LOCK TABLES `sys_user_role` WRITE;
 /*!40000 ALTER TABLE `sys_user_role` DISABLE KEYS */;
+INSERT INTO `sys_user_role` VALUES (2,3,2),(3,2,1),(4,2,2),(5,1,1),(6,1,2);
 /*!40000 ALTER TABLE `sys_user_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2005,6 +3744,650 @@ UNLOCK TABLES;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `test` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
 
 USE `test`;
+
+--
+-- Current Database: `vhr`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `vhr` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `vhr`;
+
+--
+-- Table structure for table `adjustsalary`
+--
+
+DROP TABLE IF EXISTS `adjustsalary`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `adjustsalary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eid` int(11) DEFAULT NULL,
+  `asDate` date DEFAULT NULL COMMENT '调薪日期',
+  `beforeSalary` int(11) DEFAULT NULL COMMENT '调前薪资',
+  `afterSalary` int(11) DEFAULT NULL COMMENT '调后薪资',
+  `reason` varchar(255) DEFAULT NULL COMMENT '调薪原因',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`),
+  KEY `pid` (`eid`),
+  CONSTRAINT `adjustsalary_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `adjustsalary`
+--
+
+LOCK TABLES `adjustsalary` WRITE;
+/*!40000 ALTER TABLE `adjustsalary` DISABLE KEYS */;
+/*!40000 ALTER TABLE `adjustsalary` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `appraise`
+--
+
+DROP TABLE IF EXISTS `appraise`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `appraise` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eid` int(11) DEFAULT NULL,
+  `appDate` date DEFAULT NULL COMMENT '考评日期',
+  `appResult` varchar(32) DEFAULT NULL COMMENT '考评结果',
+  `appContent` varchar(255) DEFAULT NULL COMMENT '考评内容',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`),
+  KEY `pid` (`eid`),
+  CONSTRAINT `appraise_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `appraise`
+--
+
+LOCK TABLES `appraise` WRITE;
+/*!40000 ALTER TABLE `appraise` DISABLE KEYS */;
+/*!40000 ALTER TABLE `appraise` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `department`
+--
+
+DROP TABLE IF EXISTS `department`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `department` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) DEFAULT NULL COMMENT '部门名称',
+  `parentId` int(11) DEFAULT NULL,
+  `depPath` varchar(255) DEFAULT NULL,
+  `enabled` tinyint(1) DEFAULT '1',
+  `isParent` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `department`
+--
+
+LOCK TABLES `department` WRITE;
+/*!40000 ALTER TABLE `department` DISABLE KEYS */;
+INSERT INTO `department` VALUES (1,'股东会',-1,'.1',1,1),(4,'董事会',1,'.1.4',1,1),(5,'总办',4,'.1.4.5',1,1),(8,'财务部',5,'.1.4.5.8',1,0),(78,'市场部',5,'.1.4.5.78',1,1),(81,'华北市场部',78,'.1.4.5.78.81',1,1),(82,'华南市场部',78,'.1.4.5.78.82',1,0),(85,'石家庄市场部',81,'.1.4.5.78.81.85',1,0),(86,'西北市场部',78,'.1.4.5.78.86',1,1),(87,'西安市场',86,'.1.4.5.78.86.87',1,1),(89,'莲湖区市场',87,'.1.4.5.78.86.87.89',1,0),(91,'技术部',5,'.1.4.5.91',1,0),(92,'运维部',5,'.1.4.5.92',1,0);
+/*!40000 ALTER TABLE `department` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `employee`
+--
+
+DROP TABLE IF EXISTS `employee`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `employee` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '员工编号',
+  `name` varchar(10) DEFAULT NULL COMMENT '员工姓名',
+  `gender` char(4) DEFAULT NULL COMMENT '性别',
+  `birthday` date DEFAULT NULL COMMENT '出生日期',
+  `idCard` char(18) DEFAULT NULL COMMENT '身份证号',
+  `wedlock` enum('已婚','未婚','离异') DEFAULT NULL COMMENT '婚姻状况',
+  `nationId` int(8) DEFAULT NULL COMMENT '民族',
+  `nativePlace` varchar(20) DEFAULT NULL COMMENT '籍贯',
+  `politicId` int(8) DEFAULT NULL COMMENT '政治面貌',
+  `email` varchar(20) DEFAULT NULL COMMENT '邮箱',
+  `phone` varchar(11) DEFAULT NULL COMMENT '电话号码',
+  `address` varchar(64) DEFAULT NULL COMMENT '联系地址',
+  `departmentId` int(11) DEFAULT NULL COMMENT '所属部门',
+  `jobLevelId` int(11) DEFAULT NULL COMMENT '职称ID',
+  `posId` int(11) DEFAULT NULL COMMENT '职位ID',
+  `engageForm` varchar(8) DEFAULT NULL COMMENT '聘用形式',
+  `tiptopDegree` enum('博士','硕士','本科','大专','高中','初中','小学','其他') DEFAULT NULL COMMENT '最高学历',
+  `specialty` varchar(32) DEFAULT NULL COMMENT '所属专业',
+  `school` varchar(32) DEFAULT NULL COMMENT '毕业院校',
+  `beginDate` date DEFAULT NULL COMMENT '入职日期',
+  `workState` enum('在职','离职') DEFAULT '在职' COMMENT '在职状态',
+  `workID` char(8) DEFAULT NULL COMMENT '工号',
+  `contractTerm` double DEFAULT NULL COMMENT '合同期限',
+  `conversionTime` date DEFAULT NULL COMMENT '转正日期',
+  `notWorkDate` date DEFAULT NULL COMMENT '离职日期',
+  `beginContract` date DEFAULT NULL COMMENT '合同起始日期',
+  `endContract` date DEFAULT NULL COMMENT '合同终止日期',
+  `workAge` int(11) DEFAULT NULL COMMENT '工龄',
+  PRIMARY KEY (`id`),
+  KEY `departmentId` (`departmentId`),
+  KEY `jobId` (`jobLevelId`),
+  KEY `dutyId` (`posId`),
+  KEY `nationId` (`nationId`),
+  KEY `politicId` (`politicId`),
+  KEY `workID_key` (`workID`),
+  CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `department` (`id`),
+  CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`jobLevelId`) REFERENCES `joblevel` (`id`),
+  CONSTRAINT `employee_ibfk_3` FOREIGN KEY (`posId`) REFERENCES `position` (`id`),
+  CONSTRAINT `employee_ibfk_4` FOREIGN KEY (`nationId`) REFERENCES `nation` (`id`),
+  CONSTRAINT `employee_ibfk_5` FOREIGN KEY (`politicId`) REFERENCES `politicsstatus` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1519 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `employee`
+--
+
+LOCK TABLES `employee` WRITE;
+/*!40000 ALTER TABLE `employee` DISABLE KEYS */;
+INSERT INTO `employee` VALUES (1,'江南一点雨','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',5,9,29,'劳务合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000001',2,'2018-04-01',NULL,'2018-01-01','2020-01-01',NULL),(2,'陈静','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',8,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000002',3,'2015-09-10',NULL,'2015-06-09','2018-06-08',NULL),(3,'赵琳浩','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000003',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(4,'鹿存亮','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000004',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(5,'姚森','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','硕士','室内装修设计','西北大学','2017-01-02','在职','00000005',7,'2017-04-02',NULL,'2017-01-02','2024-01-17',NULL),(6,'云星','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000006',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(7,'贾旭明','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000007',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(8,'张黎明','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000008',7,'2018-04-01',NULL,'2018-01-01','2025-01-30',NULL),(9,'薛磊','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000009',6,'2018-04-01',NULL,'2018-01-01','2024-01-17',NULL),(10,'张洁','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000010',1,'2018-01-31',NULL,'2018-01-01','2019-01-01',NULL),(11,'江南一点雨2','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',91,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000011',1,'2018-04-01',NULL,'2018-01-01','2019-01-01',NULL),(12,'陈静2','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000012',3,'2015-09-10',NULL,'2015-06-09','2018-06-08',NULL),(13,'赵琳浩2','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000013',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(14,'鹿存亮2','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000014',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(15,'姚森2','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000015',7,'2017-04-02',NULL,'2017-01-02','2024-01-17',NULL),(16,'云星2','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000016',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(17,'贾旭明2','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000017',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(18,'王一亭','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000018',7,'2018-04-01',NULL,'2018-01-01','2025-01-30',NULL),(19,'薛磊2','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000019',1,'2018-04-01',NULL,'2018-01-01','2019-01-01',NULL),(20,'张洁2','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000020',1,'2018-01-31',NULL,'2018-01-01','2019-01-01',NULL),(21,'江南一点雨3','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000021',1,'2018-04-01',NULL,'2018-01-01','2019-01-01',NULL),(22,'陈静3','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000022',3,'2015-09-10',NULL,'2015-06-09','2018-06-08',NULL),(24,'鹿存亮3','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000024',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(25,'姚森3','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000025',7,'2017-04-02',NULL,'2017-01-02','2024-01-17',NULL),(26,'云星3','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000026',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(27,'贾旭明3','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000027',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(28,'张黎明3','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000028',7,'2018-04-01',NULL,'2018-01-01','2025-01-30',NULL),(29,'薛磊3','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000029',6,'2018-04-01',NULL,'2018-01-01','2024-01-17',NULL),(31,'江南一点雨4','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000031',1,'2018-04-01',NULL,'2018-01-01','2019-01-01',NULL),(32,'陈静4','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000032',3,'2015-09-10',NULL,'2015-06-09','2018-06-08',NULL),(33,'赵琳浩4','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000033',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(34,'鹿存亮4','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000034',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(35,'姚森4','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000035',7,'2017-04-02',NULL,'2017-01-02','2024-01-17',NULL),(36,'云星4','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000036',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(37,'贾旭明4','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000037',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(38,'张黎明2','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000038',7,'2018-04-01',NULL,'2018-01-01','2025-01-30',NULL),(39,'薛磊4','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000039',6,'2018-04-01',NULL,'2018-01-01','2024-01-17',NULL),(40,'张洁4','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000040',1,'2018-01-31',NULL,'2018-01-01','2019-01-01',NULL),(41,'江南一点雨5','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000041',1,'2018-04-01',NULL,'2018-01-01','2019-01-01',NULL),(42,'陈静5','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000042',3,'2015-09-10',NULL,'2015-06-09','2018-06-08',NULL),(43,'赵琳浩5','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000043',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(44,'鹿存亮5','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000044',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(45,'姚森5','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000045',7,'2017-04-02',NULL,'2017-01-02','2024-01-17',NULL),(46,'云星5','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000046',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(47,'贾旭明5','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000047',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(48,'张黎明5','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000048',7,'2018-04-01',NULL,'2018-01-01','2025-01-30',NULL),(49,'薛磊5','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000049',6,'2018-04-01',NULL,'2018-01-01','2024-01-17',NULL),(50,'张洁5','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000050',1,'2018-01-31',NULL,'2018-01-01','2019-01-01',NULL),(51,'江南一点雨6','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000051',1,'2018-04-01',NULL,'2018-01-01','2019-01-01',NULL),(52,'陈静6','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000052',3,'2015-09-10',NULL,'2015-06-09','2018-06-08',NULL),(53,'赵琳浩6','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000053',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(54,'鹿存亮6','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000054',3.5,'2018-04-01',NULL,'2018-01-01','2021-07-14',NULL),(55,'姚森6','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000055',7,'2017-04-02',NULL,'2017-01-02','2024-01-17',NULL),(56,'云星6','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000056',5.25,'2018-04-01',NULL,'2018-01-01','2023-04-13',NULL),(1351,'江南一点雨','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000001',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1352,'陈静','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000002',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1353,'赵琳浩','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000003',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1354,'鹿存亮','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000004',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1355,'姚森','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000005',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1357,'贾旭明','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000007',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1358,'张黎明','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000008',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1359,'薛磊','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000009',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1360,'张洁','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000010',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1361,'江南一点雨2','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000011',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1362,'陈静2','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000012',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1363,'赵琳浩2','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000013',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1364,'鹿存亮2','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000014',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1365,'姚森2','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000015',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1366,'云星2','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000016',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1367,'贾旭明2','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000017',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1368,'王一亭','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000018',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1369,'薛磊2','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000019',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1370,'张洁2','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000020',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1371,'江南一点雨3','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000021',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1372,'陈静3','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000022',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1373,'鹿存亮3','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000024',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1374,'姚森3','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000025',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1375,'云星3','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000026',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1376,'贾旭明3','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000027',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1377,'张黎明3','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000028',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1378,'薛磊3','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000029',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1379,'江南一点雨4','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000031',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1380,'陈静4','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000032',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1381,'赵琳浩4','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000033',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1382,'鹿存亮4','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000034',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1383,'姚森4','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000035',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1384,'云星4','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000036',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1385,'贾旭明4','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000037',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1411,'谢工','女','1970-01-01','618177197001011234','离异',1,'江苏',1,'584991843@qq.com','18558887788','北京',91,12,29,'劳动合同','本科','计算机软件','南华大学','2018-01-01','在职','00000038',5,'2019-01-01',NULL,'2018-01-01','2023-01-01',NULL),(1412,'林昭亮','男','1990-01-01','610122199809091234','已婚',1,'广东',13,'584991843@qq.com','16767776654','广东深圳',91,15,33,'劳动合同','大专','计算机软件','广东职业技术学院','2018-01-01','在职','00000039',5,'2018-04-01',NULL,'2018-01-01','2023-01-01',NULL),(1413,'11','男','2018-01-01','610122201801011234','已婚',1,'1',1,'584991843@qq.com','111','1',89,9,29,'劳动合同','本科','1','1','2018-01-01','在职','00000040',4,'2018-04-01',NULL,'2018-01-01','2022-01-26',NULL),(1414,'1','男','2018-01-01','610188199809091234','已婚',1,'1',1,'584991843@qq.com','1','1',89,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000041',1,'2018-01-31',NULL,'2018-01-31','2019-01-31',NULL),(1415,'1','男','2018-01-01','610122199909090000','已婚',1,'1',1,'584991843@qq.com','1','1',78,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000042',1,'2018-01-31',NULL,'2018-01-31','2019-01-31',NULL),(1416,'1','男','2018-01-01','610122199909090000','已婚',1,'1',1,'584991843@qq.com','1','1',81,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000043',0,'2018-01-31',NULL,'2018-01-31','2018-01-31',NULL),(1417,'1','男','2018-01-01','610122199909099999','已婚',1,'1',1,'584991843@qq.com','1','1',87,9,29,'劳动合同','大专','1','1','2018-01-01','在职','00000044',0,'2018-01-01',NULL,'2018-01-01','2018-01-31',NULL),(1418,'1','男','2018-01-01','610122199909099999','已婚',1,'1',1,'584991843@qq.com','1','1',78,9,29,'劳动合同','大专','1','1','2018-01-01','在职','00000045',0,'2018-01-01',NULL,'2018-01-01','2018-01-31',NULL),(1419,'林伯渠','男','2018-01-01','610122199909099999','未婚',1,'1',1,'584991843@qq.com','1','1',8,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000046',0,'2018-01-31',NULL,'2018-01-31','2018-01-31',NULL),(1420,'1','男','2018-01-01','610122199909091234','已婚',1,'1',1,'584991843@qq.com','1','1',8,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000047',0,'2018-01-31',NULL,'2018-01-31','2018-01-31',NULL),(1421,'江南一点雨','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',5,9,29,'劳务合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000001',2,NULL,NULL,'2018-01-01','2020-01-01',NULL),(1422,'陈静','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',8,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000002',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1423,'赵琳浩','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000003',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1424,'鹿存亮','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000004',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1425,'姚森','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','硕士','室内装修设计','西北大学','2017-01-02','在职','00000005',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1426,'云星','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000006',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1427,'贾旭明','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000007',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1428,'张黎明','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000008',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1429,'薛磊','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000009',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1430,'张洁','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000010',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1431,'江南一点雨2','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',91,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000011',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1432,'陈静2','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000012',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1433,'赵琳浩2','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000013',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1434,'鹿存亮2','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000014',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1435,'姚森2','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000015',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1436,'云星2','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000016',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1437,'贾旭明2','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000017',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1438,'王一亭','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000018',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1439,'薛磊2','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000019',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1440,'张洁2','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000020',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1441,'江南一点雨3','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000021',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1442,'陈静3','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000022',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1443,'鹿存亮3','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000024',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1444,'姚森3','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000025',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1445,'云星3','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000026',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1446,'贾旭明3','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000027',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1447,'张黎明3','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000028',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1448,'薛磊3','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000029',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1449,'江南一点雨4','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000031',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1450,'陈静4','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000032',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1451,'赵琳浩4','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000033',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1452,'鹿存亮4','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000034',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1453,'姚森4','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000035',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1454,'云星4','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000036',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1455,'贾旭明4','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000037',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1456,'张黎明2','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000038',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1457,'薛磊4','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000039',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1458,'张洁4','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000040',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1459,'江南一点雨5','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000041',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1460,'陈静5','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000042',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1461,'赵琳浩5','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000043',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1462,'鹿存亮5','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000044',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1463,'姚森5','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000045',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1464,'云星5','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000046',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1465,'贾旭明5','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000047',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1466,'张黎明5','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000048',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1467,'薛磊5','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000049',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1468,'张洁5','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000050',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1469,'江南一点雨6','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000051',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1470,'陈静6','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000052',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1471,'赵琳浩6','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000053',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1472,'鹿存亮6','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000054',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1473,'姚森6','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000055',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1474,'云星6','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000056',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1475,'江南一点雨','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000001',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1476,'陈静','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000002',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1477,'赵琳浩','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000003',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1478,'鹿存亮','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000004',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1479,'姚森','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000005',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1480,'贾旭明','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000007',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1481,'张黎明','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000008',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1482,'薛磊','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000009',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1483,'张洁','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000010',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1484,'江南一点雨2','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000011',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1485,'陈静2','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000012',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1486,'赵琳浩2','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000013',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1487,'鹿存亮2','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000014',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1488,'姚森2','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000015',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1489,'云星2','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000016',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1490,'贾旭明2','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000017',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1491,'王一亭','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000018',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1492,'薛磊2','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000019',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1493,'张洁2','女','1990-10-09','420177199010093652','未婚',1,'海南',5,'zhangjie@qq.com','13695557742','海口市美兰区',92,16,34,'劳动合同','高中','无','海南侨中','2018-01-01','在职','00000020',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1494,'江南一点雨3','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000021',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1495,'陈静3','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000022',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1496,'鹿存亮3','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000024',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1497,'姚森3','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000025',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1498,'云星3','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000026',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1499,'贾旭明3','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000027',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1500,'张黎明3','男','1991-02-01','610144199102014569','已婚',1,'广东',6,'zhangliming@qq.com','18979994478','广东珠海',91,15,33,'劳动合同','高中','考古','清华大学','2018-01-01','在职','00000028',7,NULL,NULL,'2018-01-01','2025-01-30',NULL),(1501,'薛磊3','男','1992-07-01','610144199207017895','已婚',1,'陕西西安',13,'xuelei@qq.com','15648887741','西安市雁塔区',92,14,34,'劳动合同','初中','无','华胥中学','2018-01-01','在职','00000029',6,NULL,NULL,'2018-01-01','2024-01-17',NULL),(1502,'江南一点雨4','男','1990-01-01','610122199001011256','已婚',1,'陕西',13,'laowang@qq.com','18565558897','深圳市南山区',8,9,29,'劳动合同','本科','信息管理与信息系统','深圳大学','2018-01-01','在职','00000031',1,NULL,NULL,'2018-01-01','2019-01-01',NULL),(1503,'陈静4','女','1989-02-01','421288198902011234','已婚',1,'海南',1,'chenjing@qq.com','18795556693','海南省海口市美兰区',82,12,30,'劳动合同','高中','市场营销','武汉大学','2015-06-09','在职','00000032',3,NULL,NULL,'2015-06-09','2018-06-08',NULL),(1504,'赵琳浩4','男','1993-03-04','610122199303041456','未婚',1,'陕西',3,'zhao@qq.com','15698887795','陕西省西安市莲湖区',91,12,33,'劳动合同','博士','电子工程','哈尔滨理工大学','2018-01-01','在职','00000033',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1505,'鹿存亮4','男','1990-01-03','610122199001031456','已婚',1,'陕西',3,'zhao@qq.com','15612347795','陕西省西安市莲湖区',92,12,34,'劳动合同','高中','电子工程','哈尔滨理工大学','2018-01-01','在职','00000034',3.5,NULL,NULL,'2018-01-01','2021-07-14',NULL),(1506,'姚森4','男','1991-02-05','610122199102058952','已婚',1,'河南',3,'yaosen@qq.com','14785559936','河南洛阳人民大道58号',92,15,34,'劳动合同','初中','室内装修设计','西北大学','2017-01-02','在职','00000035',7,NULL,NULL,'2017-01-02','2024-01-17',NULL),(1507,'云星4','女','1993-01-05','610122199301054789','已婚',1,'陕西西安',1,'yunxing@qq.com','15644442252','陕西西安新城区',92,16,34,'劳务合同','硕士','通信工程','西安电子科技学校','2018-01-01','在职','00000036',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1508,'贾旭明4','男','1993-11-11','610122199311111234','已婚',1,'广东广州',4,'jiaxuming@qq.com','15644441234','广东省广州市天河区冼村路',78,15,33,'劳务合同','初中','通信工程','西北大学','2018-01-01','在职','00000037',5.25,NULL,NULL,'2018-01-01','2023-04-13',NULL),(1509,'谢工','女','1970-01-01','618177197001011234','离异',1,'江苏',1,'584991843@qq.com','18558887788','北京',91,12,29,'劳动合同','本科','计算机软件','南华大学','2018-01-01','在职','00000038',5,NULL,NULL,'2018-01-01','2023-01-01',NULL),(1510,'林昭亮','男','1990-01-01','610122199809091234','已婚',1,'广东',13,'584991843@qq.com','16767776654','广东深圳',91,15,33,'劳动合同','大专','计算机软件','广东职业技术学院','2018-01-01','在职','00000039',5,NULL,NULL,'2018-01-01','2023-01-01',NULL),(1511,'11','男','2018-01-01','610122201801011234','已婚',1,'1',1,'584991843@qq.com','111','1',89,9,29,'劳动合同','本科','1','1','2018-01-01','在职','00000040',4,NULL,NULL,'2018-01-01','2022-01-26',NULL),(1512,'1','男','2018-01-01','610188199809091234','已婚',1,'1',1,'584991843@qq.com','1','1',89,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000041',1,NULL,NULL,'2018-01-31','2019-01-31',NULL),(1513,'1','男','2018-01-01','610122199909090000','已婚',1,'1',1,'584991843@qq.com','1','1',78,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000042',1,NULL,NULL,'2018-01-31','2019-01-31',NULL),(1514,'1','男','2018-01-01','610122199909090000','已婚',1,'1',1,'584991843@qq.com','1','1',81,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000043',0,NULL,NULL,'2018-01-31','2018-01-31',NULL),(1515,'1','男','2018-01-01','610122199909099999','已婚',1,'1',1,'584991843@qq.com','1','1',87,9,29,'劳动合同','大专','1','1','2018-01-01','在职','00000044',0,NULL,NULL,'2018-01-01','2018-01-31',NULL),(1516,'1','男','2018-01-01','610122199909099999','已婚',1,'1',1,'584991843@qq.com','1','1',78,9,29,'劳动合同','大专','1','1','2018-01-01','在职','00000045',0,NULL,NULL,'2018-01-01','2018-01-31',NULL),(1517,'林伯渠','男','2018-01-01','610122199909099999','未婚',1,'1',1,'584991843@qq.com','1','1',8,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000046',0,NULL,NULL,'2018-01-31','2018-01-31',NULL),(1518,'1','男','2018-01-01','610122199909091234','已婚',1,'1',1,'584991843@qq.com','1','1',8,9,29,'劳动合同','大专','1','1','2018-01-31','在职','00000047',0,NULL,NULL,'2018-01-31','2018-01-31',NULL);
+/*!40000 ALTER TABLE `employee` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `employeeec`
+--
+
+DROP TABLE IF EXISTS `employeeec`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `employeeec` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eid` int(11) DEFAULT NULL COMMENT '员工编号',
+  `ecDate` date DEFAULT NULL COMMENT '奖罚日期',
+  `ecReason` varchar(255) DEFAULT NULL COMMENT '奖罚原因',
+  `ecPoint` int(11) DEFAULT NULL COMMENT '奖罚分',
+  `ecType` int(11) DEFAULT NULL COMMENT '奖罚类别，0：奖，1：罚',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`),
+  KEY `pid` (`eid`),
+  CONSTRAINT `employeeec_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `employeeec`
+--
+
+LOCK TABLES `employeeec` WRITE;
+/*!40000 ALTER TABLE `employeeec` DISABLE KEYS */;
+/*!40000 ALTER TABLE `employeeec` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `employeeremove`
+--
+
+DROP TABLE IF EXISTS `employeeremove`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `employeeremove` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eid` int(11) DEFAULT NULL,
+  `afterDepId` int(11) DEFAULT NULL COMMENT '调动后部门',
+  `afterJobId` int(11) DEFAULT NULL COMMENT '调动后职位',
+  `removeDate` date DEFAULT NULL COMMENT '调动日期',
+  `reason` varchar(255) DEFAULT NULL COMMENT '调动原因',
+  `remark` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pid` (`eid`),
+  CONSTRAINT `employeeremove_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `employeeremove`
+--
+
+LOCK TABLES `employeeremove` WRITE;
+/*!40000 ALTER TABLE `employeeremove` DISABLE KEYS */;
+/*!40000 ALTER TABLE `employeeremove` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `employeetrain`
+--
+
+DROP TABLE IF EXISTS `employeetrain`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `employeetrain` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eid` int(11) DEFAULT NULL COMMENT '员工编号',
+  `trainDate` date DEFAULT NULL COMMENT '培训日期',
+  `trainContent` varchar(255) DEFAULT NULL COMMENT '培训内容',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`),
+  KEY `pid` (`eid`),
+  CONSTRAINT `employeetrain_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `employeetrain`
+--
+
+LOCK TABLES `employeetrain` WRITE;
+/*!40000 ALTER TABLE `employeetrain` DISABLE KEYS */;
+/*!40000 ALTER TABLE `employeetrain` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `empsalary`
+--
+
+DROP TABLE IF EXISTS `empsalary`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `empsalary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `eid` int(11) DEFAULT NULL,
+  `sid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `eid` (`eid`),
+  KEY `empsalary_ibfk_2` (`sid`),
+  CONSTRAINT `empsalary_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`),
+  CONSTRAINT `empsalary_ibfk_2` FOREIGN KEY (`sid`) REFERENCES `salary` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `empsalary`
+--
+
+LOCK TABLES `empsalary` WRITE;
+/*!40000 ALTER TABLE `empsalary` DISABLE KEYS */;
+INSERT INTO `empsalary` VALUES (6,4,10),(7,3,9),(8,1,10),(10,5,9),(11,6,13),(12,7,13),(13,2,13),(14,8,10),(15,9,10),(16,10,13);
+/*!40000 ALTER TABLE `empsalary` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `hr`
+--
+
+DROP TABLE IF EXISTS `hr`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `hr` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'hrID',
+  `name` varchar(32) DEFAULT NULL COMMENT '姓名',
+  `phone` char(11) DEFAULT NULL COMMENT '手机号码',
+  `telephone` varchar(16) DEFAULT NULL COMMENT '住宅电话',
+  `address` varchar(64) DEFAULT NULL COMMENT '联系地址',
+  `enabled` tinyint(1) DEFAULT '1',
+  `username` varchar(255) DEFAULT NULL COMMENT '用户名',
+  `password` varchar(255) DEFAULT NULL COMMENT '密码',
+  `userface` varchar(255) DEFAULT NULL,
+  `remark` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `hr`
+--
+
+LOCK TABLES `hr` WRITE;
+/*!40000 ALTER TABLE `hr` DISABLE KEYS */;
+INSERT INTO `hr` VALUES (3,'系统管理员','18568887789','029-82881234','深圳南山',1,'admin','$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm','http://bpic.588ku.com/element_pic/01/40/00/64573ce2edc0728.jpg',NULL),(5,'李白','18568123489','029-82123434','海口美兰',1,'libai','$2a$10$oE39aG10kB/rFu2vQeCJTu/V/v4n6DRR0f8WyXRiAYvBpmadoOBE.','https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514093920321&di=913e88c23f382933ef430024afd9128a&imgtype=0&src=http%3A%2F%2Fp.3761.com%2Fpic%2F9771429316733.jpg',NULL),(10,'韩愈','18568123666','029-82111555','广州番禺',1,'hanyu','$2a$10$oE39aG10kB/rFu2vQeCJTu/V/v4n6DRR0f8WyXRiAYvBpmadoOBE.','https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1406745149,1563524794&fm=27&gp=0.jpg',NULL),(11,'柳宗元','18568123377','029-82111333','广州天河',1,'liuzongyuan','$2a$10$oE39aG10kB/rFu2vQeCJTu/V/v4n6DRR0f8WyXRiAYvBpmadoOBE.','https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515233756&di=0856d923a0a37a87fd26604a2c871370&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-09-27%2F041716704.jpg',NULL),(12,'曾巩','18568128888','029-82111222','广州越秀',1,'zenggong','$2a$10$oE39aG10kB/rFu2vQeCJTu/V/v4n6DRR0f8WyXRiAYvBpmadoOBE.','https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517070040185&di=be0375e0c3db6c311b837b28c208f318&imgtype=0&src=http%3A%2F%2Fimg2.soyoung.com%2Fpost%2F20150213%2F6%2F20150213141918532.jpg',NULL);
+/*!40000 ALTER TABLE `hr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `hr_role`
+--
+
+DROP TABLE IF EXISTS `hr_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `hr_role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `hrid` int(11) DEFAULT NULL,
+  `rid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `rid` (`rid`),
+  KEY `hr_role_ibfk_1` (`hrid`),
+  CONSTRAINT `hr_role_ibfk_1` FOREIGN KEY (`hrid`) REFERENCES `hr` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `hr_role_ibfk_2` FOREIGN KEY (`rid`) REFERENCES `role` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `hr_role`
+--
+
+LOCK TABLES `hr_role` WRITE;
+/*!40000 ALTER TABLE `hr_role` DISABLE KEYS */;
+INSERT INTO `hr_role` VALUES (1,3,6),(9,5,1),(10,5,4),(35,12,4),(36,12,3),(37,12,2),(43,11,3),(44,11,2),(45,11,4),(46,11,5),(48,10,3),(49,10,4);
+/*!40000 ALTER TABLE `hr_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `joblevel`
+--
+
+DROP TABLE IF EXISTS `joblevel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `joblevel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) DEFAULT NULL COMMENT '职称名称',
+  `titleLevel` enum('正高级','副高级','中级','初级','员级') DEFAULT NULL,
+  `createDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `enabled` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `joblevel`
+--
+
+LOCK TABLES `joblevel` WRITE;
+/*!40000 ALTER TABLE `joblevel` DISABLE KEYS */;
+INSERT INTO `joblevel` VALUES (9,'教授','正高级','2018-01-11 13:19:14',1),(10,'副教授','副高级','2018-01-11 13:19:20',1),(12,'助教','初级','2018-01-11 13:35:39',1),(13,'讲师','中级','2018-01-11 14:42:12',1),(14,'初级工程师','初级','2018-01-14 08:18:50',1),(15,'中级工程师','中级','2018-01-14 08:19:00',1),(16,'高级工程师','副高级','2018-01-14 08:19:14',1),(17,'骨灰级工程师','正高级','2018-01-14 08:19:24',1),(19,'asdas','副高级','2019-05-25 14:27:56',1);
+/*!40000 ALTER TABLE `joblevel` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu`
+--
+
+DROP TABLE IF EXISTS `menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `url` varchar(64) DEFAULT NULL,
+  `path` varchar(64) DEFAULT NULL,
+  `component` varchar(64) DEFAULT NULL,
+  `name` varchar(64) DEFAULT NULL,
+  `iconCls` varchar(64) DEFAULT NULL,
+  `keepAlive` tinyint(1) DEFAULT NULL,
+  `requireAuth` tinyint(1) DEFAULT NULL,
+  `parentId` int(11) DEFAULT NULL,
+  `enabled` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `parentId` (`parentId`),
+  CONSTRAINT `menu_ibfk_1` FOREIGN KEY (`parentId`) REFERENCES `menu` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu`
+--
+
+LOCK TABLES `menu` WRITE;
+/*!40000 ALTER TABLE `menu` DISABLE KEYS */;
+INSERT INTO `menu` VALUES (1,'/',NULL,NULL,'所有',NULL,NULL,NULL,NULL,1),(2,'/','/home','Home','员工资料','fa fa-user-circle-o',NULL,1,1,1),(3,'/','/home','Home','人事管理','fa fa-address-card-o',NULL,1,1,1),(4,'/','/home','Home','薪资管理','fa fa-money',NULL,1,1,1),(5,'/','/home','Home','统计管理','fa fa-bar-chart',NULL,1,1,1),(6,'/','/home','Home','系统管理','fa fa-windows',NULL,1,1,1),(7,'/employee/basic/**','/emp/basic','EmpBasic','基本资料',NULL,NULL,1,2,1),(8,'/employee/advanced/**','/emp/adv','EmpAdv','高级资料',NULL,NULL,1,2,0),(9,'/personnel/emp/**','/per/emp','PerEmp','员工资料',NULL,NULL,1,3,0),(10,'/personnel/ec/**','/per/ec','PerEc','员工奖惩',NULL,NULL,1,3,1),(11,'/personnel/train/**','/per/train','PerTrain','员工培训',NULL,NULL,1,3,1),(12,'/personnel/salary/**','/per/salary','PerSalary','员工调薪',NULL,NULL,1,3,1),(13,'/personnel/remove/**','/per/mv','PerMv','员工调动',NULL,NULL,1,3,1),(14,'/salary/sob/**','/sal/sob','SalSob','工资账套管理',NULL,NULL,1,4,1),(15,'/salary/sobcfg/**','/sal/sobcfg','SalSobCfg','员工账套设置',NULL,NULL,1,4,1),(16,'/salary/table/**','/sal/table','SalTable','工资表管理',NULL,NULL,1,4,1),(17,'/salary/month/**','/sal/month','SalMonth','月末处理',NULL,NULL,1,4,1),(18,'/salary/search/**','/sal/search','SalSearch','工资表查询',NULL,NULL,1,4,1),(19,'/statistics/all/**','/sta/all','StaAll','综合信息统计',NULL,NULL,1,5,1),(20,'/statistics/score/**','/sta/score','StaScore','员工积分统计',NULL,NULL,1,5,1),(21,'/statistics/personnel/**','/sta/pers','StaPers','人事信息统计',NULL,NULL,1,5,1),(22,'/statistics/recored/**','/sta/record','StaRecord','人事记录统计',NULL,NULL,1,5,1),(23,'/system/basic/**','/sys/basic','SysBasic','基础信息设置',NULL,NULL,1,6,1),(24,'/system/cfg/**','/sys/cfg','SysCfg','系统管理',NULL,NULL,1,6,1),(25,'/system/log/**','/sys/log','SysLog','操作日志管理',NULL,NULL,1,6,1),(26,'/system/hr/**','/sys/hr','SysHr','操作员管理',NULL,NULL,1,6,1),(27,'/system/data/**','/sys/data','SysData','备份恢复数据库',NULL,NULL,1,6,1),(28,'/system/init/**','/sys/init','SysInit','初始化数据库',NULL,NULL,1,6,1);
+/*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu_role`
+--
+
+DROP TABLE IF EXISTS `menu_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `menu_role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mid` int(11) DEFAULT NULL,
+  `rid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mid` (`mid`),
+  KEY `rid` (`rid`),
+  CONSTRAINT `menu_role_ibfk_1` FOREIGN KEY (`mid`) REFERENCES `menu` (`id`),
+  CONSTRAINT `menu_role_ibfk_2` FOREIGN KEY (`rid`) REFERENCES `role` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=278 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu_role`
+--
+
+LOCK TABLES `menu_role` WRITE;
+/*!40000 ALTER TABLE `menu_role` DISABLE KEYS */;
+INSERT INTO `menu_role` VALUES (161,7,3),(162,7,6),(163,9,6),(164,10,6),(165,11,6),(166,12,6),(167,13,6),(168,14,6),(169,15,6),(170,16,6),(171,17,6),(172,18,6),(173,19,6),(174,20,6),(175,21,6),(176,22,6),(177,23,6),(178,25,6),(179,26,6),(180,27,6),(181,28,6),(182,24,6),(247,7,4),(248,8,4),(249,11,4),(250,7,2),(251,8,2),(252,9,2),(253,10,2),(254,12,2),(255,13,2),(256,7,1),(257,8,1),(258,9,1),(259,10,1),(260,11,1),(261,12,1),(262,13,1),(263,14,1),(264,15,1),(265,16,1),(266,17,1),(267,18,1),(268,19,1),(269,20,1),(270,21,1),(271,22,1),(272,23,1),(273,24,1),(274,25,1),(275,26,1),(276,27,1),(277,28,1);
+/*!40000 ALTER TABLE `menu_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `msgcontent`
+--
+
+DROP TABLE IF EXISTS `msgcontent`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `msgcontent` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(64) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `msgcontent`
+--
+
+LOCK TABLES `msgcontent` WRITE;
+/*!40000 ALTER TABLE `msgcontent` DISABLE KEYS */;
+INSERT INTO `msgcontent` VALUES (14,'2222222222','11111111111111111','2018-02-02 12:46:19'),(15,'22222222','3333333333333333333333','2018-02-02 13:45:57'),(16,'通知标题1','通知内容1','2018-02-03 03:41:39'),(17,'通知标题2','通知内容2','2018-02-03 03:52:37'),(18,'通知标题3','通知内容3','2018-02-03 04:19:41');
+/*!40000 ALTER TABLE `msgcontent` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `nation`
+--
+
+DROP TABLE IF EXISTS `nation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `nation` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `nation`
+--
+
+LOCK TABLES `nation` WRITE;
+/*!40000 ALTER TABLE `nation` DISABLE KEYS */;
+INSERT INTO `nation` VALUES (1,'汉族'),(2,'蒙古族'),(3,'回族'),(4,'藏族'),(5,'维吾尔族'),(6,'苗族'),(7,'彝族'),(8,'壮族'),(9,'布依族'),(10,'朝鲜族'),(11,'满族'),(12,'侗族'),(13,'瑶族'),(14,'白族'),(15,'土家族'),(16,'哈尼族'),(17,'哈萨克族'),(18,'傣族'),(19,'黎族'),(20,'傈僳族'),(21,'佤族'),(22,'畲族'),(23,'高山族'),(24,'拉祜族'),(25,'水族'),(26,'东乡族'),(27,'纳西族'),(28,'景颇族'),(29,'柯尔克孜族'),(30,'土族'),(31,'达斡尔族'),(32,'仫佬族'),(33,'羌族'),(34,'布朗族'),(35,'撒拉族'),(36,'毛难族'),(37,'仡佬族'),(38,'锡伯族'),(39,'阿昌族'),(40,'普米族'),(41,'塔吉克族'),(42,'怒族'),(43,'乌孜别克族'),(44,'俄罗斯族'),(45,'鄂温克族'),(46,'崩龙族'),(47,'保安族'),(48,'裕固族'),(49,'京族'),(50,'塔塔尔族'),(51,'独龙族'),(52,'鄂伦春族'),(53,'赫哲族'),(54,'门巴族'),(55,'珞巴族'),(56,'基诺族');
+/*!40000 ALTER TABLE `nation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oplog`
+--
+
+DROP TABLE IF EXISTS `oplog`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `oplog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `addDate` date DEFAULT NULL COMMENT '添加日期',
+  `operate` varchar(255) DEFAULT NULL COMMENT '操作内容',
+  `hrid` int(11) DEFAULT NULL COMMENT '操作员ID',
+  PRIMARY KEY (`id`),
+  KEY `hrid` (`hrid`),
+  CONSTRAINT `oplog_ibfk_1` FOREIGN KEY (`hrid`) REFERENCES `hr` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oplog`
+--
+
+LOCK TABLES `oplog` WRITE;
+/*!40000 ALTER TABLE `oplog` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oplog` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `politicsstatus`
+--
+
+DROP TABLE IF EXISTS `politicsstatus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `politicsstatus` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `politicsstatus`
+--
+
+LOCK TABLES `politicsstatus` WRITE;
+/*!40000 ALTER TABLE `politicsstatus` DISABLE KEYS */;
+INSERT INTO `politicsstatus` VALUES (1,'中共党员'),(2,'中共预备党员'),(3,'共青团员'),(4,'民革党员'),(5,'民盟盟员'),(6,'民建会员'),(7,'民进会员'),(8,'农工党党员'),(9,'致公党党员'),(10,'九三学社社员'),(11,'台盟盟员'),(12,'无党派民主人士'),(13,'普通公民');
+/*!40000 ALTER TABLE `politicsstatus` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `position`
+--
+
+DROP TABLE IF EXISTS `position`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `position` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) DEFAULT NULL COMMENT '职位',
+  `createDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `enabled` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `position`
+--
+
+LOCK TABLES `position` WRITE;
+/*!40000 ALTER TABLE `position` DISABLE KEYS */;
+INSERT INTO `position` VALUES (29,'技术总监','2018-01-11 13:13:42',1),(30,'运营总监','2018-01-11 13:13:48',1),(31,'市场总监','2018-01-11 13:13:56',1),(32,'总经理','2018-01-11 13:35:07',1),(33,'研发工程师','2018-01-14 08:07:11',1),(34,'运维工程师','2018-01-14 08:11:41',1);
+/*!40000 ALTER TABLE `position` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role`
+--
+
+DROP TABLE IF EXISTS `role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) DEFAULT NULL,
+  `nameZh` varchar(64) DEFAULT NULL COMMENT '角色名称',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role`
+--
+
+LOCK TABLES `role` WRITE;
+/*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES (1,'ROLE_manager','部门经理'),(2,'ROLE_personnel','人事专员'),(3,'ROLE_recruiter','招聘主管'),(4,'ROLE_train','培训主管'),(5,'ROLE_performance','薪酬绩效主管'),(6,'ROLE_admin','系统管理员'),(13,'ROLE_test2','测试角色2');
+/*!40000 ALTER TABLE `role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `salary`
+--
+
+DROP TABLE IF EXISTS `salary`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `salary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `basicSalary` int(11) DEFAULT NULL COMMENT '基本工资',
+  `bonus` int(11) DEFAULT NULL COMMENT '奖金',
+  `lunchSalary` int(11) DEFAULT NULL COMMENT '午餐补助',
+  `trafficSalary` int(11) DEFAULT NULL COMMENT '交通补助',
+  `allSalary` int(11) DEFAULT NULL COMMENT '应发工资',
+  `pensionBase` int(11) DEFAULT NULL COMMENT '养老金基数',
+  `pensionPer` float DEFAULT NULL COMMENT '养老金比率',
+  `createDate` timestamp NULL DEFAULT NULL COMMENT '启用时间',
+  `medicalBase` int(11) DEFAULT NULL COMMENT '医疗基数',
+  `medicalPer` float DEFAULT NULL COMMENT '医疗保险比率',
+  `accumulationFundBase` int(11) DEFAULT NULL COMMENT '公积金基数',
+  `accumulationFundPer` float DEFAULT NULL COMMENT '公积金比率',
+  `name` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `salary`
+--
+
+LOCK TABLES `salary` WRITE;
+/*!40000 ALTER TABLE `salary` DISABLE KEYS */;
+INSERT INTO `salary` VALUES (9,9000,4000,800,500,NULL,2000,0.07,'2018-01-23 16:00:00',2000,0.07,2000,0.07,'市场部工资账套'),(10,2000,2000,400,1000,NULL,2000,0.07,'2017-12-31 16:00:00',2000,0.07,2000,0.07,'人事部工资账套'),(13,10000,3000,500,500,NULL,4000,0.07,'2018-01-24 16:00:00',4000,0.07,4000,0.07,'运维部工资账套');
+/*!40000 ALTER TABLE `salary` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sysmsg`
+--
+
+DROP TABLE IF EXISTS `sysmsg`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `sysmsg` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mid` int(11) DEFAULT NULL COMMENT '消息id',
+  `type` int(11) DEFAULT '0' COMMENT '0表示群发消息',
+  `hrid` int(11) DEFAULT NULL COMMENT '这条消息是给谁的',
+  `state` int(11) DEFAULT '0' COMMENT '0 未读 1 已读',
+  PRIMARY KEY (`id`),
+  KEY `hrid` (`hrid`),
+  KEY `sysmsg_ibfk_1` (`mid`),
+  CONSTRAINT `sysmsg_ibfk_1` FOREIGN KEY (`mid`) REFERENCES `msgcontent` (`id`),
+  CONSTRAINT `sysmsg_ibfk_2` FOREIGN KEY (`hrid`) REFERENCES `hr` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sysmsg`
+--
+
+LOCK TABLES `sysmsg` WRITE;
+/*!40000 ALTER TABLE `sysmsg` DISABLE KEYS */;
+INSERT INTO `sysmsg` VALUES (57,14,0,3,1),(58,14,0,5,1),(59,14,0,10,1),(60,14,0,11,0),(61,14,0,12,0),(62,15,0,3,1),(63,15,0,5,1),(64,15,0,10,1),(65,15,0,11,0),(66,15,0,12,0),(67,16,0,3,1),(68,16,0,5,1),(69,16,0,10,1),(70,16,0,11,0),(71,16,0,12,0),(72,17,0,3,1),(73,17,0,5,1),(74,17,0,10,1),(75,17,0,11,0),(76,17,0,12,0),(77,18,0,3,1),(78,18,0,5,0),(79,18,0,10,0),(80,18,0,11,0),(81,18,0,12,0);
+/*!40000 ALTER TABLE `sysmsg` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 /*!50606 SET GLOBAL INNODB_STATS_AUTO_RECALC=@OLD_INNODB_STATS_AUTO_RECALC */;
 
@@ -2016,4 +4399,4 @@ USE `test`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-14 23:01:19
+-- Dump completed on 2019-06-16  9:47:41
