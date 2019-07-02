@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="CloudClient9000" />
         <module name="CloudFeign8082" />
+        <module name="CloudZuul8085" />
+        <module name="CloudServer8080" />
         <module name="CloudHystrixFeign8084" />
         <module name="CloudHystrixRibbon8083" />
         <module name="CloudRibbon8081" />
-        <module name="CloudServer8080" />
-        <module name="CloudZuul8085" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -77,6 +77,17 @@
       <inspection_tool class="SqlStorageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     </profile>
     <version value="1.0" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CloudClient9000" options="-parameters" />
+      <module name="CloudFeign8082" options="-parameters" />
+      <module name="CloudHystrixFeign8084" options="-parameters" />
+      <module name="CloudHystrixRibbon8083" options="-parameters" />
+      <module name="CloudRibbon8081" options="-parameters" />
+      <module name="CloudServer8080" options="-parameters" />
+      <module name="CloudZuul8085" options="-parameters" />
+    </option>
   </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../.." />

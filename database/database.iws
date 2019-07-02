@@ -2,45 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61335491-e73c-4925-8023-4aa427a1aad9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/XmMainDayService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/XmMainMonthService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/com/mvc/service/XmMainDayServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/com/mvc/service/XmMainMonthServiceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/entity/ProData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/entity/ProMain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/mapper/ProDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/mapper/ProMainMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/mvc/service/ProMainService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/com/ProDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/mapper/springboot/com/ProMainMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/template/mvc/mapper/ProDataMapperTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../templatespringboot/src/test/java/springboot/template/mvc/mapper/ProMainMapperTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ideaDataSources/a0513c01-f6a7-436c-b7ad-18a168f18bf7.xml" afterPath="$PROJECT_DIR$/.ideaDataSources/a0513c01-f6a7-436c-b7ad-18a168f18bf7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.ipr" afterPath="$PROJECT_DIR$/database.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.iws" afterPath="$PROJECT_DIR$/database.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/util/TestMain.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/com/util/TestMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/aspect/IdType.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/aspect/IdType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/aspect/SysLogAspect.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/aspect/SysLogAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/shiro/CustomRealm.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/global/shiro/CustomRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/LoginController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/MenuController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/MenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/RedisController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/RedisController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/Testcontroller.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/Testcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/UserInfoController.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/controller/UserInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/base/BaseEntity.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/entity/base/BaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/mapper/base/BaseMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RedisService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/RedisService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysDepartmentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysLogService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysLogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysPermissionService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysPermissionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysRoleService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/SysRoleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/UserInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/base/BaseService.java" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/java/springboot/template/mvc/service/base/BaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/../templatespringboot/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" afterPath="$PROJECT_DIR$/../templatespringboot/templatespringboot.iws" />
+      <change beforePath="$PROJECT_DIR$/database.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/database.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../space1/space1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../space1/space1.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../space1/space1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../space1/space1.iws" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,63 +14,44 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand>
       <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="shop" type="e3449647:DbNodeDescriptor" />
-      </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="templatespringboot" type="e3449647:DbNodeDescriptor" />
-      </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="templatespringboot" type="e3449647:DbNodeDescriptor" />
-        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xm_main_month" pinned="false" current-in-tab="false">
-        <entry file="das://table:/database2dfa3cb3/a0513c01-f6a7-436c-b7ad-18a168f18bf7/templatespringboot.xm_main_month">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xm_main_month" pinned="false" current-in-tab="false">
-        <entry file="das://src:table:/database2dfa3cb3/a0513c01-f6a7-436c-b7ad-18a168f18bf7/templatespringboot.xm_main_month">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-              <folding />
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="72" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -125,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console_5.sql" />
         <option value="src:table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/xhfwdb.indent" />
@@ -139,19 +85,14 @@
         <option value="src:table:/databaseb0abf1ee/1456f8fe-3b4d-43d3-8c67-8b87456bb902/xhfwdb.barcodereceive" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1456f8fe-3b4d-43d3-8c67-8b87456bb902/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console_1.sql" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="197" />
     <option name="y" value="379" />
     <option name="width" value="1380" />
@@ -180,30 +121,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DDL Data Source&#10;MySQL" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database.ipr" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DDL Data Source&#10;MySQL" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database.ipr" />
-    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,86 +151,42 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SbtLocalSettings">
@@ -305,8 +194,8 @@
       <projects_view />
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -369,11 +258,12 @@
       <workItem from="1519478331200" duration="731000" />
       <workItem from="1519568925524" duration="360000" />
       <workItem from="1533560634490" duration="2188000" />
+      <workItem from="1561124446700" duration="424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276532000" />
+    <option name="totallyTimeSpent" value="276956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,59 +275,48 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5209251" sideWeight="0.507438" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958678" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18031032" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23030303" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38436124" sideWeight="0.492562" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="DB Browser" order="2" weight="0.23030303" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Database" order="4" visible="true" weight="0.12693334" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.24958678" />
+      <window_info id="Structure" order="6" weight="0.24958678" />
+      <window_info id="JRebel" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Tail" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.32929516" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32929516" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" weight="0.32929516" />
+      <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32819384" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32929516" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="14" sideWeight="0.492562" visible="true" weight="0.3837838" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.507438" side_tool="true" weight="0.5209251" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" />
+      <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="right" id="BPMNPalette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="das://src:table:/databaseb0abf1ee/1456f8fe-3b4d-43d3-8c67-8b87456bb902/xhfwdb.barcodelist" />
@@ -479,10 +358,6 @@
     <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/xhfwdb.fcpjc" />
     <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/xhfwdb.jcxxcomponents" />
     <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shopping.userinfo" />
-    <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_order_item" />
-    <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_order" />
-    <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_user" />
-    <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_product" />
     <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_order" />
     <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_order_item" />
     <entry file="das://table:/databaseb0abf1ee/a0513c01-f6a7-436c-b7ad-18a168f18bf7/shop.store_user" />
@@ -490,30 +365,31 @@
     <entry file="das://table:/database2dfa3cb3/a0513c01-f6a7-436c-b7ad-18a168f18bf7/templatespringboot.xm_main_day">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <filtering />
         </state>
       </provider>
     </entry>
     <entry file="das://table:/database2dfa3cb3/a0513c01-f6a7-436c-b7ad-18a168f18bf7/templatespringboot.xm_main_month">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state projectRestartId="c97122ae-0797-4735-8c1c-db674e3a26bc">
+          <filtering />
         </state>
       </provider>
     </entry>
     <entry file="das://src:table:/database2dfa3cb3/a0513c01-f6a7-436c-b7ad-18a168f18bf7/templatespringboot.xm_main_month">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0513c01-f6a7-436c-b7ad-18a168f18bf7/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="72" selection-end-column="78" />
         </state>
       </provider>
     </entry>
