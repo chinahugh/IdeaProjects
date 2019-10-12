@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>开始使用layui</title>
+    <link rel="stylesheet" href="../../static/layui/layui/css/layui.css">
+</head>
+
+<body>
+
+    <div id="test1"></div>
+
+    <script src="../../static/layui/layui/layui.js"></script>
+    <script>
+        //一般直接写在一个js文件中
+        layui.use(['layer', 'form', 'tree'], function () {
+            var layer = layui.layer
+                , form = layui.form
+                , tree = layui.tree;
+
+            //渲染
+            var inst1 = tree.render({
+                elem: '#test1'  //绑定元素
+                , showCheckbox: true
+                , edit: ['add', 'update', 'del']
+                , accordion: true
+                , onlyIconControl: false
+
+                , data: [] //数据源
+                , id: 'demoId' //定义索引
+                , click: function (obj) {
+                    // console.log(obj.data); //得到当前点击的节点数据
+                    // console.log(obj.state); //得到当前节点的展开状态：open、close、normal
+                    // console.log(obj.elem); //得到当前节点元素
+
+                    // console.log(obj.data.children); //当前节点下是否有子节点
+                }
+                , oncheck: function (obj) {
+                    console.log(obj.data); //得到当前点击的节点数据
+                    console.log(obj.checked); //得到当前节点的展开状态：open、close、normal
+                    console.log(obj.elem); //得到当前节点元素
+                }
+                , data: [{
+                    title: '江西' //一级菜单
+                    , children: [{
+                        title: '南昌' //二级菜单
+                        , children: [{
+                            title: '高新区' //三级菜单
+                            //…… //以此类推，可无限层级
+                        }]
+                    }]
+                }, {
+                    title: '陕西' //一级菜单
+                    , children: [{
+                        title: '西安' //二级菜单
+                    }]
+                }]
+            });
+            //执行节点勾选
+            tree.setChecked('demoId', 1); //单个勾选 id 为 1 的节点
+            tree.setChecked('demoId', [2, 3]); //批量勾选 id 为 2、3 的节点
+        });
+    </script>
+</body>
+
+</html>

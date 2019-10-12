@@ -39,7 +39,7 @@ public class MavenCleanUtils {
             if (file.isDirectory()) {
                 if (Objects.requireNonNull(file.listFiles()).length == 0) {
                     // 删除空文件夹
-                    System.out.println(file.getAbsolutePath());
+                    System.out.println("空文件夹删除："+file.getAbsolutePath());
                     file.delete();
                 } else {
                     boolean flag = checkAndDeleteFiles(Objects.requireNonNull(file.listFiles()));

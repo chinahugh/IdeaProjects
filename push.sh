@@ -6,6 +6,7 @@ echo "备份mysql数据库"
 # 备份文件在同级目录下的mysql.sql文件中
 # 向数据库导入备份文件时，先删除文件中的mysq数据库
 echo "开始备份数据库..."
+set  MYSQL_HOME=C:/Program Files/MySQL/MySQL Server 8.0
 "$MYSQL_HOME/bin/mysqldump.exe" -uroot -proot -A >mysql.sql
 echo "备份数据库完成..."
 read -t 36000 -p "按任意键继续"
