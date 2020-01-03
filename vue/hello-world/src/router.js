@@ -29,7 +29,13 @@ export default new Router({
                     path: 'user',
                     name: 'user',
                     component: () => import(/* webpackChunkName: "user" */ './views/User.vue')
+                },
+                {
+                    path: 'ajax',
+                    name: 'go',
+                    component: () => import(/* webpackChunkName: "user" */ './views/ajax.vue')
                 }
+
             ]
         },
         {

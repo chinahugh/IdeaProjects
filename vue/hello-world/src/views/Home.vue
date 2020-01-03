@@ -8,6 +8,9 @@
       <li>
         <router-link :to="{name: 'user'}">用户信息</router-link>
       </li>
+       <li>
+        <router-link :to="{name: 'go'}">go</router-link>
+      </li>
     </ul>
   </div>
 </template>
