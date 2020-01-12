@@ -1,5 +1,5 @@
 #一般而言，Dockerfile分为四部分：基础镜像信息、维护者信息、镜像操作指令和容器启动是执行的指令。
-模板如下：
+#模板如下：
 
 #This dockerfile uses the Ubuntu image
 #指定基于的基础镜像,可以使用多个FROM指令，每个镜像一次
@@ -52,7 +52,7 @@ RUN pwd
 #3.CMD ["param1","param2"]提供给ENTRYPOINT的默认参数
 #如果指定多条，只有最后一条会被执行，如果用户启动容器时指定了运行的命令，则会覆盖掉CMD指定的命令。
 
-举个例子：
+#举个例子：
 vi Dockerfile
 #This dockerfile uses the pagekit
 FROM ubuntu:trusty
