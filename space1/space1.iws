@@ -19,95 +19,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d37d76-494d-47cd-b2a5-9a923fd3e331" name="Default" comment="java 8 interface">
-      <change afterPath="$PROJECT_DIR$/maven/src/main/java/com/test/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/com/tools/url/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ideaDataSources/93efd03b-bd1a-4529-86e8-4504dabd5fd0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.ideaDataSources/93efd03b-bd1a-4529-86e8-4504dabd5fd0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/maven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/maven.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/main/java/com/docker/note/Dockerfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/maven/src/main/java/com/docker/note/Dockerfile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/space1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/space1.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/space1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/space1.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/aaa/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/hello-world/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/hello-world/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/hello-world/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/hello-world/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/hello-world/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/hello-world/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/hello-world/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/hello-world/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/hello-world/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/hello-world/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/saaa.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/test/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/test/unit/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/test/unit/jest.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/test/unit/setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue1/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/vue2/src/views/Home.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vxcode/ test" beforeDir="false" afterPath="$PROJECT_DIR$/../vxcode/ test" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/maven/target/" />
@@ -165,36 +83,7 @@
     <favorites_list name="space1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/Hello.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-              <folding>
-                <element signature="e#131#132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/test/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -227,6 +116,7 @@
       <find>ScoreFrame</find>
       <find>ASYNC</find>
       <find>import org.junit.jupiter.api.Test;</find>
+      <find>#</find>
     </findStrings>
     <replaceStrings>
       <replace>Demo1</replace>
@@ -248,11 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot/src/main/java/template/SpringbootApplication.java" />
-        <option value="$PROJECT_DIR$/maven/src/main/java/com/java/java8/annotation/ioc/README..md" />
-        <option value="$PROJECT_DIR$/maven/src/main/java/com/java/java8/annotation/ioc/IocAnotiation.java" />
-        <option value="$PROJECT_DIR$/maven/src/main/java/com/java/utils/BaseType.java" />
-        <option value="$PROJECT_DIR$/maven/src/main/java/com/java/utils/BaseTypeUtils.java" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/java/java8/annotation/ioc/User.java" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/java/java8/annotation/ioc/Ioc.java" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/java/java8/annotation/ioc/Controller.java" />
@@ -286,7 +171,6 @@
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/template/com/test/ReactController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93efd03b-bd1a-4529-86e8-4504dabd5fd0/console_2.sql" />
-        <option value="$PROJECT_DIR$/maven/pom.xml" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/tools/file/MavenCleanUtils.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/template/com/test/HelloController.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/SpringbootApplication.java" />
@@ -299,6 +183,12 @@
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/mvc/global/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/mvc/test/HelloController.java" />
         <option value="$PROJECT_DIR$/maven/src/main/java/com/test/test.java" />
+        <option value="$PROJECT_DIR$/maven/src/main/java/com/docker/note/Dockerfile" />
+        <option value="$PROJECT_DIR$/maven/pom.xml" />
+        <option value="$PROJECT_DIR$/maven/src/main/java/com/tools/url/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/maven/src/main/java/com/docker/note/Dockerfile.md" />
+        <option value="&lt;9b72dd96-494c-4d36-9986-4f6ece5e1b2a&gt;/index.php" />
+        <option value="&lt;9b72dd96-494c-4d36-9986-4f6ece5e1b2a&gt;/mq.php" />
       </list>
     </option>
   </component>
@@ -310,7 +200,6 @@
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
-    <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
@@ -324,9 +213,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\repository" />
         <option name="mavenHome" value="D:/Program Files/apache-maven-3.5.2" />
-        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.5.2\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -345,7 +233,37 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="maven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="maven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="maven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="maven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="maven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -368,7 +286,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -385,6 +302,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -425,7 +343,49 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="space1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -446,7 +406,12 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="HelloWorldInnerClass&#9;FILE&#9;file://D:/IdeaProjects/IdeaProjects/space1/Java/src/com/java/core/innerclass/HelloWorldInnerClass.java" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="true&#10;D:/IdeaProjects/IdeaProjects/space1/springboot/springboot.iml" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
@@ -458,16 +423,19 @@
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.14 (/usr/bin/python2.7)" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25144747" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -506,7 +474,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.HttpUtils">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="html" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -535,10 +503,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
+    <configuration name="HttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tools.url.HttpUtils" />
       <module name="maven" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tools.url.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -832,23 +806,23 @@
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.RedisTemplate" />
-      <item itemvalue="Application.Hello" />
       <item itemvalue="Application.MavenCleanUtils" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.HttpUtils" />
       <item itemvalue="Cucumber java.All Features in: html" />
       <item itemvalue="Maven.generate" />
       <item itemvalue="Remote.Unnamed" />
       <item itemvalue="Spring Boot.SpringbootApplication" />
       <item itemvalue="Tomcat Server.All_maven" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.2" />
-      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpUtils" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.MavenCleanUtils" />
         <item itemvalue="Cucumber java.All Features in: html" />
         <item itemvalue="Application.RedisTemplate" />
-        <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
   </component>
@@ -1054,6 +1028,9 @@
       <workItem from="1564279036733" duration="6515000" />
       <workItem from="1569847927464" duration="628000" />
       <workItem from="1573707584145" duration="441000" />
+      <workItem from="1578802283361" duration="71000" />
+      <workItem from="1578802679451" duration="1399000" />
+      <workItem from="1578922586702" duration="1418000" />
     </task>
     <task id="LOCAL-00001" summary="mystream">
       <created>1512489148783</created>
@@ -1118,7 +1095,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542418832872</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="java 8 interface">
+      <created>1578803204282</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578803204283</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1154,7 +1138,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="387732000" />
+    <option name="totallyTimeSpent" value="390620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1166,9 +1150,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49174312" visible="true" weight="0.2531983" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49174312" weight="0.1652452" />
       <window_info id="Structure" order="1" sideWeight="0.49405405" weight="0.24946696" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.5059459" side_tool="true" weight="0.24946696" />
@@ -1176,18 +1160,19 @@
       <window_info id="DB Browser" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5059459" side_tool="true" weight="0.24946696" />
       <window_info id="Web" order="7" sideWeight="0.5059459" side_tool="true" weight="0.24946696" />
+      <window_info active="true" id="Remote Host" order="8" visible="true" weight="0.20255864" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49652222" visible="true" weight="0.32864866" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.3881081" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.38720173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40648648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32756758" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.3286638" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5042644" side_tool="true" weight="0.3881081" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5042644" side_tool="true" weight="0.38720173" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.36972973" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3809524" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23752712" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32900432" />
       <window_info anchor="bottom" id="JRebel Console" order="13" sideWeight="0.5034778" side_tool="true" weight="0.3286638" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
@@ -1198,6 +1183,7 @@
       <window_info active="true" anchor="bottom" id="Database Console" order="19" visible="true" weight="0.32875264" />
       <window_info anchor="bottom" id="Tail" order="20" />
       <window_info anchor="bottom" id="Docker" order="21" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="22" weight="0.329718" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2552167" />
@@ -1212,7 +1198,8 @@
       <window_info active="true" anchor="right" id="JRebel Setup Guide" order="11" weight="0.32942432" />
       <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.3296" />
       <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="13" side_tool="true" weight="0.3296" />
-      <window_info anchor="right" id="Maven" order="14" />
+      <window_info anchor="right" id="Maven" order="14" weight="0.32995737" />
+      <window_info anchor="right" id="Bean Validation" order="15" weight="0.32995737" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49174312" visible="true" weight="0.1792" />
@@ -1356,10 +1343,11 @@
     </expand>
     <select />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/springboot/src/test/java/template/SpringbootApplicationTests.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93efd03b-bd1a-4529-86e8-4504dabd5fd0/console_2.sql" />
     <entry file="file://$PROJECT_DIR$/html/ajax/damo/demo1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1403,24 +1391,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1001">
-          <caret line="99" column="62" lean-forward="true" selection-start-line="99" selection-start-column="62" selection-end-line="99" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="522" column="13" lean-forward="true" selection-start-line="522" selection-start-column="13" selection-end-line="522" selection-end-column="13" />
-          <folding>
-            <element signature="e#8758#8785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java" />
     <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/redis/code/RedisTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1513,27 +1484,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE-sources.jar!/org/springframework/boot/SpringBootConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE-sources.jar!/org/springframework/boot/SpringBootConfiguration.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java" />
     <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/mvc/SpringbootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1544,22 +1497,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/org/slf4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="656" column="16" selection-start-line="656" selection-start-column="16" selection-end-line="656" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.1.RELEASE/spring-boot-dependencies-2.1.1.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="524" column="12" selection-start-line="524" selection-start-column="12" selection-end-line="524" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/org/slf4j/Logger.java" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.1.RELEASE/spring-boot-dependencies-2.1.1.RELEASE.pom" />
     <entry file="file://$PROJECT_DIR$/springboot/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="801">
           <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
@@ -1567,13 +1507,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/mvc/global/common/C.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="152" column="24" lean-forward="true" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcProperties.java" />
     <entry file="file://$PROJECT_DIR$/springboot/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1626,20 +1560,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="86" column="29" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java" />
     <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/mvc/global/common/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
@@ -1683,7 +1605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/maven/src/main/java/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="84">
           <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
             <element signature="e#131#132#0" expanded="true" />
@@ -1693,15 +1615,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/test/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="420">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/tools/url/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/docker/note/Docker使用总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="357">
+            <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven/src/main/java/com/docker/note/Dockerfile.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="436">
+            <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
         </state>
       </provider>
     </entry>
