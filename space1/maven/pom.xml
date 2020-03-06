@@ -86,6 +86,11 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.3</version>
         </dependency>
+        <dependency>
+            <groupId>net.dongliu</groupId>
+            <artifactId>requests</artifactId>
+            <version>5.0.8</version>
+        </dependency>
     </dependencies>
     <build>
         <!--MyBatis Generator自动生成代码 始-->
@@ -100,19 +105,27 @@
                     <overwrite>true</overwrite>
                 </configuration>
             </plugin>
-            <!--MyBatis Generator自动生成代码 终-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
                 <configuration>
-                    <verbose>true</verbose>
-                    <fork>true</fork>
-                    <executable>${JAVA_HOME}/bin/javac</executable>
                     <source>8</source>
                     <target>8</target>
                 </configuration>
             </plugin>
+            <!--MyBatis Generator自动生成代码 终-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<version>3.1</version>-->
+                <!--<configuration>-->
+                    <!--<verbose>true</verbose>-->
+                    <!--<fork>true</fork>-->
+                    <!--<executable>${JAVA_HOME}/bin/javac</executable>-->
+                    <!--<source>8</source>-->
+                    <!--<target>8</target>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>

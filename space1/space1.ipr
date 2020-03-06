@@ -491,7 +491,6 @@
     </data-source>
   </component>
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
-    <file url="remoteDeploymentFS://&lt;9b72dd96-494c-4d36-9986-4f6ece5e1b2a&gt;/mq.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/maven" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
@@ -752,6 +751,14 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="192.168.10.129 (project level)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/html" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
@@ -763,7 +770,7 @@
   </component>
   <component name="WebServers">
     <option name="servers">
-      <webServer id="9b72dd96-494c-4d36-9986-4f6ece5e1b2a" name="192.168.10.129" url="http://192.168.10.129">
+      <webServer id="9b72dd96-494c-4d36-9986-4f6ece5e1b2a" name="192.168.10.129 (project level)" url="http://192.168.10.129">
         <fileTransfer host="192.168.10.129" port="22" rootFolder="/web" accessType="SFTP">
           <advancedOptions>
             <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
@@ -1081,6 +1088,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://D:/repository/maven/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.dongliu:commons:8.1.0">
+      <CLASSES>
+        <root url="jar://D:/repository/maven/net/dongliu/commons/8.1.0/commons-8.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://D:/repository/maven/net/dongliu/commons/8.1.0/commons-8.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://D:/repository/maven/net/dongliu/commons/8.1.0/commons-8.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.dongliu:requests:5.0.8">
+      <CLASSES>
+        <root url="jar://D:/repository/maven/net/dongliu/requests/5.0.8/requests-5.0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://D:/repository/maven/net/dongliu/requests/5.0.8/requests-5.0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://D:/repository/maven/net/dongliu/requests/5.0.8/requests-5.0.8-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: net.sf.barcode4j:barcode4j:2.1">
