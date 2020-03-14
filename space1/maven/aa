@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/ydui.css?rev=@@hash">
+    <link rel="stylesheet" href="static/css/app.css?rev=@@hash">
+    <script src="static/js/adaptive.js"></script>
+    <script>
+        // 设计图宽度
+        window['adaptive'].desinWidth = 750;
+        // body 字体大小
+        window['adaptive'].baseFont = 28;
+        /*
+        // 显示最大宽度 
+        window['adaptive'].maxWidth = 480;
+        // rem值改变后执行方法
+        window['adaptive'].setRemCallback = function () {
+            alert(1)
+        };
+        */
+        window['adaptive'].scaleType = 1;
+        // 初始化
+        window['adaptive'].init();
+    </script>
+    <!-- <script src="static/js/ydui.flexible.js"></script> -->
+</head>
+
+<body>
+    <div class="app">
+        <div class="newscard">
+            <div class="c_head">
+                <div class="c_left">
+                    <span>10万元保额</span>
+                    <p>约定法定传染病</p>
+                    <p>身故保障金</p>
+                </div>
+                <div class="c_right">
+                    <span>500元保费</span>
+                    <p>约定法定传染病</p>
+                    <p>确诊保障金</p>
+                </div>                
+            </div>
+            <div class="c_body"><p>戴口罩，请洗手，守护万家，与您同行</p></div>
+            <div class="c_bottom"><p>*约定法定传染病包含：因冠状病毒导致的乙类传染病、人感染高致病性禽流感、狂犬病等12种疾病。</p></div>
+        </div>
+        <div class="usercard">
+            <div class="title"><span class="sp_title">请填写投保信息</span></div>
+            <hr class="hr">
+            <div class="userinfo">
+                <div class="lin">
+                    <div class="lin_lab">
+                        <label>姓&nbsp&nbsp&nbsp&nbsp名</label>
+                    </div>
+                    <div class="lin_in">
+                        <input type="text" class="in" name="user_name" id="user_name">
+                    </div>
+                </div>
+                <div class="lin">
+                    <div class="lin_lab">
+                        <label>身份证</label>
+                    </div>
+                    <div class="lin_in">
+                        <input type="text" class="in" name="user_idcard" id="user_idcard">
+                    </div>
+                </div>
+                <div class="lin">
+                    <div class="lin_lab">
+                        <label>手机号</label>
+                    </div>
+                    <div class="lin_in">
+                        <input type="text" class="in" name="user_phone" id="user_phone">
+                    </div>
+                </div>
+                <div class="lin">
+                    <div class="lin_lab">
+                        <label>地&nbsp&nbsp&nbsp&nbsp区</label>
+                    </div>
+                    <div class="lin_in">
+                        <input type="text" readonly class="in" name="user_addr" id="user_addr">
+                    </div>
+                </div>
+
+                <div class="lin">
+                    <input type="button" value="提    交" class="tj">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/jquery.js?rev=@@hash"></script>
+    <script type="text/javascript" src="static/js/app.js?rev=@@hash"></script>
+    <script type="text/javascript" src="static/layer.js?rev=@@hash"></script>
+    <script type="text/javascript" src="static/js/ydui.citys.js"></script>
+    <script type="text/javascript" src="static/js/ydui.js?rev=@@hash"></script>
+</body>
+
+</html>

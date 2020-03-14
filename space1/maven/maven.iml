@@ -51,5 +51,6 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
     <orderEntry type="library" name="Maven: net.dongliu:requests:5.0.8" level="project" />
     <orderEntry type="library" name="Maven: net.dongliu:commons:8.1.0" level="project" />
+    <orderEntry type="library" name="ifxjdbc" level="project" />
   </component>
 </module>

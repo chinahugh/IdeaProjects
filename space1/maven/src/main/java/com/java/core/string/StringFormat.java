@@ -9,10 +9,10 @@ import java.util.function.BiFunction;
  */
 public class StringFormat {
     public static void main(String[] args) {
-        String a=test1.apply("%05d", 9);
-
-//        String format = String.format("%05d", 9);
+        String a=FORMAT.apply("%05d", 9);
         System.out.println(a);
+        String format = String.format("%-5d", -999999);
+        System.out.println(format);
 
         new Thread(() -> System.out.println("ll")).start();
         System.out.println("[\\]");
@@ -20,7 +20,7 @@ public class StringFormat {
 
 
 
-    private static BiFunction<String, Integer, String> test1 = String::format;
+    private static final BiFunction<String, Integer, String> FORMAT = String::format;
 }
 
 

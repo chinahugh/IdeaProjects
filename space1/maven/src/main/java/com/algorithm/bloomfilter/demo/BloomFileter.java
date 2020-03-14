@@ -23,7 +23,7 @@ public class BloomFileter implements Serializable {
      * @param dataCount 预期处理的数据规模，如预期用于处理1百万数据的查重，这里则填写1000000
      */
     public BloomFileter(int dataCount) {
-        this(MisjudgmentRate.MIDDLE, dataCount, null);
+        this(MisjudgmentRate.HIGH, dataCount, null);
     }
 
     /**
@@ -216,7 +216,7 @@ public class BloomFileter implements Serializable {
 
     public static void main(String[] args) {
 
-        BloomFileter fileter = new BloomFileter(100000000);
+        BloomFileter fileter = new BloomFileter(10000000);
         System.out.println(fileter.addIfNotExist("1111111111111"));
         System.out.println(fileter.addIfNotExist("2222222222222222"));
         System.out.println(fileter.addIfNotExist("3333333333333333"));

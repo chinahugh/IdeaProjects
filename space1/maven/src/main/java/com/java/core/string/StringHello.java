@@ -12,6 +12,6 @@ public class StringHello {
     public void a(){
         String a="aaa";
         String b="aaa";
-        System.out.println("b==a = " + b==a);
+        System.out.println(b==a);
     }
 }
