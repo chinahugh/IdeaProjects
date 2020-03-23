@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes"?>
+<ApplyInfo>
+  <GeneralInfo>
+    <UUID>8af780f111674143107ab</UUID>
+    <PlateformCode>CPI001098</PlateformCode>
+    <Md5Value>79cff12c18097e61b2d70f0a9294c468</Md5Value>
+  </GeneralInfo>
+  <PolicyInfos>
+    <PolicyInfo>
+      <SerialNo>1</SerialNo>
+      <RiskCode>WCV</RiskCode>
+      <OperateTimes>2020-02-13 15:49:18</OperateTimes>
+      <StartDate>2020-02-20</StartDate>
+      <EndDate>2021-02-20</EndDate>
+      <StartHour>0</StartHour>
+      <EndHour>24</EndHour>
+      <SumAmount>305000</SumAmount>
+      <SumPremium>80</SumPremium>
+      <ArguSolution>1</ArguSolution>
+      <Quantity>1</Quantity>
+      <InsuredPlan>
+        <RationType>WCV000000g</RationType>
+      </InsuredPlan>
+      <Applicant>
+        <AppliName>将于哈</AppliName>
+        <AppliIdType>01</AppliIdType>
+        <AppliIdNo>130927199112152711</AppliIdNo>
+        <AppliIdMobile>18701100183</AppliIdMobile>
+      </Applicant>
+      <Insureds>
+        <Insured>
+          <InsuredSeqNo>1</InsuredSeqNo>
+          <InsuredName>将于可</InsuredName>
+          <InsuredIdType>01</InsuredIdType>
+          <InsuredIdNo>130927199112152711</InsuredIdNo>
+		  <InsuredBirthday>1991-12-15</InsuredBirthday>
+        </Insured>
+      </Insureds>
+	  <Specials> 
+        <Special key="businessDepartmentCode">62300100</Special> <!--出单归属机构代码-->
+      </Specials>  
+    </PolicyInfo>
+  </PolicyInfos>
+</ApplyInfo>
+

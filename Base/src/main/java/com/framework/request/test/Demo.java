@@ -18,11 +18,14 @@ public class Demo {
     @Test
     public void t1() throws IOException {
         StringBuffer sb = new StringBuffer();
-        readToBuffer(sb, "报文.txt");
+        readToBuffer(sb, "报文.xml");
 
         Map<String, String> map = new HashMap<>();
         map.put("interfaceNo", "001005");
-        map.put("datas", sb.toString());
+        byte[] gbks = sb.toString().getBytes("UTF-8");
+        String s_gbk = new String(gbks,"GBK");
+        System.out.println(s_gbk);
+        map.put("datas", s_gbk);
 
         RawResponse send = Requests.post(url).params(map).send();
 
