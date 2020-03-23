@@ -16,7 +16,7 @@ public class ZookeeperDemoWatcher implements Watcher {
         //zookeeper配置数据存放路径
         String path = "/test";
         //连接zookeeper并且注册一个默认的监听器
-        zk = new ZooKeeper("192.168.10.128:2181", 5000,new ZookeeperDemoWatcher());
+        zk = new ZooKeeper("192.168.10.128:2181", 5000, new ZookeeperDemoWatcher());
         //等待zk连接成功的通知
         connectedSemaphore.await();
         //获取path目录节点的配置数据，并注册默认的监听器
@@ -25,15 +25,17 @@ public class ZookeeperDemoWatcher implements Watcher {
     }
 
     public void process(WatchedEvent event) {
-        if (Watcher.Event.KeeperState.SyncConnected == event.getState()) {  //zk连接成功通知事件
-            if (Watcher.Event.EventType.None == event.getType() && null == event.getPath()) {
+        //zk连接成功通知事件
+        if (Watcher.Event.KeeperState.SyncConnected == event.getState()) {
+            if (Event.EventType.None == event.getType() && null == event.getPath()) {
                 connectedSemaphore.countDown();
-            } else if (event.getType() == Watcher.Event.EventType.NodeDataChanged) {  //zk目录节点数据变化通知事件
-                try {
-                    System.out.println("配置已修改，新值为：" + new String(zk.getData(event.getPath(), true, stat)));
-                } catch (Exception e) {
+            } else //zk目录节点数据变化通知事件
+                if (event.getType() == Event.EventType.NodeDataChanged) {
+                    try {
+                        System.out.println("配置已修改，新值为：" + new String(zk.getData(event.getPath(), true, stat)));
+                    } catch (Exception ignored) {
+                    }
                 }
-            }
         }
     }
 

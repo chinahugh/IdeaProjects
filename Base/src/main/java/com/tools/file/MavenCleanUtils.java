@@ -12,7 +12,7 @@ public class MavenCleanUtils {
     /**
      * 注意：MAVEN_REPO_PATH 的值需要替换成自己的maven本地仓库地址
      */
-    private static final String MAVEN_REPO_PATH = "d:/repository";
+    private static final String MAVEN_REPO_PATH = "d:/repository/maven";
     /**
      * 删除文件类型
      */

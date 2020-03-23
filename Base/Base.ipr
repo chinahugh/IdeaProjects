@@ -15,12 +15,44 @@
   </component>
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/报文.txt" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
       <option name="myName" value="Project Default" />
+      <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="TOP_LEVEL_CLASS_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="INNER_CLASS_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="METHOD_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+          </value>
+        </option>
+        <option name="FIELD_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="IGNORE_DEPRECATED" value="false" />
+        <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+        <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+        <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+        <option name="myAdditionalJavadocTags" value="Date,Description" />
+      </inspection_tool>
     </profile>
     <version value="1.0" />
   </component>
@@ -315,17 +347,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://D:/repository/maven/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: mysql:mysql-connector-java:5.1.44">
-      <CLASSES>
-        <root url="jar://D:/repository/maven/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://D:/repository/maven/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://D:/repository/maven/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: net.dongliu:commons:8.1.0">

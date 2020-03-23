@@ -24,7 +24,7 @@ public class HttpUtils {
         try {
             // 1:----设置传递参数----
             // 创建post对象
-            HttpGet post = new HttpGet("http://127.0.0.1/zhufu/index.html");
+            HttpGet post = new HttpGet("https://www.baidu.com");
             // 创建集合 添加参数
             List<NameValuePair> list = new LinkedList<>();
             BasicNameValuePair param1 = new BasicNameValuePair("name", "Anndy");
