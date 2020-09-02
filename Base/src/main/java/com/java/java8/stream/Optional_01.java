@@ -5,7 +5,8 @@ import java.util.Optional;
 /**
  * @Author: hugh
  * @Time: 2017/12/25 1:18 PM
- * @Discraption: Optional是一个容器对象，用于容纳非空对象。Optional对象通过缺失值值代表null。这个类有许多实用的方法来促使代码能够处理一些像可用或者不可用的值，而不是检查那些空值（null）。
+ * @Discraption: Optional是一个容器对象，用于容纳非空对象。Optional对象通过缺失值值代表null。
+ * 这个类有许多实用的方法来促使代码能够处理一些像可用或者不可用的值，而不是检查那些空值（null）。
  */
 public class Optional_01 {
     public static void main(String args[]) {

@@ -19,12 +19,17 @@ public class MavenCleanUtils {
     private static final String[] SUFFIX = {".lastUpdated", "jar-in-progress"};
 
     public static void main(String[] args) {
+        while (clean() > 0) {
+        }
+    }
+
+    private static int clean() {
         File mavenRep = new File(MAVEN_REPO_PATH);
         long usableSpace1 = mavenRep.getUsableSpace();
         System.out.println(usableSpace1);
         if (!mavenRep.exists()) {
             System.out.println("Maven repos is not exist.");
-            return;
+            return 0;
         }
         File[] files = mavenRep.listFiles();
         checkAndDeleteFiles(Objects.requireNonNull(files));
@@ -32,6 +37,7 @@ public class MavenCleanUtils {
         long usableSpace2 = mavenRep.getUsableSpace();
         System.out.println(usableSpace2);
         System.out.println(usableSpace1 - usableSpace2);
+        return (int) (usableSpace1 - usableSpace2);
     }
 
     private static boolean checkAndDeleteFiles(File[] files) {
@@ -39,7 +45,7 @@ public class MavenCleanUtils {
             if (file.isDirectory()) {
                 if (Objects.requireNonNull(file.listFiles()).length == 0) {
                     // 删除空文件夹
-                    System.out.println("空文件夹删除："+file.getAbsolutePath());
+                    System.out.println("空文件夹删除：" + file.getAbsolutePath());
                     file.delete();
                 } else {
                     boolean flag = checkAndDeleteFiles(Objects.requireNonNull(file.listFiles()));

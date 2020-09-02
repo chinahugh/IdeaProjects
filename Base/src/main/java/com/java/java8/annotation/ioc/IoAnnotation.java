@@ -86,7 +86,7 @@ public class IoAnnotation {
             }
             if (o != null) {
                 Ioc annotation = o.getClass().getAnnotation(Ioc.class);
-                if (annotation == null ||(annotation!=null&&annotation.required())) {
+                if (annotation == null || annotation.required()) {
                     classMap.put(type, o);
                 }
             }

@@ -27,12 +27,12 @@ public class HelloWorldInnerClass {
         A.Inner inner = a.new Inner();
 
     }
-}
-
-
-class A{
-    private String s="aa";
-    class Inner{
-        private int anInt=000;
+    static class A{
+        private String s="aa";
+        class Inner{
+            private int anInt=000;
+        }
     }
 }
+
+

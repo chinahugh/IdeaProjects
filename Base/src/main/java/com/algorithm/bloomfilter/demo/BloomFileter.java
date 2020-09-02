@@ -5,9 +5,13 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.BitSet;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author HGH
+ */
 public class BloomFileter implements Serializable {
     private static final long serialVersionUID = -5221305273707291280L;
     private final int[] seeds;
@@ -23,7 +27,7 @@ public class BloomFileter implements Serializable {
      * @param dataCount 预期处理的数据规模，如预期用于处理1百万数据的查重，这里则填写1000000
      */
     public BloomFileter(int dataCount) {
-        this(MisjudgmentRate.HIGH, dataCount, null);
+        this(MisjudgmentRate.MIDDLE, dataCount, null);
     }
 
     /**
@@ -48,15 +52,15 @@ public class BloomFileter implements Serializable {
     public void add(String data) {
         checkNeedClear();
 
-        for (int i = 0; i < seeds.length; i++) {
-            int index = hash(data, seeds[i]);
+        for (int seed : seeds) {
+            int index = hash(data, seed);
             setTrue(index);
         }
     }
 
     public boolean check(String data) {
-        for (int i = 0; i < seeds.length; i++) {
-            int index = hash(data, seeds[i]);
+        for (int seed : seeds) {
+            int index = hash(data, seed);
             if (!notebook.get(index)) {
                 return false;
             }
@@ -187,11 +191,11 @@ public class BloomFileter implements Serializable {
         /**
          * 每个字符串分配8个位
          */
-        SMALL(new int[]{2, 3, 5, 7, 11, 13, 17, 19}), //
+        SMALL(new int[]{2, 3, 5, 7, 11, 13, 17, 19}),
         /**
          * 每个字符串分配16个位
          */
-        MIDDLE(new int[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53}), //
+        MIDDLE(new int[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53}),
         /**
          * 每个字符串分配32个位
          */
@@ -229,11 +233,18 @@ public class BloomFileter implements Serializable {
         System.out.println(fileter.getUseRate());
         System.out.println(fileter.addIfNotExist("1111111111111"));
         System.out.println(fileter.check("5555555555554"));
-        System.out.println(fileter.toString());
+//        System.out.println(fileter.toString());
     }
 
     @Override
     public String toString() {
-        return this.autoClearRate+" "+this.size+" "+rate+" "+this.notebook+" "+useCount;
+        return "BloomFileter{" +
+                "seeds=" + Arrays.toString(seeds) +
+                ", size=" + size +
+                ", notebook=" + notebook +
+                ", rate=" + rate +
+                ", useCount=" + useCount +
+                ", autoClearRate=" + autoClearRate +
+                '}';
     }
 }

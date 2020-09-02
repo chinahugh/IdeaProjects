@@ -34,7 +34,7 @@ ForkJoinPool ：ForkJoinTask需要通过ForkJoinPool来执行，任务分割出�
 
 因为是有结果的任务，所以必须继承RecursiveTask，实现代码如下：
 ```
-package com.java.focus.thread.forkjoin.Fork;
+package com.java.focus.thread.forkjoin.fork;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;

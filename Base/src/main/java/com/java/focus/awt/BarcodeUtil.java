@@ -214,7 +214,6 @@ public class BarcodeUtil {
     public static void main(String[] args) throws FileNotFoundException {
 
         String msg = "1234567.8912A";
-        String file = "barcode";
         String titlemsg = "ds4AD351384";
         long l = System.currentTimeMillis();
         Font gfont = new Font("宋体", Font.PLAIN, 3);
@@ -225,7 +224,5 @@ public class BarcodeUtil {
         l = System.currentTimeMillis() - l;
         System.out.println("time : " + l);
         // System.out.println(f1.getPath());
-
     }
-
 }

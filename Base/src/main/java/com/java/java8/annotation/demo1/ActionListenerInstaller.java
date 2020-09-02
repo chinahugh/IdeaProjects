@@ -28,7 +28,7 @@ public class ActionListenerInstaller {
                 //获取变量的值
                 Object fObj = field.get(o);
                 //annotation不为空，而且field是AbstractButton的对象
-                if (fObj != null && annotation != null && fObj instanceof AbstractButton) {
+                if (annotation != null && fObj instanceof AbstractButton) {
                    //获取注解上的listener值
                     Class<? extends ActionListener> listener = annotation.listener();
                     //使用注解传入的值创建对象

@@ -50,7 +50,7 @@ public class NewDate {
         int seconds = currentTime.getSecond();
 
         // 由当前时间对象获得各个字段，输出结果
-        System.out.println("month: " + month + "day: " + day + "seconds: " + seconds);
+        System.out.println("month: " + month + " day: " + day + " seconds: " + seconds);
 
         // 由当前时间附带月份和年再输出
         LocalDateTime date2 = currentTime.withDayOfMonth(10).withYear(2012);

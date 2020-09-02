@@ -43,7 +43,7 @@ class Synchronized implements Runnable {
         Thread syn1 = new Thread(aSynchronized, "syn1");
         Thread syn2 = new Thread(aSynchronized, "syn2");
         syn1.start();
-        syn2.start();
+      //  syn2.start();
     }
     public static void main2() {
         //这时创建了两个SyncThread的对象，线程thread1执行的是syncThread1对象中的synchronized
@@ -52,7 +52,7 @@ class Synchronized implements Runnable {
         //而这两把锁是互不干扰的，不形成互斥，所以两个线程可以同时执行。
         Thread syn1 = new Thread(new Synchronized(), "syn1");
         Thread syn2 = new Thread(new Synchronized(), "syn2");
-        syn1.start();
+       // syn1.start();
         syn2.start();
     }
 

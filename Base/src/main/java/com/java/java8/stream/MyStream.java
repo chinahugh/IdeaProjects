@@ -14,6 +14,7 @@ public class MyStream {
 
         // 统计空字符串的数量
         List<String> strings = Arrays.asList("efg", "", "abc", "bc", "ghij", "", "lmn");
+
         System.out.println("List: " + strings);
         long count = getCountEmptyStringUsingJava7(strings);
 
@@ -150,7 +151,7 @@ public class MyStream {
         List<Integer> squaresList = new ArrayList<>();
 
         for (Integer number : numbers) {
-            Integer square = number * number.intValue();
+            Integer square = number * number;
 
             if (!squaresList.contains(square)) {
                 squaresList.add(square);

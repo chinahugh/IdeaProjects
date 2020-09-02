@@ -24,7 +24,7 @@ class StationThread extends Thread {
     // 为了保持票数的一致，票数要静态
     private static int num;
     // 创建一个静态钥匙
-    private static Object key;
+    private static final Object key =new Object();
     public StationThread() {
         this(20);
     }
@@ -34,7 +34,7 @@ class StationThread extends Thread {
     }
 
     public StationThread(String name, int num) {
-        this.num = num;
+        StationThread.num = num;
     }
 
     @Override

@@ -13,8 +13,8 @@ import redis.clients.jedis.JedisPoolConfig;
  * @Description RedisTemplate
  */
 public class RedisTemplate {
-    private static String localhost ="192.168.197.133";
-    private static Logger logger= LoggerFactory.getLogger(RedisTemplate.class);
+    private static String localhost = "192.168.197.133";
+    private static Logger logger = LoggerFactory.getLogger(RedisTemplate.class);
     private static JedisPool pool = null;
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class RedisTemplate {
 
         JedisPool pool = getPool();
         logger.info(new JSONObject(pool).toString());
-        setx("a",1000,"123123");
+        setx("a", 1000, "123123");
 //        try {
 //            Thread.sleep(1001);
 //        } catch (InterruptedException e) {
@@ -34,6 +34,7 @@ public class RedisTemplate {
 //        }
         logger.info(get("a"));
     }
+
     /**
      * 构建redis连接池
      *
@@ -64,12 +65,12 @@ public class RedisTemplate {
         return pool;
 
     }
+
     /**
      * 给key赋值，并生命周期设置为seconds
      *
      * @param key
-     * @param seconds
-     *            生命周期 秒为单位
+     * @param seconds 生命周期 秒为单位
      * @param value
      */
     public static void setx(String key, int seconds, String value) {
@@ -81,13 +82,16 @@ public class RedisTemplate {
             jedis.setex(key, seconds, value);
         } catch (Exception e) {
             // 释放redis对象
-            pool.returnBrokenResource(jedis);
+//            pool.returnBrokenResource(jedis);
+            pool.close();
             logger.error("fail to set key and seconds", e);
         } finally {
             // 返还到连接池
-            pool.returnResource(jedis);
+//            pool.returnResource(jedis);
+            pool.close();
         }
     }
+
     /**
      * 获取数据
      *
@@ -106,12 +110,14 @@ public class RedisTemplate {
         } catch (Exception e) {
             // TODO: handle exception
             // 释放redis对象
-            pool.returnBrokenResource(jedis);
+//            pool.returnBrokenResource(jedis);
+            pool.close();
             logger.error("jedis error is" + "e.printStackTrace()");
             logger.error("fail to get data from jedis ", e);
         } finally {
             // 返还到连接池
-            pool.returnResource(jedis);
+//            pool.returnResource(jedis);
+            pool.close();
         }
         return value;
 
