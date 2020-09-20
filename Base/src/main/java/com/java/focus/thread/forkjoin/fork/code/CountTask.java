@@ -1,9 +1,14 @@
 package com.java.focus.thread.forkjoin.fork.code;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  *
@@ -50,6 +55,10 @@ public class CountTask extends RecursiveTask<Integer> {
     public static void main(String[] args) {
         ForkJoinPool forkJoinPool = new ForkJoinPool();
 //        ForkJoinPool.commonPool()
+//        ExecutorService executorService = Executors.newFixedThreadPool(2);
+//        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2, 2,
+//                0L, TimeUnit.MILLISECONDS,
+//                new LinkedBlockingQueue<Runnable>());
         //生成一个计算任务，负责计算1+2+3+4
         CountTask task = new CountTask(1, 40000);
         //执行一个任务

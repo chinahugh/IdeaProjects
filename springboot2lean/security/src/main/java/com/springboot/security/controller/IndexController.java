@@ -1,5 +1,8 @@
 package com.springboot.security.controller;
 
+import com.springboot.security.common.R;
+import com.springboot.security.service.IndexService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,6 +14,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class IndexController {
 
 // @PreAuthorize("hasRole('admin')")
+    @Autowired
+    IndexService indexService;
+
     @RequestMapping("/hello")
     public String hello() {
         System.out.println("hello");
@@ -34,8 +40,7 @@ public class IndexController {
     }
     @RequestMapping("/logg")
     @ResponseBody
-    public String logg() {
-        System.out.println("logg");
-        return "logg";
+    public R logg() {
+        return indexService.list();
     }
 }

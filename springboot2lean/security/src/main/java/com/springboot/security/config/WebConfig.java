@@ -13,6 +13,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
        registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
        registry.addResourceHandler("/static/**/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/druid/**");
     }
     /**
      * 视图控制器配置
@@ -23,4 +24,5 @@ public class WebConfig extends WebMvcConfigurationSupport {
     protected void addViewControllers(ViewControllerRegistry registry) {
 //        registry.addViewController("/index").setViewName("index");//默认视图跳转
     }
+
 }
