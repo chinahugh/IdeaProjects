@@ -20,7 +20,15 @@
 *.zip
 *.tar.gz
 *.rar
-
+*.json
+mvnw
+mvnw.cmd
+*.jar
+org*
+.*
+*.ipr
+*.http
+*.iws
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 #hs_err_pid*
 
