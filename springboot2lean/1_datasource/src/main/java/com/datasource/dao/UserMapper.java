@@ -1,15 +1,16 @@
 package com.datasource.dao;
 
-import com.datasource.entity.User;
+import com.datasource.entity.Testdatasource;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 /**
  * @author HGH
  */
 @Mapper
-public interface Test2Interface {
+public interface UserMapper {
 
-    @Select("select * from user where id=#{user.id}")
-    User find(User user);
+    @Select("select id,name,insertime from testdatasource where id=#{id}")
+    Testdatasource findById(@Param("id") Integer id);
 }

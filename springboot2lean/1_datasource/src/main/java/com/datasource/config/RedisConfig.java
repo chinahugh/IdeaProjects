@@ -1,7 +1,6 @@
 package com.datasource.config;
 
 import com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -13,8 +12,8 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  */
 @Configuration
 public class RedisConfig {
-    @Autowired
-    RedisTemplate redisTemplate;
+    // @Autowired
+    // private RedisTemplate redisTemplate;
 
     @Bean
     public RedisTemplate redisT(RedisConnectionFactory redisConnectionFactory) {

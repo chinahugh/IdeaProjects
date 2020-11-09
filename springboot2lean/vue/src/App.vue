@@ -73,9 +73,13 @@ export default {
   },
   methods: {
     onSubmit() {
+      var json = JSON.parse(
+        '{"page":"1","defaultRows":"2","currentRows":"3","totalRows":"4","totalPages":"5","order":[{"field":"name","desc}]}'
+      );
+      console.log(json);
       this.$axios
-        .post("http://localhost:8080/", {
-          name: '{"page":"1","defaultRows":"2","currentRows":"3","totalRows":"4","totalPages":"5","asd":[{"":""}]}',
+        .post("http://localhost:8080", {
+          name: JSON.stringify(json),
         })
         .then(function (res) {
           console.log(res);

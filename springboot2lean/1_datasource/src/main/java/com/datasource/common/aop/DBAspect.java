@@ -36,6 +36,7 @@ public class DBAspect {
 //    }
 
     @Around("pointcut()")
+    @SuppressWarnings("unchecked")
     public Object around(ProceedingJoinPoint point) {
         try {
             Page page = null;
@@ -49,8 +50,8 @@ public class DBAspect {
                 }
             }
             Object proceed = point.proceed();
-            if (args[0] instanceof Page && proceed instanceof List && page != null) {
-                page.setCurrentRows(((List) proceed).size());
+            if (args[0] instanceof Page && proceed instanceof List && page != null) {               
+                page.setCurrentRows(((List<Object>) proceed).size());
             }
             return proceed;
         } catch (Throwable t) {

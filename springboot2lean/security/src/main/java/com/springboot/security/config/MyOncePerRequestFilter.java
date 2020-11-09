@@ -24,7 +24,9 @@ public class MyOncePerRequestFilter extends OncePerRequestFilter {
         }
 
         ArrayList<GrantedAuthority> list = new ArrayList<>();
-        GrantedAuthority grantedAuthority = new GrantedAuthority() {
+        GrantedAuthority grantedAuthority = new GrantedAuthority() { 
+            private static final long serialVersionUID = 4660735246670129714L;
+
             @Override
             public String getAuthority() {
                 return "test";

@@ -1,7 +1,12 @@
 package com.java.java8.stream;
 
+import cn.hutool.core.util.StrUtil;
+import com.google.common.collect.ImmutableList;
+
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Author: hugh
@@ -9,7 +14,26 @@ import java.util.stream.Collectors;
  * @Description:
  */
 public class MyStream {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+        t2();
+    }
+
+    private static void t2() {
+        // 初始化一个不可变字符串
+        List<String> words = Arrays.asList("hello", "java8", "stream", null);
+        Stream<String> strStream = words.stream()
+                .filter(StrUtil::isNotEmpty)
+
+                .map(word -> word.split(""))
+             //   .filter(w -> w.length > 4)
+                .flatMap(Arrays::stream)
+
+                .distinct();
+// output: hello java8 stream
+        strStream.forEach(System.out::println);
+    }
+
+    public static void t1() {
         System.out.println("Using Java 7: ");
 
         // 统计空字符串的数量

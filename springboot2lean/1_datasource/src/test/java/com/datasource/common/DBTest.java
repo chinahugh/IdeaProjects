@@ -12,12 +12,12 @@ class DBTest {
     @Test
     void page() {
         for (int i = 0; i < 100; i++) {
-            db.update("insert into testdatasource (name,insertime) values(?,NOW())", "hugh" + i);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            // db.update("insert into testdatasource (name,insertime) values(?,NOW())", "hugh" + i);
+            // try {
+            //     Thread.sleep(1000);
+            // } catch (InterruptedException e) {
+            //     e.printStackTrace();
+            // }
         }
     }
 

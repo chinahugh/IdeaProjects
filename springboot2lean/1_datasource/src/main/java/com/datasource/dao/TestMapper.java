@@ -8,12 +8,14 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author HGH
+ */
 @Component
 public class TestMapper extends Mapper {
 
     @CatcheA(name="list",time = 300)
     public List<Map<String, Object>> queryForList(Page page, String sql, @Nullable Object... args) {
-        List<Map<String, Object>> maps = db.queryForList(page, sql, args);
-        return maps;
+        return db.queryForList(page, sql, args);
     }
 }

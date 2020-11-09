@@ -3,6 +3,9 @@ package com.springboot.security.common;
 import java.util.HashMap;
 
 public class R extends HashMap<String, Object> {
+    
+    private static final long serialVersionUID = 9182938985439304094L;
+
     private R(int initialCapacity) {
         super(initialCapacity);
     }

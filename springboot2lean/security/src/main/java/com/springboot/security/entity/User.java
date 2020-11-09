@@ -9,10 +9,12 @@ import java.util.Collection;
 import java.util.List;
 
 public class User  implements UserDetails {
+ 
+    private static final long serialVersionUID = -2738581353670294684L;
 
     /**
      * 用户名
-     * */
+     */
     private String username;
 
     /**

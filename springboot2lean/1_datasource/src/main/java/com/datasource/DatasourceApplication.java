@@ -9,9 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DatasourceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DatasourceApplication.class, args);
-		System.out.println("hello  ");
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DatasourceApplication.class, args);
+        System.out.println("hello");  
+    }
 
 }
+

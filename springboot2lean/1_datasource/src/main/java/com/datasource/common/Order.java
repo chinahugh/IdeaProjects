@@ -21,7 +21,7 @@ public class Order implements Serializable {
     }
 
     public String getDesc() {
-        return desc==0?"des":"desc";
+        return desc==0?"asc":"desc";
     }
 
     public void setDesc(int desc) {

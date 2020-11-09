@@ -3,8 +3,7 @@ package com.datasource.common;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
-
-import java.io.Serializable;
+ 
 import java.util.LinkedHashMap;
 import java.util.Objects;
 
@@ -13,7 +12,7 @@ import java.util.Objects;
  *
  * @author HGH
  */
-public class R extends LinkedHashMap<String, Object> implements Serializable {
+public class R extends LinkedHashMap<String, Object>{
     private static final long serialVersionUID = 4626535312542645606L;
 
     private final Logger logger = LoggerFactory.getLogger(R.class);
