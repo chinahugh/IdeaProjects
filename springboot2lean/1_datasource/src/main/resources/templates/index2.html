@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/element-ui.css">
+</head>
+<body>
+<div id="app">
+    <el-main style="padding:10% 40%;text-align: center;margin:auto">
+        <el-form :model="form" label-width="80px">
+            <el-form-item label="姓名">
+                <el-input v-model="form.username" placeholder="请输入用户名"></el-input>
+            </el-form-item>
+            <el-form-item label="密码">
+                <el-input v-model="form.password" placeholder="密码"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" v-on:click="onSubmit">登陆</el-button>
+                <el-button>取消</el-button>
+            </el-form-item>
+        </el-form>
+    </el-main>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="/static/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/static/js/element-ui.js"></script>
+<script src="/static/js/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                form: {
+                    username: "",
+                    password: ""
+                },
+                page: {
+                    "page": "1",
+                    "defaultRows": "2",
+                    "currentRows": "3",
+                    "totalRows": "4",
+                    "totalPages": "5",
+                    "orders": [{"field": "name", "desc": 1}]
+                }
+            }
+        }, methods: {
+            onSubmit() {
+                let that = this;
+                axios({
+                    methods: "post",
+                    url: "/test",
+                    params: that.page
+                }).then(res => {
+                    // console.log(res);
+                    // axios({
+                    //     methods:"get",
+                    //     url:"/index"
+                    // }).then(res=>{
+                    //     console.log(res);
+                    //
+                    // })
+                })
+            }
+        }
+    })
+</script>
+</html>

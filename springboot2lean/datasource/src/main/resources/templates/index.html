@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/element-ui.css">
+</head>
+<body>
+<div id="app">
+  <el-main style="padding:200px 400px;text-align: center;margin:auto" >
+            <el-button type="primary" v-on:click="onSubmit">登陆</el-button>
+  </el-main>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="/static/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/static/js/element-ui.js"></script>
+<script src="/static/js/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data () {
+            return {
+                form: {
+                    username: "",
+                    password: ""
+                }
+            }
+        },methods:{
+            onSubmit(){
+                let that=this;
+                axios({
+                    methods:"get",
+                    url:"/login",
+                    params:that.form
+                }).then(res=>{
+                    console.log(res);
+                    axios({
+                        methods:"get",
+                        url:"/index"
+                    }).then(res=>{
+                        console.log(res);
+
+                    })
+                })
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/element-ui.css">
+
+</head>
+<body>
+<div id="app">
+    <el-main style="padding:200px 400px;text-align: center;margin:auto">
+        <el-button type="primary" v-on:click="onSubmit">登陆</el-button>
+    </el-main>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="/static/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/static/js/element-ui.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                form: {
+                    username: "",
+                    password: ""
+                }, page: {
+                    "page": 1,
+                    "defaultRows": 20,
+                    "currentRows": 3,
+                    "totalRows": 4,
+                    "totalPages": 5,
+                    "orders": [
+                        {
+                            "field": "name",
+                            "desc": 1
+                        }, {
+                            "field": "id",
+                            "desc": 1
+                        }
+                    ]
+                }
+            }
+        }, methods: {
+            onSubmit() {
+                let that = this;
+                $.ajax({
+                    type: "post",
+                    url: "/test",
+                    headers : {"Content-Type" : "application/json;charset=utf-8"},
+                    data: JSON.stringify(that.page),
+                    // data: that.page,
+                    success: function (e) {
+                        console.log(e)
+                    }
+                })
+            }
+        }
+    })
+</script>
+</html>
