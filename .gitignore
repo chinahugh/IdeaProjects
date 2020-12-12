@@ -29,10 +29,13 @@ org*
 *.ipr
 *.http
 *.iws  
-
+.classpath
+.project
+*.iml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 #hs_err_pid*
 
+.settings
 */out/
 **/out/
 */target/
@@ -41,5 +44,5 @@ org*
 /.vscode/
 */classes/
 **/classes/
-#*/.idea/
-#**/.idea/
+*/.idea/
+**/.idea/
