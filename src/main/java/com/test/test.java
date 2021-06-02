@@ -1,7 +1,14 @@
 package com.test;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.tensorflow.ConcreteFunction;
+import org.tensorflow.Signature;
+import org.tensorflow.Tensor;
+import org.tensorflow.op.Ops;
+import org.tensorflow.TensorFlow;
+import org.tensorflow.op.core.Placeholder;
+import org.tensorflow.op.math.Add;
+import org.tensorflow.types.TInt32;
+
 
 /**
  * @author HUGH
@@ -10,33 +17,21 @@ import java.util.List;
  */
 public class test {
     public static void main(String[] args) {
-        A a = new A();
-        B b = new B(a);
-        b.aaa();
-    }
-}
+            System.out.println("Hello TensorFlow " + TensorFlow.version());
 
-class A {
-    public A() {
-    }
+            try (ConcreteFunction dbl = ConcreteFunction.create(test::dbl);
+                 Tensor<TInt32> x = TInt32.scalarOf(10);
+                 Tensor<TInt32> dblX = dbl.call(x).expect(TInt32.DTYPE)) {
+                System.out.println(x.data().getInt() + " doubled is " + dblX.data().getInt());
 
-    public void a() {
-        System.out.println(1111111111);
-    }
-}
+            }
+        }
 
-class B {
-    private List<A> list = new ArrayList<>();
-
-    public B(A a) {
-        list.add(a);
-    }
-
-    public void aaa(){
-        for (A a:list){
-            a.a();
+        private static Signature dbl(Ops tf){
+            Placeholder<TInt32> x = tf.placeholder(TInt32.DTYPE);
+            Add<TInt32> dblX = tf.math.add(x, x);
+            return Signature.builder().input("x", x).output("dbl", dblX).build();
         }
     }
-}
 
 

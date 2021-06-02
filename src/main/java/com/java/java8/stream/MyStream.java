@@ -23,14 +23,12 @@ public class MyStream {
         List<String> words = Arrays.asList("hello", "java8", "stream", null);
         Stream<String> strStream = words.stream()
                 .filter(StrUtil::isNotEmpty)
-
                 .map(word -> word.split(""))
-             //   .filter(w -> w.length > 4)
+                //   .filter(w -> w.length > 4)
                 .flatMap(Arrays::stream)
-
                 .distinct();
 // output: hello java8 stream
-        strStream.forEach(System.out::println);
+        strStream.forEach(System.out::print);
     }
 
     public static void t1() {

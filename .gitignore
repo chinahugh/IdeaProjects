@@ -47,3 +47,12 @@ org*
 **/classes/
 */.idea/
 **/.idea/
+# src/main/java/com/docker/code/
+# src/main/java/com/game/
+# src/main/java/com/java/core/collections/queue/
+# src/main/java/com/java/core/collections/set/
+# src/main/java/com/java/core/integer/
+# src/main/java/com/java/focus/reflect/
+# src/main/java/com/java/focus/swing/note/
+# src/main/java/com/java/java8/interfacee/demo/
+# src/test/

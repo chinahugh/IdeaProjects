@@ -6,11 +6,11 @@ package com.java.java8.stream;
  * @Discraption: lambda表达式
  */
 public class NewFeaturesTester {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         NewFeaturesTester tester = new NewFeaturesTester();
 
         // 带有类型声明的表达式
-        MathOperation addition = (int a, int b) -> a + b;
+        MathOperation addition = Integer::sum;
 
         // 没有类型声明的表达式
         MathOperation subtraction = (a, b) -> a - b;

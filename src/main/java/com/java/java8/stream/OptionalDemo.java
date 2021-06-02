@@ -1,6 +1,12 @@
 package com.java.java8.stream;
 
+import java.io.IOException;
+import java.time.ZoneId;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Author: hugh
@@ -8,10 +14,10 @@ import java.util.Optional;
  * @Discraption: Optional是一个容器对象，用于容纳非空对象。Optional对象通过缺失值值代表null。
  * 这个类有许多实用的方法来促使代码能够处理一些像可用或者不可用的值，而不是检查那些空值（null）。
  */
-public class Optional_01 {
-    public static void main(String args[]) {
+public class OptionalDemo {
+    public static void main(String[] args) {
 
-        Optional_01 tester = new Optional_01();
+        OptionalDemo tester = new OptionalDemo();
         Integer value1 = null;
         Integer value2 = 5;
 
@@ -21,6 +27,8 @@ public class Optional_01 {
         // 如果传递的参数为null，那么 of 将抛出空指针异常（NullPointerException）
         Optional<Integer> b = Optional.of(value2);
         System.out.println(tester.sum(a, b));
+
+
     }
 
     private Integer sum(Optional<Integer> a, Optional<Integer> b) {

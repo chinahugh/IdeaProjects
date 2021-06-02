@@ -1,6 +1,7 @@
 package com.java.core.collections.map;
 
 import java.util.AbstractMap;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,6 +40,13 @@ public class Hello {
     }
 
     public static void main(String[] args) {
-
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("asd", "asdd");
+        map.put("asd2", "asdd123");
+        map.put("asd3", "asddasd");
+        String s = map.values().toString();
+        System.out.println(s);
+        Object[] a= {"asd","asd"};
+        System.out.println(Arrays.toString(a));
     }
 }
